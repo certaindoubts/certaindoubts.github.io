@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<!--[if IE 7]>	<html id="ie7" lang="en-US"> <![endif]-->
+<!--[if IE 8]>	<html id="ie8" lang="en-US"> <![endif]-->
+<!--[if IE 9]>	<html id="ie9" lang="en-US"> <![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8) ] | !(IE 9) ><!-->	<html lang="en-US"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes' />
+<title>Deliberation and Embedded Conditionals | Certain Doubts</title>
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://certaindoubts.com/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://certaindoubts.com/wp-content/themes/weaver-ii/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<script type="text/javascript">var weaverIsMobile=false;var weaverIsSimMobile=false;var weaverIsStacked=false;var weaverThemeWidth=940;var weaverMenuThreshold=640;var weaverHideMenuBar=false;var weaverMobileDisabled=false;var weaverFlowToBottom=false;var weaverHideTooltip=false;var weaverUseSuperfish=false;</script>
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Certain Doubts &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Certain Doubts &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Certain Doubts &raquo; Deliberation and Embedded Conditionals Comments Feed" href="feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/certaindoubts.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.10"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='weaverii-main-style-sheet-css'  href='../wp-content/themes/weaver-ii/style.min.css%3Fver=2.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='weaverii-mobile-style-sheet-css'  href='../wp-content/themes/weaver-ii/style-mobile.min.css%3Fver=2.2.2.css' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery.js%3Fver=1.12.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min.js%3Fver=1.4.1'></script>
+<link rel='https://api.w.org/' href='../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc.php%3Frsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Expected Utility, Evidence, and Reference Classes' href='../index.html%3Fp=619.html' />
+<link rel='next' title='Special Issue of Synthese &#8220;Knowability and Beyond&#8221;' href='../index.html%3Fp=621.html' />
+<meta name="generator" content="WordPress 4.9.10" />
+<link rel="canonical" href="../index.html%3Fp=620.html" />
+<link rel='shortlink' href='../index.html%3Fp=620.html' />
+<meta name='robots' content='noindex,follow' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed%3Furl=http:%252F%252Fcertaindoubts.com%252Fdeliberation-and-embedded-conditionals%252F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed%3Furl=http:%252F%252Fcertaindoubts.com%252Fdeliberation-and-embedded-conditionals%252F&amp;format=xml" />
+
+<!-- This site is using Weaver II 2.2.2 (48) subtheme: Wheat -->
+<!-- Page ID: 620 -->
+<style type="text/css">
+/* Weaver II styles - Version 48 */
+a {color:#59C448;}
+a:visited {color:#8DBA61;}
+a:hover {color:#C91640;}
+a{font-style:italic;}
+a{font-weight:bold;}
+.entry-title a {color:#0A0A0A;}
+.entry-title a:visited {color:#0A0A0A;}
+.entry-title a{font-style:normal;}
+.entry-title a{font-weight:normal;}
+.entry-meta a, .entry-utility a {color:#474134;}
+.entry-meta a:visited, .entry-utility a:visited {color:#706752;}
+.entry-meta a:hover, .entry-utility a:hover {color:#C91640;}
+.widget-area a {color:#474134;}
+.widget-area a:visited {color:#706752;}
+.widget-area a:hover {color:#C91640;}
+.widget-area a{font-style:normal;}
+.widget-area a{font-weight:normal;}
+#infobar a{font-style:normal;}
+#infobar a{font-weight:normal;}
+#colophon a{font-style:normal;}
+#colophon a{font-weight:normal;}
+#wrapper {border: 1px solid #AB9B7D;}
+#sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,#first,#second,#third,#fourth, .mobile_widget_area {border: 1px solid #AB9B7D;}
+#wrapper, #branding, #colophon, .commentlist li.comment, #respond, #sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,#first,#second,#third,#fourth,.mobile_widget_area {-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}
+#sidebar_wrap_right.right-1-col,#sidebar_wrap_right.right-2-col,#sidebar_wrap_right.right-2-col-bottom,
+#sidebar_wrap_left.left-1-col,#sidebar_wrap_left.left-2-col,#sidebar_wrap_left.left-2-col-bottom,#sidebar_wrap_left,#sidebar_wrap_right
+{-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}
+.commentlist li.comment .comment-meta {-moz-border-radius-topleft: 7px; -moz-border-radius-topright: 7px;
+ -webkit-border-top-left-radius: 7px; -webkit-border-top-right-radius: 7px; border-top-left-radius: 7px; border-top-right-radius: 7px;}
+#access {-moz-border-radius-bottomleft: 7px; -moz-border-radius-bottomright: 7px;
+ -webkit-border-bottom-left-radius: 7px; -webkit-border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; border-bottom-right-radius: 7px;}
+#access2 {-moz-border-radius-topleft: 7px; -moz-border-radius-topright: 7px;
+ -webkit-border-top-left-radius: 7px; -webkit-border-top-right-radius: 7px; border-top-left-radius: 7px; border-top-right-radius: 7px;}
+body {background-image: url(../wp-content/themes/weaver-ii/images/gr.png); background-attachment: scroll; background-repeat: repeat-x;}
+#wrapper {-webkit-box-shadow: 0 0 3px 3px rgba(0,0,0,0.25); -moz-box-shadow: 0 0 3px 3px rgba(0,0,0,0.25); box-shadow: 0 0 3px 3px rgba(127,127,127,0.25);}
+#wrapper{max-width:940px;}
+#sidebar_primary,.mobile_widget_area {background-color:#F5DEB3;}
+#sidebar_right {background-color:#F5DEB3;}
+#sidebar_left {background-color:#F5DEB3;}
+.sidebar_top,.sidebar_extra {background-color:#F5DEB3;}
+.sidebar_bottom {background-color:#F5DEB3;}
+#first,#second,#third,#fourth {background-color:transparent;}
+.widget {background-color:transparent;}
+#container_wrap.right-1-col{width:75.000%;} #sidebar_wrap_right.right-1-col{width:25.000%;}
+#container_wrap.right-2-col,#container_wrap.right-2-col-bottom{width:67.000%;} #sidebar_wrap_right.right-2-col,#sidebar_wrap_right.right-2-col-bottom{width:33.000%;}
+#container_wrap.left-1-col{width:75.000%;} #sidebar_wrap_left.left-1-col{width:25.000%;}
+#container_wrap.left-2-col,#container_wrap.left-2-col-bottom{width:67.000%;} #sidebar_wrap_left.left-2-col,#sidebar_wrap_left.left-2-col-bottom{width:33.000%;}
+#container_wrap{width:66.000%;} #sidebar_wrap_left{width:17.000%;} #sidebar_wrap_right{width:17.000%;}
+#sidebar_wrap_2_left_left, #sidebar_wrap_2_right_left {width:54.000%;margin-right:1%;}
+#sidebar_wrap_2_left_right, #sidebar_wrap_2_right_right {width:45.000%;}
+#sidebar_header {font-size:70%;}
+#sidebar_header .header-widget-1 {display:none;}
+#sidebar_header .header-widget-2 {display:none;}
+#sidebar_header .header-widget-3 {display:none;}
+#sidebar_header .header-widget-4 {display:none;}
+@media only screen and (max-width:640px) { /* header widget area mobile rules */
+} /* end mobile rules */
+#main {padding: 15px 0 0 0;}
+#site-description {font-size:200.000%;}
+#site-title {overflow:hidden; padding:0; margin:0; position:absolute; left:2.000%; top: 5.000%; z-index:20;}
+#site-description {overflow:hidden; padding:0; margin:0; position:absolute; left:4.000%; top: 30.000%; z-index:20;}
+.menu_bar a, .mobile_menu_bar a {font-weight:bold;}
+@media only screen and (min-width: 641px) {.menu_bar,.weaveriip_vertical_menu .menu_bar { background-image: url(../wp-content/themes/weaver-ii/images/theme/fade.png);}}
+@media only screen and (min-width: 641px) {.menu_bar ul ul a, .menu_bar li:hover > a, .menu_bar ul ul :hover > a { background-image: url(../wp-content/themes/weaver-ii/images/theme/fadeup.png);}}
+#ie8 .menu_bar,#ie8 .weaveriip_vertical_menu .menu_bar,#ie7 .menu_bar,#ie7 .weaveriip_vertical_menu .menu_bar { background-image: url(../wp-content/themes/weaver-ii/images/theme/fade.png);}
+#ie8 .menu_bar ul ul a, #ie8 .menu_bar li:hover > a, #ie8 .menu_bar ul ul :hover > a,
+#ie7 .menu_bar ul ul a, #ie7 .menu_bar li:hover > a, #ie7 .menu_bar ul ul :hover > a{ background-image: url(../wp-content/themes/weaver-ii/images/theme/fadeup.png);}
+.menu_bar, .menu_bar a,.menu_bar a:visited,.mobile_menu_bar a {color:#FFFAEF;}
+.menu_bar li:hover > a, .menu_bar a:focus {background-color:#BAA987;}
+.menu_bar li:hover > a, .menu_bar a:focus {color:#F0EBE0;}
+.menu_bar ul ul a {background-color:#BAA987;}
+.menu_bar ul ul a,.menu_bar ul ul a:visited {color:#FFFAEF;}
+.menu_bar ul ul :hover > a {background-color:#BAA987;}
+.menu_bar ul ul :hover > a {color:#F0EBE0;}
+.menu_bar, .mobile_menu_bar, .menu-add {background-color:#AB9B7D;}
+.mobile-menu-link {border-color:#FFFAEF;}
+.widget-area .menu-vertical,.menu-vertical {clear:both;background-color:transparent;margin:0;width:100%;overflow:hidden;border-bottom:3px solid #FFFAEF;border-top:1px solid #FFFAEF;}
+.widget-area .menu-vertical ul, .menu-vertical ul {margin: 0; padding: 0; list-style-type: none;  list-style-image:none;font-family: inherit;}
+.widget-area .menu-vertical li a, .widget-area .menu-vertical a:visited, .menu-vertical li a, .menu-vertical a:visited {
+color: #FFFAEF;  background-color: #AB9B7D; display: block !important; padding: 5px 10px; text-decoration: none; border-top:2px solid #FFFAEF;}
+.widget-area .menu-vertical a:hover,.widget-area .menu-vertical a:focus, .menu-vertical a:hover,.menu-vertical a:focus {
+color: #F0EBE0; background-color: #BAA987;text-decoration: none;}
+.widget-area .menu-vertical ul ul li, .menu-vertical ul ul li { margin: 0; }
+.widget-area .menu-vertical ul ul a,.menu-vertical ul ul a {color: #FFFAEF; background-color: #AB9B7D;
+ display: block; padding: 4px 5px 4px 25px; text-decoration: none;border:0;
+ border-top:1px solid #FFFAEF;}
+.widget-area .menu-vertical ul ul a:hover,#wrap-header .menu-vertical ul ul a:hover,#wrap-header .menu-vertical ul a:hover {color: #F0EBE0; background-color: #BAA987; text-decoration: none;}
+.widget-area .menu-vertical ul ul ul a,.menu-vertical ul ul ul a {padding: 4px 5px 4px 35px;}
+.widget-area .menu-vertical ul ul ul a,.menu-vertical ul ul ul ul a {padding: 4px 5px 4px 45px;}
+.widget-area .menu-vertical ul ul ul ul a,.menu-vertical ul ul ul ul ul a {padding: 4px 5px 4px 55px;}
+.menu_bar .current_page_item > a, .menu_bar .current-menu-item > a, .menu_bar .current-cat > a, .menu_bar .current_page_ancestor > a,.menu_bar .current-category-ancestor > a, .menu_bar .current-menu-ancestor > a, .menu_bar .current-menu-parent > a, .menu_bar .current-category-parent > a,.menu-vertical .current_page_item > a, .menu-vertical .current-menu-item > a, .menu-vertical .current-cat > a, .menu-vertical .current_page_ancestor > a, .menu-vertical .current-category-ancestor > a, .menu-vertical .current-menu-ancestor > a, .menu-vertical .current-menu-parent > a, .menu-vertical .current-category-parent > a,.widget-area .menu-vertical .current_page_item > a, .widget-area .menu-vertical .current-menu-item > a, .widget-area .menu-vertical .current-cat > a, .widget-area .menu-vertical .current_page_ancestor > a {color:#474134 !important;}
+.entry-title {border-bottom: 1px solid #0A0A0A;}
+#content, .entry-content h1, .entry-content h2 {color:#292929;}
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6, #content dt, #content th,
+h1, h2, h3, h4, h5, h6,#author-info h2 {color:#0A0A0A;}
+#content h1.entry-title {color:#0A0A0A;}
+.commentlist li.comment, #respond {background-color:transparent;}
+.wp-caption p.wp-caption-text, #content .gallery .gallery-caption,.entry-attachment .entry-caption {color:#333333;}
+#content img.size-full, #content img.size-large, #content img.size-medium, #content img.size-thumbnail, #content .attachment-thumbnail, #content .gallery img,#content .gallery-thumb img,.entry-attachment img, #content .wp-caption img, #content img.wp-post-image,#content img[class*="wp-image-"],#author-avatar img,img.avatar {background-color:transparent;}
+.home .sticky, #container.page-with-posts .sticky, #container.index-posts .sticky {background-color:#E6DCC8;}
+.entry-meta, .entry-content label, .entry-utility {color:#706752;}
+body {font-size:12px;}
+body {background-color:#C7B491;}
+body {color:#292929;}
+#wrapper {background-color:#FEF3DD;}
+#main {background-color:transparent;}
+#container {background-color:transparent;}
+#content {background-color:transparent;}
+#content .post,.post {background-color:transparent;}
+#branding {background-color:transparent;}
+#colophon {background-color:#F5DEB3;}
+hr {background-color:#AB9B7D;}
+.entry-meta {background-color:transparent;}
+.entry-utility {background-color:transparent;}
+input, textarea, ins, pre {background-color:#F0F0F0;}
+.widget {color:#333333;}
+.widget-title {border-bottom: 1px solid #222222; margin-bottom:5px;padding-bottom:3px;}
+.widget-title, .widget_search label, #wp-calendar caption {color: #222222;}
+#site-title a {color:#FEF9EE;}
+#site-description {color:#FFFAEF;}
+/* Weaver II Mobile Device Options */
+.weaver-any-mobile  #main a, .weaver-any-mobile  #mobile-widget-area a, .weaver-any-mobile  .sidebar_top a, .weaver-any-mobile  .sidebar_bottom a, .weaver-any-mobile  .sidebar_extra a {text-decoration: underline !important;}
+@media only screen and (max-width:768px) and (orientation:portrait) {body {padding: 0px !important;}}
+@media only screen and (max-width:640px) {
+#main a, #mobile-widget-area a, .sidebar_top a, .sidebar_bottom a, .sidebar_extra a{text-decoration: underline !important;}
+}
+@media only screen and (max-width: 580px) {
+}
+
+/* end Weaver II CSS */
+</style> <!-- end of main options style section -->
+
+
+<!--[if lte IE 8]>
+<style type="text/css" media="screen">
+#content img.size-thumbnail,#content img.size-medium,#content img.size-large,#content img.size-full,#content img.attachment-thumbnail,
+#content img.wp-post-image,img.avatar,.format-chat img.format-chat-icon,
+#wrapper,#branding,#colophon,#content, #content .post,
+#sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,
+#first,#second,#third,#fourth,
+#commentform input:focus,#commentform textarea:focus,#respond input#submit {
+		behavior: url(http://certaindoubts.com/wp-content/themes/weaver-ii/js/PIE/PIE.php) !important; position:relative;
+}
+</style>
+<![endif]-->
+
+<!-- End of Weaver II options -->
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		</head>
+
+<body class="post-template-default single single-post postid-620 single-format-standard singular not-logged-in weaver-desktop weaver-mobile-smart-nostack">
+<a href="index.html%3Freplytocom=3952.html#page-bottom" id="page-top">&darr;</a> <!-- add custom CSS to use this page-bottom link -->
+<div id="wrapper" class="hfeed">
+<div id="wrap-header">
+	<header id="branding" role="banner"><div id="branding-content">
+		<div id="site-logo"></div>
+		<div id="site-logo-link" onclick="location.href='http://certaindoubts.com/';"></div>
+
+		<div class="title-description-xhtml">
+			<h1 id="site-title" ><span><a href="../index.html" title="Certain Doubts" rel="home">Certain Doubts</a></span></h1>
+			<h2 id="site-description"> devoted to matters epistemic</h2>
+		</div>
+		<div id="header_image">
+                              <img src="../wp-content/themes/weaver-ii/images/headers/wheat.jpg" width="940" height="188" alt="Certain Doubts" />
+        		</div><!-- #header_image -->
+	</div></header><!-- #branding-content, #branding -->
+<div id="wrap-bottom-menu">
+<div id="mobile-bottom-nav" class="mobile_menu_bar" style="padding:5px 10px 5px 10px;clear:both;">
+	<div style="margin-bottom:20px;">
+<span class="mobile-home-link">
+	<a href="../index.html" title="Certain Doubts" rel="home">Home</a></span>
+	<span class="mobile-menu-link"><a href="javascript:void(null);" onclick="weaverii_ToggleMenu(document.getElementById('nav-bottom-menu'), this, 'Menu &darr;', 'Menu &uarr;')">Menu &darr;</a></span></div>
+</div>
+		<div class="skip-link"><a class="assistive-text" href="index.html%3Freplytocom=3952.html#content" title="">Skip to primary content</a></div>
+			<div class="skip-link"><a class="assistive-text" href="index.html%3Freplytocom=3952.html#sidebar_primary" title="">Skip to secondary content</a></div>
+				<div id="nav-bottom-menu"><nav id="access" class="menu_bar" role="navigation">
+<div class="menu"><ul>
+<li ><a href="../index.html">Home</a></li><li class="page_item page-item-1894"><a href="../index.html%3Fpage_id=1894.html">Decade and Longitudinal Journal Information</a></li>
+<li class="page_item page-item-2739"><a href="../index.html%3Fpage_id=2739.html">Epistemology Course Slides</a></li>
+<li class="page_item page-item-2752"><a href="../index.html%3Fpage_id=2752.html">Talks:  Slides and Videos</a></li>
+<li class="page_item page-item-417"><a href="../index.html%3Fp=417.html">About Certain Doubts</a></li>
+<li class="page_item page-item-397"><a href="../index.html%3Fp=397.html">Contributors</a></li>
+<li class="page_item page-item-413"><a href="../index.html%3Fp=413.html">Archives</a></li>
+<li class="page_item page-item-774"><a href="../index.html%3Fpage_id=774.html">Complete Hirsch Number Rankings of U.S. Philosophy PhD Programs</a></li>
+<li class="page_item page-item-823"><a href="../index.html%3Fp=823.html">Philosophy Journal Information:  ESF Rankings, Citation Impact, &#038; Rejection Rates</a></li>
+<li class="page_item page-item-454"><a href="../index.html%3Fp=454.html">Some of Our Books</a></li>
+</ul></div>
+		</nav></div><!-- #access --></div> <!-- #wrap-bottom-menu -->
+</div> <!-- #wrap-header -->
+	<div id="main">
+	<div id="sidebar_wrap_left" class="split equal_height">
+	<div id="sidebar_left" class="widget-area" role="complementary">
+<aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">John Fischer</span> on <a href="../index.html%3Fp=4902.html#comment-331879">The End</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://dailynous.com/2019/03/07/philosophers-on-the-philosophy-blogosphere/' rel='external nofollow' class='url'>Philosophers On the Philosophy Blogosphere - Daily Nous</a></span> on <a href="../index.html%3Fp=616.html#comment-331009">Doris and Russell on Stanley</a></li><li class="recentcomments"><span class="comment-author-link"><a href='https://philosophy.unc.edu/2019/02/08/worsnip-wins-young-epistemologist-prize/' rel='external nofollow' class='url'>Worsnip wins Young Epistemologist Prize - Department of Philosophy</a></span> on <a href="../index.html%3Fp=4897.html#comment-329263">Young Epistemologist Prize 2019</a></li><li class="recentcomments"><span class="comment-author-link">S. Alas</span> on <a href="../index.html%3Fp=4890.html#comment-324134">A simple problem for (unrestricted) Conditionalization</a></li><li class="recentcomments"><span class="comment-author-link"><a href='https://enigmanically.blogspot.co.uk/' rel='external nofollow' class='url'>Martin Cooke</a></span> on <a href="../index.html%3Fp=4738.html#comment-310431">What philosophers think might not be what you think they think</a></li></ul></aside><aside id="meta-2" class="widget widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="../wp-login.php.html">Log in</a></li>
+			<li><a href="../feed/index.html">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="../comments/feed/index.html">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside><aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-9"><a href="../category/a-priori-knowledge/index.html" >a priori knowledge</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="../category/confirmation-theory/index.html" >confirmation theory</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="../category/contextualism/index.html" >contextualism</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="../category/epistemic-paradoxes/index.html" >epistemic paradoxes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="../category/formal-epistemology/index.html" >formal epistemology</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="../category/foundationalismcoherentism/index.html" >foundationalism and coherentism</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="../category/foundationalism-and-coherentism/index.html" >foundationalism and coherentism</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="../category/general/index.html" >general</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="../category/internalismexternalism/index.html" >internalism and externalism</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="../category/internalism-and-externalism/index.html" >internalism and externalism</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="../category/justification/index.html" >justification</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="../category/knowledge/index.html" >knowledge</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="../category/links/index.html" >Links</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="../category/major-figures/index.html" >major figures</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="../category/memory/index.html" >memory</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="../category/perception/index.html" >perception</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="../category/skepticism/index.html" >skepticism</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="../category/testimony-and-social-epistemology/index.html" >testimony and social epistemology</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="../category/uncategorized/index.html" >Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="../category/understanding/index.html" >understanding</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="../category/value-driven-epistemology/index.html" >value-driven epistemology</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="../category/virtue-epistemology/index.html" >virtue epistemology</a>
+</li>
+		</ul>
+</aside>
+	</div><!-- #sidebar_left .widget-area -->
+	</div><!-- #sidebar_wrap_left -->
+		<div id="container_wrap" class="container-single equal_height split">
+		<div id="container">
+			<div id="content" role="main">
+
+				<nav id="nav-above" class="navigation">
+				<h3 class="assistive-text">Post navigation</h3>
+					<div class="nav-previous"><a href="../index.html%3Fp=619.html" rel="prev"><span class="meta-nav">&larr;</span> Expected Utility, Evidence, and Reference Classes</a></div>
+				<div class="nav-next"><a href="../index.html%3Fp=621.html" rel="next">Special Issue of Synthese &#8220;Knowability and Beyond&#8221; <span class="meta-nav">&rarr;</span></a></div>
+				</nav><!-- #nav-above -->
+
+
+<article id="post-620" class="content-single  post-620 post type-post status-publish format-standard hentry category-general">
+	<header class="entry-header">
+		<div class="entry-hdr"><h1 class="entry-title">Deliberation and Embedded Conditionals</h1></div>
+
+		<div class="entry-meta">
+						<div class="meta-info-wrap">
+			<span class="sep posted-on">Posted on </span><a href="../index.html%3Fp=620.html" title="1:47 pm" rel="bookmark"><time class="entry-date" datetime="2006-09-21T13:47:26+00:00">September 21, 2006</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="../author/admin/index.html" title="View all posts by Kvanvig Jon" rel="author">Kvanvig Jon</a></span></span><span class="updated">September 21, 2006</span>
+			</div><!-- .entry-meta-icons -->		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+	<div class="entry-content cf">
+		<p>Suppose you are deciding whether to do A or B, which are mutually exclusive.  Suppose also that you believe the following:</p>
+<p>1. If p, then I should do A.<br />
+2. If ~p, then I should do B.</p>
+<p>But, being a philosopher, you think further, and realize that the truth of these conditionals is contingent.  And, further, you believe that the contingency is based on some further claim q for the first claim and r for the second.  So you believe:</p>
+<p>3.  If q, then (if p, then I should do A).<br />
+4.  If ~q, then ~(if p, then I should do A).<br />
+5.  If r, then (if ~p, then I should do B).<br />
+6.  If ~r, then ~(if ~p, then I should do B).</p>
+<p>Suppose then that you learn whether or not p is true.  Since you believe 1 &#038; 2, it looks like that would settle the issue of what to do.  But you also believe 3-6, and we may suppose that you haven&#8217;t learned whether or not q is true and you haven&#8217;t learned whether or not r is true.</p>
+<p>You have available to you the following line of reasoning:  &#8220;the truth of 1 and 2 is dependent on information I don&#8217;t have, and so I shouldn&#8217;t be confident about either 1 or 2.  So I shouldn&#8217;t use the truth or falsity of p as a guide to what to do in this case.&#8221;</p>
+<p>Is this reasoning sound?</p>
+<p><span id="more-620"></span>If you think it is, then paralysis ensues.  Paralysis ensues except when the conditionals that are used in deliberation are necessary, which of course is at best rarely true.  For notice the argument doesn&#8217;t depend on knowing exactly what the contingency of 1 &#038; 2 depends on.  Instead, all it requires is knowing that it is dependent on something, we know not what.  But if you know that 1 &#038; 2 are contingent, then you already know, in virtue of knowing what &#8216;contingent&#8217; means, that there is some claim which is such that a variation in its truth value implies a variation in the truth value of 1 or 2.</p>
+<p>So suppose you think the above reasoning must be rejected.  You think instead that all that matters is whether 1 &#038; 2 are true or whether you believe them.  That&#8217;s all that matters to proper decision-making.  But then reflection on one&#8217;s deliberative processes of the sort imagined above is, we might say, completely epiphenomenal from the point of view of rational decision-making.  But that can&#8217;t be right either.   If you learn that your assumptions about which conditionals are true depends on information you don&#8217;t yet have, it looks like you shouldn&#8217;t yet use those conditionals in deciding what to do.</p>
+<p>So perhaps we should say the following.  If you believe 3-6, you should rationally withhold on 1 &#038; 2, and so not use them in deliberating, because not knowing whether q and not knowing whether r undermines any reasons you&#8217;d have for believing 1 or 2.</p>
+<p>Consider, though, a generalization of each of 3-6, replacing the reference to q and r with an existential quantifier and a variable.  If 1 &#038; 2 are contingent, that logically implies that there is some proposition such that if it were true, 1 would be true and if it were false, 1 would be false; and there is some proposition such that if it were true 2 would be true and if it were false 2 would be false.  You may not know which propositions have that feature but you know there are such propositions.</p>
+<p>So what difference does it make to rationality when you can identify the particular content in question?  Why would the mere fact that you can specify the ground of contingency make such a difference?</p>
+			</div><!-- .entry-content -->
+
+	<footer class="entry-utility">
+<div class="meta-info-wrap">
+			<span class="cat-links">
+<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="../category/general/index.html" rel="category tag">general</a>			</span>
+		<span class="permalink-icon"><a href="../index.html%3Fp=620.html" title="Permalink to Deliberation and Embedded Conditionals" rel="bookmark">permalink</a></span>
+	</div><!-- .entry-meta-icons -->
+
+	</footer><!-- .entry-utility -->
+</article><!-- #post-620 -->
+
+				<nav id="nav-below" class="navigation">
+				<h3 class="assistive-text">Post navigation</h3>
+					<div class="nav-previous"><a href="../index.html%3Fp=619.html" rel="prev"><span class="meta-nav">&larr;</span> Expected Utility, Evidence, and Reference Classes</a></div>
+				<div class="nav-next"><a href="../index.html%3Fp=621.html" rel="next">Special Issue of Synthese &#8220;Knowability and Beyond&#8221; <span class="meta-nav">&rarr;</span></a></div>
+				</nav><!-- #nav-above -->
+
+
+	<div id="comments">
+
+		<hr class='comments-hr'>
+		<header id="comments-title">
+		<h3>Comments</h3>
+				<h4>
+<em>Deliberation and Embedded Conditionals</em> &#8212; 55 Comments		</h4>
+		</header>
+
+		
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-3916" >
+		<article id="comment-3916" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/f00be77b5c6bc32ec7e2261ad2e745e6?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f00be77b5c6bc32ec7e2261ad2e745e6?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://pixnaps.blogspot.com' rel='external nofollow' class='url'>Richard</a></span> on <a href="../index.html%3Fp=620.html#comment-3916"><time datetime="2006-09-22T04:29:24+00:00">September 22, 2006 at 4:29 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I think I must be missing something. If you believe 1-6, then can&#8217;t you simply infer that q and r are both true? (Modus tollens on 1 &amp; 4, etc.) Or, intuitively, if you believe claim (1), and also believe it to be contingent on q, then aren&#8217;t you already committed to the truth of q? Granting this, I don&#8217;t see how the problem is meant to get off the ground&#8230;</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3916.html#respond' onclick='return addComment.moveForm( "comment-3916", "3916", "respond", "620" )' aria-label='Reply to Richard'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3917" >
+		<article id="comment-3917" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/23fa973d87bbd27a88c85f870493316c?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/23fa973d87bbd27a88c85f870493316c?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www3.baylor.edu/Jonathan_Kvanvig/' rel='external nofollow' class='url'>kvanvig</a></span> on <a href="../index.html%3Fp=620.html#comment-3917"><time datetime="2006-09-22T09:05:49+00:00">September 22, 2006 at 9:05 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Richard, yes you can infer that q is true and r is true, from 1 and 2.  But it doesn&#8217;t follow from that inference that you&#8217;ve learned that q is true or that you&#8217;ve learned that r is true.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3917.html#respond' onclick='return addComment.moveForm( "comment-3917", "3917", "respond", "620" )' aria-label='Reply to kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3918" >
+		<article id="comment-3918" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/21fa7b5f226ec27a45b3a77874ff9350?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/21fa7b5f226ec27a45b3a77874ff9350?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://colfa.utsa.edu/ecpc/faculty/almeida/default.htm' rel='external nofollow' class='url'>Mike Almeida</a></span> on <a href="../index.html%3Fp=620.html#comment-3918"><time datetime="2006-09-22T16:16:45+00:00">September 22, 2006 at 4:16 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hi Jon!</p>
+<p>I&#8217;m not sure there&#8217;s a problem. I have this,</p>
+<p>1. If p, then I should do A.<br />
+2. If ~p, then I should do B.</p>
+<p>And I believe:</p>
+<p>3. If q, then (if p, then I should do A).<br />
+4. If ~q, then ~(if p, then I should do A).<br />
+5. If r, then (if ~p, then I should do B).<br />
+6. If ~r, then ~(if ~p, then I should do B).</p>
+<p>I&#8217;m assuming you don&#8217;t have in mind some special conditional, but just the material conditional. From (1) alone it follows that (where &#8216;SA&#8217; is I should do A),</p>
+<p>1.1 (p &amp; q) -&gt; SA</p>
+<p>(1.1) follows from strengthening antecedents, which is valid. With a few simple operations (1.1) expands to your (3),</p>
+<p>3. q -&gt; (p -&gt; SA)</p>
+<p>But (1) also entails (1&#8221;),</p>
+<p>1.1 (p &amp; ~q) -&gt; SA</p>
+<p>and again the quickly transforms to,</p>
+<p>1.2  ~q -&gt; (p -&gt; SA)</p>
+<p>But (1.2) together with your (4) show that ~q implies a contradiction and so is obviously false.</p>
+<p>4. ~q -&gt; ~(p -&gt; SA)</p>
+<p>But then the condition q is true. The same sort of argument shows that r is true. So no paralysis. If you&#8217;ve learned that p is true, then you should do A. Otherwise, B.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3918.html#respond' onclick='return addComment.moveForm( "comment-3918", "3918", "respond", "620" )' aria-label='Reply to Mike Almeida'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3919" >
+		<article id="comment-3919" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/23fa973d87bbd27a88c85f870493316c?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/23fa973d87bbd27a88c85f870493316c?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www3.baylor.edu/Jonathan_Kvanvig/' rel='external nofollow' class='url'>kvanvig</a></span> on <a href="../index.html%3Fp=620.html#comment-3919"><time datetime="2006-09-22T16:53:08+00:00">September 22, 2006 at 4:53 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hi, Mike, yes I am assuming a special conditional.  The reason is simple:  if you&#8217;re using the material conditional, then strengthening the antecedent works, and there is no issue.  But strengthening doesn&#8217;t work for counterfactuals or for indicatives (assuming grice is wrong, of course).  So deliberation is fine if we could argue that deliberative conditionals are material conditionals.  But they are not.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3919.html#respond' onclick='return addComment.moveForm( "comment-3919", "3919", "respond", "620" )' aria-label='Reply to kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3920" >
+		<article id="comment-3920" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/21fa7b5f226ec27a45b3a77874ff9350?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/21fa7b5f226ec27a45b3a77874ff9350?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://colfa.utsa.edu/ecpc/faculty/almeida/default.htm' rel='external nofollow' class='url'>Mike Almeida</a></span> on <a href="../index.html%3Fp=620.html#comment-3920"><time datetime="2006-09-22T18:07:52+00:00">September 22, 2006 at 6:07 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Suppose it&#8217;s not a material conditional. And let p be the contingent atomic formula, C. How does the contingency of C make the truth of C dependent on any other proposition? C is atomic, and so logically unrelated to any other formula. But then it seems like your conditional must be a causal conditional. C might depend causally on other propositions/state of affairs. But I can&#8217;t see how it is logically or otherwise dependent. What sort of conditional is it?</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3920.html#respond' onclick='return addComment.moveForm( "comment-3920", "3920", "respond", "620" )' aria-label='Reply to Mike Almeida'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3921" >
+		<article id="comment-3921" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=620.html#comment-3921"><time datetime="2006-09-22T18:42:54+00:00">September 22, 2006 at 6:42 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hey, Jon,</p>
+<p>1. &#8220;Assuming Grice is wrong&#8221; &#8212; isn&#8217;t that a big &#8220;if&#8221; (no pun intended)? Is the Gricean line dead?</p>
+<p>2. I too had Mike&#8217;s question in mind: What should we know about those special conditionals in order to converse about inferences?</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3921.html#respond' onclick='return addComment.moveForm( "comment-3921", "3921", "respond", "620" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3922" >
+		<article id="comment-3922" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jamie</span> on <a href="../index.html%3Fp=620.html#comment-3922"><time datetime="2006-09-22T21:29:55+00:00">September 22, 2006 at 9:29 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jon,<br />
+This is good. I&#8217;m sure there is something strange going on in these &#8216;practical conditionals&#8217;, that is, conditionals with <i>ought</i> or <i>should</i> consequents (also other broadly normative consequents). I don&#8217;t think the problems have anything to do with the nesting, though. Here is a small illustration.<br />
+Suppose you have the chance to bet on the toss of a fair coin, but you have to put up $1000 to win $900. I think each of these is true:<br />
+(t) If the coin will land tails, then you should bet on tails.<br />
+(h) If the coin will land heads, then you should bet on heads.<br />
+Furthermore,<br />
+(v) The coin will land heads or the coin will land tails.<br />
+Now by v-elimination we can conclude that you should write me a check for $1000 and bet. But that is obviously a false conclusion. Yet all the premises are true, and v-elimination is valid.<br />
+The inference uses modus ponens. Unrestricted modus ponens is therefore invalid for this type of conditional.<br />
+This was a highly compressed presentation, but I hope it sounds somewhat plausible. (I&#8217;m working on this argument as part of a paper right now.)</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3922.html#respond' onclick='return addComment.moveForm( "comment-3922", "3922", "respond", "620" )' aria-label='Reply to Jamie'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3923" >
+		<article id="comment-3923" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jamie</span> on <a href="../index.html%3Fp=620.html#comment-3923"><time datetime="2006-09-22T21:45:17+00:00">September 22, 2006 at 9:45 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Claudio and Mike,<br />
+I thought JK&#8217;s point was to try to get some grip on the conditionals. We don&#8217;t know how to analyze them. They are the conditionals we use in ordinary practical reasoning and talk. Almost nobody thinks these are material conditionals, of course, and it is unsurprising that antecedent strengthening fails (since it isn&#8217;t generally valid for indicative conditionals of English). But if I&#8217;m right, modus ponens also fails, and that is quite surprising. Modus ponens is supposed to be the essence of a conditional.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3923.html#respond' onclick='return addComment.moveForm( "comment-3923", "3923", "respond", "620" )' aria-label='Reply to Jamie'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3924" >
+		<article id="comment-3924" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/23fa973d87bbd27a88c85f870493316c?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/23fa973d87bbd27a88c85f870493316c?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www3.baylor.edu/Jonathan_Kvanvig/' rel='external nofollow' class='url'>kvanvig</a></span> on <a href="../index.html%3Fp=620.html#comment-3924"><time datetime="2006-09-22T21:50:17+00:00">September 22, 2006 at 9:50 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jamie, that is stunning!  Tell me what you say about resistance to the truth of t and h.  Suppose I say they are both false.  Instead, what is true is that if you are going to bet, then if it will come up heads, you should bet on heads (and the same for tails).</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3924.html#respond' onclick='return addComment.moveForm( "comment-3924", "3924", "respond", "620" )' aria-label='Reply to kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3925" >
+		<article id="comment-3925" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jamie</span> on <a href="../index.html%3Fp=620.html#comment-3925"><time datetime="2006-09-22T22:08:38+00:00">September 22, 2006 at 10:08 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Your nested conditional(!) is true too. It is also a troublesome conditional &#8212; I&#8217;ll come back to that in a moment.</p>
+<p>In support of (h), for instance, I can say this. <i>Suppose the coin will land tails.</i> Now, on that supposition, I ask you: shouldn&#8217;t you bet on tails? Surely you should, on that supposition!<br />
+But now, having granted that, how can you deny (h)?</p>
+<p>Back to your nested conditional:</p>
+<p>(n) If you are going to bet, then if it will come up heads, you should bet on heads.</p>
+<p>Of course that is true. I am the potential player, and you tell me (n), and you are right. Now as it happens, I am an awful compulsive gambler, so as a matter of fact I am going to be. From this (h) follows. But you meant to deny (h). If (h) were false, it is hard to believe that I could make it true by betting.</p>
+<p>This sort of thing happens all the time with practical conditionals; in fact, it is <i>that</i> odd feature that first got me thinking about them. If you are going to buy a Humvee, my ecological cousin tells me, you ought to buy a small Humvee. And I am going to buy a Humvee. So she must conclude that I ought to buy a small Humvee. But she doesn&#8217;t believe that for a minute. Modus ponens fails again.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3925.html#respond' onclick='return addComment.moveForm( "comment-3925", "3925", "respond", "620" )' aria-label='Reply to Jamie'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3926" >
+		<article id="comment-3926" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Gregory Wheeler</span> on <a href="../index.html%3Fp=620.html#comment-3926"><time datetime="2006-09-23T05:27:24+00:00">September 23, 2006 at 5:27 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>It isn&#8217;t clear to me that either (h) or (t) is true. I don&#8217;t place bets on outcomes, but on expected outcomes. To suppose that the coin lands heads (tails) is one thing, to suppose that the outcome of a tossed, fair coin is heads (tails) is quite another. The example equivocates between these two notions. If the outcome is the result of a fair toss, as we are told in the setup, it is reasonable under these conditions for the outcome to be heads (tails) but not to place a bet on heads (tails). If we are in a position of knowing the outcome of the toss, we in effect deny that the outcome is decided by a fair toss.  We  then might be in a position to accept the conditional (h) or (t) that corresponded to the known outcome, heads or tails.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3926.html#respond' onclick='return addComment.moveForm( "comment-3926", "3926", "respond", "620" )' aria-label='Reply to Gregory Wheeler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3927" >
+		<article id="comment-3927" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/0335636d216edab667758e2d3d5f1ac8?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/0335636d216edab667758e2d3d5f1ac8?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Juan Comesaña</span> on <a href="../index.html%3Fp=620.html#comment-3927"><time datetime="2006-09-23T06:28:15+00:00">September 23, 2006 at 6:28 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jamie&#8217;s problem is related to the gentle murder paradox, isn&#8217;t it?</p>
+<p>Anyway, I&#8217;m missing something here:</p>
+<blockquote><p>In support of (h), for instance, I can say this. Suppose the coin will land tails. Now, on that supposition, I ask you: shouldn’t you bet on tails? Surely you should, on that supposition!</p></blockquote>
+<p>But what if I say: I shouldn&#8217;t&#8212;if I do I&#8217;ll lose $100?</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3927.html#respond' onclick='return addComment.moveForm( "comment-3927", "3927", "respond", "620" )' aria-label='Reply to Juan Comesaña'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3928" >
+		<article id="comment-3928" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Gregory Wheeler</span> on <a href="../index.html%3Fp=620.html#comment-3928"><time datetime="2006-09-23T07:57:54+00:00">September 23, 2006 at 7:57 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>The gentle murder paradox concerns a clash that arises between interpreting the box modality in normal modal logics as an obligation, and the failure of obligations to satisfy the distribution axiom of normal modal logics. Since the statements in the above example range over actions and states of affairs, it isn&#8217;t clear that a deontic logic would be appropriate. Also, the gentle murder paradox doesn&#8217;t concern uncertainty and decision, whereas in this example the equivocation between expectation of an outcome and an outcome is key to getting the arguments off of the ground.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3928.html#respond' onclick='return addComment.moveForm( "comment-3928", "3928", "respond", "620" )' aria-label='Reply to Gregory Wheeler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3929" >
+		<article id="comment-3929" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=620.html#comment-3929"><time datetime="2006-09-23T08:24:45+00:00">September 23, 2006 at 8:24 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jamie,<br />
+I&#8217;ll have to join the skeptical ranks alongside Greg and Juan. The assault on MP seems way too fast here:</p>
+<p>&#8220;If you are going to buy a Humvee, my ecological cousin tells me, you ought to buy a small Humvee. And I am going to buy a Humvee. So she must conclude that I ought to buy a small Humvee. But she doesn’t believe that for a minute. Modus ponens fails again.&#8221;</p>
+<p>This is an ordinary Sophie&#8217;s choice-type situation, isn&#8217;t it? Your ecological cousin does (consistently) believe that you ought to minimize the damage. But, she&#8217;ll still consistently hope that you&#8217;ll forget that Humvee nonsense altogether.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3929.html#respond' onclick='return addComment.moveForm( "comment-3929", "3929", "respond", "620" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3930" >
+		<article id="comment-3930" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jamie</span> on <a href="../index.html%3Fp=620.html#comment-3930"><time datetime="2006-09-23T08:27:19+00:00">September 23, 2006 at 8:27 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I&#8217;m afraid I don&#8217;t understand comment [11], Greg Wheeler. Sorry.</p>
+<blockquote><p>I don’t place bets on outcomes, but on expected outcomes.</p></blockquote>
+<p>I don&#8217;t follow you. What does it mean to bet on an expected outcome? I thought we bet on outcomes. If we bet on a baseball game, we bet on its outcome, not on its expected outcome.</p>
+<blockquote><p>If we are in a position of knowing the outcome of the toss, we in effect deny that the outcome is decided by a fair toss.</p></blockquote>
+<p>If you mean the time of the judgment to be essential, then yes; but that it a purely accidental feature. The coin could have been flipped yesterday and we are to bet on it now.</p>
+<p>Juan: Oops, in that paragraph I was actually talking about (t), not (h)!<br />
+But I think you misunderstood the bet. The player has to put up $1000, but if he wins he gets that money back plus $900.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3930.html#respond' onclick='return addComment.moveForm( "comment-3930", "3930", "respond", "620" )' aria-label='Reply to Jamie'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3931" >
+		<article id="comment-3931" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jamie</span> on <a href="../index.html%3Fp=620.html#comment-3931"><time datetime="2006-09-23T08:36:11+00:00">September 23, 2006 at 8:36 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Claudio,<br />
+Yes, she does believe I ought to minimize the damage. But that&#8217;s not the question. The question is whether she believes that I ought to buy a Humvee. I&#8217;m sure she would deny it, and I&#8217;m sure that non-philosophers would never attribute that belief to her.</p>
+<p>I&#8217;m not surprised at the skepticism; modus ponens is what conditionals are all about! But I don&#8217;t see any way around it. Do you think (t) and (h) are false, as Jon suggested?</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3931.html#respond' onclick='return addComment.moveForm( "comment-3931", "3931", "respond", "620" )' aria-label='Reply to Jamie'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3932" >
+		<article id="comment-3932" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/21fa7b5f226ec27a45b3a77874ff9350?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/21fa7b5f226ec27a45b3a77874ff9350?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://colfa.utsa.edu/ecpc/faculty/almeida/default.htm' rel='external nofollow' class='url'>Mike Almeida</a></span> on <a href="../index.html%3Fp=620.html#comment-3932"><time datetime="2006-09-23T09:14:10+00:00">September 23, 2006 at 9:14 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jamie,</p>
+<p>Here&#8217;s question about the tense of the propositions in t and h.<br />
+(t) If the coin will land tails, then you should bet on tails.<br />
+(h) If the coin will land heads, then you should bet on heads.<br />
+Suppose everything in my epistemic situation is unchanged except I learn that the coin has already been tossed, and (t) and (h) are replaced with (t&#8217;) and (h&#8217;),<br />
+(t&#8217;) If the coin has landed tails, then you should bet on tails.<br />
+(h&#8217;) If the coin has landed heads, then you should bet on heads.<br />
+Since the coin has landed tails or it has landed heads, there seems to be a perfectly reasonable sense in which I should bet on heads or I should bet on tails. Maybe call that an objective sense. The inference using MP seems to go through. But given my epistemic situation, there is a perfectly reasonable sense in which I should not bet on either. Maybe call that a subjective sense. These terms are not the most helpful, but a solution like this seems to suggest itself.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3932.html#respond' onclick='return addComment.moveForm( "comment-3932", "3932", "respond", "620" )' aria-label='Reply to Mike Almeida'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3933" >
+		<article id="comment-3933" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Gregory Wheeler</span> on <a href="../index.html%3Fp=620.html#comment-3933"><time datetime="2006-09-23T09:42:05+00:00">September 23, 2006 at 9:42 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>We are interested in the outcome of games and coin tosses, to be sure, but we don&#8217;t place bets on the supposition that a particular outcome occurs. Showing a willingness to bet at even money that a tossed coin lands heads is not to act as if &#8220;the outcome will be heads&#8221; is true; Rather, it is to act as if at least half of the tosses of coins yield heads.</p>
+<p>Time of an event with respect to placing bets isn&#8217;t relevant, but epistemic position of the subject with respect to learning of the outcome is relevant. If you are told that the outcome you are interested in wagering on is, or was, produced by the toss of a fair coin, then your disposition to make (or fail to make) a bet is determined by your expectation of the outcome, not the outcome itself.</p>
+<p>If you have the luxury of placing bets directly on outcomes, you are not in a position of uncertainty with respect to those outcomes. You might learn of the outcome before placing the bet, for instance, or have reason to doubt the uncertainty mechanism is properly modeled by a Bernoulli trial with the binomial parameter &theta; = 0.5. But I assume that these options are ruled out by your description of the outcome of the toss being determined by a fair toss.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3933.html#respond' onclick='return addComment.moveForm( "comment-3933", "3933", "respond", "620" )' aria-label='Reply to Gregory Wheeler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3934" >
+		<article id="comment-3934" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/21fa7b5f226ec27a45b3a77874ff9350?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/21fa7b5f226ec27a45b3a77874ff9350?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://colfa.utsa.edu/ecpc/faculty/almeida/default.htm' rel='external nofollow' class='url'>Mike Almeida</a></span> on <a href="../index.html%3Fp=620.html#comment-3934"><time datetime="2006-09-23T10:30:22+00:00">September 23, 2006 at 10:30 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Gregory, you write,<br />
+&#8220;Time of an event with respect to placing bets isn’t relevant, but epistemic position of the subject with respect to learning of the outcome is relevant&#8221;<br />
+Isn&#8217;t relevant to what? If the coin has been tossed and it came up heads, there is a sense in which it is true that I ought to bet heads. After all it is guaranteed that if I bet heads, I win. But certainly I agree that given our limited epistemic situation&#8211;or given just what I happen to know&#8211;I ought not to bet. A similar distinction between &#8220;oughts&#8221; (objective v. subjective or objective v. decision-oughts, etc.) is of course familiar in moral theory.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3934.html#respond' onclick='return addComment.moveForm( "comment-3934", "3934", "respond", "620" )' aria-label='Reply to Mike Almeida'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3935" >
+		<article id="comment-3935" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Gregory Wheeler</span> on <a href="../index.html%3Fp=620.html#comment-3935"><time datetime="2006-09-23T10:50:52+00:00">September 23, 2006 at 10:50 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Relevant to placing a bet.</p>
+<p>I don&#8217;t think there is a sense in which the truth of a contingent outcome should be linked to an agent&#8217;s rational betting behavior. If the agent learns that the outcome is heads and has the option to profit from it, then that is reasonable. But the coin showing heads, alone, is not sufficient.</p>
+<p>Imagine this case. A coin of unknown bias is showing either heads or tails. What is your expectation that it is heads?</p>
+<p>For my money, I know nothing about this coin: I don&#8217;t even know if it shows a face as the result of a toss, or shows the face (or its opposite) that I bet on. So, I would represent my ignorance about this coin as maximal, represented by the unit interval [0,1].</p>
+<p>Since I know nothing about this coin, it is irrelevant to me whether it in fact shows heads. (Again, if I *learn* that it does, that&#8217;s fine. But that isn&#8217;t the structure of these conditionals, or of your suggestion.)</p>
+<p>The point is that the &#8220;objective/subjective&#8221; distinction you are proposing still depends upon assumptions about the experimental setup and the propensity of the coin to show heads, and not simply on the coin showing heads.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3935.html#respond' onclick='return addComment.moveForm( "comment-3935", "3935", "respond", "620" )' aria-label='Reply to Gregory Wheeler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3936" >
+		<article id="comment-3936" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/0335636d216edab667758e2d3d5f1ac8?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/0335636d216edab667758e2d3d5f1ac8?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Juan Comesaña</span> on <a href="../index.html%3Fp=620.html#comment-3936"><time datetime="2006-09-23T11:53:36+00:00">September 23, 2006 at 11:53 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jaime,</p>
+<p>Ok, I get it now. Cool. But you&#8217;ll need to infer that you should bet from the proposition that you should bet on heads (tails), don&#8217;t you? That&#8217;s what reminds me of the gentle murder paradox.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3936.html#respond' onclick='return addComment.moveForm( "comment-3936", "3936", "respond", "620" )' aria-label='Reply to Juan Comesaña'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3937" >
+		<article id="comment-3937" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/0335636d216edab667758e2d3d5f1ac8?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/0335636d216edab667758e2d3d5f1ac8?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Juan Comesaña</span> on <a href="../index.html%3Fp=620.html#comment-3937"><time datetime="2006-09-23T11:58:28+00:00">September 23, 2006 at 11:58 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Forget about my previous comment. You do get the result that you should either bet on heads or on tails.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3937.html#respond' onclick='return addComment.moveForm( "comment-3937", "3937", "respond", "620" )' aria-label='Reply to Juan Comesaña'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3938" >
+		<article id="comment-3938" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=620.html#comment-3938"><time datetime="2006-09-23T14:00:03+00:00">September 23, 2006 at 2:00 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jamie,<br />
+As far as I can see, Greg is right on target in his comments # 11 and #18 above. So, I&#8217;ll answer your question (#16) with that in mind.</p>
+<p>Yes, if Jon thinks (t) and (h) are false, I agree with him and wonder why Greg is/was in doubt (#11). We&#8217;re talking about the underlying principle, I suppose, and I think the principle is something like: Necessarily, it is rational for you to make a winning bet. On the assumptions from #11 and #18, that&#8217;s a patent falsehood. Isn&#8217;t it?</p>
+<p>As regards the Humvee point, I still don&#8217;t see the problem with saying that she does believe buying the smaller Humvee is the lesser evil &#8212; even if she also believes you shouldn&#8217;t buy either. No progress here. I don&#8217;t see how I miss the point. I assume she&#8217;s not stricken with amnesia after you tell her that you will be buying one of the Humvees no matter what. What does she think *now* consistently with hating the alternatives?</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3938.html#respond' onclick='return addComment.moveForm( "comment-3938", "3938", "respond", "620" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3939" >
+		<article id="comment-3939" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/ad2368f81642ed00e788cd8e88b8be8f?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/ad2368f81642ed00e788cd8e88b8be8f?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Fritz</span> on <a href="../index.html%3Fp=620.html#comment-3939"><time datetime="2006-09-23T14:50:33+00:00">September 23, 2006 at 2:50 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jon, you write:</p>
+<p>&#8220;Paralysis ensues except when the conditionals that are used in deliberation are necessary, which of course is at best rarely true. For notice the argument doesn’t depend on knowing exactly what the contingency of 1 &amp; 2 depends on.&#8221;</p>
+<p>But be careful &#8211; earlier in the post your wrote:</p>
+<p>&#8220;But, being a philosopher, you think further, and realize that the truth of these conditionals is contingent. And, further, you believe that the contingency is based on some further claim q for the first claim and r for the second.&#8221;</p>
+<p>And this 2nd sentence (the &#8220;And, further&#8230;&#8221; sentence), really is a further claim, that doesn&#8217;t follow from contingency alone. Paralysis results, if at all, only with an assumption stronger than contingency alone. And here&#8217;s a cryptic suggestion for you: the further assumption will not so often be true, consistent with your &#8220;learning&#8221; (hence, knowing, for example, p&#8230;).</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3939.html#respond' onclick='return addComment.moveForm( "comment-3939", "3939", "respond", "620" )' aria-label='Reply to Fritz'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-8629" >
+		<article id="comment-8629" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jamie</span> on <a href="../index.html%3Fp=620.html#comment-8629"><time datetime="2006-09-23T16:14:37+00:00">September 23, 2006 at 4:14 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I&#8217;m afraid I simply don&#8217;t understand Greg&#8217;s objections.</p>
+<blockquote><p>
+We are interested in the outcome of games and coin tosses, to be sure, but we don&#8217;t place bets on the supposition that a particular outcome occurs. </p></blockquote>
+<p>For some reason I have a very hard time understanding what you mean. We do, obviously, have conditional bets, which is the best sense I can make out of &#8220;place bets on the supposition that a particular outcome occurs.&#8221; If you aren&#8217;t talking about conditional bets, then I don&#8217;t know what you mean. Conditional bets are commonplace and central to some dutch book arguments so I&#8217;m sure you can&#8217;t be denying the existence of conditional bets.</p>
+<blockquote><p>If you are told that the outcome you are interested in wagering on is, or was, produced by the toss of a fair coin, then your disposition to make (or fail to make) a bet is determined by your expectation of the outcome, not the outcome itself. </p></blockquote>
+<p>Yes, of course. Even if you aren&#8217;t told that the outcome is produced by a fair coin, your disposition to bet will be determined by your expectation of the outcome. I agree completely.</p>
+<blockquote><p>
+If you have the luxury of placing bets directly on outcomes, you are not in a position of uncertainty with respect to those outcomes. </p></blockquote>
+<p>???<br />
+You place bets directly on outcomes when you are uncertain about them. We could bet right now on the outcome of tomorrow&#8217;s baseball game. We would be betting directly on the outcome, although we are uncertain about it.<br />
+In any case, I&#8217;ve lost the thread. How is this relevant to the truth of the premises (t) and (h)?</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=8629.html#respond' onclick='return addComment.moveForm( "comment-8629", "8629", "respond", "620" )' aria-label='Reply to Jamie'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3940" >
+		<article id="comment-3940" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jamie</span> on <a href="../index.html%3Fp=620.html#comment-3940"><time datetime="2006-09-23T16:15:15+00:00">September 23, 2006 at 4:15 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Mike,<br />
+I’m sure you are in the neighborhood of the correct diagnosis. The solution cannot, I think, literally be that ‘ought’ has two senses. But I agree with you that somehow the content of ‘you ought to bet’ shifts through the course of the argument.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3940.html#respond' onclick='return addComment.moveForm( "comment-3940", "3940", "respond", "620" )' aria-label='Reply to Jamie'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3941" >
+		<article id="comment-3941" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jamie</span> on <a href="../index.html%3Fp=620.html#comment-3941"><time datetime="2006-09-23T16:23:18+00:00">September 23, 2006 at 4:23 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Claudio,</p>
+<blockquote><p>
+As far as I can see, Greg is right on target in his comments # 11 and #18 above.</p></blockquote>
+<p>He may well be. I don&#8217;t think I understand what he&#8217;s saying in those two, esp. in 18.</p>
+<blockquote><p>
+Yes, if Jon thinks (t) and (h) are false, I agree with him and wonder why Greg is/was in doubt (#11).
+</p></blockquote>
+<p>I gave an argument for them. Can you say what you think is wrong with the argument that I gave?</p>
+<blockquote><p>
+ We’re talking about the underlying principle, I suppose, and I think the principle is something like: Necessarily, it is rational for you to make a winning bet. On the assumptions from #11 and #18, that’s a patent falsehood. Isn’t it?
+</p></blockquote>
+<p>I don&#8217;t follow you. I certainly agree with you that the principle you just stated is false. What does it have to do with the question at hand?</p>
+<blockquote><p>
+As regards the Humvee point, I still don’t see the problem with saying that she does believe buying the smaller Humvee is the lesser evil — even if she also believes you shouldn’t buy either. No progress here.</p></blockquote>
+<p>I fully agree that no progress whatever is made by those two statements!<br />
+But for some reason you are not addressing the actual question, which is whether she believes I ought to buy a Humvee.</p>
+<blockquote><p>
+I don’t see how I miss the point. I assume she’s not stricken with amnesia after you tell her that you will be buying one of the Humvees no matter what. What does she think *now* consistently with hating the alternatives?</p></blockquote>
+<p>You&#8217;ve said something she now thinks, and I agree with you about that. But that&#8217;s not the question. The question is whether she thinks I ought to buy a small Humvee. And she doesn&#8217;t think so. &#8220;Rachel, do you think Jamie ought to buy that small Humvee?&#8221; &#8220;Of course not, but at least it&#8217;s better than the big one.&#8221;</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3941.html#respond' onclick='return addComment.moveForm( "comment-3941", "3941", "respond", "620" )' aria-label='Reply to Jamie'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3942" >
+		<article id="comment-3942" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=620.html#comment-3942"><time datetime="2006-09-23T17:24:34+00:00">September 23, 2006 at 5:24 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jamie,<br />
+I&#8217;m afraid I&#8217;m getting disoriented. Where&#8217;s your argument for (t) and (h)? Is it the following bit from comment #10?</p>
+<p>&#8220;In support of (h), for instance, I can say this. Suppose the coin will land tails. Now, on that supposition, I ask you: shouldn’t you bet on tails? Surely you should, on that supposition!<br />
+But now, having granted that, how can you deny (h)?&#8221;</p>
+<p>The Humvee issue: Why would Rachel give you that answer to that question? Why not just &#8220;of course, not&#8221; *period*. Because the relevant question is not the one you&#8217;re asking. It&#8217;s &#8220;Rachel, assuming that one of the Humvees will be bought (regardless of your disgust for Humvees in general), which one do you think Jamie should buy?&#8221;</p>
+<p>Isn&#8217;t this a familiar situation: &#8220;Jamie, I know you don&#8217;t want to see anybody killed as a matter of principle. But, assuming that X will blow up that bomb and kill us all unless we kill him, should we kill him fast or should we make him suffer?&#8221;</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3942.html#respond' onclick='return addComment.moveForm( "comment-3942", "3942", "respond", "620" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3943" >
+		<article id="comment-3943" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jamie</span> on <a href="../index.html%3Fp=620.html#comment-3943"><time datetime="2006-09-23T19:36:00+00:00">September 23, 2006 at 7:36 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Claudio, yes, that&#8217;s the argument.</p>
+<p>The answer to the question you asked Rachel is, &#8220;If he&#8217;s going to buy a Humvee he should buy the small one.&#8221; We all agree that&#8217;s true. And Rachel knows I will buy a Humvee. But she thinks I am going to do something that I ought not do, even if I buy the small one. She thinks I ought not to buy the small one and that I ought not to buy the big one.</p>
+<p>&#8212;&#8212;<br />
+Listen, I&#8217;m not communicating very well and I&#8217;m not following others very well either, and I didn&#8217;t mean to hijack Jon Kvanvig&#8217;s thread. Sorry. I&#8217;ll allow this to end.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3943.html#respond' onclick='return addComment.moveForm( "comment-3943", "3943", "respond", "620" )' aria-label='Reply to Jamie'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3944" >
+		<article id="comment-3944" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Gregory Wheeler</span> on <a href="../index.html%3Fp=620.html#comment-3944"><time datetime="2006-09-24T04:00:18+00:00">September 24, 2006 at 4:00 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Yes, I think that both (t) and (h) are false. That is, there are cases in which the antecedent is true, (i.e., the coin will land heads (tails)) and the consequent is false. (i.e., it is not the case that you should bet on heads (tails).)</p>
+<p>Since conditional bets are mentioned, let&#8217;s use their structure to reframe my objection. In my making a conditional bet on the event A, the event A is treated as <i>my</i> evidence  and not simply as an event that occurs. There are cases when A might occur but where I would not be reasonable to bet on A. The coin of unknown bias offers an example. Our informal talk of conditional bets runs together this distinction between an event occurring simpliciter, and supposing that event occurs as evidence.</p>
+<p>The antecedents of the conditionals (t) and (h) concern the event of the coin landing heads (tails), not that the coin landing heads (tails) will be treated as evidence.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3944.html#respond' onclick='return addComment.moveForm( "comment-3944", "3944", "respond", "620" )' aria-label='Reply to Gregory Wheeler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3945" >
+		<article id="comment-3945" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/f00be77b5c6bc32ec7e2261ad2e745e6?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f00be77b5c6bc32ec7e2261ad2e745e6?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://pixnaps.blogspot.com' rel='external nofollow' class='url'>Richard</a></span> on <a href="../index.html%3Fp=620.html#comment-3945"><time datetime="2006-09-24T06:18:25+00:00">September 24, 2006 at 6:18 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Isn&#8217;t the Humvee case an example of what Broome calls &#8220;<a href="http://pixnaps.blogspot.com/2006/01/disjunctive-requirements.html" rel="nofollow">wide-scope oughts</a>&#8220;? Rachel isn&#8217;t really saying [Buy &#8211;&gt; Ought(Buy Small)]. Rather, she&#8217;s endorsing the wide-scope claim: [Ought(Buy &#8211;&gt; Buy Small)], where the conditional is embedded and so not available for modus ponens. The problem is just that English grammar isn&#8217;t capable of distinguishing these two logical forms.</p>
+<p>Jamie&#8217;s interesting coin case reminds me of the classic fatalistic arguments I discuss <a href="http://pixnaps.blogspot.com/2005/10/idle-argument-essay.html" rel="nofollow">here</a> (though he&#8217;s since convinced me that my analysis there isn&#8217;t quite right).</p>
+<p>Mike&#8217;s comment #19 seems right to me, though. We might distinguish the &#8216;ought&#8217; of reasons (externalistically construed, as what would be best in objective fact) vs. the more subjective &#8216;ought&#8217; of rationality (expected utility, etc.).</p>
+<p>In the objective sense, the coin argument goes through just fine: you really should bet, and what you should bet on is the winning option. (Go on, what are you waiting for?)</p>
+<p>Taking the subjective sense (which is more appropriate for deliberation), the premises (h) and (t) are false, as per Greg&#8217;s #30. Even if the coin will land heads, you rationally shouldn&#8217;t bet on it unless this information is actually accessible to you. Jamie&#8217;s conditional proof (&#8220;Surely you should [bet tails], on that supposition!&#8221;) is only convincing if the supposition is supposed to be actually made by the gambler. Certainly if I (qua gambler) may suppose that the coin will land tails, then that&#8217;s what I rationally should bet on. But if we&#8217;re supposing, abstractly, that the coin lands heads without my having antecedent knowledge of this, then it wouldn&#8217;t be rational for my ignorant self to bet at all.</p>
+<p>(This line of thought becomes clearer if we append &#8220;without your foreknowledge&#8221; to the antecedents of (h) and (t).)</p>
+<p>Does that sound right?</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3945.html#respond' onclick='return addComment.moveForm( "comment-3945", "3945", "respond", "620" )' aria-label='Reply to Richard'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3946" >
+		<article id="comment-3946" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/23fa973d87bbd27a88c85f870493316c?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/23fa973d87bbd27a88c85f870493316c?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www3.baylor.edu/Jonathan_Kvanvig/' rel='external nofollow' class='url'>kvanvig</a></span> on <a href="../index.html%3Fp=620.html#comment-3946"><time datetime="2006-09-24T07:59:29+00:00">September 24, 2006 at 7:59 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jamie, don&#8217;t worry about hijacking a thread, that&#8217;s not an issue at all.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3946.html#respond' onclick='return addComment.moveForm( "comment-3946", "3946", "respond", "620" )' aria-label='Reply to kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3947" >
+		<article id="comment-3947" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=620.html#comment-3947"><time datetime="2006-09-24T12:38:55+00:00">September 24, 2006 at 12:38 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Sounds right to me, Richard (#31).</p>
+<p>(By the way, that&#8217;s a good discussion of the scope problem on your blog. I was involved with the distinction between WC and NC some time ago. The critic assumed I was committed to NC, while WC was all I needed. We sorted it out eventually, but not as abstractly and nicely as you did. Can I have the Broome reference, please?)</p>
+<p>My problem with Jamie&#8217;s argument for (h) is that, looking at it from the point of view of comments #11 and #18, it doesn&#8217;t look helpful at all. And that&#8217;s the only perspective I can have on the issue.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3947.html#respond' onclick='return addComment.moveForm( "comment-3947", "3947", "respond", "620" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3948" >
+		<article id="comment-3948" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jamie</span> on <a href="../index.html%3Fp=620.html#comment-3948"><time datetime="2006-09-24T14:51:02+00:00">September 24, 2006 at 2:51 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Okay, one more try.<br />
+Greg, your reason for thinking that (t) is false is that there is a case in which the antecedent is true and the consequent false. Of course there is such a case. If there were no such case, then <b>obviously</b> modus ponens could not fail. But we are talking about my claim that modus ponens does fail for these conditionals. It is, therefore, straightforwardly question-begging to use the fact that there is a case in which the antecedent is true and the consequent false, as a reason for thinking that the conditional is false.<br />
+Richard: you are absolutely right that reading the <i>ought</i> as having wide scope explains why modus ponens fails. (It&#8217;s strange that those who thinks that m.p. does <b>not</b> fail here agree with you that the scope is wide!) I have separate reasons for doubting that the <i>ought</i>s are wide scope. (That&#8217;s what my paper is actually about.) But I am glad you agree about the failure of modus ponens.</p>
+<p>Richard again:</p>
+<blockquote><p>Jamie’s conditional proof &#8230; is only convincing if the supposition is supposed to be actually made by the gambler.</p></blockquote>
+<p>Whoa! I thought conditional proof was supposed to be valid for every conditional there is. In conditional proof we do not add the extra assumption that anybody knows the discharged premise, so I find it puzzling that you (and apparently Claudio) think that it&#8217;s necessary for validity here.<br />
+Anyway, I would be quite happy with an admission that conditional proof fails for these practical conditionals. My view is that it succeeds but modus ponens fails, but I&#8217;m okay with the contrary view.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3948.html#respond' onclick='return addComment.moveForm( "comment-3948", "3948", "respond", "620" )' aria-label='Reply to Jamie'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3949" >
+		<article id="comment-3949" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/ad2368f81642ed00e788cd8e88b8be8f?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/ad2368f81642ed00e788cd8e88b8be8f?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Fritz</span> on <a href="../index.html%3Fp=620.html#comment-3949"><time datetime="2006-09-24T14:57:28+00:00">September 24, 2006 at 2:57 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jamie &#8212;</p>
+<p>you write:</p>
+<p>&#8220;It is, therefore, straightforwardly question-begging to use the fact that there is a case in which the antecedent is true and the consequent false, as a reason for thinking that the conditional is false.&#8221;</p>
+<p>But why say that this is *question begging*. Why not say instead that this confuses your conditionals for strict conditionals. I don&#8217;t know what kind of conditionals we&#8217;re dealing with here (that&#8217;s part of what&#8217;s fun and complicated about this issue right?) but I&#8217;m confident that they aren&#8217;t strict just like they are and they aren&#8217;t material. But maybe I&#8217;m missing what you and Greg are disagreeing about (if I am missing this, I at least fell a bit better given that you seem to be not quite following either).</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3949.html#respond' onclick='return addComment.moveForm( "comment-3949", "3949", "respond", "620" )' aria-label='Reply to Fritz'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3950" >
+		<article id="comment-3950" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/f00be77b5c6bc32ec7e2261ad2e745e6?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f00be77b5c6bc32ec7e2261ad2e745e6?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://pixnaps.blogspot.com' rel='external nofollow' class='url'>Richard</a></span> on <a href="../index.html%3Fp=620.html#comment-3950"><time datetime="2006-09-25T03:36:33+00:00">September 25, 2006 at 3:36 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hi Jamie, sorry I was unclear: my complaint is not with the logic of conditional proof, but rather your claim that &#8220;Surely you should [bet tails], on that supposition [that the coin will land tails]!&#8221; Let me clarify.</p>
+<p>Suppose it&#8217;s true that the coin will land tails (without the gambler&#8217;s foreknowledge). Does it follow that the gambler rationally should bet tails? No, of course not. Quite the opposite: given his ignorance of the fact, he shouldn&#8217;t bet at all. So the conditional &#8220;if the coin will land tails then the gambler should bet on tails&#8221; is false. Replacing &#8216;the gambler&#8217; with &#8216;I&#8217; doesn&#8217;t change this. All it does is allow us to equivocate in a way that gives your argument its misleading plausibility.</p>
+<p>The equivocation arises when you conflate the gambler with the logician doing the supposing. Compare:</p>
+<p>(t1) If the coin will land tails without my foreknowledge, then I should bet tails.</p>
+<p>(t2) If I may suppose that the coin will land tails, then I should bet tails.</p>
+<p>I take it that (t1) is obviously false, and (t2) obviously true, when using the &#8216;should&#8217; of rationality. Now, (t) really corresponds to (t1), and so is likewise false. But your argument tempts us to treat (t) like (t2) instead.</p>
+<p>&#8220;<i>Suppose the coin will land tails. Now, on that supposition, I ask you: shouldn’t you bet on tails? Surely you should, on that supposition!</i>&#8221;</p>
+<p>This conflates the gambler and the reasoner.</p>
+<p>Sure, if I qua gambler get to suppose that the coin will land tails, then that&#8217;s what I should bet on. That is, supposing (for sake of CP) that I get to suppose (for sake of deliberation) that the coin will land tails, it follows that I should deliberately bet tails. But applying conditional proof to this will only yield (t2), not (t).</p>
+<p>N.B. The gambler should bet tails only if, at the time of decision, they hold that the coin will (probably) land tails. This condition is satisfied if, internal to deliberation, the gambler may suppose that the coin will land tails. So far so good. But if you have an <i>external</i> logical debate with the gambler, and ask them to make this supposition <i>for sake of argument</i>, then the supposition will be discharged by the time they return to their practical deliberation. It will no longer be accessible when they have to decide whether to bet. So the above condition is <i>not</i> satisfied in such a case.</p>
+<p>Perhaps a parody-argument would help illustrate. Consider the conditional:</p>
+<p><b>(t*) If the coin will land tails, then you suppose that the coin will land tails.</b></p>
+<p>A groundless claim. But apply Jamie&#8217;s reasoning: &#8220;<i>Suppose the coin will land tails. Now, on that supposition, I ask you: don&#8217;t you suppose that the coin will land tails? Surely you do, on that supposition!</i>&#8221; Hmm.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3950.html#respond' onclick='return addComment.moveForm( "comment-3950", "3950", "respond", "620" )' aria-label='Reply to Richard'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3951" >
+		<article id="comment-3951" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Gregory Wheeler</span> on <a href="../index.html%3Fp=620.html#comment-3951"><time datetime="2006-09-25T03:43:16+00:00">September 25, 2006 at 3:43 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>A recap:</p>
+<p>At [7], Jamie asserts that he thinks (t) and (h) are true. I think there is no good reason whatsoever for regarding either claim to be true. On the contrary:</p>
+<p>(h?) If a fairly tossed coin will land heads, there is nothing to that fact that would recommend anything to anyone about how he should, or should not, bet</p>
+<p>(t?) If a fairly tossed coin will land tails, there is nothing to that fact that would recommend anything to anyone about how he should, or should not, bet.</p>
+<p>Hence the argument in [7] does not get off of the ground, since the premises (t) and (h) of that argument are false. The argument I advanced against the truth of (t) and (h) also provides reasons for affirming (t?) and (h?). This is a very general point, and will not be remedied by tinkering with the semantics  of the conditional in (t) and (h).</p>
+<p>The discussion about conditional probabilities P(A|B) was offered as one reason in support for taking the objection to be a general point and not a technical one about conditionals. In this context the issue takes shape as a concern over the character of B in P(A|B).  B in classic epistemic probability represents an event, but the measure P is the agent&#8217;s own, defined over an algebra that represents the event B, to the agent, and the relationships that the agent imagines to hold between B and A (and other events). Our informal talk of conditioning on outcomes invites confusing the fact that B and the relevant agent&#8217;s representation of B, which is what I thought might be behind the preposterous suggestion that (t) and (h) are true.</p>
+<p>Finally, my post [30], mentioned in [34], was a reply to Claudio to clarify my attitude toward (t) and (h) in 11. It was not an argument or even a summary of my argument.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3951.html#respond' onclick='return addComment.moveForm( "comment-3951", "3951", "respond", "620" )' aria-label='Reply to Gregory Wheeler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3952" >
+		<article id="comment-3952" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/f00be77b5c6bc32ec7e2261ad2e745e6?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f00be77b5c6bc32ec7e2261ad2e745e6?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://pixnaps.blogspot.com' rel='external nofollow' class='url'>Richard</a></span> on <a href="../index.html%3Fp=620.html#comment-3952"><time datetime="2006-09-25T03:45:14+00:00">September 25, 2006 at 3:45 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Claudio, I don&#8217;t know the Broome reference, sorry. (He taught our seminar based on forthcoming work, so I don&#8217;t know any of his published stuff.)</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3952.html#respond' onclick='return addComment.moveForm( "comment-3952", "3952", "respond", "620" )' aria-label='Reply to Richard'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3953" >
+		<article id="comment-3953" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Gregory Wheeler</span> on <a href="../index.html%3Fp=620.html#comment-3953"><time datetime="2006-09-25T04:05:27+00:00">September 25, 2006 at 4:05 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I am intrigued by the wide/narrow scope proposal of the (presumably modal) operator OUGHT, but I have some reservations that this will work out the way it is imagined. However, unlike my doubts about (t) and (h), my reservations about the scope hypothesis do depend very much on the interpretation of the logical components of the sentences.</p>
+<p>I&#8217;ll sketch the worry. If ought is imagined to be represented within an S5 deontic logic, where O is the box modality, there **might** be cases of natural language &#8220;conditionals&#8221; expressing obligations that are captured only meta-logical properties of a formula rather than that formulas&#8217; truth conditions at the point (world) of evaluation. We recognize the distinction between satisfiability and global truth in a modal logic, for instance, but we only have the *object language* resources to represent the former. So, technically, if our talk of obligations includes both types, this distinction won&#8217;t be properly reflected in the object language of the logic.  This is relevant when you are interested in representing conditionals that express something similar to &#8220;Given everywhere that p is satisfied, q is too.&#8221;</p>
+<p>There are moves to try for a repair, if there is even a problem here to repair. I&#8217;d be very interested to hear if anyone has looked at issues like this, particularly if they&#8217;ve used logical modalities for modeling &#8220;conditionals&#8221; that express something similar to &#8220;Given everywhere that p, q&#8221;, rather than try to build them into the semantics of the logic.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3953.html#respond' onclick='return addComment.moveForm( "comment-3953", "3953", "respond", "620" )' aria-label='Reply to Gregory Wheeler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3954" >
+		<article id="comment-3954" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jamie</span> on <a href="../index.html%3Fp=620.html#comment-3954"><time datetime="2006-09-25T08:29:45+00:00">September 25, 2006 at 8:29 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Good, thank you, Richard.<br />
+I agree with you entirely about the conditionals you mention, <i>and</i> I think you are absolutely right in bringing out the temptation to conflate the supposition that p with the supposition that the supposer supposes that p.</p>
+<p>First, in support of what you’ve said, I think that conflation infects indicative conditionals in many places. Compare this somewhat idiomatic form of conditional:</p>
+<p>(if-R) If you believe Richard, then the <i>ought</i> has wide scope.</p>
+<p>This conditional is intuitively true. But surely it is grossly implausible that whether the scope of the <i>ought</i> could depend in any way on whether the audience believes Richard. Diagnosis: when we consider (if-R), we imagine that we believe Richard, and then ask ourselves whether the <i>ought</i> has wide scope; but imagining that we believe Richard is very hard to distinguish from imagining that Richard is correct, so our answer is that yes, under that supposition, the <i>ought</i> does have wide scope.</p>
+<p>Second, though:<br />
+You have replaced ‘should’ with ‘rationally should’, and I want to know how the argument works with just plain ‘should’. And in that case, I don’t buy your analysis. Suppose this ticket is, in fact, the winner; in that case, shouldn’t you spend a dollar on it? Yes (I say)! Only you don’t know it, so it’s understandable that you don’t do what you should.<br />
+Or try it with ‘better’. If the coin will land heads, then it is better to make the bet and to make it on heads. Suppose the coin will land heads; now, isn’t it better, on that supposition, that you bet on heads?</p>
+<p>Finally, is there an equivocation involved in the argument? Well, I think there must be something <i>like</i> an equivocation at some point (this is what I was saying in [26] about Mike’s remark in [17]). But I don’t believe that ‘ought’, ‘should’, ‘better’, and so on, are all literally ambiguous in just the same way.</p>
+<p>Greg,<br />
+I don’t know what argument you’ve given against the (‘preposterous’) truth of (t) and (h). I (like Fritz, apparently) thought that the argument was that there are counterexamples, but you say that was not an argument.<br />
+It seems a bit unfair for you to suggest that I’m ‘tinkering with the semantics of the conditionals’, by the way, since I haven’t offered any semantics for them. I would like to know the semantics, but I believe we have to look carefully at how they work in arguments and <i>then</i> work out their semantics, rather than vice versa.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3954.html#respond' onclick='return addComment.moveForm( "comment-3954", "3954", "respond", "620" )' aria-label='Reply to Jamie'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3955" >
+		<article id="comment-3955" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=620.html#comment-3955"><time datetime="2006-09-25T09:02:58+00:00">September 25, 2006 at 9:02 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jamie,<br />
+Clarifying for the record: Richard&#8217;s #36 and Greg&#8217;s #37 are exactly what I wish I had written earlier in the discussion. The elements are in #11 and #18. But it&#8217;s very good to see the discussion go up a notch or two in terms of clarity.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3955.html#respond' onclick='return addComment.moveForm( "comment-3955", "3955", "respond", "620" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3956" >
+		<article id="comment-3956" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jamie</span> on <a href="../index.html%3Fp=620.html#comment-3956"><time datetime="2006-09-25T15:34:25+00:00">September 25, 2006 at 3:34 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Thanks, Claudio.<br />
+I&#8217;ve already responded to Richard&#8217;s #36, as you see.<br />
+Since you wish you had written Greg&#8217;s #37, can you explain what the argument is against the truth of (t) and (h)?</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3956.html#respond' onclick='return addComment.moveForm( "comment-3956", "3956", "respond", "620" )' aria-label='Reply to Jamie'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3957" >
+		<article id="comment-3957" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=620.html#comment-3957"><time datetime="2006-09-25T16:48:11+00:00">September 25, 2006 at 4:48 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Well, well, Jamie&#8230; I don&#8217;t think I can improve on the explanation that you already have. (That&#8217;s the point in saying that I wouldn&#8217;t have done any better than those two comments.) In any case, what is it about #37 that seems hard to understand?</p>
+<p>Again, for the record, I wouldn&#8217;t have called *anything* about this discussion &#8220;preposterous&#8221;. But we&#8217;re all writing at breakneck speed here, aren&#8217;t we? Verbal slips are par for the course. (We&#8217;ve all had our share of them, haven&#8217;t we?)</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3957.html#respond' onclick='return addComment.moveForm( "comment-3957", "3957", "respond", "620" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3958" >
+		<article id="comment-3958" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jamie</span> on <a href="../index.html%3Fp=620.html#comment-3958"><time datetime="2006-09-25T18:23:29+00:00">September 25, 2006 at 6:23 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Claudio,</p>
+<p>There is no argument in #37 for the conclusion that (t) and (h) are false. Is there?</p>
+<p>There is an assertion that they are false. And there are a pair of sentences that Greg appears to think are contraries of (t) and (h). (I am not convinced that they are, but I&#8217;m not sure, and I&#8217;m not committing myself either way.) Greg says he thinks they are true. But I don&#8217;t think there is any argument.</p>
+<p>#37 refers to &#8220;the argument I advanced against the truth of (t) and (h)&#8221;, but it doesn&#8217;t give that argument or say which argument it is. I presume you know what that argument is; I don&#8217;t. (I have no doubt that there is an argument! I just don&#8217;t know what it is.)</p>
+<p>As to &#8216;preposterous&#8217;, you&#8217;re right, unequivocally. 🙂</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3958.html#respond' onclick='return addComment.moveForm( "comment-3958", "3958", "respond", "620" )' aria-label='Reply to Jamie'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3959" >
+		<article id="comment-3959" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/f00be77b5c6bc32ec7e2261ad2e745e6?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f00be77b5c6bc32ec7e2261ad2e745e6?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://pixnaps.blogspot.com' rel='external nofollow' class='url'>Richard</a></span> on <a href="../index.html%3Fp=620.html#comment-3959"><time datetime="2006-09-26T00:05:22+00:00">September 26, 2006 at 12:05 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jamie, if we adopt a more objective sense of &#8216;should&#8217;, isn&#8217;t the conclusion of the coin argument then unproblematically true? (Cf. my comment #31.) You <i>should</i> &#8220;write&#8230; a check for $1000 and bet&#8221; on the winning outcome. It&#8217;s a pity you don&#8217;t know which that is, but that doesn&#8217;t falsify the conclusion any more than it does the premises (t) and (h).</p>
+<p>Perhaps your point is as follows: granted, it is better to bet on the winning outcome. But it is not better to bet, simpliciter, for that leaves open a 50% chance of losing.</p>
+<p>That seems right, but may not connect with the original coin argument as you presented it.  The most you can strictly infer from (t), (h), and (v) alone is that &#8220;you should bet on tails or you should bet on heads&#8221;. To obtain your more general conclusion (that you should bet, simpliciter), you need the further premise(s): <i>if you should bet on tails (heads), then you should bet, simpliciter</i>. But this is simply the denial of the above point. So if we take that point seriously, we should reject this new premise.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3959.html#respond' onclick='return addComment.moveForm( "comment-3959", "3959", "respond", "620" )' aria-label='Reply to Richard'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3960" >
+		<article id="comment-3960" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jamie</span> on <a href="../index.html%3Fp=620.html#comment-3960"><time datetime="2006-09-26T07:24:14+00:00">September 26, 2006 at 7:24 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hm, you&#8217;re right, Richard, but I feel like that&#8217;s a loophole that I just have to be more careful about rather than a serious problem.</p>
+<p>Well, here&#8217;s a try at repairing with minimal amendment. We can use the principle, &#8220;If you ought to do A, and the only way you can A is by doing B, then you ought to do B.&#8221;</p>
+<p>Now, in each branch of the OR-elimination, I&#8217;ll use that principle to conclude, &#8220;You ought to bet&#8221;, so the overall conclusion resting on the disjunction (but not separately on the disjuncts) will be &#8220;You ought to bet&#8221;.</p>
+<p>How&#8217;s that? (I hope that instrumental principle is true! I think it is. I&#8217;m less sure that it supports modus ponens itself, of course, but if it doesn&#8217;t that works for me.)</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3960.html#respond' onclick='return addComment.moveForm( "comment-3960", "3960", "respond", "620" )' aria-label='Reply to Jamie'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3961" >
+		<article id="comment-3961" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=620.html#comment-3961"><time datetime="2006-09-26T08:24:06+00:00">September 26, 2006 at 8:24 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jon,<br />
+We seem to have an answer (maybe not the best one) to the questions (some version of the questions) in your last paragraph:</p>
+<p>&#8220;So what difference does it make to rationality when you can identify the particular content in question? Why would the mere fact that you can specify the ground of contingency make such a difference?&#8221;</p>
+<p>Moore-paradoxical propositions have the feature in question (some feature like the one you have in mind): the existentially quantified form is OK but some instances are not, and they are all contingent. So, &#8220;Somebody has no thoughts&#8221; is fine; &#8220;I don&#8217;t have any&#8221; is not. (I hold that that&#8217;s a Moore-paradoxical proposition, have argued that it is. But this will work for the historical forms too.)</p>
+<p>Can this be relevant to your problem? (I&#8217;m here assuming for the sake of argument that the reasoning is OK all the way to the last paragraph in your post.)</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3961.html#respond' onclick='return addComment.moveForm( "comment-3961", "3961", "respond", "620" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3962" >
+		<article id="comment-3962" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Gregory Wheeler</span> on <a href="../index.html%3Fp=620.html#comment-3962"><time datetime="2006-09-26T08:55:23+00:00">September 26, 2006 at 8:55 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jamie: if you ought to buy baby new shoes, and the only way for you to buy baby new shoes is to stickup a gas station, you ought to stickup a gas station?</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3962.html#respond' onclick='return addComment.moveForm( "comment-3962", "3962", "respond", "620" )' aria-label='Reply to Gregory Wheeler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3963" >
+		<article id="comment-3963" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/23fa973d87bbd27a88c85f870493316c?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/23fa973d87bbd27a88c85f870493316c?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www3.baylor.edu/Jonathan_Kvanvig/' rel='external nofollow' class='url'>kvanvig</a></span> on <a href="../index.html%3Fp=620.html#comment-3963"><time datetime="2006-09-26T10:12:10+00:00">September 26, 2006 at 10:12 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hi Claudio, yes, I agree on the Moore sentences, and your remark connects with Fritz&#8217;s earlier one, that the assumption of being able to identify the contents in question is crucial.  I&#8217;d prefer a solution, though, that rendered the embedded conditional irrelevant, though it is hard to say why.  One reason is that even though Fritz is right, there&#8217;s still the worry that you can&#8217;t tell whether the given case is one where there is such a specific proposition that can play the role in the problematic embeddings.  So to act on the simple conditionals seems to presume something we don&#8217;t know.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3963.html#respond' onclick='return addComment.moveForm( "comment-3963", "3963", "respond", "620" )' aria-label='Reply to kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3964" >
+		<article id="comment-3964" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jamie</span> on <a href="../index.html%3Fp=620.html#comment-3964"><time datetime="2006-09-26T10:39:06+00:00">September 26, 2006 at 10:39 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Greg,<br />
+That&#8217;s a question about a conditional, not a conditional question, right?<br />
+I guess I&#8217;d say yes, since (off hand) I would want to do modus tollens. I ought not to hold up the gas station, which would be the only way I could get the new baby shoes; so it&#8217;s not the case that I ought to get the baby shoes.<br />
+I don&#8217;t know, the whole locution is kind of stilted so my intuition is not tremendously strong. It&#8217;s much clearer to me if I say, &#8220;&#8230; so <i>I had better just pass on the baby shoes</i>.&#8221;</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3964.html#respond' onclick='return addComment.moveForm( "comment-3964", "3964", "respond", "620" )' aria-label='Reply to Jamie'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3965" >
+		<article id="comment-3965" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Gregory Wheeler</span> on <a href="../index.html%3Fp=620.html#comment-3965"><time datetime="2006-09-26T11:28:21+00:00">September 26, 2006 at 11:28 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Yes, I was riffing on &#8220;Baby Needs a New Pair of Shoes&#8221;, since we were talking about betting. Should have made it &#8216;Baby&#8217;, I suppose. But then one might wonder whether stilettos or soft soles, are there&#8217;s political jeopardy in some circles over that ambiguity.</p>
+<p>Your reply concerns your actions, so far as I can tell, and not your obligation to Baby.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3965.html#respond' onclick='return addComment.moveForm( "comment-3965", "3965", "respond", "620" )' aria-label='Reply to Gregory Wheeler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3966" >
+		<article id="comment-3966" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jamie</span> on <a href="../index.html%3Fp=620.html#comment-3966"><time datetime="2006-09-26T19:32:24+00:00">September 26, 2006 at 7:32 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><blockquote><p>Your reply concerns your actions, so far as I can tell, and not your obligation to Baby.</p></blockquote>
+<p>That is an enigmatic thing to say. My reply is explicitly and unequivocally about what normative requirements apply to the agent; it uses &#8216;ought&#8217; and &#8216;had better&#8217;, straightforwardly normative expressions.<br />
+Obviously it is also about actions (how could it be about obligations without being about actions?).</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3966.html#respond' onclick='return addComment.moveForm( "comment-3966", "3966", "respond", "620" )' aria-label='Reply to Jamie'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3967" >
+		<article id="comment-3967" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/f00be77b5c6bc32ec7e2261ad2e745e6?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f00be77b5c6bc32ec7e2261ad2e745e6?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://pixnaps.blogspot.com' rel='external nofollow' class='url'>Richard</a></span> on <a href="../index.html%3Fp=620.html#comment-3967"><time datetime="2006-09-27T07:32:51+00:00">September 27, 2006 at 7:32 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jamie, the puzzle then seems to come down to this: <i>suppose that it&#8217;s best to do B and A, but worst to do B and not-A, compared to the neutral option of not-B. As such, is it better to do B?</i></p>
+<p>I&#8217;m not sure if there&#8217;s really a determinate answer to this. It seems like the right thing to say is, &#8220;It depends whether you&#8217;ll go on to do A!&#8221;</p>
+<p>Similarly for your instrumental principle, and its application to the betting case. You should bet on the winning option. So should you bet? Well, it depends whether you&#8217;ll be doing so on the winning option or not&#8230;</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3967.html#respond' onclick='return addComment.moveForm( "comment-3967", "3967", "respond", "620" )' aria-label='Reply to Richard'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3968" >
+		<article id="comment-3968" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jamie</span> on <a href="../index.html%3Fp=620.html#comment-3968"><time datetime="2006-09-27T10:24:57+00:00">September 27, 2006 at 10:24 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I agree with all that except for the bit about there being no determinate answer. Aren&#8217;t there lots and lots of cases in which whether P or Q is the case depends on whether R is true, but this plainly doesn&#8217;t mean that whether P or Q is the case is indeterminate?<br />
+Still, when you put it in that nice Boolean way instead of the overtly instrumental way that I put it, I agree that what seemed obviously true to me suddenly seems very questionable. It seems to me that there must be plenty of cases in which you ought to do A&amp;B, but, since you are not in fact going to do B, you ought <i>not</i> to do A, since A&amp;~B is a lot worse than ~A&amp;~B.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3968.html#respond' onclick='return addComment.moveForm( "comment-3968", "3968", "respond", "620" )' aria-label='Reply to Jamie'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3969" >
+		<article id="comment-3969" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/83ceb04a82c192493fd5d79004eec4a6?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/83ceb04a82c192493fd5d79004eec4a6?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.philosophy.ox.ac.uk/members/nshackel/index.htm' rel='external nofollow' class='url'>nick shackel</a></span> on <a href="../index.html%3Fp=620.html#comment-3969"><time datetime="2006-10-03T10:24:32+00:00">October 3, 2006 at 10:24 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Parfit puts forward an example that is analogous to the issue of whether, if it will land heads, you ought to bet heads. 100 miners are trapped underground in either shaft A or B. In the time available before they die, you can either dig a rescue tunnel to A or to B but not to both. If you get it right you will save all, but otherwise all will die. Alternatively, you can dig an intermediate rescue tunnel, call it C, which will certainly save exactly 90 of the 100 lives, whichever of A or B they are in. Clearly, this is not a case in which you can refuse the bet, so what ought you to do? Under outcome consequentialism, if they are in A you ought to dig A and if they are in B you ought to dig B and it&#8217;s not the case that you ought to dig C (since there is an outcome under which digging C is worse, so a maximising teleological principle cannot imply that you ought to dig C). Under prospect consequentialism you ought to dig C (a propect need not be simply the expected outcome of an action, but the disparity between certainty of saving 90 and a significant chance of losing 100 is going to favour digging C under most accounts of a prospect).</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3969.html#respond' onclick='return addComment.moveForm( "comment-3969", "3969", "respond", "620" )' aria-label='Reply to nick shackel'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+		</ol>
+
+		
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply to <a href="index.html%3Freplytocom=3952.html#comment-3952">Richard</a> <small><a rel="nofollow" id="cancel-comment-reply-link" href="../index.html%3Fp=620.html#respond">Cancel reply</a></small></h3>			<form action="http://certaindoubts.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='620' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='3952' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="0349e56ae8" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="14"/></p>			</form>
+			</div><!-- #respond -->
+	</div><!-- #comments -->
+
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+		</div><!-- #container_wrap -->
+
+	<div id="sidebar_wrap_right" class="split equal_height">
+	<div id="sidebar_right" class="widget-area" role="complementary">
+		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+											<li>
+					<a href="../index.html%3Fp=4902.html">The End</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4897.html">Young Epistemologist Prize 2019</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4890.html">A simple problem for (unrestricted) Conditionalization</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4883.html">Reminder: Young Epistemologist Prize 2019</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4877.html">Do We Know that We&#8217;re not Brains in Vats?: Follow-Up: Polls and Surveys</a>
+									</li>
+					</ul>
+		</aside><aside id="calendar-2" class="widget widget_calendar"><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar">
+	<caption>April 2019</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="../2019/02/index.html">&laquo; Feb</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+	</tr>
+	<tr>
+		<td>8</td><td><a href="../2019/04/09/index.html" aria-label="Posts published on April 9, 2019">9</a></td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+	</tr>
+	<tr>
+		<td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
+	</tr>
+	<tr>
+		<td>22</td><td id="today">23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+	</tr>
+	<tr>
+		<td>29</td><td>30</td>
+		<td class="pad" colspan="5">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></aside><aside id="meta-3" class="widget widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="../wp-login.php.html">Log in</a></li>
+			<li><a href="../feed/index.html">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="../comments/feed/index.html">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside><aside id="search-2" class="widget widget_search"><form role="search" style="background:transparent;" method="get" class="searchform" action="../index.html" >
+	<label class="screen-reader-text" for="s">Search for:</label>
+	<input type="search" value="" name="s" id="s" placeholder="Search Site" />
+	<input class="searchformimg" type="image" src="../wp-content/themes/weaver-ii/images/search_button.gif" alt="Search" />
+	</form></aside>
+	</div><!-- sidebar_right .widget-area -->
+	</div><!-- #sidebar_wrap_right -->
+    <div class='weaver-clear'></div></div><!-- #main -->
+	<footer id="colophon" role="contentinfo">
+	  <div>
+
+		<div id="site-ig-wrap">
+		<span id="site-info">
+		&copy; 2019 - <a href="../index.html" title="Certain Doubts" rel="home">Certain Doubts</a>
+		</span> <!-- #site-info -->
+		<span id="site-generator">
+		<a href="http://wordpress.org/" title="wordpress.org" rel="generator" target="_blank">Proudly powered by WordPress</a>&nbsp;
+Weaver II by <a href="http://weavertheme.com" target="_blank" title="http://weavertheme.com">WP Weaver</a>
+		</span> <!-- #site-generator -->
+		</div><!-- #site-ig-wrap -->
+		<div class="weaver-clear"></div>
+	  </div>
+	</footer><!-- #colophon -->
+</div><!-- #wrapper -->
+<a href="index.html%3Freplytocom=3952.html#page-top" id="page-bottom">&uarr;</a>
+<div id="weaver-final" class="weaver-final-normal"><script type='text/javascript' src='../wp-includes/js/comment-reply.min.js%3Fver=4.9.10'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var weaver_menu_params = {"selector":"li:has(ul) > a","selector_leaf":"li li li:not(:has(ul)) > a"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/themes/weaver-ii/js/weaverjslib.min.js%3Fver=2.2.2'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.min.js%3Fver=4.9.10'></script>
+<script async="async" type='text/javascript' src='../wp-content/plugins/akismet/_inc/form.js%3Fver=4.1'></script>
+</div> <!-- #weaver-final -->
+</body>
+</html>

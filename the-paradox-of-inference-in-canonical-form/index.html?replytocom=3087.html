@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<!--[if IE 7]>	<html id="ie7" lang="en-US"> <![endif]-->
+<!--[if IE 8]>	<html id="ie8" lang="en-US"> <![endif]-->
+<!--[if IE 9]>	<html id="ie9" lang="en-US"> <![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8) ] | !(IE 9) ><!-->	<html lang="en-US"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes' />
+<title>The Paradox of Inference in Canonical Form | Certain Doubts</title>
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://certaindoubts.com/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://certaindoubts.com/wp-content/themes/weaver-ii/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<script type="text/javascript">var weaverIsMobile=false;var weaverIsSimMobile=false;var weaverIsStacked=false;var weaverThemeWidth=940;var weaverMenuThreshold=640;var weaverHideMenuBar=false;var weaverMobileDisabled=false;var weaverFlowToBottom=false;var weaverHideTooltip=false;var weaverUseSuperfish=false;</script>
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Certain Doubts &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Certain Doubts &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Certain Doubts &raquo; The Paradox of Inference in Canonical Form Comments Feed" href="feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/certaindoubts.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.10"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='weaverii-main-style-sheet-css'  href='../wp-content/themes/weaver-ii/style.min.css%3Fver=2.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='weaverii-mobile-style-sheet-css'  href='../wp-content/themes/weaver-ii/style-mobile.min.css%3Fver=2.2.2.css' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery.js%3Fver=1.12.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min.js%3Fver=1.4.1'></script>
+<link rel='https://api.w.org/' href='../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc.php%3Frsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Assumptions' href='../index.html%3Fp=498.html' />
+<link rel='next' title='Stats for December' href='../index.html%3Fp=500.html' />
+<meta name="generator" content="WordPress 4.9.10" />
+<link rel="canonical" href="../index.html%3Fp=499.html" />
+<link rel='shortlink' href='../index.html%3Fp=499.html' />
+<meta name='robots' content='noindex,follow' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed%3Furl=http:%252F%252Fcertaindoubts.com%252Fthe-paradox-of-inference-in-canonical-form%252F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed%3Furl=http:%252F%252Fcertaindoubts.com%252Fthe-paradox-of-inference-in-canonical-form%252F&amp;format=xml" />
+
+<!-- This site is using Weaver II 2.2.2 (48) subtheme: Wheat -->
+<!-- Page ID: 499 -->
+<style type="text/css">
+/* Weaver II styles - Version 48 */
+a {color:#59C448;}
+a:visited {color:#8DBA61;}
+a:hover {color:#C91640;}
+a{font-style:italic;}
+a{font-weight:bold;}
+.entry-title a {color:#0A0A0A;}
+.entry-title a:visited {color:#0A0A0A;}
+.entry-title a{font-style:normal;}
+.entry-title a{font-weight:normal;}
+.entry-meta a, .entry-utility a {color:#474134;}
+.entry-meta a:visited, .entry-utility a:visited {color:#706752;}
+.entry-meta a:hover, .entry-utility a:hover {color:#C91640;}
+.widget-area a {color:#474134;}
+.widget-area a:visited {color:#706752;}
+.widget-area a:hover {color:#C91640;}
+.widget-area a{font-style:normal;}
+.widget-area a{font-weight:normal;}
+#infobar a{font-style:normal;}
+#infobar a{font-weight:normal;}
+#colophon a{font-style:normal;}
+#colophon a{font-weight:normal;}
+#wrapper {border: 1px solid #AB9B7D;}
+#sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,#first,#second,#third,#fourth, .mobile_widget_area {border: 1px solid #AB9B7D;}
+#wrapper, #branding, #colophon, .commentlist li.comment, #respond, #sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,#first,#second,#third,#fourth,.mobile_widget_area {-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}
+#sidebar_wrap_right.right-1-col,#sidebar_wrap_right.right-2-col,#sidebar_wrap_right.right-2-col-bottom,
+#sidebar_wrap_left.left-1-col,#sidebar_wrap_left.left-2-col,#sidebar_wrap_left.left-2-col-bottom,#sidebar_wrap_left,#sidebar_wrap_right
+{-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}
+.commentlist li.comment .comment-meta {-moz-border-radius-topleft: 7px; -moz-border-radius-topright: 7px;
+ -webkit-border-top-left-radius: 7px; -webkit-border-top-right-radius: 7px; border-top-left-radius: 7px; border-top-right-radius: 7px;}
+#access {-moz-border-radius-bottomleft: 7px; -moz-border-radius-bottomright: 7px;
+ -webkit-border-bottom-left-radius: 7px; -webkit-border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; border-bottom-right-radius: 7px;}
+#access2 {-moz-border-radius-topleft: 7px; -moz-border-radius-topright: 7px;
+ -webkit-border-top-left-radius: 7px; -webkit-border-top-right-radius: 7px; border-top-left-radius: 7px; border-top-right-radius: 7px;}
+body {background-image: url(../wp-content/themes/weaver-ii/images/gr.png); background-attachment: scroll; background-repeat: repeat-x;}
+#wrapper {-webkit-box-shadow: 0 0 3px 3px rgba(0,0,0,0.25); -moz-box-shadow: 0 0 3px 3px rgba(0,0,0,0.25); box-shadow: 0 0 3px 3px rgba(127,127,127,0.25);}
+#wrapper{max-width:940px;}
+#sidebar_primary,.mobile_widget_area {background-color:#F5DEB3;}
+#sidebar_right {background-color:#F5DEB3;}
+#sidebar_left {background-color:#F5DEB3;}
+.sidebar_top,.sidebar_extra {background-color:#F5DEB3;}
+.sidebar_bottom {background-color:#F5DEB3;}
+#first,#second,#third,#fourth {background-color:transparent;}
+.widget {background-color:transparent;}
+#container_wrap.right-1-col{width:75.000%;} #sidebar_wrap_right.right-1-col{width:25.000%;}
+#container_wrap.right-2-col,#container_wrap.right-2-col-bottom{width:67.000%;} #sidebar_wrap_right.right-2-col,#sidebar_wrap_right.right-2-col-bottom{width:33.000%;}
+#container_wrap.left-1-col{width:75.000%;} #sidebar_wrap_left.left-1-col{width:25.000%;}
+#container_wrap.left-2-col,#container_wrap.left-2-col-bottom{width:67.000%;} #sidebar_wrap_left.left-2-col,#sidebar_wrap_left.left-2-col-bottom{width:33.000%;}
+#container_wrap{width:66.000%;} #sidebar_wrap_left{width:17.000%;} #sidebar_wrap_right{width:17.000%;}
+#sidebar_wrap_2_left_left, #sidebar_wrap_2_right_left {width:54.000%;margin-right:1%;}
+#sidebar_wrap_2_left_right, #sidebar_wrap_2_right_right {width:45.000%;}
+#sidebar_header {font-size:70%;}
+#sidebar_header .header-widget-1 {display:none;}
+#sidebar_header .header-widget-2 {display:none;}
+#sidebar_header .header-widget-3 {display:none;}
+#sidebar_header .header-widget-4 {display:none;}
+@media only screen and (max-width:640px) { /* header widget area mobile rules */
+} /* end mobile rules */
+#main {padding: 15px 0 0 0;}
+#site-description {font-size:200.000%;}
+#site-title {overflow:hidden; padding:0; margin:0; position:absolute; left:2.000%; top: 5.000%; z-index:20;}
+#site-description {overflow:hidden; padding:0; margin:0; position:absolute; left:4.000%; top: 30.000%; z-index:20;}
+.menu_bar a, .mobile_menu_bar a {font-weight:bold;}
+@media only screen and (min-width: 641px) {.menu_bar,.weaveriip_vertical_menu .menu_bar { background-image: url(../wp-content/themes/weaver-ii/images/theme/fade.png);}}
+@media only screen and (min-width: 641px) {.menu_bar ul ul a, .menu_bar li:hover > a, .menu_bar ul ul :hover > a { background-image: url(../wp-content/themes/weaver-ii/images/theme/fadeup.png);}}
+#ie8 .menu_bar,#ie8 .weaveriip_vertical_menu .menu_bar,#ie7 .menu_bar,#ie7 .weaveriip_vertical_menu .menu_bar { background-image: url(../wp-content/themes/weaver-ii/images/theme/fade.png);}
+#ie8 .menu_bar ul ul a, #ie8 .menu_bar li:hover > a, #ie8 .menu_bar ul ul :hover > a,
+#ie7 .menu_bar ul ul a, #ie7 .menu_bar li:hover > a, #ie7 .menu_bar ul ul :hover > a{ background-image: url(../wp-content/themes/weaver-ii/images/theme/fadeup.png);}
+.menu_bar, .menu_bar a,.menu_bar a:visited,.mobile_menu_bar a {color:#FFFAEF;}
+.menu_bar li:hover > a, .menu_bar a:focus {background-color:#BAA987;}
+.menu_bar li:hover > a, .menu_bar a:focus {color:#F0EBE0;}
+.menu_bar ul ul a {background-color:#BAA987;}
+.menu_bar ul ul a,.menu_bar ul ul a:visited {color:#FFFAEF;}
+.menu_bar ul ul :hover > a {background-color:#BAA987;}
+.menu_bar ul ul :hover > a {color:#F0EBE0;}
+.menu_bar, .mobile_menu_bar, .menu-add {background-color:#AB9B7D;}
+.mobile-menu-link {border-color:#FFFAEF;}
+.widget-area .menu-vertical,.menu-vertical {clear:both;background-color:transparent;margin:0;width:100%;overflow:hidden;border-bottom:3px solid #FFFAEF;border-top:1px solid #FFFAEF;}
+.widget-area .menu-vertical ul, .menu-vertical ul {margin: 0; padding: 0; list-style-type: none;  list-style-image:none;font-family: inherit;}
+.widget-area .menu-vertical li a, .widget-area .menu-vertical a:visited, .menu-vertical li a, .menu-vertical a:visited {
+color: #FFFAEF;  background-color: #AB9B7D; display: block !important; padding: 5px 10px; text-decoration: none; border-top:2px solid #FFFAEF;}
+.widget-area .menu-vertical a:hover,.widget-area .menu-vertical a:focus, .menu-vertical a:hover,.menu-vertical a:focus {
+color: #F0EBE0; background-color: #BAA987;text-decoration: none;}
+.widget-area .menu-vertical ul ul li, .menu-vertical ul ul li { margin: 0; }
+.widget-area .menu-vertical ul ul a,.menu-vertical ul ul a {color: #FFFAEF; background-color: #AB9B7D;
+ display: block; padding: 4px 5px 4px 25px; text-decoration: none;border:0;
+ border-top:1px solid #FFFAEF;}
+.widget-area .menu-vertical ul ul a:hover,#wrap-header .menu-vertical ul ul a:hover,#wrap-header .menu-vertical ul a:hover {color: #F0EBE0; background-color: #BAA987; text-decoration: none;}
+.widget-area .menu-vertical ul ul ul a,.menu-vertical ul ul ul a {padding: 4px 5px 4px 35px;}
+.widget-area .menu-vertical ul ul ul a,.menu-vertical ul ul ul ul a {padding: 4px 5px 4px 45px;}
+.widget-area .menu-vertical ul ul ul ul a,.menu-vertical ul ul ul ul ul a {padding: 4px 5px 4px 55px;}
+.menu_bar .current_page_item > a, .menu_bar .current-menu-item > a, .menu_bar .current-cat > a, .menu_bar .current_page_ancestor > a,.menu_bar .current-category-ancestor > a, .menu_bar .current-menu-ancestor > a, .menu_bar .current-menu-parent > a, .menu_bar .current-category-parent > a,.menu-vertical .current_page_item > a, .menu-vertical .current-menu-item > a, .menu-vertical .current-cat > a, .menu-vertical .current_page_ancestor > a, .menu-vertical .current-category-ancestor > a, .menu-vertical .current-menu-ancestor > a, .menu-vertical .current-menu-parent > a, .menu-vertical .current-category-parent > a,.widget-area .menu-vertical .current_page_item > a, .widget-area .menu-vertical .current-menu-item > a, .widget-area .menu-vertical .current-cat > a, .widget-area .menu-vertical .current_page_ancestor > a {color:#474134 !important;}
+.entry-title {border-bottom: 1px solid #0A0A0A;}
+#content, .entry-content h1, .entry-content h2 {color:#292929;}
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6, #content dt, #content th,
+h1, h2, h3, h4, h5, h6,#author-info h2 {color:#0A0A0A;}
+#content h1.entry-title {color:#0A0A0A;}
+.commentlist li.comment, #respond {background-color:transparent;}
+.wp-caption p.wp-caption-text, #content .gallery .gallery-caption,.entry-attachment .entry-caption {color:#333333;}
+#content img.size-full, #content img.size-large, #content img.size-medium, #content img.size-thumbnail, #content .attachment-thumbnail, #content .gallery img,#content .gallery-thumb img,.entry-attachment img, #content .wp-caption img, #content img.wp-post-image,#content img[class*="wp-image-"],#author-avatar img,img.avatar {background-color:transparent;}
+.home .sticky, #container.page-with-posts .sticky, #container.index-posts .sticky {background-color:#E6DCC8;}
+.entry-meta, .entry-content label, .entry-utility {color:#706752;}
+body {font-size:12px;}
+body {background-color:#C7B491;}
+body {color:#292929;}
+#wrapper {background-color:#FEF3DD;}
+#main {background-color:transparent;}
+#container {background-color:transparent;}
+#content {background-color:transparent;}
+#content .post,.post {background-color:transparent;}
+#branding {background-color:transparent;}
+#colophon {background-color:#F5DEB3;}
+hr {background-color:#AB9B7D;}
+.entry-meta {background-color:transparent;}
+.entry-utility {background-color:transparent;}
+input, textarea, ins, pre {background-color:#F0F0F0;}
+.widget {color:#333333;}
+.widget-title {border-bottom: 1px solid #222222; margin-bottom:5px;padding-bottom:3px;}
+.widget-title, .widget_search label, #wp-calendar caption {color: #222222;}
+#site-title a {color:#FEF9EE;}
+#site-description {color:#FFFAEF;}
+/* Weaver II Mobile Device Options */
+.weaver-any-mobile  #main a, .weaver-any-mobile  #mobile-widget-area a, .weaver-any-mobile  .sidebar_top a, .weaver-any-mobile  .sidebar_bottom a, .weaver-any-mobile  .sidebar_extra a {text-decoration: underline !important;}
+@media only screen and (max-width:768px) and (orientation:portrait) {body {padding: 0px !important;}}
+@media only screen and (max-width:640px) {
+#main a, #mobile-widget-area a, .sidebar_top a, .sidebar_bottom a, .sidebar_extra a{text-decoration: underline !important;}
+}
+@media only screen and (max-width: 580px) {
+}
+
+/* end Weaver II CSS */
+</style> <!-- end of main options style section -->
+
+
+<!--[if lte IE 8]>
+<style type="text/css" media="screen">
+#content img.size-thumbnail,#content img.size-medium,#content img.size-large,#content img.size-full,#content img.attachment-thumbnail,
+#content img.wp-post-image,img.avatar,.format-chat img.format-chat-icon,
+#wrapper,#branding,#colophon,#content, #content .post,
+#sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,
+#first,#second,#third,#fourth,
+#commentform input:focus,#commentform textarea:focus,#respond input#submit {
+		behavior: url(http://certaindoubts.com/wp-content/themes/weaver-ii/js/PIE/PIE.php) !important; position:relative;
+}
+</style>
+<![endif]-->
+
+<!-- End of Weaver II options -->
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		</head>
+
+<body class="post-template-default single single-post postid-499 single-format-standard singular not-logged-in weaver-desktop weaver-mobile-smart-nostack">
+<a href="index.html%3Freplytocom=3087.html#page-bottom" id="page-top">&darr;</a> <!-- add custom CSS to use this page-bottom link -->
+<div id="wrapper" class="hfeed">
+<div id="wrap-header">
+	<header id="branding" role="banner"><div id="branding-content">
+		<div id="site-logo"></div>
+		<div id="site-logo-link" onclick="location.href='http://certaindoubts.com/';"></div>
+
+		<div class="title-description-xhtml">
+			<h1 id="site-title" ><span><a href="../index.html" title="Certain Doubts" rel="home">Certain Doubts</a></span></h1>
+			<h2 id="site-description"> devoted to matters epistemic</h2>
+		</div>
+		<div id="header_image">
+                              <img src="../wp-content/themes/weaver-ii/images/headers/wheat.jpg" width="940" height="188" alt="Certain Doubts" />
+        		</div><!-- #header_image -->
+	</div></header><!-- #branding-content, #branding -->
+<div id="wrap-bottom-menu">
+<div id="mobile-bottom-nav" class="mobile_menu_bar" style="padding:5px 10px 5px 10px;clear:both;">
+	<div style="margin-bottom:20px;">
+<span class="mobile-home-link">
+	<a href="../index.html" title="Certain Doubts" rel="home">Home</a></span>
+	<span class="mobile-menu-link"><a href="javascript:void(null);" onclick="weaverii_ToggleMenu(document.getElementById('nav-bottom-menu'), this, 'Menu &darr;', 'Menu &uarr;')">Menu &darr;</a></span></div>
+</div>
+		<div class="skip-link"><a class="assistive-text" href="index.html%3Freplytocom=3087.html#content" title="">Skip to primary content</a></div>
+			<div class="skip-link"><a class="assistive-text" href="index.html%3Freplytocom=3087.html#sidebar_primary" title="">Skip to secondary content</a></div>
+				<div id="nav-bottom-menu"><nav id="access" class="menu_bar" role="navigation">
+<div class="menu"><ul>
+<li ><a href="../index.html">Home</a></li><li class="page_item page-item-1894"><a href="../index.html%3Fpage_id=1894.html">Decade and Longitudinal Journal Information</a></li>
+<li class="page_item page-item-2739"><a href="../index.html%3Fpage_id=2739.html">Epistemology Course Slides</a></li>
+<li class="page_item page-item-2752"><a href="../index.html%3Fpage_id=2752.html">Talks:  Slides and Videos</a></li>
+<li class="page_item page-item-417"><a href="../index.html%3Fp=417.html">About Certain Doubts</a></li>
+<li class="page_item page-item-397"><a href="../index.html%3Fp=397.html">Contributors</a></li>
+<li class="page_item page-item-413"><a href="../index.html%3Fp=413.html">Archives</a></li>
+<li class="page_item page-item-774"><a href="../index.html%3Fpage_id=774.html">Complete Hirsch Number Rankings of U.S. Philosophy PhD Programs</a></li>
+<li class="page_item page-item-823"><a href="../index.html%3Fp=823.html">Philosophy Journal Information:  ESF Rankings, Citation Impact, &#038; Rejection Rates</a></li>
+<li class="page_item page-item-454"><a href="../index.html%3Fp=454.html">Some of Our Books</a></li>
+</ul></div>
+		</nav></div><!-- #access --></div> <!-- #wrap-bottom-menu -->
+</div> <!-- #wrap-header -->
+	<div id="main">
+	<div id="sidebar_wrap_left" class="split equal_height">
+	<div id="sidebar_left" class="widget-area" role="complementary">
+<aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">John Fischer</span> on <a href="../index.html%3Fp=4902.html#comment-331879">The End</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://dailynous.com/2019/03/07/philosophers-on-the-philosophy-blogosphere/' rel='external nofollow' class='url'>Philosophers On the Philosophy Blogosphere - Daily Nous</a></span> on <a href="../index.html%3Fp=616.html#comment-331009">Doris and Russell on Stanley</a></li><li class="recentcomments"><span class="comment-author-link"><a href='https://philosophy.unc.edu/2019/02/08/worsnip-wins-young-epistemologist-prize/' rel='external nofollow' class='url'>Worsnip wins Young Epistemologist Prize - Department of Philosophy</a></span> on <a href="../index.html%3Fp=4897.html#comment-329263">Young Epistemologist Prize 2019</a></li><li class="recentcomments"><span class="comment-author-link">S. Alas</span> on <a href="../index.html%3Fp=4890.html#comment-324134">A simple problem for (unrestricted) Conditionalization</a></li><li class="recentcomments"><span class="comment-author-link"><a href='https://enigmanically.blogspot.co.uk/' rel='external nofollow' class='url'>Martin Cooke</a></span> on <a href="../index.html%3Fp=4738.html#comment-310431">What philosophers think might not be what you think they think</a></li></ul></aside><aside id="meta-2" class="widget widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="../wp-login.php.html">Log in</a></li>
+			<li><a href="../feed/index.html">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="../comments/feed/index.html">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside><aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-9"><a href="../category/a-priori-knowledge/index.html" >a priori knowledge</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="../category/confirmation-theory/index.html" >confirmation theory</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="../category/contextualism/index.html" >contextualism</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="../category/epistemic-paradoxes/index.html" >epistemic paradoxes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="../category/formal-epistemology/index.html" >formal epistemology</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="../category/foundationalismcoherentism/index.html" >foundationalism and coherentism</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="../category/foundationalism-and-coherentism/index.html" >foundationalism and coherentism</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="../category/general/index.html" >general</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="../category/internalismexternalism/index.html" >internalism and externalism</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="../category/internalism-and-externalism/index.html" >internalism and externalism</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="../category/justification/index.html" >justification</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="../category/knowledge/index.html" >knowledge</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="../category/links/index.html" >Links</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="../category/major-figures/index.html" >major figures</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="../category/memory/index.html" >memory</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="../category/perception/index.html" >perception</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="../category/skepticism/index.html" >skepticism</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="../category/testimony-and-social-epistemology/index.html" >testimony and social epistemology</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="../category/uncategorized/index.html" >Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="../category/understanding/index.html" >understanding</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="../category/value-driven-epistemology/index.html" >value-driven epistemology</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="../category/virtue-epistemology/index.html" >virtue epistemology</a>
+</li>
+		</ul>
+</aside>
+	</div><!-- #sidebar_left .widget-area -->
+	</div><!-- #sidebar_wrap_left -->
+		<div id="container_wrap" class="container-single equal_height split">
+		<div id="container">
+			<div id="content" role="main">
+
+				<nav id="nav-above" class="navigation">
+				<h3 class="assistive-text">Post navigation</h3>
+					<div class="nav-previous"><a href="../index.html%3Fp=498.html" rel="prev"><span class="meta-nav">&larr;</span> Assumptions</a></div>
+				<div class="nav-next"><a href="../index.html%3Fp=500.html" rel="next">Stats for December <span class="meta-nav">&rarr;</span></a></div>
+				</nav><!-- #nav-above -->
+
+
+<article id="post-499" class="content-single  post-499 post type-post status-publish format-standard hentry category-epistemic-paradoxes">
+	<header class="entry-header">
+		<div class="entry-hdr"><h1 class="entry-title">The Paradox of Inference in Canonical Form</h1></div>
+
+		<div class="entry-meta">
+						<div class="meta-info-wrap">
+			<span class="sep posted-on">Posted on </span><a href="../index.html%3Fp=499.html" title="4:35 pm" rel="bookmark"><time class="entry-date" datetime="2005-12-30T16:35:26+00:00">December 30, 2005</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="../author/claudio/index.html" title="View all posts by Claudio de Almeida" rel="author">Claudio de Almeida</a></span></span><span class="updated">December 30, 2005</span>
+			</div><!-- .entry-meta-icons -->		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+	<div class="entry-content cf">
+		<p>Following a couple of brief notes on what I call the &#8220;canonical form&#8221; of a paradox and on how the Paradox of Inference – the problem derived from Lewis Carroll’s dialogue between Achilles and the Tortoise – has been received in the literature, I offer what seems to me a philosophically useful version of the paradox. This version of the problem places it more clearly into the epistemologist’s hands than does the original version.</p>
+<p><span id="more-499"></span><strong>1. What is a paradox?</strong></p>
+<p>I’m afraid there isn’t good philosophy in the lack of a consensual, theoretically neutral answer to that question. I would have thought that we are at least very close to having such a consensual answer. But I still hear some bewildering remarks on the issue from our experts.</p>
+<p>I would have thought that no serious objection could be raised against Mark Sainsbury’s characterization of the philosophical notion of a paradox in the following passage of his 1995 book:</p>
+<p>&#8220;This is what I understand by a paradox: an apparently unacceptable conclusion derived by apparently acceptable reasoning from apparently acceptable premises. Appearances have to deceive, since the acceptable cannot lead by acceptable steps to the unacceptable. So, generally, we have a choice: either the conclusion is not really unacceptable, or else the starting point, or the reasoning, has some non-obvious flaw.&#8221;</p>
+<p>But Roy Sorensen (2003) calls attention to four potential problems here (although Sainsbury is explicitly targeted for only two of them, and only those two points are acknowledged by him as problematic for a tenable definition of &#8220;paradox&#8221;).</p>
+<p>First, according to Sorensen, &#8220;Sainsbury identifies the paradox with the unacceptable <em>conclusion</em> of an argument that has acceptable premises and an acceptable inference pattern&#8221;. Even though Sorensen prefaces that claim by noting that &#8220;[m]ost philosophers agree arguments play an essential role in paradox&#8221;, that hardly softens the blow of what I would have regarded as an extremely unsympathetic interpretation of Sainsbury’s definition. &#8220;Surely, that’s not what Sainsbury meant!&#8221; was how I reacted at first. &#8220;It is extravagant, to put it mildly, to claim that a single statement, the conclusion of an argument, is <em>the paradox</em>!&#8221; But then I come across the following characterization by Gregory Moore (1998) in a <em>Routledge Encyclopedia</em> article:</p>
+<p>&#8220;Etymologically, a paradox is something ‘against’ (‘para’) ‘[common] opinion’ (‘dox’). Nowadays it means <em>a claim</em> that seems absurd but has an argument to sustain it. A paradox appears ‘paradoxical’ when one is uncertain which premise to abandon.&#8221; (Emphasis added.)</p>
+<p>Things have just gotten a whole lot worse: We are now allowed to believe that any old argument can back up a paradoxical conclusion!</p>
+<p>My worries turn into a full-blown headache when I seek James Cargile’s (2005) help in another dictionary entry. Noting that &#8220;[o]ne interpretation of ‘paradox’ is ‘statement conflicting with received opinion’, Cargile goes on to dignify the single-claim account, implicitly deeming it intelligible, possibly as legitimate as that meaning of the term that makes it synonymous with &#8220;antinomy&#8221;, a term which, according to him, &#8220;applies not to a statement which conflicts [with received opinion], but to the conflict itself&#8221;. And this is about as close as Cargile comes to using the word &#8220;argument&#8221; in explaining what a paradox is. There is, of course, much to like in what he writes about the notion. But the concept of an argument never takes pride of place in his general account of the matter.</p>
+<p>It gets worse. Relying on both Sainsbury and Quine (1961), this is Jonathan Vogel (1992) in another dictionary entry:</p>
+<p>&#8220;Somewhat loosely, a paradox is a compelling argument from unexceptionable premisses to an unacceptable conclusion; more strictly speaking, a paradox is specified to be a sentence that is true if and only if it is false.&#8221;</p>
+<p>But no explanation is given for how the &#8220;strict&#8221;, single-statement account evolves from the &#8220;loose&#8221;, argument-based account! [1]</p>
+<p>Moreover, we don’t have do be so literal when interpreting Quine, do we? Here’s the misleading passage from Quine that seems to be the source of all evils:</p>
+<p>&#8220;May we say in general, then, that a paradox is just any conclusion that at first sounds absurd but that has an argument to sustain it? In the end I think this account stands up pretty well. But it leaves much unsaid. The argument that sustains a paradox may expose the absurdity of a buried premise or of some preconception previously reckoned as central to physical theory, to mathematics, or to the thinking process.&#8221;</p>
+<p>But it takes only a pinch of charity – and a few more lines in Quine’s paper – to see that he is just as comfortable calling the whole paradoxical argument &#8220;the paradox&#8221;. Speaking of the Barber, he says: &#8220;The paradox is simply a proof that no village can contain a man who shaves all and only those men in it who do not shave themselves.&#8221;</p>
+<p>As for Sorensen’s positive account of the philosophically relevant meaning of &#8220;paradox&#8221;, I haven’t found any more than this: &#8220;I take paradoxes to be a species of riddle.&#8221; There follows a charming display of erudition where even perceptual illusions are deemed relevant to an understanding of the notion of a paradox. &#8220;I think philosophers exaggerate the role of arguments in paradoxes&#8221;, he notes, with welcome clarity.</p>
+<p>Having determined that this is all backward and unhelpful for my philosophical needs, I turn to Benson Mates (1981) and, sure enough, my Sainsbury-induced appreciation of the role of arguments in paradoxes is rewarded: &#8220;[paradoxes] may be defined as seemingly valid arguments that obtain implausible conclusions from plausible premises (or that obtain, from given premises, conclusions seemingly independent of those premises).&#8221;</p>
+<p>Now, I don’t think I need validity (or even the <em>appearance</em> of it) creeping into my definition of &#8220;paradox&#8221;. Doris Olin (2003), a fellow enthusiast of the role of arguments in paradoxes, thinks that I do need validity. This is what she calls a &#8220;traditional definition&#8221;: &#8220;A paradox is an argument in which there appears to be correct reasoning from true premises to a false conclusion.&#8221; [2] Her analysis of the concept wraps this definition in a number of qualifications and, most importantly, replaces &#8220;correct reasoning&#8221; with &#8220;valid reasoning&#8221;. I can’t pursue the matter of whether that is a well-advised move here (I don’t think it is). For present purposes, suffice it to note that Olin joins Mates and Sainsbury as regards the essential features of paradoxes.</p>
+<p>Count John Etchemendy among the &#8220;traditionalists&#8221;. His <em>Cambridge Dictionary</em> entry on &#8220;paradox&#8221; begins as follows:</p>
+<p>&#8220;<em>Paradox</em>, a seemingly sound piece of reasoning based on seemingly true assumptions that leads to a contradiction (or other obviously false conclusion). A paradox reveals that either the principles of reasoning or the assumptions on which it is based are faulty.&#8221;</p>
+<p>Taken literally, there is an angle from which this is only a slight conceivable improvement over Olin’s offering, if, as I would claim, validity is really not an essential element. (Again, I’m not discussing Olin’s interesting argument for validity as a requirement, but, in any case, we’re striving for easily attainable convergence here, not the ultimate resolution of our toughest disagreements.) For, like in Mates’ definition, only the <em>appearance</em> of soundness is required. [3] But I see no improvement on Sainsbury’s characterization (if we don’t interpret him as Sorensen has). Unlike Olin, on the other hand, and most unfortunately, Etchemendy leaves no room for the acceptance of the paradoxical conclusion in a satisfactory analysis of a paradox. [4]</p>
+<p>So, I’m ready to take the following as a Sainsbury-inspired working definition of &#8220;paradox&#8221;:</p>
+<p>(WD) A paradox is an argument the conclusion of which is both unacceptable and obtained by seemingly good inference from seemingly irresistible premises.</p>
+<p>We can now turn to the three remaining problems from Sorensen’s discussion of Sainsbury’s definition, for all three apply to WD. (His avowed objections to Sainsbury are in this group.) Luckily, they can all be disposed of in one fell swoop.</p>
+<p>Sorensen explicitly objects that &#8220;[a] believer in classical logic can simultaneously perceive an argument as sound and as a positive instance of the paradox of strict implication&#8221;. [5] This gives him the opportunity to note that</p>
+<p>&#8220;The paradox can be in <em>how</em> you prove something rather than in what you prove. This point causes indigestion for those who say that all paradoxes feature unacceptable conclusions. Their accounts are too narrow.&#8221; (p. 106)</p>
+<p>His second objection – my third problem – is derived from an ingenious collaboration between the kind of reasoning that gives rise to the Preface Paradox and the classical theory of validity. Here’s the main passage:</p>
+<p>&#8220;In addition to being modest about whether all my beliefs are true, I should be modest about whether all my beliefs are consistent. The more I say, the more opportunities I have to contradict myself. I say very much in this book and so believe that the assertions in this text (even apart from those in the preface) are jointly inconsistent. Take the first 10,001 assertions I make in this book. I believe that any conjunction of 10,000 of them is inconsistent. Now consider any argument that takes 10,000 of my 10,001 assertions as the premises and takes the negation of the remaining assertion as the conclusion. This jumble argument would fit R. M. Sainsbury’s definition of a paradox&#8230;The conclusion of the jumble argument is unacceptable to me because I sincerely assert its negation in my book. Each premise of the jumble argument is acceptable because I sincerely assert it in my book. The <em>reasoning</em> in the jumble argument is acceptable to me because I think the argument is deductively valid: Any argument with jointly inconsistent premises is automatically valid&#8230;But since jumble arguments are not really paradoxes, they show that Sainsbury’s definition is too broad.&#8221; (pp. 104-115) [6]</p>
+<p>My fourth problem from Sorensen comes from the consideration of premiseless paradoxes:</p>
+<p>&#8220;Formally, premiseless paradoxes are surprises deduced from the empty set. If validly deduced, they are veridical paradoxes. The most celebrated example is Kurt Godel’s second incompleteness theorem: a consistent proof system that is strong enough to generate elementary number theory must be incomplete. There could be premiseless antinomies: two accepted inference rules might lead to opposite conclusions.&#8221;</p>
+<p>One fell swoop, I promised: The reason why none of these last three objections sticks is very simple when we consider the question: For the traditional paradox pattern, to whom must the premises and the inference seem irresistible and the conclusion repugnant? The answer clearly is: To common sense!</p>
+<p>Michael Clark (2002) comes very, very close to expressing what I would regard as the definitive view of the matter:</p>
+<p>&#8220;But what, you might ask, counts as ‘acceptable’ and ‘unacceptable’? (Un)acceptable to whom? Isn’t Sainsbury’s account too vague? No, on the contrary the vagueness in that account is an advantage, since what counts as contrary to received opinion will vary with that opinion. What once seemed paradoxical may cease to seem so. Thus, although Quine treats Godel’s first incompleteness theorem as a paradox, it is not usually counted as one nowadays, since we have got used to distinguishing truth from proof.&#8221;</p>
+<p>My reply to Sorensen builds on Clark’s main point above but draws a somewhat different moral. There was no point in time, I submit, when any of Godel’s theorems could sensibly be deemed paradoxical (in the philosophically fundamental sense of the term), since there was no point in time when the reasoning in his proof was available to common sense. [7] This, of course, applies to the last three problems from Sorensen: They all trade on a notoriously perverse consequence of the classical theory of validity. Common sense doesn’t reach that high. It takes a fair amount of theory to generate Sorensen’s objections. They all concern reasoning that would not be regarded as &#8220;valid&#8221; – <em>or else be found deserving of any term of praise whatsoever</em> – by the commonsensical audience, as any logic instructor is so painfully reminded every time the term &#8220;validity&#8221; is up for discussion in the classroom. [8]</p>
+<p>So, I’ll subject WD to a minor revision and will call the resulting characterization &#8220;the canonical form&#8221; of paradoxes: A paradox is an argument in which, from a commonsensical point of view, an unacceptable conclusion is obtained by seemingly good inference from seemingly irresistible premises. [9]</p>
+<p>The therapy will remain as previously prescribed by the traditionalists. The philosophically important paradoxes (as opposed to merely recreational fallacies with little or no instructional value) are not solved in the realm of common sense. That’s only where they are spotted.</p>
+<p>I can now turn to the Paradox of Inference with a view to offering you a version of the problem <em>in canonical form</em>. [10]</p>
+<p><strong>2. &#8220;That familiar object of ridicule&#8221;</strong></p>
+<p>That’s how John Hawthorne (2004, 2003) describes Lewis Carroll’s Tortoise. Ridicule?! Try as I might, I’ve been unable to verify Hawthorne’s description.</p>
+<p>In his <em>Principles of Mathematics</em>, Russell (1903) credits the Tortoise with having shown that &#8220;[w]e need&#8230;the notion of <em>therefore</em>, which is quite different from the notion of <em>implies</em>&#8220;. It takes quite of bit of exegetical interpretation to make Russell’s understanding of such a fundamental point transparent to the contemporary reader. But we have no need for such extreme measures here. The point is more forcefully stated in <em>Principia</em> (vol. 1, 1910), where he notes that &#8220;[t]he process of&#8230;inference cannot be reduced to symbols&#8221;. Here, he doesn’t mention Carroll, but the very same point from that passage in the <em>Principles</em> is made.</p>
+<p>We know how the point has been received in contemporary philosophy. William and Martha Kneale claim that &#8220;[t]he distinction between rules and premisses was made clear by C. L. Dodgson (Lewis Carroll) in ‘What the Tortoise said to Achilles’&#8221;. Quine (1936, 1954) decisively used the point in his influential critique of conventionalism. So many have endorsed the claim that we owe such a lesson to Carroll’s Tortoise that we shouldn’t need another reminder. Here are some of the references I have at arm’s length: Susan Haack (1973: &#8220;What I have said in this paper&#8230;is foreshadowed in Carroll&#8221;), Anthony Quinton (1973: &#8220;a fact memorably demonstrated by Lewis Carroll’s story&#8230;&#8221;), Ivor Grattan-Guinness (1976: &#8220;Lewis Carroll showed that&#8230;&#8221;), Robert Nozick (1981: &#8220;The Lewis Carroll regress&#8230;&#8221;), Mark Sainsbury (1989: &#8220;As Lewis Carroll showed&#8230;&#8221;), Pascal Engel (1991: &#8220;Carroll’s paradox bears on the very status&#8230;&#8221;), P. N. Johnson-Laird and Ruth Byrne (1991: &#8220;Lewis Carroll’s (1895) classic paper&#8230;In this neat logical fable&#8230;&#8221;), John Pollock and Joe Cruz (1999: &#8220;This was apparently first noted by Lewis Carroll&#8221;), Paul Boghossian (2001: &#8220;a&#8230;far more powerful consideration – the argument outlined in that enigmatic note by Lewis Carroll&#8230;&#8221;), Roy Sorensen (2003: &#8220;Carroll’s puzzle does show that&#8230;&#8221;), Laurence BonJour (2004: &#8220;pointed out long ago by Lewis Carroll&#8221;), Michael Devitt (2004: &#8220;as Lewis Carroll made clear a century ago&#8230;&#8221;), Richard Fumerton (2004: &#8220;[My] view does at least remind one of Carroll’s famous dialogue&#8230;&#8221;), Alexander Oliver (2005: &#8220;[Carroll] hints at a deep problem about the epistemology of valid inference, demonstrating that&#8230;&#8221;).</p>
+<p>This hardly reads like ridicule. Granted, the evidence that Carroll himself failed to draw the popular moral of his story seems unequivocal. Yet, even if Timothy Smiley (1995) is right when he remarks that &#8220;[a]ny attempt by Carroll to tackle the question of inference was bound to begin in confusion and end in constipation&#8221;, Carroll was certainly not alone in his day. And the lesson was taken anyway.</p>
+<p>If there is any philosophy behind Hawthorne’s misleading description, it must be this: Where is the paradox?! Even if we can’t fairly object to Carroll’s describing his problem in a letter to a less-than-enthusiastic editor of <em>Mind</em> as &#8220;my paradox&#8221; (Dodgson 1977), where is the paradox for <em>us</em>?</p>
+<p>I think we have just begun to understand that, if there is still anything worth discussing in Carroll’s tale, the discussion will be conducted where it always belonged: in epistemology. From Carroll to Quine, however, the conceptual resources were simply not there to see past the familiar admonition: &#8220;Mind the difference between premises and rules!&#8221; To this day, the best one-line summary of the popular version of Carroll’s lesson that I have come across is Russell’s in <em>Principia</em>: &#8220;the process of&#8230;inference cannot be reduced to symbols&#8221;. If that’s all that there is to the Tortoise, let’s all, please, stop calling the tale &#8220;a paradox&#8221;. That description is anachronistic.</p>
+<p>Lately, however, we’ve learned where best to locate the Tortoise: It has become a major concern for advocates of inferential internalism, like Fumerton and BonJour. It turns out that the problem may concern the radically internalist intuitions that provide the underpinnings of inferential internalism. Maybe that’s what accounts for the persistent fascination that the Tortoise still holds for the unpolluted minds of our undergraduate students. In spite of the Tortoise’s clumsy presentation of her case for a regress, the non-philosophical audience still falls prey to&#8230;well, <em>some</em> important intuition that seems to lead to a regress of justification. Fumerton and BonJour have most definitely touched a nerve. Maybe Carroll is in their debt to some extent. [11]</p>
+<p>But I think I can give you a Carrollian paradox that is not the exclusive concern of the inferential internalist. If I am right about how best to represent the crucial intuition in Carroll’s tale, it turns out that we all may have to worry about this epistemic Tortoise.</p>
+<p><strong>3. Another paradox regained?</strong></p>
+<p>My task is to offer you a paradox <em>in canonical form</em>. The argument below could be shortened if the legitimacy of each step to the naked eye of common sense were not one of my crucial concerns. Except in one case, every inferential step (indicated by &#8220;therefore&#8221;) is valid. The invalid step, I submit, must depend on some very simple and seemingly sound epistemic principle. I will make no effort to identify it here. All I will do in that regard is to provide a few comments (within square brackets) to facilitate the acceptance of some of the premises which may seem specialized or dubious, in order to establish that they actually are commonsensical.</p>
+<p>Here’s the epistemic Tortoise:</p>
+<p><strong>(1) If you ask me to (rationally) accept the conclusion C of an argument just because I accept the premises of the argument (say, A and B), it is reasonable of me to ask you to furnish me with a good enough reason R for me to (rationally) accept the conclusion on the basis of the accepted premises.</strong> [Presumably, this is what proofs do. If you are not compelled to take an inferential step on your own, you ask for a proof. An inference rule is not a reason. It is not a proposition, not the content of a belief. Maybe it is a command (with &#8220;propositional content&#8221;, but not a truth bearer). It doesn’t matter what it is for our concerns here. What matters is that a proof is not a rule. Rules are only <em>mentioned</em> in proofs. A proof is a proposition. It is a reason for accepting a conclusion on the basis of given premises. Even if there is some sound objection to thinking that proofs <em>invariably</em> take a propositional form, there seems to be nothing wrong with thinking that a proof <em>may be</em> a proposition of the form &#8220;if you accept claims with such-and-such properties and you also accept such-and-such a rule, you may (rationally, validly, reasonably, etc.) draw a conclusion with such-and-such properties&#8221; (or &#8220;having accepted that such-and-such, rule X makes it rational for you to accept such-and-such&#8221;). A proof only &#8220;takes effect&#8221; once the rules that are mentioned in it are accepted. The proof simply &#8220;connects the dots&#8221;, so to speak. It’s a nudging in propositional form. It can be contested. It can be shown false. (&#8220;You claim that such-and-such follows from such-and-such by rule such-and-such. That’s false!&#8221;) It’s an ordinary statement, and ordinarily perceived as such. Caution: This <em>is</em> consistent with thinking that the terms &#8220;proof&#8221; and &#8220;argument&#8221; are interchangeable in most contexts – that is, that the term &#8220;proof&#8221; is usually applied to a set of at least two propositions, with a &#8220;therefore&#8221; (&#8220;so&#8221;, &#8220;consequently&#8221;, etc.) appropriately introducing one of the propositions. What matters here is the kind of claim that <em>explicitly</em> involves reference to a rule of inference (or, in any case, explicitly speaks of the epistemic appropriateness of an inferential step). That little report to the right of each sentence in your proof (when you do it textbook style) is what I am calling <em>the proof</em>. That little report is just a <em>claim</em>, not an argument. It’s <em>the reason</em> offered for the acceptance of the proposition to its left on the basis of some earlier acceptance. It’s only in this theoretical, &#8220;metalinguistic&#8221; sense that I use the term &#8220;proof&#8221; here. When you need the theoretical claim to take that inferential step, the theoretical claim is added to your reasons for the next acceptance.]</p>
+<p><strong>(2) If it’s reasonable of me to ask you to furnish me with a good enough reason R for me to accept the conclusion based on the premises, then it’s reasonable of me to refuse to accept C if I reject either A or B or R.</strong></p>
+<p><strong>(3) [Assumption] I do think that the acceptance of R is a necessary condition of the acceptance of C on the basis of A and B, and R is a good enough reason to accept C on the basis of A and B.</strong> [&#8220;Logical compulsion&#8221; usually takes care of the matter, no doubt. Still, many of us will eventually find ourselves in a situation where we are in need of an explicit proof, a case in which we require that the speaker appeal to <em>principles of reasoning</em> of one sort or another. This is, of course, usual for philosophers. But we preach that the study of logic is not just an endeavor of intellectual interest. We preach that everybody should study logic and apply it to the exercise of rational persuasion. So, the fact that, to most people, claims that make explicit appeal to rules of inference are unintelligible is simply a consequence of the fact that the study of logic is not as widespread as we would like.]</p>
+<p><strong>(4) Therefore, it is reasonable of me to regard A, B and R as necessary for my acceptance of C.</strong></p>
+<p><strong>(5) But, if I think that R is necessary for my acceptance of C on the basis of A and B, and R is a good enough reason for the acceptance of C on the basis of A and B, then I must (on pain of irrationality) accept that A, B and R are jointly sufficient for the (rational) acceptance of C.</strong> [Note that &#8220;good enough&#8221; is supposed to take care of defeasibility conditions too.]</p>
+<p><strong>(6) Therefore, I ought to accept that A, B and R are jointly sufficient for the acceptance of C.</strong></p>
+<p><strong>(7) Therefore, A, B and R are jointly sufficient for the acceptance of C. </strong>[Having given myself an epistemic advice in 6, I take it here, performing the acceptance recommended by my reflection. Whether &#8220;therefore&#8221; is appropriately used here is a good point for discussion.]</p>
+<p><strong>(8) If I rationally reflect on what is sufficient for the acceptance of a given proposition P and conclude that Q is sufficient, then I ought to accept that <em>Q is sufficient for the acceptance of P</em>.</strong></p>
+<p><strong>(9) Therefore, if I rationally reflect about what is sufficient for my acceptance of C, I ought to accept that <em>A, B and R are jointly sufficient for the acceptance of C</em>.</strong></p>
+<p><strong>(10) Any proposition the acceptance of which is necessary for the rational acceptance of some other proposition must be included in the set of reasons for the rational acceptance of the latter proposition.</strong></p>
+<p><strong>(11) Therefore, if I rationally reflect on what is sufficient for the acceptance of C, unless I accept 7 above, I may reasonably refuse to accept C.</strong></p>
+<p><strong>(12) I rationally reflect on what is sufficient for my acceptance of C in 1-11.</strong></p>
+<p><strong>(13) Therefore, 7 is necessary for my rational acceptance of C.</strong></p>
+<p><strong>(14) However, according to 7, A, B and R are jointly sufficient for my acceptance of C, and, if a set of propositions is sufficient for the rational acceptance of some other proposition, nothing that’s outside the set can be necessary for that acceptance.</strong></p>
+<p><strong>Therefore, 7 both is and is not necessary for my acceptance of C.</strong></p>
+<p><strong>4. Concluding remarks</strong></p>
+<p>If I’m not mistaken, the above argument cannot be stopped by the old lesson. I don’t see how a distinction between premises and rules will have any bearing on this argument. Notice, also, that the argument does not rest on the kind of claim that characterizes inferential internalism. Supposedly, this Tortoise is every one of us in those reflective moments when we are moved by ostensive, consciously accepted epistemic advice.</p>
+<p><strong>Notes</strong></p>
+<p>1. The restriction to &#8220;sentences that are true if and only if false&#8221; is also ill-advised. The conclusions of paradoxical arguments can be either necessary or contingent falsehoods, either contingent or necessary truths – the whole gamut.</p>
+<p>2. But the claim that this is &#8220;a traditional definition&#8221; is not backed up with references (although I think she is right, in that this is at least a very close approximation to what most philosophers have tacitly accepted since time immemorial).</p>
+<p>3. Appearance to whom?! This will matter and I will get back to it shortly.</p>
+<p>4. Olin: &#8220;There are&#8230;two principal options in providing a resolution for a&#8230;paradox: (i) we may dispel the illusion that the argument is air-tight&#8230;or (ii) we may <em>explain away</em> the appearance of falsity in the conclusion.</p>
+<p>5. It is a &#8220;positive&#8221; instance, on his account, if the reasoner believes there are only truths among the premises and also believes the conclusion (which, in this case, is supposed to be a necessary truth). Otherwise, it is a &#8220;negative&#8221; instance, the object of the next objection.</p>
+<p>6. It is noteworthy that Sorensen’s reasoner can’t have it both ways by his own lights: If he saw a paradox when he did accept the conclusion (taking it to be a necessary truth validly derived from a premise he also accepted), he <em>will</em> have to regard his jumble argument as a paradox. I don’t think Sorensen noticed this apparent inconsistency.</p>
+<p>7. No, there is no harm in calling a specialized argument with a surprising conclusion a &#8220;paradox&#8221;. But there is no philosophical gain in doing so. We are after the meaning of the term in which the fundamental problems of philosophy may properly be called &#8220;paradoxes&#8221; (see Mates 1981).</p>
+<p>8. The problem with the classical view of validity (as I have urged in my forthcoming paper on Moore’s Paradox), <em>for the classically-minded among us</em>, is just the view that <em>any</em> necessary falsehood or <em>any</em> necessary truth suffices to make an argument valid – even when no acceptable inference rule will take us from premises to conclusion.</p>
+<p>9. A bit of my case against Olin’s view of paradoxes as valid arguments: Consider this valid argument offered by Lewis Carroll (my source is Quine 1974):</p>
+<p>The only animals in this house are cats.<br />
+Every animal is suitable for a pet, that loves to gaze at the moon.<br />
+When I detest an animal, I avoid it.<br />
+No animals are carnivorous, unless they prowl at night.<br />
+No cat fails to kill mice.<br />
+No animals ever take to me, except what are in this house.<br />
+Kangaroos are not suitable for pets.<br />
+None but carnivora kill mice.<br />
+I detest animals that do not take to me.<br />
+Animals that prowl at night always love to gaze at the moon.<br />
+Therefore, I always avoid a kangaroo!</p>
+<p>Now, suppose you accept the premises but reject the conclusion. Is the argument a paradox by your lights? Of course, not. For the average reasoner, the validity of the argument is not available to the naked eye, so to speak. But the persuasiveness of an argument to the average reasoner <em>must</em> be an essential element of the philosophical notion of a paradox.</p>
+<p>10. If I’m not mistaken, it was Clark (2002) who coined the epithet &#8220;Paradox of Inference&#8221;. The label is not without its measure of inadequacy. &#8220;Paradox of Inference&#8221; is how W. E. Johnson (1922) calls J. S. Mill’s problem (or pseudoproblem) concerning how valid arguments can be informative. But we had better stick with Clark’s label anyhow. He is commended for giving the paradox a much-needed label.</p>
+<p>11. It is interesting to keep in mind that the analysis of reasoning has long seemed to appeal to the kind of requirement championed by the inferential internalist. Here’s C. S. Peirce (1902) in his <em>Baldwin Dictionary</em> entry on reasoning:</p>
+<p>&#8220;Reasoning is a process in which the reasoner is conscious that a judgment, the conclusion, is determined by other judgments, the premises, according to a general habit of thought, which he may not be able precisely to formulate, but which he approves as conducive to true knowledge&#8230;Without this logical approval, the process, although it may be closely analogous to reasoning in other respects, lacks the essence of reasoning.&#8221;</p>
+<p>The devil, of course, is in the &#8220;approval&#8221; of a habit of thought.</p>
+<p><strong>References</strong></p>
+<p>Boghossian, P. 2001. Inference and Insight, <em>Philosophy and Phenomenological Research</em>, vol. 63, no. 3.</p>
+<p>BonJour, L. 2004. In Defense of the a Priori. In Steup and Sosa, eds., <em>Contemporary Debates in Epistemology</em> (Blackwell).</p>
+<p>Cargile, J. 2005. Paradox. In Honderich, ed., <em>The Oxford Companion to Philosophy</em>, 2nd edn (Oxford UP)</p>
+<p>Carroll, L. 1895. What the Tortoise Said to Achilles, <em>Mind</em>.</p>
+<p>Clark, M. 2002. <em>Paradoxes  from A to Z</em> (Routledge).</p>
+<p>de Almeida, C. Moorean Absurdity: An Epistemological Analysis. Forthcoming in Green and Williams, eds., <em>Moore’s Paradox: New Essays on Belief, Rationality, and the First Person</em> (Oxford UP)</p>
+<p>Devitt, M. 2004. There Is no a Priori. In Steup and Sosa, eds., op. cit.</p>
+<p>Dodgson. C. L. 1977. <em>Lewis Carroll’s Symbolic Logic</em> (Clarkson Potter).</p>
+<p>Engel, Pascal. 1991. <em>The Norm of Truth</em> (University of Toronto Press).</p>
+<p>Etchemendy, J. 1999. Paradox. In R. Audi, ed., <em>The Cambridge Dictionary of Philosophy</em>, 2nd edn (Cambridge UP).</p>
+<p>Fumerton, R. 2004. Epistemic Probability, <em>Philosophical Issues</em>, 14.</p>
+<p>Grattan-Guinness, I. 1976. On the Mathematical and Philosophical Background to Russell’s The Principles of Mathematics. In J. E. Thomas and K. Blackwell, eds., <em>Russell in Review</em> (Samuel Stevens, Hakkert &#038; Company).</p>
+<p>Haack, S. 1973. The Justification of Deduction. Reprinted in her <em>Deviant Logic, Fuzzy Logic</em> (The University of Chicago Press).</p>
+<p>Hawthorne, J. 2004. The Case for Closure. In Steup and Sosa, op. cit.</p>
+<p>___. 2003. <em>Knowledge and Lotteries</em> (Oxford UP).</p>
+<p>Johnson, W. E. 1922. <em>Logic</em>, Part II (Cambridge UP).</p>
+<p>Johnson-Laird, P. N. and Ruth Byrne. 1991. <em>Deduction</em> (Lawrence Erlbaum).</p>
+<p>Kneale, W. and M. Kneale. 1962. <em>The Development of Logic</em> (Oxford UP).</p>
+<p>Mates, B. 1981. <em>Skeptical Essays</em> (The University of Chicago Press).</p>
+<p>Moore, G. 1998. Paradoxes of Set and Property. In E. Craig, ed., <em>The Routledge Encyclopedia of Philosophy</em>.</p>
+<p>Nozick, R. 1981. <em>Philosophical Explanations</em> (Bleknap-Harvard).</p>
+<p>Olin, D. 2003. <em>Paradox</em> (McGill-Queen’s University Press).</p>
+<p>Oliver, A. 2005. Carroll, Lewis. In Honderich, op. cit.</p>
+<p>Peirce, C. S. 1902. Reasoning. In J. M. Baldwin, ed. <em>Dictionary of Philosophy</em> (Macmillan).</p>
+<p>Pollock, J. and Joseph Cruz. 1999. <em>Contemporary Theories of Knowledge</em>, 2nd edn (Rowman &#038; Littlefield).</p>
+<p>Quine, W. V. 1974. <em>Methods of Logic</em>, 3rd edn (Routledge &#038; Kegan Paul)</p>
+<p>___. 1954. Carnap and Logical Truth. Reprinted in his <em>The Ways of Paradox and Other Essays</em> (Harvard UP).</p>
+<p>___. 1936. Truth by Convention. Reprinted in his <em>The Ways of Paradox</em>.</p>
+<p>Quinton, A. 1973. <em>The Nature of Things</em> (Routledge &#038; Kegan Paul).</p>
+<p>Russell, B. 1903. <em>The Principles of Mathematics</em> (Cambridge UP).</p>
+<p>Russell and Whitehead. 1910. <em>Principia Mathematica</em>, vol. 1 (Cambridge UP).</p>
+<p>Sainsbury. R. M. 1995. <em>Paradoxes</em>, 2nd edn (Cambridge UP)</p>
+<p>___. 1989. On Induction and Russell’s Postulates. In C. W. Savage and A. Anderson, eds, <em>Minnesota Studies in the Philosophy of Science, XII, Rereading Russell</em> (University of Minnesota Press).</p>
+<p>Smiley, T. 1995. A Tale of Two Tortoises, <em>Mind</em> 104, no. 416.</p>
+<p>Sorensen, R. 2003. <em>A Brief History of the Paradox</em> (Oxford UP).</p>
+			</div><!-- .entry-content -->
+
+	<footer class="entry-utility">
+<div class="meta-info-wrap">
+			<span class="cat-links">
+<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="../category/epistemic-paradoxes/index.html" rel="category tag">epistemic paradoxes</a>			</span>
+		<span class="permalink-icon"><a href="../index.html%3Fp=499.html" title="Permalink to The Paradox of Inference in Canonical Form" rel="bookmark">permalink</a></span>
+	</div><!-- .entry-meta-icons -->
+
+	</footer><!-- .entry-utility -->
+</article><!-- #post-499 -->
+
+				<nav id="nav-below" class="navigation">
+				<h3 class="assistive-text">Post navigation</h3>
+					<div class="nav-previous"><a href="../index.html%3Fp=498.html" rel="prev"><span class="meta-nav">&larr;</span> Assumptions</a></div>
+				<div class="nav-next"><a href="../index.html%3Fp=500.html" rel="next">Stats for December <span class="meta-nav">&rarr;</span></a></div>
+				</nav><!-- #nav-above -->
+
+
+	<div id="comments">
+
+		<hr class='comments-hr'>
+		<header id="comments-title">
+		<h3>Comments</h3>
+				<h4>
+<em>The Paradox of Inference in Canonical Form</em> &#8212; 29 Comments		</h4>
+		</header>
+
+		
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-3088" >
+		<article id="comment-3088" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=499.html#comment-3088"><time datetime="2005-12-31T07:38:47+00:00">December 31, 2005 at 7:38 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Here are the references I forgot to include in the bibliography:</p>
+<p>Quine. 1961. The Ways of Paradox. Reprinted in his _The Ways of Paradox_.</p>
+<p>Vogel, J. 1992. Paradox. In Dancy and Sosa, eds., _A Companion to Epistemology_ (Blackwell).</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3088.html#respond' onclick='return addComment.moveForm( "comment-3088", "3088", "respond", "499" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3089" >
+		<article id="comment-3089" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/b7a14fec5eb6a1cadc1523b9fe923509?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/b7a14fec5eb6a1cadc1523b9fe923509?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">daniele sgaravatti</span> on <a href="../index.html%3Fp=499.html#comment-3089"><time datetime="2005-12-31T09:17:26+00:00">December 31, 2005 at 9:17 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>This &#8220;short essay&#8221; is very interesting; I just want to contest a small point about the exegesis of Hawthorne&#8217;s remark &#8220;that familiar object of ridicule&#8221;. It seems unfair to take this to mean that Lewis Carroll&#8217;s story is itself ridicule, and therefore philosophically uninteresting. The description is applied to the character in the story, and not to the story itself, or even to the arguments the Tortoise uses. The reason the Tortoise is ridiculous (and I think, by the way, Carroll&#8217;s intention was just to make it so) is just that it defends a clearly unacceptable conclusion. There is no implication that there is no genuine and important paradox there. Of course, Hawthorne himself might have a different opinion.<br />
+If &#8220;A paradox is an argument the conclusion of which is both unacceptable and obtained by seemingly good inference from seemingly irresistible premises&#8221;, than the three options: rejecting the premises, rejecting the reasoning, accepting the conclusion, are all equally ridiculous if taken as unproblematic, and not backed by some explanation.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3089.html#respond' onclick='return addComment.moveForm( "comment-3089", "3089", "respond", "499" )' aria-label='Reply to daniele sgaravatti'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3090" >
+		<article id="comment-3090" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/21fa7b5f226ec27a45b3a77874ff9350?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/21fa7b5f226ec27a45b3a77874ff9350?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://colfa.utsa.edu/ecpc/faculty/almeida/default.htm' rel='external nofollow' class='url'>Mike</a></span> on <a href="../index.html%3Fp=499.html#comment-3090"><time datetime="2005-12-31T09:30:48+00:00">December 31, 2005 at 9:30 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hi Jon,</p>
+<p>With a valid deductive inference, I don&#8217;t see the problem so clearly. Suppose it is true that A, B |- C. And suppose the relevant inference rule is R. Givne the validity of the inference, the corresponding conditional is necessarily true, (1)(A &amp; B) -&gt; C. And since (1) is necessarily true, it is also necessarily true that (2) [(A &amp; B) &amp; R]-&gt; C. From (1) and (2) you want to conclude that R is both a necessary condition and not a necessary condition of C. But there is no particular paradox in that. What did I miss in your argument?</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3090.html#respond' onclick='return addComment.moveForm( "comment-3090", "3090", "respond", "499" )' aria-label='Reply to Mike'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3091" >
+		<article id="comment-3091" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=499.html#comment-3091"><time datetime="2005-12-31T12:59:07+00:00">December 31, 2005 at 12:59 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Thanks, Daniele!</p>
+<p>Have I been unfair to Hawthorne? I&#8217;d be very sorry if you&#8217;re right. But I don&#8217;t think you are. If you call Carroll&#8217;s Tortoise &#8220;that familiar object of ridicule&#8221;, when the beloved character is obviously that familiar object of _reverence_ (as Hawthorne certainly knows it is), you&#8217;re gonna see more than a few eyebrows raised. So, tighten your seat belt!</p>
+<p>Now, I was just protesting the inadequacy of his description of the Tortoise. If we&#8217;re going to get any deeper into his reasons for calling her &#8220;ridiculous&#8221;, things may get worse for him. Here&#8217;s why he thinks her ridiculous: &#8220;The premises of a modus ponens argument are stably adhered to, and yet the conclusion stably repudiated&#8221; (Hawthorne 2003, p. 39).</p>
+<p>There are two problems here: First, that&#8217;s not the familiar lesson from Carroll&#8217;s tale. That&#8217;s how the Tortoise sets Achilles up for his fall. The familiar lesson comes from her suggestion that Achilles&#8217; only chance of satisfying her is by introducing a new conditional among the premises. This last move is where the familiar moral comes from.</p>
+<p>Second, Carroll obviously uses modus ponens just to dramatize what is otherwise a reasonable stance: You may accept the premises of a valid argument but fail to see that you are epistemically committed to the conclusion. It happens all the time! That&#8217;s why we often need proofs. Suppose that, instead of a single modus ponens step, you&#8217;d have to traverse the length of a seven-rule chain in order to get to the conclusion. The situation is arguably the same from a philosophical point of view. So, I don&#8217;t think that there is anything obviously ridiculous in that move by the Tortoise.</p>
+<p>As regards how Carroll actually viewed his Tortoise, the evidence is clear: He was honestly puzzled. He was no match for the Tortoise, didn&#8217;t find her ridiculous at all. See Smiley 1995.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3091.html#respond' onclick='return addComment.moveForm( "comment-3091", "3091", "respond", "499" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3092" >
+		<article id="comment-3092" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=499.html#comment-3092"><time datetime="2005-12-31T13:15:42+00:00">December 31, 2005 at 1:15 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hi, Mike!</p>
+<p>As charitable as Jon is, I&#8217;m afraid he&#8217;s gonna let me handle my own jams!</p>
+<p>You&#8217;re thinking about the old Tortoise. Give the new beast a chance! And see Clark 2002. Your point is there. It comes from J. F. Thomson (1960).</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3092.html#respond' onclick='return addComment.moveForm( "comment-3092", "3092", "respond", "499" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3093" >
+		<article id="comment-3093" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/21fa7b5f226ec27a45b3a77874ff9350?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/21fa7b5f226ec27a45b3a77874ff9350?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://colfa.utsa.edu/ecpc/faculty/almeida/default.htm' rel='external nofollow' class='url'>Mike</a></span> on <a href="../index.html%3Fp=499.html#comment-3093"><time datetime="2005-12-31T13:32:59+00:00">December 31, 2005 at 1:32 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Oh, I&#8217;m sorry Claudio. I didn&#8217;t notice that it was your post. Apologies. Thanks for the reference.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3093.html#respond' onclick='return addComment.moveForm( "comment-3093", "3093", "respond", "499" )' aria-label='Reply to Mike'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3094" >
+		<article id="comment-3094" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=499.html#comment-3094"><time datetime="2006-01-03T12:50:21+00:00">January 3, 2006 at 12:50 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Here&#8217;s a nice passage from Jonathan Adler&#8217;s _Belief&#8217;s Own Ethics_ (MIT Press, 2002) that I thought you should have:</p>
+<p>&#8220;Lewis Carroll&#8217;s &#8216;What the Tortoise Said to Achilles&#8217; can be read as a parable about the impossibility of complete explicitness in formal arguments. One cannot demand that inferences, licensed by a logical connective, be reconstructed to express the meaning of that connective as a rule to be added as a premise. For the inferential role of that premise will then itself require expression of a further rule, licensing its use as another premise, launching an infinite regress.&#8221;</p>
+<p>The old Tortoise laughs her evil laugh. And then she coughs, trembles, has a seizure and is put under heavy sedation at the intensive-care unit where she&#8217;s been for many years.</p>
+<p>Meanwhile, at the gym, the new Tortoise finishes her lemonade and strikes a pose: &#8220;Again&#8221;, she says, &#8220;you need make no such confusion between rules and premises to get into my brand of trouble, since&#8230;Hey, is that the new Rolling Stones?&#8221;</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3094.html#respond' onclick='return addComment.moveForm( "comment-3094", "3094", "respond", "499" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3095" >
+		<article id="comment-3095" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/83ceb04a82c192493fd5d79004eec4a6?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/83ceb04a82c192493fd5d79004eec4a6?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">nick shackel</span> on <a href="../index.html%3Fp=499.html#comment-3095"><time datetime="2006-01-04T19:10:33+00:00">January 4, 2006 at 7:10 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>At a quick reading, here is what seems to me to be a problem, from line 3 of your canonical form: &#8220;I do think that the acceptance of R is a necessary condition of the acceptance of C on the basis of A and B&#8230;&#8221;. Under what I would take to be a straightforward interpretation of &#8216;acceptance&#8217; I don&#8217;t see why the embedded proposition has to be true in general  (but I think you need it to be true in general). For example, most people who reason in accordance with modus ponens have no attitude towards it and many would not be able to understand it. Yet they can legitimately accept q on the basis of p and if p then q (or at least, so would say some externalists. Modus ponens *explains* why they can legitimately do so, but they don&#8217;t have to accept it to do so. Consequently I do not think you give reason for us to believe line 4, and in fact I think line 4 is false.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3095.html#respond' onclick='return addComment.moveForm( "comment-3095", "3095", "respond", "499" )' aria-label='Reply to nick shackel'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3096" >
+		<article id="comment-3096" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=499.html#comment-3096"><time datetime="2006-01-07T06:53:46+00:00">January 7, 2006 at 6:53 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Nick, no, I don&#8217;t need it to be true in general. This is a crucial point here. I&#8217;m not defending inferential internalism (or implying that it is indefensible).</p>
+<p>Suppose I accept the two premises of your argument, A and B. You then say that I must accept the conclusion C you&#8217;re selling on pain of irrationality. I don&#8217;t feel at all compelled to do so and ask you for a reason. You give me a story R. Let&#8217;s suppose that R is a long and beautiful story: It makes reference to epistemic values, entailment, closure, truth conditions for conditionals and, say, Contraposition, Simplification, Disjunctive Syllogism, Hypothetical Syllogism and Modus Ponens. I then respond as follows:</p>
+<p>(T) Ah, okay, now I see that I really must accept C. I do it, of course, on the basis of A, B and R.</p>
+<p>What&#8217;s wrong with T?</p>
+<p>I hope this helps.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3096.html#respond' onclick='return addComment.moveForm( "comment-3096", "3096", "respond", "499" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3097" >
+		<article id="comment-3097" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/744368bafaee16d07e6605e0e8358b29?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/744368bafaee16d07e6605e0e8358b29?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Doris Olin</span> on <a href="../index.html%3Fp=499.html#comment-3097"><time datetime="2006-01-07T16:29:56+00:00">January 7, 2006 at 4:29 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hi Claudio,</p>
+<p>I have some comments on the definition of ‘paradox’, both yours and mine. First, the issue of validity: (i) In footnote 9, a valid argument is presented which appears to S to have true premises and false conclusion, but whose validity is not apparent to S. The question then raised is, Is this a paradox by S’s lights? My account doesn’t deal explicitly with the issue of to whom the argument must appear valid, but since the argument doesn’t appear valid to S, it would not be difficult to maintain that it is not a paradox by S’s lights. If the question is simply ‘ Is this a paradox?’, I think the answer is that it is not. For it seems to be a straightforward case in which, once the validity of the argument is seen, it would not be particularly problematic to revise our view of the conclusion or one of the premises. That is, the appearance of validity, true premises and false conclusion, would be at best fleeting. (ii)With regard to your working definition, (WD), on page 3: Wouldn’t an inductive argument of apparently correct form, apparently true premises and false conclusion count as a paradox according to (WD)? Examples of such arguments are easily generated, but they do not appear paradoxical.</p>
+<p>On another issue – to whom must it appear – I have no decided positive view. It might be useful to look at locutions such as: It appears that …. (e.g. the thief entered by the back door). Perhaps such expressions are not to be parsed in terms of ‘appears to x’. If , on the other hand, the ‘appears’ in the definition of validity must be construed as ‘appears to x’, then there are two options. The first is that the notion of paradox is implicitly relational, that is, an argument is paradoxical for a person x provided that it appears to x that ….  According to this approach, there is no such thing as paradox simpliciter, only paradox for x. We speak of paradox without the qualifier ‘for x’ because we generally agree on the relevant appearances. The second option, the one you favour, is that it is appearance to a certain specified group which determines whether we have a paradox. I also am inclined in this direction. But it doesn’t seem to me plausible that appearance to average reasoners is the determinant of paradox. For one thing, there are the mathematical paradoxes which are beyond the average reasoner. (I know that your concern is just paradoxes which play a key role in philosophy, but I don’t see why there is a need for two senses of ‘paradox’.) Judging by the response of my students, I would say it’s not clear many of them ‘get’ the argument of the iterated prisoner’s dilemma, especially in the mathematical induction format.  Does the existence of a paradox depend on its being expressed in a form available to the average reasoner? For these reasons, a definition in terms of average reasoners may be too restrictive. But it may also be too broad. For instance, the infamous proof that 1=2 may appear valid to the average reasoner, but we do not consider it a paradox. If we are going to take the second option, that appearance to some group is key, I would be more inclined to appeal to competent reasoners or expert reasoners.</p>
+<p>No doubt, there are other issues to explore. For instance, it seems to me that even if the paradox of the surprise exam is resolved, it is still  a paradox. Perhaps it is necessary that  the appearance be robust, that there is still the appearance even when the resolution is understood. Certainly we need some way to distinguish paradox from simple fallacies.</p>
+<p>Doris</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3097.html#respond' onclick='return addComment.moveForm( "comment-3097", "3097", "respond", "499" )' aria-label='Reply to Doris Olin'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3098" >
+		<article id="comment-3098" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/b364842b99f28fab9c2439bb7edf63ff?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/b364842b99f28fab9c2439bb7edf63ff?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Marz</span> on <a href="../index.html%3Fp=499.html#comment-3098"><time datetime="2006-01-08T13:42:03+00:00">January 8, 2006 at 1:42 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I stumbled upon this site and this post, and I am amazed at the complexity of the discussion. Having taken a philosophy course in college (Intro to Logic) and liked it very much, I have a great deal of appreciation for this topic. Even as a layman, it appears to me that the author presents this subject matter in brilliant fashion. The discussion is clearly above my education, but interesting nevertheless. I apologize for my comment&#8217;s lack of relevance, but I felt compelled to let the author and others involved in the discussion know that even those outside your field have a great deal of respect and appreciation for the work you do. Thanks!</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3098.html#respond' onclick='return addComment.moveForm( "comment-3098", "3098", "respond", "499" )' aria-label='Reply to Marz'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3099" >
+		<article id="comment-3099" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=499.html#comment-3099"><time datetime="2006-01-09T07:22:52+00:00">January 9, 2006 at 7:22 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Thank you, Doris! I’m calling an emergency meeting of the voices in my head and will get back to you if I have something useful to say in that regard.</p>
+<p>I’d like to explore a possible solution to the new Tortoise problem – if it is indeed a problem.</p>
+<p>It may seem that we can solve the problem by appeal to the view that what justifies a belief need not play any role in causing it. The Tortoise tries to expand the evidence set by including R in it. Maybe the move holds sway just because we accept that she wouldn’t have believed that C unless she also accepted R.</p>
+<p>This anti-causalist view is famously championed by Keith Lehrer (1974, 2000). It has been endorsed by Jon Kvanvig (1985) and Carl Ginet (1989). Richard Foley (1987) thinks the causalist intuition can be handled without a causal requirement.</p>
+<p>This form of anti-causalism is unpopular with both externalists and internalists. Causalists include Robert Audi (1983, 2001), Roderick Firth (1979), Laurence BonJour (1985), Marshall Swain (1981), William Alston (1988), Alvin Goldman (1979), Richard Fumerton (1995), John Pollock and Joe Cruz (1999), Susan Haack (1999).</p>
+<p>Earl Conee and Richard Feldman (1985, 2004) hold a nuanced view. But their notion of well-foundedness (a necessary condition of knowledge, according to them) would place them among causalists.</p>
+<p>I’m not developing the anti-causalist view here. I’m just crudely putting it forward as an intriguing possibility in this connection.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3099.html#respond' onclick='return addComment.moveForm( "comment-3099", "3099", "respond", "499" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-8703" >
+		<article id="comment-8703" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/0b6ef3c9e894753edf111a596bdcfb13?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/0b6ef3c9e894753edf111a596bdcfb13?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">jonathan adler</span> on <a href="../index.html%3Fp=499.html#comment-8703"><time datetime="2006-01-09T14:36:18+00:00">January 9, 2006 at 2:36 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>[Apologies: I posted this earlier, but failed to post it attached to Claudio&#8217;s original sumission. I&#8217;m reposting it, hoping to do it right this time]<br />
+Dear Claudio,</p>
+<p>Thanks again for the heads up on your posting. I found the discussion of paradoxes illuminating and useful, and the attempt to formulate epistemic principles for the Carroll worthwhile.</p>
+<p>I disagree with your first step. I would be less adverse, but for it&#8217;s reading under your (10): I don&#8217;t see what entitles &#8220;some other proposition&#8221;. My objection is a variant of one way of pressing the rule-premise objection to Achilles: the acceptance of the conditional is the acceptance of mp.</p>
+<p>So what&#8217;s the argument for reading R as not already included in the premises offered? H: Where is Bill this morning? S: If Bill keeps to schedule, he is in Brooklyn. And we know Bill keeps to schedule. So Bill must be in Brooklyn this morning. S has successfully defended his conclusion. If you want to speak of it in your terms: He has given his R in giving his reasons and giving them with the recognized intention that they be seen as reasons to accept the conclusion, along the same line of reasoning as the speaker.</p>
+<p>A second problem, which hooks into this one, directly opposes your (2). It depends on the difference between a (legitimate) request as an challenge and as an inquiry. One crucial difference is that as a challenge, unless the speaker can meet the hearer is not obliged to accept his argument. Your analysis requires that the &#8216;reasonable of me to ask&#8217; be a challenge.  If you ask S for his reason (rule) to draw his conclusion (i.e. if you put him in Achilles&#8217; position), would you really deny that he had not given sufficient reasons (proof) of his conclusion, if he could not provide any answer beyond something vague like that it is just obvious or intuitive that the conclusion follows? Similarly, if he gave a wrong answer. If S&#8217;s proof is along the lines proposed, I think he would still have justified his conclusion if he said something false like that it was mt or that the premises are (only) inductive evidence of the conclusion. On this count, Gettier-discussion allows for cases where a justification of the form A&amp;B&amp;C still succeeds, even if the subject&#8217;s avowed justification is false, when the falsity is due to one clearly demarcated part, say, C, but that all that is evidently needed really is A&amp;B, which are true.</p>
+<p>In any case, the point is that if your query is to be free for the asking, as the paradox (regress) requires, then it is not a necessary condition for the proof to go through that S be able to give a correct (or any substantive) response. However, if the query is to be a challenge, then it itself requires backing (a second crucial difference)&#8211;some real ground that the reasons by the speaker offered are not adequate. But then they are again not free for the asking (anti-(1), (2), and (10), again), and the regress breaks for a different reason.</p>
+<p>All best, Jonathan</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=8703.html#respond' onclick='return addComment.moveForm( "comment-8703", "8703", "respond", "499" )' aria-label='Reply to jonathan adler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3100" >
+		<article id="comment-3100" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=499.html#comment-3100"><time datetime="2006-01-10T14:25:09+00:00">January 10, 2006 at 2:25 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Doris, I see three areas of possible disagreement in your reply. I&#8217;m singling out three of your remarks just to highlight those three points. (Those who are interested in this discussion are urged to read Doris&#8217; commentary in its entirety above.)</p>
+<p>1. &#8220;WOULDN&#8217;T [ANY] INDUCTIVE ARGUMENT OF APPARENTLY CORRECT FORM&#8230;COUNT AS A PARADOX ACCORDING TO [CLAUDIO]?&#8221;<br />
+I don&#8217;t think so. The arguments you have in mind all involve reasoning about probabilities, don&#8217;t they? Probabilistic reasoning is notoriously difficult for common sense. The average reasoner will typically accept the premises, reject the conclusion, and be unsure as to whether the reasoning is okay. In fact, it should be immediately apparent to Mr. Common Sense that the reasoning is slippery, even if he is clueless as to what exactly the problem is. The Gambler&#8217;s Fallacy is a good example of how error-prone people are when it comes to probabilistic reasoning. You&#8217;re unlikely to get any resistance from Mr. CS if you respond with a simple &#8220;It doesn’t work like that!&#8221; and he has any evidence that your math is better than his. Mutatis mutandis, this will also apply to the infamous proof that 1=2.</p>
+<p>2. &#8220;[I]T DOESN&#8217;T SEEM TO ME PLAUSIBLE THAT APPEARANCE TO AVERAGE REASONERS IS THE DETERMINANT OF PARADOX.&#8221;<br />
+I&#8217;m afraid we&#8217;ll have to make do with &#8220;average reasoners&#8221; (creepy as this surely sounds!). Three points: First, notice that the notion of an expert reasoner (your preference) is hardly without its problems. I would think that Graham Priest must count as an expert reasoner by any standard. And yet, most of our _favorite_ expert reasoners (no offense, Graham!) think that many of his most cherished beliefs are necessary falsehoods! Okay, maybe he doesn&#8217;t believe what he writes. But, hey, this is getting difficult – which makes my point. If he believes what he writes, we&#8217;re gonna have to elect our _favorites_ among expert reasoners. If he doesn&#8217;t, there must still be some deep lesson there about expert reasoning &#8212; like, maybe, just maybe, there is no such thing after all, and the skeptic (or the relativist) wins the day. Or, if there is, maybe it&#8217;s just based on popularity anyway. And the notion of an average reasoner may return through a back door in order to settle the dispute among the experts. (Huge topic!) Second, a point of clarification: When I think of average reasoners, I discount all irrelevant human weaknesses, like a short attention span, impatience, lack of intellectual excitement, that kind of thing. So, maybe my average reasoners will resemble your expert reasoners in a number of respects. Third, like Benson Mates, I&#8217;m interested in that meaning of the term &#8220;paradox&#8221; that characterizes the fundamental problems of philosophy. From this point of view, in order to be classified as a paradox, an argument must not depend on any _technical_ terms. Russell&#8217;s Paradox is a genuine paradox by my account. You can easily generate paradoxes &#8220;in canonical form&#8221; that exploit our conflicting intuitions regarding the existence of free will, causation, consequentialism vs. deontologism, rationality and knowledge (Agrippa&#8217;s Trilemma, Cartesian skepticism), meaning (vagueness, bivalence), the existence of a God (and his alleged properties), etc. None of those paradoxical arguments depend on any technical terms. That&#8217;s what accounts for their persistence. I think this is what Mates was looking for. (Technical terms will, of course, be essential to the analyses of those problems.)</p>
+<p>3. &#8220;I DON&#8217;T SEE WHY THERE IS A NEED FOR TWO SENSES OF &#8216;PARADOX&#8217;.&#8221;<br />
+I bet you do! This is too large a topic for my brief and tentative remarks here, of course. In any case, I&#8217;ll suggest that we need at least three senses of &#8220;paradox&#8221;. (I don&#8217;t like the alternative view &#8212; the one according to which there is only one meaning for &#8220;paradox&#8221; and many metaphorical uses of the term. I won&#8217;t go into this here. I&#8217;ll just favor ambiguity over metaphor without offering reasons.) First, there is the &#8220;newspaper sense&#8221; of the term: According to this, there is, for instance, a &#8220;French paradox&#8221;, some surprising phenomenon involving the consumption of cheese and wine. People seem willing to call any surprising phenomenon a &#8220;paradox&#8221;. Second, there is the &#8220;specialized sense&#8221;: Monty Hall, Cantor&#8217;s Paradox, Galileo&#8217;s Paradox, Hilbert&#8217;s Hotel, etc., all belong here. Third, the philosophical sense: The Surprise Exam, The Sorites, The Preface, The Liar, and all our favorites. These all have deeply troubling conclusions, not just &#8220;surprising&#8221; ones. I&#8217;d suggest that the jury is still out as to how we should classify something like The Toxin Paradox (which doesn&#8217;t seem at all paradoxical to me in the philosophical sense of the term). Maybe it&#8217;s just a &#8220;specialized paradox&#8221; about the involuntariness of certain mental phenomena. But we may need more categories.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3100.html#respond' onclick='return addComment.moveForm( "comment-3100", "3100", "respond", "499" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3101" >
+		<article id="comment-3101" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/61b26d13ac6e6f9558292bfe51a6fb63?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/61b26d13ac6e6f9558292bfe51a6fb63?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.dartmouth.edu/~rasoren/rasoren.html' rel='external nofollow' class='url'>Roy Sorensen</a></span> on <a href="../index.html%3Fp=499.html#comment-3101"><time datetime="2006-01-11T19:34:07+00:00">January 11, 2006 at 7:34 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Claudio, I enjoyed your reply to the four objections in my book,*A brief history of the paradox*. The book has two further objections to the argument based definition of paradox:</p>
+<p>1. Some paradoxes are meaningless. All arguments must have propositions as premises and conclusions. Therefore, no argument is meaningless.(See pages 35-36 and 352.)</p>
+<p>2. Bertrand&#8217;s paradox involves infinitely many propositions. In classical logic, arguments must have finitely many premises. (See pages 247-9.)</p>
+<p>Perhaps you can address these as well. The riddle theory can handle both because some riddles are pseudo-questions and because some questions have answer sets containing infinitely many propositions.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3101.html#respond' onclick='return addComment.moveForm( "comment-3101", "3101", "respond", "499" )' aria-label='Reply to Roy Sorensen'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3102" >
+		<article id="comment-3102" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=499.html#comment-3102"><time datetime="2006-01-12T12:44:47+00:00">January 12, 2006 at 12:44 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jonathan, thank you!</p>
+<p>I don&#8217;t think the first objection (&#8220;I disagree with&#8230;line of reasoning as the speaker.&#8221;) applies to my problem. I get the whiff of the old Tortoise problem here. The new problem &#8212; if there is one &#8212; does not depend on a rule/premise confusion. I have assumed that the new Tortoise accepts any rule that&#8217;s relevant to the argument in dispute. (At all events, that&#8217;s what I meant to do.) When she asks for a reason to accept the conclusion C on the basis of premises A and B, she&#8217;s asking for a _proof_ that C follows from A and B by rules that she already accepts. It&#8217;s a common situation. Logical implication doesn&#8217;t have to be obvious. (It&#8217;s just Carroll&#8217;s ploy of offering resistance to a single MP step that makes it shocking and leads to the old rule/premise lesson. &#8220;Ploy&#8221; may not be the right word here from a historical point of view.) And when she&#8217;s given a description of the inferential path to C from A and B (namely, R), she wants to add R to the premises leading to C. Suppose R is something like this: &#8220;C follows from A and B by applications of Contraposition, Simplification, Disjunctive Syllogism, Hypothetical Syllogism, and MP.&#8221; You may accept all of those rules but may not see that they lead to C from A and B. (In my reply to Nick above, I suggest that R could be a _much_ longer story, the kind that students get from us in the classroom, just about the whole package: logical theory plus much of the epistemology of reasoning. This is an intriguing point to me: A little theory, a lot of theory: Does it matter?)</p>
+<p>The part of the second point that is not affected by the foregoing is very interesting. But I&#8217;ll need more time to appreciate its relevance.</p>
+<p>As regards the point from Gettier-type considerations, I&#8217;d suggest that you can be bolder than that. I join Peter Klein in thinking that there are benign falsehoods (as witnessed by my post &#8220;On Useful Falsehoods&#8221; elsewhere in the blog), but I don&#8217;t think that benign falsehoods have to be conjunctions with true conjuncts.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3102.html#respond' onclick='return addComment.moveForm( "comment-3102", "3102", "respond", "499" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3103" >
+		<article id="comment-3103" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=499.html#comment-3103"><time datetime="2006-01-15T15:43:42+00:00">January 15, 2006 at 3:43 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Thanks, Roy!</p>
+<p>Yes, indeed, a complete review of your critique of the argument-based view of paradoxes would have to address those two additional objections. I wonder whether anything can be learned about the nature of philosophical paradoxes from a consideration of Bertrand&#8217;s Paradox, at least if you are willing to grant me the distinction put forward in my reply to Doris above. (And I have little doubt that _some_ such distinction will have to be made.) As for the other two points (meaninglessness and the riddle theory), I&#8217;ll have a thing or two to say in response, but I&#8217;ll have to do it in installments.</p>
+<p>MEANINGLESSNESS</p>
+<p>I&#8217;d be extra careful with this notion. You&#8217;ve put it to at least two time-honored uses in your book. But, unfortunately, that tradition has not even ensured intelligibility for all, let alone philosophical triumph.</p>
+<p>Here&#8217;s a passage (pp. 35-6) where the notion is deployed:</p>
+<p>&#8220;Parmenides is pioneering a semantic solution to paradoxes. Instead of trying to answer the riddle, he characterizes &#8216;Does Pegasus exist?&#8217; as covert nonsense. If you think that the meaning of a name is its bearer and you think &#8216;Pegasus&#8217; has no bearer, then you think &#8216;Pegasus exists&#8217; and &#8216;Pegasus does not exist&#8217; are equally meaningless. Since the conclusion of an argument must be a proposition, neither of these statements can be the conclusion of an argument. If you also believe that paradoxes  are conclusions or arguments, then you will be committed to denying that there is any paradox of negative existentials.&#8221;</p>
+<p>Is it nonsense to say that Pegasus does not exist? Common sense will have to be strong-armed, of course. When Russell came on the scene with his notion of a logically proper name (Russell &#8220;On Meaning and Denotation&#8221;, 1904; the notion, not the label), the semantics of proper names had just seen the first attempts at paving the way for any articulate sense of puzzlement involving negative existentials (J. S. Mill, Frege, Meinong). It took that bloody onslaught called &#8220;On Denoting&#8221; to rescue us from the Millian, Fregean and Meinongian quagmires, venerable efforts as they surely were. As far as I can see, we&#8217;re not out of the woods on that front. Even discounting the complication posed by the fact that you&#8217;re using a fictional name there, if you&#8217;re going to base your point on a Russellian-Kripkean notion of rigid designation, there will have to be some work done to keep the detractors at bay, don&#8217;t you think? I&#8217;m not suggesting it can&#8217;t be done. I simply wouldn&#8217;t be as sanguine on that point.</p>
+<p>My notion of a specialized, or technical, paradox in the reply to Doris offers a refuge, doesn&#8217;t it? According to that proposal, &#8220;philosophical paradox&#8221; is an ambiguous expression. There are specialized paradoxes _in_ philosophy which are not philosophical paradoxes in the philosophically fundamental sense of the term &#8220;paradox&#8221;. If negative existentials are seen as an instance of a specialized paradox, you can then use as much theory as you may need to set up the problem. And I think you will need a fair amount of theory to have it accepted by the folk that saying that Pegasus does not exist is talking nonsense.</p>
+<p>The second interesting appeal to meaninglessness (p. 352):</p>
+<p>&#8220;[C]ontingent liars show that meaninglessness is sometimes undetectable by the speaker. The internal rationality of the speaker is not enough guarantee that his utterances are meaningful.&#8221; (This is in a passage where you endorse Quine&#8217;s view of the Liar as meaningless.)</p>
+<p>Here&#8217;s another uphill battle for you: using the meaninglessness charge for apparently meaningful sentences. We&#8217;re not returning to the blanket condemnations of self-reference of the Russell-Wittgenstein era, I suppose. (&#8220;This sentence contains five words&#8221; is unproblematically true; &#8220;This sentence can be hazardous to your health&#8221;, unproblematically false.) And I hear that more recent attempts on that front (Tarski, Kripke) have also failed to persuade the philosophically relentless among us. Meaninglessness comes in many flavors. What&#8217;s yours?</p>
+<p>As you know, Wittgensteinians have made a relatively comfortable living off meaninglessness charges. But sometimes common sense fights back. I&#8217;m reminded of how Max Black (&#8220;On Speaking with the Vulgar&#8221;, 1949) responds to Norman Malcolm&#8217;s attack on Moore&#8217;s &#8220;I know that this is a hand&#8221; and its kin. He sees a number of paradoxical consequences in Malcolm&#8217;s charge of covert nonsense. Black&#8217;s fifth &#8220;paradoxical conclusion&#8221; from Malcolm&#8217;s principles: &#8220;A nonsensical sentence may be used in a complex sentence, the whole of which is not nonsensical.&#8221; Would you, Roy, regard the following as a case of covert nonsense? &#8220;If the antecedent of this conditional is not true, then this conditional is meaningless according to some.&#8221;</p>
+<p>Be that as it may, yes, contingent liars are exactly where the battle over meaninglessness should be fought. Black&#8217;s fourth paradoxical conclusion from Malcolm&#8217;s principles takes us to the heart of the matter: &#8220;A nonsensical utterance may be _understood_ by a hearer.&#8221; Common sense awaits, abused but not silenced!</p>
+<p>These are just cautionary notes. I don&#8217;t presume to have put forward a full-blown refutation of your meaninglessness claim. Just count on my being deeply distrustful of charges of covert nonsense which come unaccompanied by all the theory that we&#8217;ll need to stomach them.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3103.html#respond' onclick='return addComment.moveForm( "comment-3103", "3103", "respond", "499" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3104" >
+		<article id="comment-3104" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=499.html#comment-3104"><time datetime="2006-01-16T06:32:01+00:00">January 16, 2006 at 6:32 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Revision: I should have used &#8220;the semantics of singular terms&#8221; where I wrote &#8220;the semantics of proper names&#8221;. (Ah, the joys of philosophy!&#8230;)</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3104.html#respond' onclick='return addComment.moveForm( "comment-3104", "3104", "respond", "499" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3105" >
+		<article id="comment-3105" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=499.html#comment-3105"><time datetime="2006-01-19T05:26:10+00:00">January 19, 2006 at 5:26 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Folks, I&#8217;m gonna have to leave my little tent at CD unattended for the next few days. I apologize for any delayed replies. Hasta luego!</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3105.html#respond' onclick='return addComment.moveForm( "comment-3105", "3105", "respond", "499" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3106" >
+		<article id="comment-3106" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/61b26d13ac6e6f9558292bfe51a6fb63?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/61b26d13ac6e6f9558292bfe51a6fb63?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.dartmouth.edu/~rasoren/rasoren.html' rel='external nofollow' class='url'>Roy Sorensen</a></span> on <a href="../index.html%3Fp=499.html#comment-3106"><time datetime="2006-01-19T21:47:06+00:00">January 19, 2006 at 9:47 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I agree that far too many paradoxes are mistakenly characterized as meaningless. But it is also excessive to infer that none are meaningless. It is even more excessive to rule out the possibility of a meaningless paradox by definition. The argument based definition goes to that extreme.<br />
+    In his 1962 gem &#8220;On Some Paradoxes&#8221; J. F. Thomson proves that there is no predicate expressed by Kurt Grelling&#8217;s riddle, &#8220;Is `heterological&#8217; heterological?&#8221;. Just as there can be no barber who shaves all and only those who do not shave themselves, there can be no predicate that applies to all and only those predicates that do not apply to themselves. It is just a theorem of logic, specifically Thomson&#8217;s &#8220;small theorem&#8221;.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3106.html#respond' onclick='return addComment.moveForm( "comment-3106", "3106", "respond", "499" )' aria-label='Reply to Roy Sorensen'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3107" >
+		<article id="comment-3107" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/f4c7482c3767f1976291fe3e8ad033a6?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f4c7482c3767f1976291fe3e8ad033a6?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">nick shackel</span> on <a href="../index.html%3Fp=499.html#comment-3107"><time datetime="2006-01-22T05:13:58+00:00">January 22, 2006 at 5:13 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Here is what I think is wrong with saying that you accept C on the basis of A, B and R. (i.e. with (T)) (in post #9 above)</p>
+<p>First, I&#8217;m not sure that anything is gained by moving away from the simple example of modus ponens. However, I would reply to your uttering (T) by saying, no you are mistaken. The basis is not A, B and R, although it may be A, B and part of R. In citing A and B for why you should accept C I was citing what I took to be the contextually salient considerations  that need to be brought to mind to appreciate why accepting C is compelled. HOwever, when you ask why you should accept C then I must concede that the argument is somewhat enthymemetic and must make explicit the context within which A and B are embedded. In offering you the long and beautiful story R, I was doing two things: restoring the omitted premisses and explaining how those premisses make correct the conclusion (my use of &#8216;correct&#8217; is supposed to allow our talk to include entailment and non-deductive implication). So R contains two kinds of elements: propositions that are part of the basis for believing C,  and propositions that explain moves in the argument. Only the former kind are added to A and B to form the basis for believing C. So now the structure is of a set of propositions, D, which includes A and B and all the other propositions that are the basis for C, and a set of propostions that explain how one gets from D to C. A (non-deductive) proof would consist in listing D and further propositions derived from D such that each is either contained in D or got from D by correct inference. Nothing more is required for a proof than that list. The role of E is only to explain the correct inferences.</p>
+<p>Of course, all I am doing here is restoring the premiss/rule of inference distinction, but at the moment I don&#8217;t see why I shouldn&#8217;t, and especially since you say you are not defending inferential internalism. You do not have to accept E (in the sense of acceptance I mentioned earlier), but merely reason in accordance with E, in order to understand the proof and be justified in believing C. Consequently E is no part of the basis. Therefore accepting R is not a necessary part of accepting C on the basis of A and B, and accepting D as a necessary part doesn&#8217;t help, so line (3)of your original argument is false. Now I don&#8217;t see why this kind of move can&#8217;t be made for any case and that is why I thought you need line (3) to be true in general.</p>
+<p>Sorry for the delay in replying. Busy time of year!</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3107.html#respond' onclick='return addComment.moveForm( "comment-3107", "3107", "respond", "499" )' aria-label='Reply to nick shackel'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3086" >
+		<article id="comment-3086" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=499.html#comment-3086"><time datetime="2006-02-06T16:42:34+00:00">February 6, 2006 at 4:42 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Roy, actually, it is not a mistake to rule out the possibility of a meaningless paradox by definition if we don&#8217;t have any good reason to believe that there is such a thing as (that there are instance of) covert nonsense. We don&#8217;t. Thomson&#8217;s 1962 paper is no help to your case.</p>
+<p>When you write that, &#8220;[j]ust as there can be no barber who shaves all and only those who do not shave themselves, there can be no predicate that applies to all and only those predicates that do not apply to themselves&#8221;, you gloss over an important distinction that Thomson didn&#8217;t miss (although he should certainly have been more emphatic in making it). Notice the asymmetry. When you speak of the barber, you&#8217;re led to the conclusion that there can be no such _barber_, not to the conclusion that there is no _predicate_ such as &#8220;x is a barber who shaves all and only those who do not shave themselves&#8221;. When we consider the Russellian predicate, we&#8217;re led to the (stunning) conclusion that there can be no such _class_, not to the conclusion that there can be no _predicate_ such as &#8220;x is a class of all classes which are not members of themselves&#8221;. (The &#8220;predicate&#8221; version of Russell&#8217;s paradox is no help here.) When we consider &#8220;heterological&#8221;, it is slippery to think of it, as it is normally done, as synonymous with &#8220;not self-applicable&#8221;, because that may make it tempting to conclude that there can be no such _predicate_, while the paradoxical conclusion should be that there can be no such _property_ as heterologicality.</p>
+<p>The problem is widespread. In trying to be non-technical in a quick presentation of the problem, even our best authors sometimes leave room for confusion. For instance, Doris Olin and Gregory Moore are two of the authors who speak of &#8220;words that apply to themselves&#8221;. So, if a word does iff it doesn&#8217;t, are we to conclude that there can be no such _word_? Like Quine, Thomson, himself, at first defines &#8220;heterological&#8221; as &#8220;adjective [that] is not true of (i.e., does not apply to) itself&#8221; – which invites the absurd conclusion: there can be no such _adjective_. But level-headedness is restored when he mentions Church&#8217;s exact formulation: &#8220;Let us distinguish adjectives &#8212; i.e., words denoting properties &#8212; as _autological_ or _heterological_ according as they do or do not have the property which they denote.&#8221;</p>
+<p>It would be _fantastic_ if &#8220;x is a word that has the property which it denotes&#8221; were meaningful but &#8220;x is a word that does not have the property which it denotes&#8221; were not. It would be even more fantastic if neither were. Thomson steers clear from that fantastic claim. He explicitly rejects the meaninglessness alternative. The conclusion authorized by his discussion of the problem (wisely described as &#8220;not a solution&#8221;) is that either heterologicality is not a property or &#8220;x is heterological&#8221; is a gappy predicate. (He favors the latter alternative, which is emphasized in his paper.) Here are the crucial passages:</p>
+<p>&#8220;Does it follow that &#8216;heterological&#8217; is meaningless or that there is no such word-property as heterologicality? This would hardly be an acceptable consequence. But it does not follow. What follows is only that we may have a wrong conception of what the word&#8217;s meaning is&#8230; The only question which remains is: how are we to characterise (_extensionally_) the sense of &#8216;heterological&#8217;?&#8230; The simplest answer seems to be this: to say that we have given no sense to saying that &#8216;heterological&#8217; is heterological; or formally, that the predicate &#8216;x is heterological&#8217; does not have a value (a truth-value) for that argument.&#8221; [Emphasis added.]</p>
+<p>Granted, he does occasionally leave room for the interpretation you attribute to him. On p. 114, he claims that his gap analysis arises out of &#8220;a frank admission that no predicate can do what we originally and naively wanted &#8216;heterological&#8217; to do&#8221;. But he immediately goes on to note that &#8220;I should still claim that the suggestion above that we regard &#8216;x is heterological&#8217; as undefined for itself as argument is&#8230;preferable&#8221;. (The small theorem is completely innocent.)</p>
+<p>Covert-nonsense explanations replace a mystery (the paradox) with an enigma (imperceptible meaninglessness). Max Black (1949) was right. Morton White (1956) was right. Covert nonsense is a notion whose philosophical credentials should have expired a long time ago.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3086.html#respond' onclick='return addComment.moveForm( "comment-3086", "3086", "respond", "499" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3087" >
+		<article id="comment-3087" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=499.html#comment-3087"><time datetime="2006-02-07T07:28:44+00:00">February 7, 2006 at 7:28 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Will you think me frivolous if I add a grammatical erratum?</p>
+<p>My dictionary assures me that the preposition to use with &#8220;steer clear&#8221; is &#8220;of&#8221;, not &#8220;from&#8221;. (We&#8217;re supposed to be in the education business, you know&#8230;)</p>
+<p>Thanks for your patience, folks!</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3087.html#respond' onclick='return addComment.moveForm( "comment-3087", "3087", "respond", "499" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3081" >
+		<article id="comment-3081" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=499.html#comment-3081"><time datetime="2006-02-09T12:20:50+00:00">February 9, 2006 at 12:20 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>In view of some heated words in my discussion with Roy Sorensen above (the verbal heat coming mostly from me, I&#8217;m afraid), I thought I&#8217;d go on the record with this:</p>
+<p>Do I think you should spend your milk money (or even your beer money) on his book _A Brief History of the Paradox_? Suffice it to say that I&#8217;ve long kept his books on my night table &#8212; and most definitely not because they&#8217;re soporific! Roy is my teacher in books &#8212; and, at one time, also in personal communication, over vegetarian burritos, when I was a post-doctoral visitor at NYU, kindly sponsored by him, some years ago. I&#8217;ve taken many lessons from him and I&#8217;m proud of each and every one of them.</p>
+<p>Of course, this is totally unnecessary for many people here. Those whom I&#8217;ve met at the Rutgers Epistemology Conference, for instance, to mention one conference that is dear to many of us at CD, are unlikely to confuse academic elegance with word-mincing. (At Rutgers, in particular, some of our beloved teachers are well-known for what, with impeccable understatement, Jon Kvanvig once described as their &#8220;verve of expression&#8221;.) But we&#8217;re broadcasting to the world. And I write from Brazil, where too many people in the philosophy community still have a twisted sense of decorum, where reverence and sensitivity to rank is still pretty much the norm. (This is rapidly changing, though, I&#8217;m happy to note, mostly thanks to a new generation of &#8220;barbarians&#8221; for whom clarity is a non-negotiable value.)</p>
+<p>It just dawned on me that I might be misunderstood by a certain audience in my criticism of Sorensen&#8217;s work.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3081.html#respond' onclick='return addComment.moveForm( "comment-3081", "3081", "respond", "499" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-8593" >
+		<article id="comment-8593" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=499.html#comment-8593"><time datetime="2006-02-13T14:52:56+00:00">February 13, 2006 at 2:52 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>This is a PS to my discussion of Roy Sorensen&#8217;s take on Grelling&#8217;s paradox in comment # 22 above.</p>
+<p>I wish I had noted that the claim about &#8220;heterological&#8221; in Roy&#8217;s comment # 20 above is in his article on &#8220;Philosophical Implications of Logical Paradoxes&#8221;, in Blackwell&#8217;s _Companion to Philosophical Logic_ (2002), ed. by Dale Jacquette. It is, of course, to Roy&#8217;s credit &#8212; and to my discredit &#8212; that his claim has made it through that kind of scrutiny. Not that this changes my understanding of the matter one bit. I think the evidence from Thomson&#8217;s paper is irrefutably on my side.</p>
+<p>Bonus quotation:<br />
+These are selections from Georg von Wright&#8217;s 1960 gem &#8220;The Heterological Paradox&#8221; (I&#8217;m not fully endorsing it), reprinted in his _Philosophical Logic_ (Cornell UP, 1983):</p>
+<p>&#8216;In the course of our considerations so far, we have introduced two new words into our language, viz. the words &#8220;autological&#8221; and &#8220;heterological&#8221;. The two new words, it would seem, are names of properties. The word &#8220;autological&#8221; names the property which a thing has if, and only if, it (a) is a name of a property _and_ (b) has a property of which it is a name. The word &#8220;heterological&#8221; again names the property which a thing has if, and only if, it (a) is not a name of any property _or_ (b) is a name of some property but has not got any property of which it is a name&#8230; To say that &#8220;autological&#8221; and &#8220;heterological&#8221; are names of properties is, however, to make a very consequential commitment&#8230; [W]e may have to question our willingness to make this commitment&#8230; The proposition which we reached says that the word &#8220;heterological&#8221; does not name a certain property. But how can this be a _provable_ (_logical_) truth? The connection between a word and its meaning is established by arbitrary convention. No grounds of logic could prevent the word &#8220;heterological&#8221; from being the name of _any_ property. The answer to this puzzle, as far as I can see, is as follows: _If_ there is a property which a thing has if, and only if, it is not autological, then no &#8220;proof&#8221; can exclude the word &#8220;heterological&#8221; from being its name. Therefore the only reason why it can be logically true to say of the word &#8220;heterological&#8221; that it does not name a property of a certain description is that there _is_ no property of this description&#8230;What I am denying is that an entity of the description in question is a _property_&#8230; I am not denying that the word &#8220;heterological&#8221; names a property, _if_ by &#8220;property&#8221; we understand the meaning of a word which can (with this meaning) stand for the predicate in a true proposition of the (grammatical) subject-predicate form. To do this would be inconsistent with admitting, say, that &#8220;&#8216;monosyllabic&#8217; is heterological&#8221; is a true proposition; we would then have to say some such thing as that any predication of heterologicality of a word is &#8220;meaningless&#8221;, since there is no such property to be predicated of anything. But this is certainly _not_ what I wish to say&#8230; I must be denying that &#8220;heterological&#8221; names a property _in some other sense_ of the word &#8220;property&#8221;. What could this other sense be? Which _are_ the criteria on the basis of which something is to be called a &#8220;property&#8221;&#8230; [W]e found that the sense of &#8220;property&#8221; in which heterologicality is no property is a sense which makes conformity to the law of contradiction a necessary condition of propertyhood&#8230; [A]lthough our discussion thus ends in a triviality&#8230;[i]t is interesting, because it forces us to challenge assumptions which at first sight seem absolutely innocent and obvious, such as that any word which can stand for the predicate in a factually true and grammatically flawless statement of the subject-predicate form must name a property. We are forced to admit that not anything which has the &#8220;ring&#8221; of a property is one according to some other standards too which normally go with this ring&#8230; For the word &#8220;heterological&#8221; the conclusion is that it is heterological. It is heterological, _not_ because it has not got a property of which it is itself a name, but because it does not name any property at all. Thus &#8220;&#8216;heterological&#8217; is heterological&#8221; expresses a true proposition. But from this truth we cannot conclude to the truth of the proposition that &#8220;heterological&#8221; is autological. The apparent analogy with, say, &#8220;&#8216;short&#8217; is short&#8221; must not be allowed to mislead us. This latter proposition is true, because &#8220;short&#8221; is the name of a property and this property belongs to the word &#8220;short&#8221; itself&#8230; And for this reason we conclude from &#8220;&#8216;short&#8217; is short&#8221; to &#8220;&#8216;short&#8217; is autological&#8221;. But &#8220;&#8216;heterological&#8217; is heterological&#8221; is true for an entirely different reason, viz. that &#8220;heterological&#8221; does not name any property. And hence we cannot pass from _it_ to &#8220;&#8216;heterological&#8217; is autological&#8221;&#8230;&#8217;</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=8593.html#respond' onclick='return addComment.moveForm( "comment-8593", "8593", "respond", "499" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3082" >
+		<article id="comment-3082" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=499.html#comment-3082"><time datetime="2006-02-14T15:09:34+00:00">February 14, 2006 at 3:09 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>A PPS, with clarification:</p>
+<p>I meant the von Wright quotation above as an incentive for you to read the whole paper. Arguably, the most impressive part of it (absent above) is how he peddles his &#8220;artistic&#8221; definition of &#8220;heterological&#8221;. Once he gets that by you, you&#8217;re likely to find yourself in the grip of a complicated view according to which heterologicality is a property, all right, but not really. (&#8216;It may, in view of the somewhat strange nature of our conclusion, be asked: Is this conclusion really &#8220;inescapable&#8221;?&#8230; I see no possibility of escape from our conclusion through doubt about these means, i.e. the principles of logic used and the concept-formation involved.&#8217;) I&#8217;m always amazed when a philosopher pulls a beautiful stunt like that. Doesn&#8217;t it make you love this profession a little more? (Not suggesting that the view is not workable, though I doubt that it is.)</p>
+<p>In any case, the more relevant aspect of it for my concerns is that it goes to show that some of us will go to such lengths to escape the horrors of &#8220;meaninglessness by fiat&#8221; (to quote Morton White).</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3082.html#respond' onclick='return addComment.moveForm( "comment-3082", "3082", "respond", "499" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3085" >
+		<article id="comment-3085" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=499.html#comment-3085"><time datetime="2006-02-20T17:30:19+00:00">February 20, 2006 at 5:30 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Nick, I&#8217;m sorry it took a while.</p>
+<p>Let&#8217;s see if this gets us anywhere new. (This is a reply to comment # 21 above.)</p>
+<p>(a) You don&#8217;t see why you shouldn&#8217;t go back to the old premise/rule lesson. Neither do I. It&#8217;s a good lesson. I haven&#8217;t said or implied that it isn&#8217;t. All I&#8217;m doing is claiming that we can find _more_ in Carroll&#8217;s tale &#8212; so much more that there may be an actual paradox there. I can see that you&#8217;re questioning this. But I think your own response to the problem should give you pause, as it seems to indicate that there is some complexity there calling for analysis (&#8220;In offering you the long and beautiful story R, I was doing two things&#8230;&#8221;).</p>
+<p>(b) I don&#8217;t understand it when you say that my assumption (3) is _false_. How could that be? I&#8217;ve _stipulated_ that (3) is true. Moreover, it should be easy to imagine it true. After all, people often do need proofs (and often consciously so). Insisting that some may never do (because, say, they&#8217;re logically omniscient or otherwise especially gifted) is beside the point. (We can, of course, discuss the many shapes that proofs take, but they certainly may take &#8212; and very often do take &#8212; a shape that will suffice for what I&#8217;m saying there.) What I have expressly denied in this connection is that it is clear that a reasoner _must_ be in possession of anything like R in order to rationally move from premises to conclusion. In other word, it is not true that Carroll&#8217;s problem, when rendered epistemologically useful, leads straight into a discussion of the tenability of inferential internalism, as Fumerton&#8217;s stimulating discussion of the problem (in his 2004) might have us believe. The whole issue of inferential internalism is beside the point. On my Carrollian problem, we derive a contradiction without any premises that imply either inferential internalism or its denial.</p>
+<p>(c) Since you are conceding all I need to see conceded (&#8220;However, when you ask why&#8230;&#8221;), please, have a look at my comment # 12 above. I think there&#8217;s a very major headache in it (assuming the paradox is genuine). People usually make the concession you&#8217;re willing to make. That&#8217;s where the persistent appeal of Carroll&#8217;s tale resides. Once we have a Carrollian problem we can work with, I submit that we come to this dilemma: it will be either paradox or the curse of Lehrer&#8217;s gypsy lawyer (as in comment # 12). As the popular talk show host would put it, I wouldn&#8217;t give that kind of trouble to a monkey on a rock!</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3085.html#respond' onclick='return addComment.moveForm( "comment-3085", "3085", "respond", "499" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3084" >
+		<article id="comment-3084" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/7655bd1a0655b0026015b3947a621268?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/7655bd1a0655b0026015b3947a621268?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.institutnicod.org/notices.php?user=Engel' rel='external nofollow' class='url'>Pascal Engel</a></span> on <a href="../index.html%3Fp=499.html#comment-3084"><time datetime="2006-04-30T10:07:30+00:00">April 30, 2006 at 10:07 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Many thanks for these interesting comments. you may be interested in looking at various papers that I wrote  about the Lewis Carroll paradox ( available in the jean nicod electronic archive). I emphasise there the analogy between the Tortoise&#8217;s attitude and that of a logical akratic, who would accept the rule but would fail to comply (in this respect the Hawthorne quote seems to me fit) or a sceptic about the power of inferential rules. In that respect the analogy is useful between the logical case and practical reasoning.</p>
+<p><a href="http://jeannicod.ccsd.cnrs.fr/index.php" rel="nofollow">http://jeannicod.ccsd.cnrs.fr/index.php</a></p>
+<p>1) Dummett, Achilles and the Tortoise, unpublished<br />
+2) Logical reasons , Philosophical explorations<br />
+3) la logique peut-elle mouvoir l&#8217;esprit ? ( in French)</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3084.html#respond' onclick='return addComment.moveForm( "comment-3084", "3084", "respond", "499" )' aria-label='Reply to Pascal Engel'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3083" >
+		<article id="comment-3083" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66abbe5527b7c6891c26324d637b798e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Claudio</span> on <a href="../index.html%3Fp=499.html#comment-3083"><time datetime="2006-05-03T18:00:17+00:00">May 3, 2006 at 6:00 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Thank you, Professor Engel. I look forward to reading those papers.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3083.html#respond' onclick='return addComment.moveForm( "comment-3083", "3083", "respond", "499" )' aria-label='Reply to Claudio'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+		</ol>
+
+		
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply to <a href="index.html%3Freplytocom=3087.html#comment-3087">Claudio</a> <small><a rel="nofollow" id="cancel-comment-reply-link" href="../index.html%3Fp=499.html#respond">Cancel reply</a></small></h3>			<form action="http://certaindoubts.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='499' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='3087' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="9cb6db84c5" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="130"/></p>			</form>
+			</div><!-- #respond -->
+	</div><!-- #comments -->
+
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+		</div><!-- #container_wrap -->
+
+	<div id="sidebar_wrap_right" class="split equal_height">
+	<div id="sidebar_right" class="widget-area" role="complementary">
+		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+											<li>
+					<a href="../index.html%3Fp=4902.html">The End</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4897.html">Young Epistemologist Prize 2019</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4890.html">A simple problem for (unrestricted) Conditionalization</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4883.html">Reminder: Young Epistemologist Prize 2019</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4877.html">Do We Know that We&#8217;re not Brains in Vats?: Follow-Up: Polls and Surveys</a>
+									</li>
+					</ul>
+		</aside><aside id="calendar-2" class="widget widget_calendar"><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar">
+	<caption>April 2019</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="../2019/02/index.html">&laquo; Feb</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+	</tr>
+	<tr>
+		<td>8</td><td><a href="../2019/04/09/index.html" aria-label="Posts published on April 9, 2019">9</a></td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+	</tr>
+	<tr>
+		<td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
+	</tr>
+	<tr>
+		<td>22</td><td id="today">23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+	</tr>
+	<tr>
+		<td>29</td><td>30</td>
+		<td class="pad" colspan="5">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></aside><aside id="meta-3" class="widget widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="../wp-login.php.html">Log in</a></li>
+			<li><a href="../feed/index.html">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="../comments/feed/index.html">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside><aside id="search-2" class="widget widget_search"><form role="search" style="background:transparent;" method="get" class="searchform" action="../index.html" >
+	<label class="screen-reader-text" for="s">Search for:</label>
+	<input type="search" value="" name="s" id="s" placeholder="Search Site" />
+	<input class="searchformimg" type="image" src="../wp-content/themes/weaver-ii/images/search_button.gif" alt="Search" />
+	</form></aside>
+	</div><!-- sidebar_right .widget-area -->
+	</div><!-- #sidebar_wrap_right -->
+    <div class='weaver-clear'></div></div><!-- #main -->
+	<footer id="colophon" role="contentinfo">
+	  <div>
+
+		<div id="site-ig-wrap">
+		<span id="site-info">
+		&copy; 2019 - <a href="../index.html" title="Certain Doubts" rel="home">Certain Doubts</a>
+		</span> <!-- #site-info -->
+		<span id="site-generator">
+		<a href="http://wordpress.org/" title="wordpress.org" rel="generator" target="_blank">Proudly powered by WordPress</a>&nbsp;
+Weaver II by <a href="http://weavertheme.com" target="_blank" title="http://weavertheme.com">WP Weaver</a>
+		</span> <!-- #site-generator -->
+		</div><!-- #site-ig-wrap -->
+		<div class="weaver-clear"></div>
+	  </div>
+	</footer><!-- #colophon -->
+</div><!-- #wrapper -->
+<a href="index.html%3Freplytocom=3087.html#page-top" id="page-bottom">&uarr;</a>
+<div id="weaver-final" class="weaver-final-normal"><script type='text/javascript' src='../wp-includes/js/comment-reply.min.js%3Fver=4.9.10'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var weaver_menu_params = {"selector":"li:has(ul) > a","selector_leaf":"li li li:not(:has(ul)) > a"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/themes/weaver-ii/js/weaverjslib.min.js%3Fver=2.2.2'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.min.js%3Fver=4.9.10'></script>
+<script async="async" type='text/javascript' src='../wp-content/plugins/akismet/_inc/form.js%3Fver=4.1'></script>
+</div> <!-- #weaver-final -->
+</body>
+</html>

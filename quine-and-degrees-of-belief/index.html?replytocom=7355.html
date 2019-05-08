@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<!--[if IE 7]>	<html id="ie7" lang="en-US"> <![endif]-->
+<!--[if IE 8]>	<html id="ie8" lang="en-US"> <![endif]-->
+<!--[if IE 9]>	<html id="ie9" lang="en-US"> <![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8) ] | !(IE 9) ><!-->	<html lang="en-US"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes' />
+<title>Quine and Degrees of Belief | Certain Doubts</title>
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://certaindoubts.com/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://certaindoubts.com/wp-content/themes/weaver-ii/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<script type="text/javascript">var weaverIsMobile=false;var weaverIsSimMobile=false;var weaverIsStacked=false;var weaverThemeWidth=940;var weaverMenuThreshold=640;var weaverHideMenuBar=false;var weaverMobileDisabled=false;var weaverFlowToBottom=false;var weaverHideTooltip=false;var weaverUseSuperfish=false;</script>
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Certain Doubts &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Certain Doubts &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Certain Doubts &raquo; Quine and Degrees of Belief Comments Feed" href="feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/certaindoubts.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.10"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='weaverii-main-style-sheet-css'  href='../wp-content/themes/weaver-ii/style.min.css%3Fver=2.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='weaverii-mobile-style-sheet-css'  href='../wp-content/themes/weaver-ii/style-mobile.min.css%3Fver=2.2.2.css' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery.js%3Fver=1.12.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min.js%3Fver=1.4.1'></script>
+<link rel='https://api.w.org/' href='../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc.php%3Frsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='2nd Online Philosophy Conference' href='../index.html%3Fp=698.html' />
+<link rel='next' title='Bled Conference 2007' href='../index.html%3Fp=700.html' />
+<meta name="generator" content="WordPress 4.9.10" />
+<link rel="canonical" href="../index.html%3Fp=699.html" />
+<link rel='shortlink' href='../index.html%3Fp=699.html' />
+<meta name='robots' content='noindex,follow' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed%3Furl=http:%252F%252Fcertaindoubts.com%252Fquine-and-degrees-of-belief%252F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed%3Furl=http:%252F%252Fcertaindoubts.com%252Fquine-and-degrees-of-belief%252F&amp;format=xml" />
+
+<!-- This site is using Weaver II 2.2.2 (48) subtheme: Wheat -->
+<!-- Page ID: 699 -->
+<style type="text/css">
+/* Weaver II styles - Version 48 */
+a {color:#59C448;}
+a:visited {color:#8DBA61;}
+a:hover {color:#C91640;}
+a{font-style:italic;}
+a{font-weight:bold;}
+.entry-title a {color:#0A0A0A;}
+.entry-title a:visited {color:#0A0A0A;}
+.entry-title a{font-style:normal;}
+.entry-title a{font-weight:normal;}
+.entry-meta a, .entry-utility a {color:#474134;}
+.entry-meta a:visited, .entry-utility a:visited {color:#706752;}
+.entry-meta a:hover, .entry-utility a:hover {color:#C91640;}
+.widget-area a {color:#474134;}
+.widget-area a:visited {color:#706752;}
+.widget-area a:hover {color:#C91640;}
+.widget-area a{font-style:normal;}
+.widget-area a{font-weight:normal;}
+#infobar a{font-style:normal;}
+#infobar a{font-weight:normal;}
+#colophon a{font-style:normal;}
+#colophon a{font-weight:normal;}
+#wrapper {border: 1px solid #AB9B7D;}
+#sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,#first,#second,#third,#fourth, .mobile_widget_area {border: 1px solid #AB9B7D;}
+#wrapper, #branding, #colophon, .commentlist li.comment, #respond, #sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,#first,#second,#third,#fourth,.mobile_widget_area {-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}
+#sidebar_wrap_right.right-1-col,#sidebar_wrap_right.right-2-col,#sidebar_wrap_right.right-2-col-bottom,
+#sidebar_wrap_left.left-1-col,#sidebar_wrap_left.left-2-col,#sidebar_wrap_left.left-2-col-bottom,#sidebar_wrap_left,#sidebar_wrap_right
+{-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}
+.commentlist li.comment .comment-meta {-moz-border-radius-topleft: 7px; -moz-border-radius-topright: 7px;
+ -webkit-border-top-left-radius: 7px; -webkit-border-top-right-radius: 7px; border-top-left-radius: 7px; border-top-right-radius: 7px;}
+#access {-moz-border-radius-bottomleft: 7px; -moz-border-radius-bottomright: 7px;
+ -webkit-border-bottom-left-radius: 7px; -webkit-border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; border-bottom-right-radius: 7px;}
+#access2 {-moz-border-radius-topleft: 7px; -moz-border-radius-topright: 7px;
+ -webkit-border-top-left-radius: 7px; -webkit-border-top-right-radius: 7px; border-top-left-radius: 7px; border-top-right-radius: 7px;}
+body {background-image: url(../wp-content/themes/weaver-ii/images/gr.png); background-attachment: scroll; background-repeat: repeat-x;}
+#wrapper {-webkit-box-shadow: 0 0 3px 3px rgba(0,0,0,0.25); -moz-box-shadow: 0 0 3px 3px rgba(0,0,0,0.25); box-shadow: 0 0 3px 3px rgba(127,127,127,0.25);}
+#wrapper{max-width:940px;}
+#sidebar_primary,.mobile_widget_area {background-color:#F5DEB3;}
+#sidebar_right {background-color:#F5DEB3;}
+#sidebar_left {background-color:#F5DEB3;}
+.sidebar_top,.sidebar_extra {background-color:#F5DEB3;}
+.sidebar_bottom {background-color:#F5DEB3;}
+#first,#second,#third,#fourth {background-color:transparent;}
+.widget {background-color:transparent;}
+#container_wrap.right-1-col{width:75.000%;} #sidebar_wrap_right.right-1-col{width:25.000%;}
+#container_wrap.right-2-col,#container_wrap.right-2-col-bottom{width:67.000%;} #sidebar_wrap_right.right-2-col,#sidebar_wrap_right.right-2-col-bottom{width:33.000%;}
+#container_wrap.left-1-col{width:75.000%;} #sidebar_wrap_left.left-1-col{width:25.000%;}
+#container_wrap.left-2-col,#container_wrap.left-2-col-bottom{width:67.000%;} #sidebar_wrap_left.left-2-col,#sidebar_wrap_left.left-2-col-bottom{width:33.000%;}
+#container_wrap{width:66.000%;} #sidebar_wrap_left{width:17.000%;} #sidebar_wrap_right{width:17.000%;}
+#sidebar_wrap_2_left_left, #sidebar_wrap_2_right_left {width:54.000%;margin-right:1%;}
+#sidebar_wrap_2_left_right, #sidebar_wrap_2_right_right {width:45.000%;}
+#sidebar_header {font-size:70%;}
+#sidebar_header .header-widget-1 {display:none;}
+#sidebar_header .header-widget-2 {display:none;}
+#sidebar_header .header-widget-3 {display:none;}
+#sidebar_header .header-widget-4 {display:none;}
+@media only screen and (max-width:640px) { /* header widget area mobile rules */
+} /* end mobile rules */
+#main {padding: 15px 0 0 0;}
+#site-description {font-size:200.000%;}
+#site-title {overflow:hidden; padding:0; margin:0; position:absolute; left:2.000%; top: 5.000%; z-index:20;}
+#site-description {overflow:hidden; padding:0; margin:0; position:absolute; left:4.000%; top: 30.000%; z-index:20;}
+.menu_bar a, .mobile_menu_bar a {font-weight:bold;}
+@media only screen and (min-width: 641px) {.menu_bar,.weaveriip_vertical_menu .menu_bar { background-image: url(../wp-content/themes/weaver-ii/images/theme/fade.png);}}
+@media only screen and (min-width: 641px) {.menu_bar ul ul a, .menu_bar li:hover > a, .menu_bar ul ul :hover > a { background-image: url(../wp-content/themes/weaver-ii/images/theme/fadeup.png);}}
+#ie8 .menu_bar,#ie8 .weaveriip_vertical_menu .menu_bar,#ie7 .menu_bar,#ie7 .weaveriip_vertical_menu .menu_bar { background-image: url(../wp-content/themes/weaver-ii/images/theme/fade.png);}
+#ie8 .menu_bar ul ul a, #ie8 .menu_bar li:hover > a, #ie8 .menu_bar ul ul :hover > a,
+#ie7 .menu_bar ul ul a, #ie7 .menu_bar li:hover > a, #ie7 .menu_bar ul ul :hover > a{ background-image: url(../wp-content/themes/weaver-ii/images/theme/fadeup.png);}
+.menu_bar, .menu_bar a,.menu_bar a:visited,.mobile_menu_bar a {color:#FFFAEF;}
+.menu_bar li:hover > a, .menu_bar a:focus {background-color:#BAA987;}
+.menu_bar li:hover > a, .menu_bar a:focus {color:#F0EBE0;}
+.menu_bar ul ul a {background-color:#BAA987;}
+.menu_bar ul ul a,.menu_bar ul ul a:visited {color:#FFFAEF;}
+.menu_bar ul ul :hover > a {background-color:#BAA987;}
+.menu_bar ul ul :hover > a {color:#F0EBE0;}
+.menu_bar, .mobile_menu_bar, .menu-add {background-color:#AB9B7D;}
+.mobile-menu-link {border-color:#FFFAEF;}
+.widget-area .menu-vertical,.menu-vertical {clear:both;background-color:transparent;margin:0;width:100%;overflow:hidden;border-bottom:3px solid #FFFAEF;border-top:1px solid #FFFAEF;}
+.widget-area .menu-vertical ul, .menu-vertical ul {margin: 0; padding: 0; list-style-type: none;  list-style-image:none;font-family: inherit;}
+.widget-area .menu-vertical li a, .widget-area .menu-vertical a:visited, .menu-vertical li a, .menu-vertical a:visited {
+color: #FFFAEF;  background-color: #AB9B7D; display: block !important; padding: 5px 10px; text-decoration: none; border-top:2px solid #FFFAEF;}
+.widget-area .menu-vertical a:hover,.widget-area .menu-vertical a:focus, .menu-vertical a:hover,.menu-vertical a:focus {
+color: #F0EBE0; background-color: #BAA987;text-decoration: none;}
+.widget-area .menu-vertical ul ul li, .menu-vertical ul ul li { margin: 0; }
+.widget-area .menu-vertical ul ul a,.menu-vertical ul ul a {color: #FFFAEF; background-color: #AB9B7D;
+ display: block; padding: 4px 5px 4px 25px; text-decoration: none;border:0;
+ border-top:1px solid #FFFAEF;}
+.widget-area .menu-vertical ul ul a:hover,#wrap-header .menu-vertical ul ul a:hover,#wrap-header .menu-vertical ul a:hover {color: #F0EBE0; background-color: #BAA987; text-decoration: none;}
+.widget-area .menu-vertical ul ul ul a,.menu-vertical ul ul ul a {padding: 4px 5px 4px 35px;}
+.widget-area .menu-vertical ul ul ul a,.menu-vertical ul ul ul ul a {padding: 4px 5px 4px 45px;}
+.widget-area .menu-vertical ul ul ul ul a,.menu-vertical ul ul ul ul ul a {padding: 4px 5px 4px 55px;}
+.menu_bar .current_page_item > a, .menu_bar .current-menu-item > a, .menu_bar .current-cat > a, .menu_bar .current_page_ancestor > a,.menu_bar .current-category-ancestor > a, .menu_bar .current-menu-ancestor > a, .menu_bar .current-menu-parent > a, .menu_bar .current-category-parent > a,.menu-vertical .current_page_item > a, .menu-vertical .current-menu-item > a, .menu-vertical .current-cat > a, .menu-vertical .current_page_ancestor > a, .menu-vertical .current-category-ancestor > a, .menu-vertical .current-menu-ancestor > a, .menu-vertical .current-menu-parent > a, .menu-vertical .current-category-parent > a,.widget-area .menu-vertical .current_page_item > a, .widget-area .menu-vertical .current-menu-item > a, .widget-area .menu-vertical .current-cat > a, .widget-area .menu-vertical .current_page_ancestor > a {color:#474134 !important;}
+.entry-title {border-bottom: 1px solid #0A0A0A;}
+#content, .entry-content h1, .entry-content h2 {color:#292929;}
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6, #content dt, #content th,
+h1, h2, h3, h4, h5, h6,#author-info h2 {color:#0A0A0A;}
+#content h1.entry-title {color:#0A0A0A;}
+.commentlist li.comment, #respond {background-color:transparent;}
+.wp-caption p.wp-caption-text, #content .gallery .gallery-caption,.entry-attachment .entry-caption {color:#333333;}
+#content img.size-full, #content img.size-large, #content img.size-medium, #content img.size-thumbnail, #content .attachment-thumbnail, #content .gallery img,#content .gallery-thumb img,.entry-attachment img, #content .wp-caption img, #content img.wp-post-image,#content img[class*="wp-image-"],#author-avatar img,img.avatar {background-color:transparent;}
+.home .sticky, #container.page-with-posts .sticky, #container.index-posts .sticky {background-color:#E6DCC8;}
+.entry-meta, .entry-content label, .entry-utility {color:#706752;}
+body {font-size:12px;}
+body {background-color:#C7B491;}
+body {color:#292929;}
+#wrapper {background-color:#FEF3DD;}
+#main {background-color:transparent;}
+#container {background-color:transparent;}
+#content {background-color:transparent;}
+#content .post,.post {background-color:transparent;}
+#branding {background-color:transparent;}
+#colophon {background-color:#F5DEB3;}
+hr {background-color:#AB9B7D;}
+.entry-meta {background-color:transparent;}
+.entry-utility {background-color:transparent;}
+input, textarea, ins, pre {background-color:#F0F0F0;}
+.widget {color:#333333;}
+.widget-title {border-bottom: 1px solid #222222; margin-bottom:5px;padding-bottom:3px;}
+.widget-title, .widget_search label, #wp-calendar caption {color: #222222;}
+#site-title a {color:#FEF9EE;}
+#site-description {color:#FFFAEF;}
+/* Weaver II Mobile Device Options */
+.weaver-any-mobile  #main a, .weaver-any-mobile  #mobile-widget-area a, .weaver-any-mobile  .sidebar_top a, .weaver-any-mobile  .sidebar_bottom a, .weaver-any-mobile  .sidebar_extra a {text-decoration: underline !important;}
+@media only screen and (max-width:768px) and (orientation:portrait) {body {padding: 0px !important;}}
+@media only screen and (max-width:640px) {
+#main a, #mobile-widget-area a, .sidebar_top a, .sidebar_bottom a, .sidebar_extra a{text-decoration: underline !important;}
+}
+@media only screen and (max-width: 580px) {
+}
+
+/* end Weaver II CSS */
+</style> <!-- end of main options style section -->
+
+
+<!--[if lte IE 8]>
+<style type="text/css" media="screen">
+#content img.size-thumbnail,#content img.size-medium,#content img.size-large,#content img.size-full,#content img.attachment-thumbnail,
+#content img.wp-post-image,img.avatar,.format-chat img.format-chat-icon,
+#wrapper,#branding,#colophon,#content, #content .post,
+#sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,
+#first,#second,#third,#fourth,
+#commentform input:focus,#commentform textarea:focus,#respond input#submit {
+		behavior: url(http://certaindoubts.com/wp-content/themes/weaver-ii/js/PIE/PIE.php) !important; position:relative;
+}
+</style>
+<![endif]-->
+
+<!-- End of Weaver II options -->
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		</head>
+
+<body class="post-template-default single single-post postid-699 single-format-standard singular not-logged-in weaver-desktop weaver-mobile-smart-nostack">
+<a href="index.html%3Freplytocom=7355.html#page-bottom" id="page-top">&darr;</a> <!-- add custom CSS to use this page-bottom link -->
+<div id="wrapper" class="hfeed">
+<div id="wrap-header">
+	<header id="branding" role="banner"><div id="branding-content">
+		<div id="site-logo"></div>
+		<div id="site-logo-link" onclick="location.href='http://certaindoubts.com/';"></div>
+
+		<div class="title-description-xhtml">
+			<h1 id="site-title" ><span><a href="../index.html" title="Certain Doubts" rel="home">Certain Doubts</a></span></h1>
+			<h2 id="site-description"> devoted to matters epistemic</h2>
+		</div>
+		<div id="header_image">
+                              <img src="../wp-content/themes/weaver-ii/images/headers/wheat.jpg" width="940" height="188" alt="Certain Doubts" />
+        		</div><!-- #header_image -->
+	</div></header><!-- #branding-content, #branding -->
+<div id="wrap-bottom-menu">
+<div id="mobile-bottom-nav" class="mobile_menu_bar" style="padding:5px 10px 5px 10px;clear:both;">
+	<div style="margin-bottom:20px;">
+<span class="mobile-home-link">
+	<a href="../index.html" title="Certain Doubts" rel="home">Home</a></span>
+	<span class="mobile-menu-link"><a href="javascript:void(null);" onclick="weaverii_ToggleMenu(document.getElementById('nav-bottom-menu'), this, 'Menu &darr;', 'Menu &uarr;')">Menu &darr;</a></span></div>
+</div>
+		<div class="skip-link"><a class="assistive-text" href="index.html%3Freplytocom=7355.html#content" title="">Skip to primary content</a></div>
+			<div class="skip-link"><a class="assistive-text" href="index.html%3Freplytocom=7355.html#sidebar_primary" title="">Skip to secondary content</a></div>
+				<div id="nav-bottom-menu"><nav id="access" class="menu_bar" role="navigation">
+<div class="menu"><ul>
+<li ><a href="../index.html">Home</a></li><li class="page_item page-item-1894"><a href="../index.html%3Fpage_id=1894.html">Decade and Longitudinal Journal Information</a></li>
+<li class="page_item page-item-2739"><a href="../index.html%3Fpage_id=2739.html">Epistemology Course Slides</a></li>
+<li class="page_item page-item-2752"><a href="../index.html%3Fpage_id=2752.html">Talks:  Slides and Videos</a></li>
+<li class="page_item page-item-417"><a href="../index.html%3Fp=417.html">About Certain Doubts</a></li>
+<li class="page_item page-item-397"><a href="../index.html%3Fp=397.html">Contributors</a></li>
+<li class="page_item page-item-413"><a href="../index.html%3Fp=413.html">Archives</a></li>
+<li class="page_item page-item-774"><a href="../index.html%3Fpage_id=774.html">Complete Hirsch Number Rankings of U.S. Philosophy PhD Programs</a></li>
+<li class="page_item page-item-823"><a href="../index.html%3Fp=823.html">Philosophy Journal Information:  ESF Rankings, Citation Impact, &#038; Rejection Rates</a></li>
+<li class="page_item page-item-454"><a href="../index.html%3Fp=454.html">Some of Our Books</a></li>
+</ul></div>
+		</nav></div><!-- #access --></div> <!-- #wrap-bottom-menu -->
+</div> <!-- #wrap-header -->
+	<div id="main">
+	<div id="sidebar_wrap_left" class="split equal_height">
+	<div id="sidebar_left" class="widget-area" role="complementary">
+<aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">John Fischer</span> on <a href="../index.html%3Fp=4902.html#comment-331879">The End</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://dailynous.com/2019/03/07/philosophers-on-the-philosophy-blogosphere/' rel='external nofollow' class='url'>Philosophers On the Philosophy Blogosphere - Daily Nous</a></span> on <a href="../index.html%3Fp=616.html#comment-331009">Doris and Russell on Stanley</a></li><li class="recentcomments"><span class="comment-author-link"><a href='https://philosophy.unc.edu/2019/02/08/worsnip-wins-young-epistemologist-prize/' rel='external nofollow' class='url'>Worsnip wins Young Epistemologist Prize - Department of Philosophy</a></span> on <a href="../index.html%3Fp=4897.html#comment-329263">Young Epistemologist Prize 2019</a></li><li class="recentcomments"><span class="comment-author-link">S. Alas</span> on <a href="../index.html%3Fp=4890.html#comment-324134">A simple problem for (unrestricted) Conditionalization</a></li><li class="recentcomments"><span class="comment-author-link"><a href='https://enigmanically.blogspot.co.uk/' rel='external nofollow' class='url'>Martin Cooke</a></span> on <a href="../index.html%3Fp=4738.html#comment-310431">What philosophers think might not be what you think they think</a></li></ul></aside><aside id="meta-2" class="widget widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="../wp-login.php.html">Log in</a></li>
+			<li><a href="../feed/index.html">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="../comments/feed/index.html">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside><aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-9"><a href="../category/a-priori-knowledge/index.html" >a priori knowledge</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="../category/confirmation-theory/index.html" >confirmation theory</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="../category/contextualism/index.html" >contextualism</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="../category/epistemic-paradoxes/index.html" >epistemic paradoxes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="../category/formal-epistemology/index.html" >formal epistemology</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="../category/foundationalismcoherentism/index.html" >foundationalism and coherentism</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="../category/foundationalism-and-coherentism/index.html" >foundationalism and coherentism</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="../category/general/index.html" >general</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="../category/internalismexternalism/index.html" >internalism and externalism</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="../category/internalism-and-externalism/index.html" >internalism and externalism</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="../category/justification/index.html" >justification</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="../category/knowledge/index.html" >knowledge</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="../category/links/index.html" >Links</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="../category/major-figures/index.html" >major figures</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="../category/memory/index.html" >memory</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="../category/perception/index.html" >perception</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="../category/skepticism/index.html" >skepticism</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="../category/testimony-and-social-epistemology/index.html" >testimony and social epistemology</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="../category/uncategorized/index.html" >Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="../category/understanding/index.html" >understanding</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="../category/value-driven-epistemology/index.html" >value-driven epistemology</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="../category/virtue-epistemology/index.html" >virtue epistemology</a>
+</li>
+		</ul>
+</aside>
+	</div><!-- #sidebar_left .widget-area -->
+	</div><!-- #sidebar_wrap_left -->
+		<div id="container_wrap" class="container-single equal_height split">
+		<div id="container">
+			<div id="content" role="main">
+
+				<nav id="nav-above" class="navigation">
+				<h3 class="assistive-text">Post navigation</h3>
+					<div class="nav-previous"><a href="../index.html%3Fp=698.html" rel="prev"><span class="meta-nav">&larr;</span> 2nd Online Philosophy Conference</a></div>
+				<div class="nav-next"><a href="../index.html%3Fp=700.html" rel="next">Bled Conference 2007 <span class="meta-nav">&rarr;</span></a></div>
+				</nav><!-- #nav-above -->
+
+
+<article id="post-699" class="content-single  post-699 post type-post status-publish format-standard hentry category-formal-epistemology">
+	<header class="entry-header">
+		<div class="entry-hdr"><h1 class="entry-title">Quine and Degrees of Belief</h1></div>
+
+		<div class="entry-meta">
+						<div class="meta-info-wrap">
+			<span class="sep posted-on">Posted on </span><a href="../index.html%3Fp=699.html" title="7:28 am" rel="bookmark"><time class="entry-date" datetime="2007-05-17T07:28:28+00:00">May 17, 2007</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="../author/admin/index.html" title="View all posts by Kvanvig Jon" rel="author">Kvanvig Jon</a></span></span><span class="updated">May 17, 2007</span>
+			</div><!-- .entry-meta-icons -->		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+	<div class="entry-content cf">
+		<p>I wonder if anyone has insight into why Quine never ran any of his epistemology off of degrees of belief (unless, of course, I&#8217;m just unaware of something in the Quinean corpus, which there is some chance of, since I know I haven&#8217;t looked at all of it).  I don&#8217;t know the answer, but here&#8217;s a guess.</p>
+<p><span id="more-699"></span>Suppose one thinks that there are both beliefs and degrees of belief, and that they are related by the following necessary equivalence:<br />
+S believes that p iff S&#8217;s confidence level regarding p exceeds some threshold T.</p>
+<p>One can fill out the Lockean picture of the relationship between belief and degree of belief by accepting this equivalence and taking the direction of reduction to go from left to right.  That is, the fundamental reality is degree of belief, with the derived reality that of belief.</p>
+<p>How would one oppose this Lockean thesis?  Well, obviously, one might think the equivalence claim is false, either by denying any relationship between beliefs and degrees of belief, or by doubting the existence of one of the two.  Perhaps Richard Jeffrey is the most famous denier of belief, but it is hard to find an explanation by those who think there are no degrees of belief.  I found one though:  from P.M.S. Hacker, &#8220;Of the Ontology of Belief,&#8221; where he says,</p>
+<blockquote><p>But there are no degrees of belief, so belief cannot be a feeling.  I cannot believe that p more than you do, although I may be more certain than you that p. I cannot believe that p just a little or very much, although I can be inclined a little or very much inclined to believe that p. Of course, one may strongly or firmly believe that p (though not “weakly&#8221; or “moderately&#8221;), but this does not indicate a degree of belief. It signifies the strength or firmness with which one cleaves to the belief one has. It is the ease or difficulty of shaking the belief in question, and not the belief itself, that has degrees. It makes sense to ask how convinced, doubtful, suspicious, confident, etc. someone is that p, but not to ask how belief-ful or how much one believes that p. It is the belief-related adjectives that do this work, not the noun “belief&#8221;. The evidence I have in favour of its being the case that p may increase, but my belief that p does not therefore increase, although my conviction, certainty or confidence that p will. (p. 5 of pdf file located <a href="http://info.sjc.ox.ac.uk/scr/hacker/docs/Ontology%20of%20belief.pdf">here</a>).</p></blockquote>
+<p>But what if one wishes not to abandon the equivalence?  One might insist that no reduction in either direction is possible, but one might also try to reduce degrees of belief to belief itself.  My suspicion is that Quine may have thought this (though, as you&#8217;ll see, I have very little evidence).  Here&#8217;s why I suspect this.  The only person to my knowledge that suggests a possible way of reducing left-to-right is Gil Harman.  I don&#8217;t have the quote with me, but what I recall is that he says something like this:  degree of belief is an epiphenomenon of how revision of belief occurs.</p>
+<p>If we wax metaphorical a bit, we can put Harman&#8217;s idea into the language of the web of belief, where depth in the web signals greater resistance to revision in the face of recalcitrant experience (or other learning).  We can use various measuring strategies (e.g., betting behaviors) to give a rough guide as to how to generate comparisons between various levels of resistance to revision.  That&#8217;s how we get degrees of belief out of belief.  Many of the things that Quine says about the web of belief are suggestive of such a view, so I wonder if Quine would have preferred the anti-Lockean explanation.</p>
+<p>OK, there are questions to be answered here, but if we suppose that the story goes something like this, then we&#8217;d have an explanation of why Quine does epistemology through belief rather than degrees of belief.  With other epistemologists, we might cite lack of familiarity with formal techniques and methods as the explanation, but I think it would be slightly bizarre to consider such an explanation for Quine!</p>
+<p>Anyway, just an idea, and I&#8217;d love to hear other ideas as to why Quine doesn&#8217;t show any interest in degrees of belief.</p>
+			</div><!-- .entry-content -->
+
+	<footer class="entry-utility">
+<div class="meta-info-wrap">
+			<span class="cat-links">
+<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="../category/formal-epistemology/index.html" rel="category tag">formal epistemology</a>			</span>
+		<span class="permalink-icon"><a href="../index.html%3Fp=699.html" title="Permalink to Quine and Degrees of Belief" rel="bookmark">permalink</a></span>
+	</div><!-- .entry-meta-icons -->
+
+	</footer><!-- .entry-utility -->
+</article><!-- #post-699 -->
+
+				<nav id="nav-below" class="navigation">
+				<h3 class="assistive-text">Post navigation</h3>
+					<div class="nav-previous"><a href="../index.html%3Fp=698.html" rel="prev"><span class="meta-nav">&larr;</span> 2nd Online Philosophy Conference</a></div>
+				<div class="nav-next"><a href="../index.html%3Fp=700.html" rel="next">Bled Conference 2007 <span class="meta-nav">&rarr;</span></a></div>
+				</nav><!-- #nav-above -->
+
+
+	<div id="comments">
+
+		<hr class='comments-hr'>
+		<header id="comments-title">
+		<h3>Comments</h3>
+				<h4>
+<em>Quine and Degrees of Belief</em> &#8212; 17 Comments		</h4>
+		</header>
+
+		
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-7350" >
+		<article id="comment-7350" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/0335636d216edab667758e2d3d5f1ac8?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/0335636d216edab667758e2d3d5f1ac8?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Juan Comesaña</span> on <a href="../index.html%3Fp=699.html#comment-7350"><time datetime="2007-05-17T18:48:53+00:00">May 17, 2007 at 6:48 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>The entry for &#8220;Belief&#8221; in *Quiddities* shows succintly that Quine was rather dismissive of both beliefs and degrees of beliefs:</p>
+<p>&#8220;But beliefs grade off (&#8230;) to where their dispositional content apart from lip service becomes tenuous to the vanishing point. What shared trait can have grouped all these extravagantly diverse states of mind, real or professed, under a single serviceable term, *belief*? None, I submit. They are grouped rather by a linguistic quirk, the adapter *that*, which can be prefixed thoughtlessly to any and every declarative sentence to produce a grammatically impeccable and hence presumably meaningful direct object for the term *believes*.&#8221;</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=7350.html#respond' onclick='return addComment.moveForm( "comment-7350", "7350", "respond", "699" )' aria-label='Reply to Juan Comesaña'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-7351" >
+		<article id="comment-7351" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/23fa973d87bbd27a88c85f870493316c?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/23fa973d87bbd27a88c85f870493316c?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www3.baylor.edu/Jonathan_Kvanvig/' rel='external nofollow' class='url'>kvanvig</a></span> on <a href="../index.html%3Fp=699.html#comment-7351"><time datetime="2007-05-17T19:11:45+00:00">May 17, 2007 at 7:11 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>That&#8217;s a good point Juan, though I&#8217;m not sure how the remark applies to degrees of belief.  In any case, he also says this:<br />
+“A belief, in the best and clearest case, is a bundle of dispositions. It may include the disposition to lip service, a disposition to accept a wager, and various dispositions to take precautions, or to book a passage, or to tidy up the front room, or the like, depending on what particular belief it may be.&#8221;</p>
+<p>This suggests that he doesn&#8217;t want to have to answer to ordinary language, as &#8220;beliefs grade off&#8221;, but that there&#8217;s a straightforward replacement notion that doesn&#8217;t grade off, and it will be reminiscent, at least, of the ordinary notion of belief, at least as found in the best and clearest cases.</p>
+<p>Moreover, worries about the concept of belief itself provide motive, as in Jeffrey, to replace belief with degree of belief.</p>
+<p>Perhaps, though, the idea is to replace mentalistic talk with dispositional language alone?  That would be too bad. . .</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=7351.html#respond' onclick='return addComment.moveForm( "comment-7351", "7351", "respond", "699" )' aria-label='Reply to kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-7353" >
+		<article id="comment-7353" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Gregory Wheeler</span> on <a href="../index.html%3Fp=699.html#comment-7353"><time datetime="2007-05-20T05:02:21+00:00">May 20, 2007 at 5:02 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p><i>&#8220;Perhaps Richard Jeffrey is the most famous denier of belief, but it is hard to find an explanation by those who think there are no degrees of belief.&#8221;</i></p>
+<p>Here is one: What evidence delivers, nearly all of the time, are real-valued <i>bounds</i> on &#8220;degrees of belief&#8221;. The probability interval [l, u] associated with a statement does not specify a range of equally rational degrees of belief between l and u: the interval [l, u] itself is not a quantity, only l and u are quantities, which are then used to specify bounds. It makes no sense to say that the degree of belief <i>is</i> [l,u]; furthermore, no degree of belief within [l,u] is defensible on the evidence; thus there are (generally) no rational degrees of belief.</p>
+<p>Here is another: to construct a degree of belief about anything you first need to agree on what the probability space looks like, which means that you must  have a firm belief (not a degree of belief!) about what is and what is not possible. Thus, degrees of belief cannot be treated as primitive.</p>
+<p>Here is a third: First-order probability is highly undecidable, far worse than first-order logic. (The validity problem for first-order probability logic with a single binary predicate is not even decidable relative to the full theory of real analysis.) Thus, it is clear that this notion &#8220;degree of belief&#8221; is at best a representative notion, not a primitive notion, and that it is part of an extremely limited representation language at that.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=7353.html#respond' onclick='return addComment.moveForm( "comment-7353", "7353", "respond", "699" )' aria-label='Reply to Gregory Wheeler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-7352" >
+		<article id="comment-7352" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/aeef9e20bc546f9bed77060ade95749a?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/aeef9e20bc546f9bed77060ade95749a?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Alex ALBON aka undying</span> on <a href="../index.html%3Fp=699.html#comment-7352"><time datetime="2007-05-20T15:33:40+00:00">May 20, 2007 at 3:33 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>(Am I right or am I right? Why was my comment deleted?)</p>
+<p>My deleted comment about 1.degrees of belief and Quine, 2.mental engineering, and it&#8217;s connections with other comments:</p>
+<p>Gregory Wheeler:<br />
+&#8220;Here is another: &#8230;. is not possible.&#8221;</p>
+<p>This corresponds to my part about apperceptual objects.</p>
+<p>Gregory Wheeler:<br />
+&#8220;The probability interval [l, u] associated with a statement&#8221;&#8230;</p>
+<p>This means that &#8220;I know l, and I know u, so between them we may find the thing that pertains to I and U, the thing that we want to establish our opinion on.&#8221;</p>
+<p>Here belief is about getting the first empirical thing on something, namely the identity of our thing in the context of l and u. So we know our thing, but when we modulate it to that specific range then the thing is just under scientific, rational modulation, and that modulation science offers us through formulas can not contain our own personal inner belief. It contains cold numbers and formulas.</p>
+<p>I have not covered this point in my deleted comment, as I am at this point only interested in abstract mechanisms, and not in what they produce. This is in fact the main distiction between me, a not professional mental engineer, and you all, professional philosophers, that not only do research inside the complete schema of human functionality, but entangle with the complicated problems of applying the results being produced by every little part of the whole mechanism.</p>
+<p>Gregory Wheeler:<br />
+&#8220;Here is a third:&#8221;&#8230;</p>
+<p>This third says what I have said about the affective energy fields, that they can not be something in themselves. The probability for knowing is a function of the empiric, material field, and while G.Wheeler says about representative / primitive I say about a noumenal realm that one has to be able to exist in, in order to be able to track the real noumenal objects in a specific instance / and provide the content of the belief for that particular instance.</p>
+<p>Again &#8211; why was my comment deleted? Can&#8217;t you people see that I&#8217;m right, that I&#8217;m naturally talented and that I need your help in order to get fit and get into the tracks of society?</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=7352.html#respond' onclick='return addComment.moveForm( "comment-7352", "7352", "respond", "699" )' aria-label='Reply to Alex ALBON aka undying'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-7354" >
+		<article id="comment-7354" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/23fa973d87bbd27a88c85f870493316c?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/23fa973d87bbd27a88c85f870493316c?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www3.baylor.edu/Jonathan_Kvanvig/' rel='external nofollow' class='url'>kvanvig</a></span> on <a href="../index.html%3Fp=699.html#comment-7354"><time datetime="2007-05-20T18:15:03+00:00">May 20, 2007 at 6:15 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hi Greg, I understand the first point, though maybe there is some mileage to be gotten from defining some notion of thick confidence that covers the range in question.  Even so, I wonder how to make any attempt when your evidence is, e.g., that there is an urn with 100 marbles in it, and either it contains 10-20 red marbles or 70-80, with the rest black.  I can see some hope for interval confidences, but these &#8220;gappy&#8221; cases seem worse to me.</p>
+<p>On the second point, I&#8217;m not sure why not treat the firm belief as just certainty?  I&#8217;m afraid I don&#8217;t have such degrees of belief, but that&#8217;s a general problem about logical truths.</p>
+<p>On the third point, I&#8217;d like to read more.  Can you point me to some literature?  Thanks!</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=7354.html#respond' onclick='return addComment.moveForm( "comment-7354", "7354", "respond", "699" )' aria-label='Reply to kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-7355" >
+		<article id="comment-7355" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Gregory Wheeler</span> on <a href="../index.html%3Fp=699.html#comment-7355"><time datetime="2007-05-21T05:16:55+00:00">May 21, 2007 at 5:16 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hi Jon,</p>
+<p>(i) We might say that either the proportion of red balls in the urn is between .1 and .2, or that it is between .7 and .8, full stop. The twist is if we wish to say something about a particular ball, call it A, that is a member of the urn. What is your degree of belief that A is red?</p>
+<p>If what you stated is all that we know about the urn, I would say that the probability that A is red is between .1 and .8. However, if I know additional things about the urn and the manner in which A is selected I can then sharpen this interval considerably. If, for example, it is reasonable for me to view the uncertainty mechanism for selecting A to be equivalent to considering the draw of A from one of two 100 ball urns, the first known to contain between 10-20 red balls, the second to contain  between 70-80 red balls, <i> and the probabilities of picking each urn to be p and p*</i>, then I can conditionalize to sharpen my interval. And there are other mechanisms that I can appeal to as well.</p>
+<p>But the catch to this is whether or not the preconditions for these methods are satisfied, whether in fact we have p and p* for instance; whether max entropy is reasonable to apply in the objective bayes framework; and so on. Some of the heat in the philosophical debates on these matters reduces to  whether or not an epistemic account ought to be built up from assuming that values for the necessary parameters are always available.</p>
+<p>(ii) Generally it is not a good idea to identify certainty with probability 1, impossibility with 0. Consider a toy example involving a 6-sided die. It is natural to identify the outcome space with the six faces of the die. This gives probability 1 to the event of the tossed die showing either side 1, or side 2, or side 3, or side 4, or side 5, or side 6. But we shouldn&#8217;t say that we are certain that <i>this</i> die will show one of these 6 sides on a given toss: it might be tossed on a shag carpet, in which case the edges and corners should be included in the event outcome space. Nor should we be certain that <i>any</i> six-sided die thrown on a flat surface will show one of the six sides: we might use a painted sugar cube as our die, in which case &#8220;total destruction&#8221; should be included in the outcome space as well.</p>
+<p>The point is that &#8220;degree of belief&#8221; makes sense only with respect to a probability space, and you need to have definite commitments a.k.a &#8220;beliefs&#8221; (or have complete and definite preferences of a given set of outcomes, if you want to go at this qualitatively via Savage) before you can talk about rational degrees of anything. Thus, degrees of belief are a highly derivative notion. Or, to put the matter the other way around, if you insist upon treating degree of belief as a primitive, then degree of belief becomes a highly contrived notion.</p>
+<p>(iii) Work on probability proof theory: Fagen, Halpern and Megiddo (&#8220;A logic for reasoning about probabilities&#8221;, Information and Computation, 1990, ) provide a proof theory for the standard probability semantics for propositional variables, and deciding satisfiability is NP-complete. But there are significant obstacles to providing a proof theory for more expressive languages. Halpern (&#8220;An analysis of first-order logics of probability&#8221;, AI Journal, 1990) shows that the validity problem I mentioned is highly undecidable. The reason is that standard Kolmogorov probability is itself a higher-order function on sets, so any language that is expressive enough to afford probabilistic reasoning <i>about</i> probability statements will extend beyond the complexity of first-order reasoning about real numbers and natural numbers.</p>
+<p>Cheers, Greg</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=7355.html#respond' onclick='return addComment.moveForm( "comment-7355", "7355", "respond", "699" )' aria-label='Reply to Gregory Wheeler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-7356" >
+		<article id="comment-7356" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/23fa973d87bbd27a88c85f870493316c?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/23fa973d87bbd27a88c85f870493316c?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www3.baylor.edu/Jonathan_Kvanvig/' rel='external nofollow' class='url'>kvanvig</a></span> on <a href="../index.html%3Fp=699.html#comment-7356"><time datetime="2007-05-21T07:02:18+00:00">May 21, 2007 at 7:02 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Two hints from Ernie LePore.  The first is to look at the index of Web of Belief, under &#8220;belief:  change of&#8221;  The second is from p. 429 in Quine&#8217;s  Library of Living Philosophers vol. &#8220;Reply to Hilary Putnam&#8221;:  Qine used to talk about &#8220;degrees of observationality&#8221; but later he (his thanks to Bergstrom) replaced that with &#8220;degrees of revisability.&#8221;</p>
+<p>The latter suggests strongly a view like the one I attributed to Harman, that language concerning degrees is best understood in terms of belief revision rather than the other way around.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=7356.html#respond' onclick='return addComment.moveForm( "comment-7356", "7356", "respond", "699" )' aria-label='Reply to kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-7357" >
+		<article id="comment-7357" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Gregory Wheeler</span> on <a href="../index.html%3Fp=699.html#comment-7357"><time datetime="2007-05-21T07:56:32+00:00">May 21, 2007 at 7:56 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Another argument then against this view, the view you attribute to Harman, is that belief change operations  include expansion, i.e., the wholesale addition of a variable (proposition) at time t that was not present before t. But this type of operation completely changes the state space that the measure is defined on; at t-1 (and perhaps before) we have one probability space, where as at t we have another.</p>
+<p>To map this into a concrete example, imagine that at t-1 we believed were dealing with a die tossed upon a marble floor. But at t we learn that the die to be tossed is made of sugar.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=7357.html#respond' onclick='return addComment.moveForm( "comment-7357", "7357", "respond", "699" )' aria-label='Reply to Gregory Wheeler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-7358" >
+		<article id="comment-7358" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/23fa973d87bbd27a88c85f870493316c?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/23fa973d87bbd27a88c85f870493316c?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www3.baylor.edu/Jonathan_Kvanvig/' rel='external nofollow' class='url'>kvanvig</a></span> on <a href="../index.html%3Fp=699.html#comment-7358"><time datetime="2007-05-21T08:06:39+00:00">May 21, 2007 at 8:06 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Greg, I don&#8217;t see this point.  A defender of Harman would want to distinguish between the idea that beliefs come in degrees and the idea that the degrees so measured satisfy some probability function.  The Harman idea has to allows that there are claims not yet in the web of belief (so that withholding, understood as a propositional attitude, doesn&#8217;t encompass every claim that isn&#8217;t in the class of things that one believes or believes the opposite).  Initially, all we would do is provide an ordinal ranking of differences between openness to revision, and then figure out some way to map this onto the real between 0 and 1.  This is all just a matter of psychology.  The epistemology comes in when we claim that the psychology has to satisfy certain requirements in order to be rational, and that&#8217;s where probability ought to appear if at all.  But maybe I&#8217;m not understanding your point?</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=7358.html#respond' onclick='return addComment.moveForm( "comment-7358", "7358", "respond", "699" )' aria-label='Reply to kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-7359" >
+		<article id="comment-7359" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Gregory Wheeler</span> on <a href="../index.html%3Fp=699.html#comment-7359"><time datetime="2007-05-21T10:41:47+00:00">May 21, 2007 at 10:41 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>If I have a degree of belief of 0.1666&#8230; at t that the tossed die shows a 6 (which is an odd doxastic state), then that belief accords to some probability function defined on a probability structure. Let&#8217;s say that p(toss = die crumbles) is undefined in this particular structure; that is, there is no &#8220;die crumbles&#8221; event in set of outcomes, hence no measurable event for &#8220;die crumbles&#8221; in the algebra of the probability space. This accords to expansion: there are events to which the agent at t takes no attitude.</p>
+<p>We may revise, by expansion, that the die is made of sugar. That is, we may add this information without retracting another belief. And yet this does force a change in the probability space if, as we will assume, &#8220;die crumbles&#8221; is now a relevant outcome. This then forces a change in degree of belief in die lands 6 assuming, as we will, that the sugar die is also a fair die.</p>
+<p>The point to notice is that there then is no (non-trivial) expansion operator on this view. <i>Any</i> expansion by non-trivial information necessitates constructing a new outcome space and adjusting the probabilities accordingly.</p>
+<p>The probabilist asks us to imagine that we be able, or he tells us that rationality dictates that we should aspire to be able to anticipate how to calculate an update on our system of degrees of after learning that the die to be tossed is made of sugar.</p>
+<p>My point is that a relatively routine and uncomplicated belief revision operator, expansion, is transformed into a heavy-lifting updating operation, since non-trivial new information will change the state space the agent uses to define his degrees of belief. That agent, if rational, is imagined to have foreseen all possible revisions, and to have on hand the parameters necessary to update and recalculate given each possible contingency. I don&#8217;t think we do anything like this, nor do I think it is nomologically possible that we do anything like this. And if ought implies can, if our psychology should bound our epistemology, which the naturalists have told us that it should, then we shouldn&#8217;t do anything like what Harman proposes.</p>
+<p>That&#8217;s rough; but that&#8217;s the general shape of the idea.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=7359.html#respond' onclick='return addComment.moveForm( "comment-7359", "7359", "respond", "699" )' aria-label='Reply to Gregory Wheeler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-7360" >
+		<article id="comment-7360" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/23fa973d87bbd27a88c85f870493316c?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/23fa973d87bbd27a88c85f870493316c?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www3.baylor.edu/Jonathan_Kvanvig/' rel='external nofollow' class='url'>kvanvig</a></span> on <a href="../index.html%3Fp=699.html#comment-7360"><time datetime="2007-05-21T15:13:29+00:00">May 21, 2007 at 3:13 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Oh, I see now, Greg, what you are worried about.  I agree completely on this point.  I think we need to distinguish the diachronic view from the synchronic one, and I was assuming that we construe the Harman account only in terms of a synchronic view.  What to do with belief revision itself won&#8217;t be a matter for some formal rule (especially for Harman!); I think all he&#8217;d want to say about that would be in terms of inference to the best explanation.  And I doubt any purely formal characterization of that rule can be found.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=7360.html#respond' onclick='return addComment.moveForm( "comment-7360", "7360", "respond", "699" )' aria-label='Reply to kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-7361" >
+		<article id="comment-7361" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Gregory Wheeler</span> on <a href="../index.html%3Fp=699.html#comment-7361"><time datetime="2007-05-22T02:54:11+00:00">May 22, 2007 at 2:54 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>What happens in the sugar die case is that a normally synchronic belief revision operation, expansion, turns into a (diachronic) update operation. My worry is that if this case is representative of the probabilistic proposal, then the normal distinction between static and dynamic operations collapses. If the distinction collapses, then any change in view becomes a diachronic operation. So if the case is representative, then we couldn&#8217;t restrict the view attributed to Harman to synchronic belief revision operations.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=7361.html#respond' onclick='return addComment.moveForm( "comment-7361", "7361", "respond", "699" )' aria-label='Reply to Gregory Wheeler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-7362" >
+		<article id="comment-7362" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/23fa973d87bbd27a88c85f870493316c?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/23fa973d87bbd27a88c85f870493316c?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www3.baylor.edu/Jonathan_Kvanvig/' rel='external nofollow' class='url'>kvanvig</a></span> on <a href="../index.html%3Fp=699.html#comment-7362"><time datetime="2007-05-22T07:47:18+00:00">May 22, 2007 at 7:47 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Greg, we need to separate belief revision principles from synchronic facts about a mental state at a given time.  Belief revision is a change from one total state to another, and all of those can take time, and hence shouldn&#8217;t count as synchronic.  I think we need to distinguish any probability proposal here, which will be a normative proposal, from a psychological point.  Some people think there are beliefs, some people think there are degrees of belief, and some think both.  We want an account of the relationship, if both exist.  Such a relationship, even if couched in the language of belief revision, won&#8217;t in fact involve any principle of belief revision.  Instead, they&#8217;ll address the question from the point of view of a particular time slice of the agent in question.  The talk of being an epiphenomenon of belief revision is, on this idea, code for depth of embedding in the web of belief, where depth measures resistance to change (which of course is a purely present fact, not dependent on what happens at any other time).</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=7362.html#respond' onclick='return addComment.moveForm( "comment-7362", "7362", "respond", "699" )' aria-label='Reply to kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-7363" >
+		<article id="comment-7363" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/7ee32ea3bbe6b3fe38650621977e99c5?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/7ee32ea3bbe6b3fe38650621977e99c5?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Stephen Fogdall</span> on <a href="../index.html%3Fp=699.html#comment-7363"><time datetime="2007-05-22T13:27:30+00:00">May 22, 2007 at 1:27 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I think Greg’s point (if I understand it) is that one cannot separate the thesis that degree of belief is the primitive notion (in terms of which full belief is defined) from the (erroneous) thesis that inference is solely a matter of updating.  That thesis stumbles on the fact that new possibilities (e.g., the die is made of sugar) sometimes have to be taken into account, altering the state space (a process radically different than updating).  If degree of belief were the primitive notion, then, on Greg’s argument, every possibility would have to be included in the state space already and assigned some degree of belief.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=7363.html#respond' onclick='return addComment.moveForm( "comment-7363", "7363", "respond", "699" )' aria-label='Reply to Stephen Fogdall'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-7364" >
+		<article id="comment-7364" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Gregory Wheeler</span> on <a href="../index.html%3Fp=699.html#comment-7364"><time datetime="2007-05-23T02:49:03+00:00">May 23, 2007 at 2:49 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Yes, Steve, that&#8217;s the general idea. There is some terminological cross-pulling between &#8220;updating&#8221;, &#8220;revision&#8221;, &#8220;synchronic&#8221;, and &#8220;diachronic&#8221; that each of us (i.e., Jon, you, me) are tangled in, which might be obscuring the poin. I would use the term &#8220;revision&#8221; as you (Steve) would use updating; updating and revision for me are diachronic in the sense that both happen through time (cf. Jon), but  the &#8220;inference mechanism&#8221; to accommodate a new item of information can either be a logical or set theoretic operation (thus, instantaneous; thus synchronic) or some reconfiguration of the state using operators that are not logical or set-theoretic but essentially state-change operations (thus, not immediate; thus, diachronic).</p>
+<p>I don&#8217;t want to lean too heavily on this terminology; I think the general idea/worry that you (Steve) mention survives translation into each of our ways of talking about this.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=7364.html#respond' onclick='return addComment.moveForm( "comment-7364", "7364", "respond", "699" )' aria-label='Reply to Gregory Wheeler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-7365" >
+		<article id="comment-7365" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Gregory Wheeler</span> on <a href="../index.html%3Fp=699.html#comment-7365"><time datetime="2007-05-23T03:02:01+00:00">May 23, 2007 at 3:02 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Yes, Steve, that&#8217;s precisely the idea. There is some terminological cross-pulling between &#8220;updating&#8221;, &#8220;revision&#8221;, &#8220;synchronic&#8221;, and &#8220;diachronic&#8221; that each of us (i.e., Jon, you, me) are tangled in, which might be obscuring the point. I would use the term &#8220;revision&#8221; as you (Steve) are using updating; updating and revision for me are diachronic in the sense that both happen through time (cf. Jon), but  the &#8220;inference mechanism&#8221; to accommodates a new item of information can either be a logical or set theoretic operation (thus, instantaneous; thus synchronic) or some reconfiguration of the state using operators that are not logical or set-theoretic but essentially state-change operators (thus, not immediate; thus diachronic).</p>
+<p>One reason for the cross-pulling is that &#8220;updating&#8221; in the way I am using it is closer to how that term is used in the belief revision/belief updating literature, whereas &#8220;updating&#8221; to a probabilist is (if orthodox) conditionalization, which is a logico-algebraic operation on a given probability structure.</p>
+<p>I don&#8217;t want to lean too heavily on this terminology, or this way of parsing time; I think the general idea/worry that you (Steve) describe survives translation into each of our ways of talking about this.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=7365.html#respond' onclick='return addComment.moveForm( "comment-7365", "7365", "respond", "699" )' aria-label='Reply to Gregory Wheeler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-7366" >
+		<article id="comment-7366" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Gregory Wheeler</span> on <a href="../index.html%3Fp=699.html#comment-7366"><time datetime="2007-05-23T03:07:39+00:00">May 23, 2007 at 3:07 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Whoops! My internet connection broke during the last postings. Jon, if you wish, you can delete (2:49) and this one, and keep (3:02). At any rate, ignore (2:49).</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=7366.html#respond' onclick='return addComment.moveForm( "comment-7366", "7366", "respond", "699" )' aria-label='Reply to Gregory Wheeler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+		</ol>
+
+		
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply to <a href="index.html%3Freplytocom=7355.html#comment-7355">Gregory Wheeler</a> <small><a rel="nofollow" id="cancel-comment-reply-link" href="../index.html%3Fp=699.html#respond">Cancel reply</a></small></h3>			<form action="http://certaindoubts.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='699' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='7355' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="7ece4553f5" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="213"/></p>			</form>
+			</div><!-- #respond -->
+	</div><!-- #comments -->
+
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+		</div><!-- #container_wrap -->
+
+	<div id="sidebar_wrap_right" class="split equal_height">
+	<div id="sidebar_right" class="widget-area" role="complementary">
+		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+											<li>
+					<a href="../index.html%3Fp=4902.html">The End</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4897.html">Young Epistemologist Prize 2019</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4890.html">A simple problem for (unrestricted) Conditionalization</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4883.html">Reminder: Young Epistemologist Prize 2019</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4877.html">Do We Know that We&#8217;re not Brains in Vats?: Follow-Up: Polls and Surveys</a>
+									</li>
+					</ul>
+		</aside><aside id="calendar-2" class="widget widget_calendar"><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar">
+	<caption>April 2019</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="../2019/02/index.html">&laquo; Feb</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+	</tr>
+	<tr>
+		<td>8</td><td><a href="../2019/04/09/index.html" aria-label="Posts published on April 9, 2019">9</a></td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+	</tr>
+	<tr>
+		<td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
+	</tr>
+	<tr>
+		<td>22</td><td id="today">23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+	</tr>
+	<tr>
+		<td>29</td><td>30</td>
+		<td class="pad" colspan="5">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></aside><aside id="meta-3" class="widget widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="../wp-login.php.html">Log in</a></li>
+			<li><a href="../feed/index.html">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="../comments/feed/index.html">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside><aside id="search-2" class="widget widget_search"><form role="search" style="background:transparent;" method="get" class="searchform" action="../index.html" >
+	<label class="screen-reader-text" for="s">Search for:</label>
+	<input type="search" value="" name="s" id="s" placeholder="Search Site" />
+	<input class="searchformimg" type="image" src="../wp-content/themes/weaver-ii/images/search_button.gif" alt="Search" />
+	</form></aside>
+	</div><!-- sidebar_right .widget-area -->
+	</div><!-- #sidebar_wrap_right -->
+    <div class='weaver-clear'></div></div><!-- #main -->
+	<footer id="colophon" role="contentinfo">
+	  <div>
+
+		<div id="site-ig-wrap">
+		<span id="site-info">
+		&copy; 2019 - <a href="../index.html" title="Certain Doubts" rel="home">Certain Doubts</a>
+		</span> <!-- #site-info -->
+		<span id="site-generator">
+		<a href="http://wordpress.org/" title="wordpress.org" rel="generator" target="_blank">Proudly powered by WordPress</a>&nbsp;
+Weaver II by <a href="http://weavertheme.com" target="_blank" title="http://weavertheme.com">WP Weaver</a>
+		</span> <!-- #site-generator -->
+		</div><!-- #site-ig-wrap -->
+		<div class="weaver-clear"></div>
+	  </div>
+	</footer><!-- #colophon -->
+</div><!-- #wrapper -->
+<a href="index.html%3Freplytocom=7355.html#page-top" id="page-bottom">&uarr;</a>
+<div id="weaver-final" class="weaver-final-normal"><script type='text/javascript' src='../wp-includes/js/comment-reply.min.js%3Fver=4.9.10'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var weaver_menu_params = {"selector":"li:has(ul) > a","selector_leaf":"li li li:not(:has(ul)) > a"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/themes/weaver-ii/js/weaverjslib.min.js%3Fver=2.2.2'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.min.js%3Fver=4.9.10'></script>
+<script async="async" type='text/javascript' src='../wp-content/plugins/akismet/_inc/form.js%3Fver=4.1'></script>
+</div> <!-- #weaver-final -->
+</body>
+</html>

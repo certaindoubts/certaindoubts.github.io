@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<!--[if IE 7]>	<html id="ie7" lang="en-US"> <![endif]-->
+<!--[if IE 8]>	<html id="ie8" lang="en-US"> <![endif]-->
+<!--[if IE 9]>	<html id="ie9" lang="en-US"> <![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8) ] | !(IE 9) ><!-->	<html lang="en-US"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes' />
+<title>Competent Deduction Closure | Certain Doubts</title>
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://certaindoubts.com/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://certaindoubts.com/wp-content/themes/weaver-ii/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<script type="text/javascript">var weaverIsMobile=false;var weaverIsSimMobile=false;var weaverIsStacked=false;var weaverThemeWidth=940;var weaverMenuThreshold=640;var weaverHideMenuBar=false;var weaverMobileDisabled=false;var weaverFlowToBottom=false;var weaverHideTooltip=false;var weaverUseSuperfish=false;</script>
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Certain Doubts &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Certain Doubts &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Certain Doubts &raquo; Competent Deduction Closure Comments Feed" href="feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/certaindoubts.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.10"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='weaverii-main-style-sheet-css'  href='../wp-content/themes/weaver-ii/style.min.css%3Fver=2.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='weaverii-mobile-style-sheet-css'  href='../wp-content/themes/weaver-ii/style-mobile.min.css%3Fver=2.2.2.css' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery.js%3Fver=1.12.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min.js%3Fver=1.4.1'></script>
+<link rel='https://api.w.org/' href='../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc.php%3Frsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Administrative Delays' href='../index.html%3Fp=364.html' />
+<link rel='next' title='Philosophers in Administration' href='../index.html%3Fp=362.html' />
+<meta name="generator" content="WordPress 4.9.10" />
+<link rel="canonical" href="../index.html%3Fp=365.html" />
+<link rel='shortlink' href='../index.html%3Fp=365.html' />
+<meta name='robots' content='noindex,follow' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed%3Furl=http:%252F%252Fcertaindoubts.com%252Fcompetent-deduction-closure%252F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed%3Furl=http:%252F%252Fcertaindoubts.com%252Fcompetent-deduction-closure%252F&amp;format=xml" />
+
+<!-- This site is using Weaver II 2.2.2 (48) subtheme: Wheat -->
+<!-- Page ID: 365 -->
+<style type="text/css">
+/* Weaver II styles - Version 48 */
+a {color:#59C448;}
+a:visited {color:#8DBA61;}
+a:hover {color:#C91640;}
+a{font-style:italic;}
+a{font-weight:bold;}
+.entry-title a {color:#0A0A0A;}
+.entry-title a:visited {color:#0A0A0A;}
+.entry-title a{font-style:normal;}
+.entry-title a{font-weight:normal;}
+.entry-meta a, .entry-utility a {color:#474134;}
+.entry-meta a:visited, .entry-utility a:visited {color:#706752;}
+.entry-meta a:hover, .entry-utility a:hover {color:#C91640;}
+.widget-area a {color:#474134;}
+.widget-area a:visited {color:#706752;}
+.widget-area a:hover {color:#C91640;}
+.widget-area a{font-style:normal;}
+.widget-area a{font-weight:normal;}
+#infobar a{font-style:normal;}
+#infobar a{font-weight:normal;}
+#colophon a{font-style:normal;}
+#colophon a{font-weight:normal;}
+#wrapper {border: 1px solid #AB9B7D;}
+#sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,#first,#second,#third,#fourth, .mobile_widget_area {border: 1px solid #AB9B7D;}
+#wrapper, #branding, #colophon, .commentlist li.comment, #respond, #sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,#first,#second,#third,#fourth,.mobile_widget_area {-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}
+#sidebar_wrap_right.right-1-col,#sidebar_wrap_right.right-2-col,#sidebar_wrap_right.right-2-col-bottom,
+#sidebar_wrap_left.left-1-col,#sidebar_wrap_left.left-2-col,#sidebar_wrap_left.left-2-col-bottom,#sidebar_wrap_left,#sidebar_wrap_right
+{-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}
+.commentlist li.comment .comment-meta {-moz-border-radius-topleft: 7px; -moz-border-radius-topright: 7px;
+ -webkit-border-top-left-radius: 7px; -webkit-border-top-right-radius: 7px; border-top-left-radius: 7px; border-top-right-radius: 7px;}
+#access {-moz-border-radius-bottomleft: 7px; -moz-border-radius-bottomright: 7px;
+ -webkit-border-bottom-left-radius: 7px; -webkit-border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; border-bottom-right-radius: 7px;}
+#access2 {-moz-border-radius-topleft: 7px; -moz-border-radius-topright: 7px;
+ -webkit-border-top-left-radius: 7px; -webkit-border-top-right-radius: 7px; border-top-left-radius: 7px; border-top-right-radius: 7px;}
+body {background-image: url(../wp-content/themes/weaver-ii/images/gr.png); background-attachment: scroll; background-repeat: repeat-x;}
+#wrapper {-webkit-box-shadow: 0 0 3px 3px rgba(0,0,0,0.25); -moz-box-shadow: 0 0 3px 3px rgba(0,0,0,0.25); box-shadow: 0 0 3px 3px rgba(127,127,127,0.25);}
+#wrapper{max-width:940px;}
+#sidebar_primary,.mobile_widget_area {background-color:#F5DEB3;}
+#sidebar_right {background-color:#F5DEB3;}
+#sidebar_left {background-color:#F5DEB3;}
+.sidebar_top,.sidebar_extra {background-color:#F5DEB3;}
+.sidebar_bottom {background-color:#F5DEB3;}
+#first,#second,#third,#fourth {background-color:transparent;}
+.widget {background-color:transparent;}
+#container_wrap.right-1-col{width:75.000%;} #sidebar_wrap_right.right-1-col{width:25.000%;}
+#container_wrap.right-2-col,#container_wrap.right-2-col-bottom{width:67.000%;} #sidebar_wrap_right.right-2-col,#sidebar_wrap_right.right-2-col-bottom{width:33.000%;}
+#container_wrap.left-1-col{width:75.000%;} #sidebar_wrap_left.left-1-col{width:25.000%;}
+#container_wrap.left-2-col,#container_wrap.left-2-col-bottom{width:67.000%;} #sidebar_wrap_left.left-2-col,#sidebar_wrap_left.left-2-col-bottom{width:33.000%;}
+#container_wrap{width:66.000%;} #sidebar_wrap_left{width:17.000%;} #sidebar_wrap_right{width:17.000%;}
+#sidebar_wrap_2_left_left, #sidebar_wrap_2_right_left {width:54.000%;margin-right:1%;}
+#sidebar_wrap_2_left_right, #sidebar_wrap_2_right_right {width:45.000%;}
+#sidebar_header {font-size:70%;}
+#sidebar_header .header-widget-1 {display:none;}
+#sidebar_header .header-widget-2 {display:none;}
+#sidebar_header .header-widget-3 {display:none;}
+#sidebar_header .header-widget-4 {display:none;}
+@media only screen and (max-width:640px) { /* header widget area mobile rules */
+} /* end mobile rules */
+#main {padding: 15px 0 0 0;}
+#site-description {font-size:200.000%;}
+#site-title {overflow:hidden; padding:0; margin:0; position:absolute; left:2.000%; top: 5.000%; z-index:20;}
+#site-description {overflow:hidden; padding:0; margin:0; position:absolute; left:4.000%; top: 30.000%; z-index:20;}
+.menu_bar a, .mobile_menu_bar a {font-weight:bold;}
+@media only screen and (min-width: 641px) {.menu_bar,.weaveriip_vertical_menu .menu_bar { background-image: url(../wp-content/themes/weaver-ii/images/theme/fade.png);}}
+@media only screen and (min-width: 641px) {.menu_bar ul ul a, .menu_bar li:hover > a, .menu_bar ul ul :hover > a { background-image: url(../wp-content/themes/weaver-ii/images/theme/fadeup.png);}}
+#ie8 .menu_bar,#ie8 .weaveriip_vertical_menu .menu_bar,#ie7 .menu_bar,#ie7 .weaveriip_vertical_menu .menu_bar { background-image: url(../wp-content/themes/weaver-ii/images/theme/fade.png);}
+#ie8 .menu_bar ul ul a, #ie8 .menu_bar li:hover > a, #ie8 .menu_bar ul ul :hover > a,
+#ie7 .menu_bar ul ul a, #ie7 .menu_bar li:hover > a, #ie7 .menu_bar ul ul :hover > a{ background-image: url(../wp-content/themes/weaver-ii/images/theme/fadeup.png);}
+.menu_bar, .menu_bar a,.menu_bar a:visited,.mobile_menu_bar a {color:#FFFAEF;}
+.menu_bar li:hover > a, .menu_bar a:focus {background-color:#BAA987;}
+.menu_bar li:hover > a, .menu_bar a:focus {color:#F0EBE0;}
+.menu_bar ul ul a {background-color:#BAA987;}
+.menu_bar ul ul a,.menu_bar ul ul a:visited {color:#FFFAEF;}
+.menu_bar ul ul :hover > a {background-color:#BAA987;}
+.menu_bar ul ul :hover > a {color:#F0EBE0;}
+.menu_bar, .mobile_menu_bar, .menu-add {background-color:#AB9B7D;}
+.mobile-menu-link {border-color:#FFFAEF;}
+.widget-area .menu-vertical,.menu-vertical {clear:both;background-color:transparent;margin:0;width:100%;overflow:hidden;border-bottom:3px solid #FFFAEF;border-top:1px solid #FFFAEF;}
+.widget-area .menu-vertical ul, .menu-vertical ul {margin: 0; padding: 0; list-style-type: none;  list-style-image:none;font-family: inherit;}
+.widget-area .menu-vertical li a, .widget-area .menu-vertical a:visited, .menu-vertical li a, .menu-vertical a:visited {
+color: #FFFAEF;  background-color: #AB9B7D; display: block !important; padding: 5px 10px; text-decoration: none; border-top:2px solid #FFFAEF;}
+.widget-area .menu-vertical a:hover,.widget-area .menu-vertical a:focus, .menu-vertical a:hover,.menu-vertical a:focus {
+color: #F0EBE0; background-color: #BAA987;text-decoration: none;}
+.widget-area .menu-vertical ul ul li, .menu-vertical ul ul li { margin: 0; }
+.widget-area .menu-vertical ul ul a,.menu-vertical ul ul a {color: #FFFAEF; background-color: #AB9B7D;
+ display: block; padding: 4px 5px 4px 25px; text-decoration: none;border:0;
+ border-top:1px solid #FFFAEF;}
+.widget-area .menu-vertical ul ul a:hover,#wrap-header .menu-vertical ul ul a:hover,#wrap-header .menu-vertical ul a:hover {color: #F0EBE0; background-color: #BAA987; text-decoration: none;}
+.widget-area .menu-vertical ul ul ul a,.menu-vertical ul ul ul a {padding: 4px 5px 4px 35px;}
+.widget-area .menu-vertical ul ul ul a,.menu-vertical ul ul ul ul a {padding: 4px 5px 4px 45px;}
+.widget-area .menu-vertical ul ul ul ul a,.menu-vertical ul ul ul ul ul a {padding: 4px 5px 4px 55px;}
+.menu_bar .current_page_item > a, .menu_bar .current-menu-item > a, .menu_bar .current-cat > a, .menu_bar .current_page_ancestor > a,.menu_bar .current-category-ancestor > a, .menu_bar .current-menu-ancestor > a, .menu_bar .current-menu-parent > a, .menu_bar .current-category-parent > a,.menu-vertical .current_page_item > a, .menu-vertical .current-menu-item > a, .menu-vertical .current-cat > a, .menu-vertical .current_page_ancestor > a, .menu-vertical .current-category-ancestor > a, .menu-vertical .current-menu-ancestor > a, .menu-vertical .current-menu-parent > a, .menu-vertical .current-category-parent > a,.widget-area .menu-vertical .current_page_item > a, .widget-area .menu-vertical .current-menu-item > a, .widget-area .menu-vertical .current-cat > a, .widget-area .menu-vertical .current_page_ancestor > a {color:#474134 !important;}
+.entry-title {border-bottom: 1px solid #0A0A0A;}
+#content, .entry-content h1, .entry-content h2 {color:#292929;}
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6, #content dt, #content th,
+h1, h2, h3, h4, h5, h6,#author-info h2 {color:#0A0A0A;}
+#content h1.entry-title {color:#0A0A0A;}
+.commentlist li.comment, #respond {background-color:transparent;}
+.wp-caption p.wp-caption-text, #content .gallery .gallery-caption,.entry-attachment .entry-caption {color:#333333;}
+#content img.size-full, #content img.size-large, #content img.size-medium, #content img.size-thumbnail, #content .attachment-thumbnail, #content .gallery img,#content .gallery-thumb img,.entry-attachment img, #content .wp-caption img, #content img.wp-post-image,#content img[class*="wp-image-"],#author-avatar img,img.avatar {background-color:transparent;}
+.home .sticky, #container.page-with-posts .sticky, #container.index-posts .sticky {background-color:#E6DCC8;}
+.entry-meta, .entry-content label, .entry-utility {color:#706752;}
+body {font-size:12px;}
+body {background-color:#C7B491;}
+body {color:#292929;}
+#wrapper {background-color:#FEF3DD;}
+#main {background-color:transparent;}
+#container {background-color:transparent;}
+#content {background-color:transparent;}
+#content .post,.post {background-color:transparent;}
+#branding {background-color:transparent;}
+#colophon {background-color:#F5DEB3;}
+hr {background-color:#AB9B7D;}
+.entry-meta {background-color:transparent;}
+.entry-utility {background-color:transparent;}
+input, textarea, ins, pre {background-color:#F0F0F0;}
+.widget {color:#333333;}
+.widget-title {border-bottom: 1px solid #222222; margin-bottom:5px;padding-bottom:3px;}
+.widget-title, .widget_search label, #wp-calendar caption {color: #222222;}
+#site-title a {color:#FEF9EE;}
+#site-description {color:#FFFAEF;}
+/* Weaver II Mobile Device Options */
+.weaver-any-mobile  #main a, .weaver-any-mobile  #mobile-widget-area a, .weaver-any-mobile  .sidebar_top a, .weaver-any-mobile  .sidebar_bottom a, .weaver-any-mobile  .sidebar_extra a {text-decoration: underline !important;}
+@media only screen and (max-width:768px) and (orientation:portrait) {body {padding: 0px !important;}}
+@media only screen and (max-width:640px) {
+#main a, #mobile-widget-area a, .sidebar_top a, .sidebar_bottom a, .sidebar_extra a{text-decoration: underline !important;}
+}
+@media only screen and (max-width: 580px) {
+}
+
+/* end Weaver II CSS */
+</style> <!-- end of main options style section -->
+
+
+<!--[if lte IE 8]>
+<style type="text/css" media="screen">
+#content img.size-thumbnail,#content img.size-medium,#content img.size-large,#content img.size-full,#content img.attachment-thumbnail,
+#content img.wp-post-image,img.avatar,.format-chat img.format-chat-icon,
+#wrapper,#branding,#colophon,#content, #content .post,
+#sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,
+#first,#second,#third,#fourth,
+#commentform input:focus,#commentform textarea:focus,#respond input#submit {
+		behavior: url(http://certaindoubts.com/wp-content/themes/weaver-ii/js/PIE/PIE.php) !important; position:relative;
+}
+</style>
+<![endif]-->
+
+<!-- End of Weaver II options -->
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		</head>
+
+<body class="post-template-default single single-post postid-365 single-format-standard singular not-logged-in weaver-desktop weaver-mobile-smart-nostack">
+<a href="index.html%3Freplytocom=2030.html#page-bottom" id="page-top">&darr;</a> <!-- add custom CSS to use this page-bottom link -->
+<div id="wrapper" class="hfeed">
+<div id="wrap-header">
+	<header id="branding" role="banner"><div id="branding-content">
+		<div id="site-logo"></div>
+		<div id="site-logo-link" onclick="location.href='http://certaindoubts.com/';"></div>
+
+		<div class="title-description-xhtml">
+			<h1 id="site-title" ><span><a href="../index.html" title="Certain Doubts" rel="home">Certain Doubts</a></span></h1>
+			<h2 id="site-description"> devoted to matters epistemic</h2>
+		</div>
+		<div id="header_image">
+                              <img src="../wp-content/themes/weaver-ii/images/headers/wheat.jpg" width="940" height="188" alt="Certain Doubts" />
+        		</div><!-- #header_image -->
+	</div></header><!-- #branding-content, #branding -->
+<div id="wrap-bottom-menu">
+<div id="mobile-bottom-nav" class="mobile_menu_bar" style="padding:5px 10px 5px 10px;clear:both;">
+	<div style="margin-bottom:20px;">
+<span class="mobile-home-link">
+	<a href="../index.html" title="Certain Doubts" rel="home">Home</a></span>
+	<span class="mobile-menu-link"><a href="javascript:void(null);" onclick="weaverii_ToggleMenu(document.getElementById('nav-bottom-menu'), this, 'Menu &darr;', 'Menu &uarr;')">Menu &darr;</a></span></div>
+</div>
+		<div class="skip-link"><a class="assistive-text" href="index.html%3Freplytocom=2030.html#content" title="">Skip to primary content</a></div>
+			<div class="skip-link"><a class="assistive-text" href="index.html%3Freplytocom=2030.html#sidebar_primary" title="">Skip to secondary content</a></div>
+				<div id="nav-bottom-menu"><nav id="access" class="menu_bar" role="navigation">
+<div class="menu"><ul>
+<li ><a href="../index.html">Home</a></li><li class="page_item page-item-1894"><a href="../index.html%3Fpage_id=1894.html">Decade and Longitudinal Journal Information</a></li>
+<li class="page_item page-item-2739"><a href="../index.html%3Fpage_id=2739.html">Epistemology Course Slides</a></li>
+<li class="page_item page-item-2752"><a href="../index.html%3Fpage_id=2752.html">Talks:  Slides and Videos</a></li>
+<li class="page_item page-item-417"><a href="../index.html%3Fp=417.html">About Certain Doubts</a></li>
+<li class="page_item page-item-397"><a href="../index.html%3Fp=397.html">Contributors</a></li>
+<li class="page_item page-item-413"><a href="../index.html%3Fp=413.html">Archives</a></li>
+<li class="page_item page-item-774"><a href="../index.html%3Fpage_id=774.html">Complete Hirsch Number Rankings of U.S. Philosophy PhD Programs</a></li>
+<li class="page_item page-item-823"><a href="../index.html%3Fp=823.html">Philosophy Journal Information:  ESF Rankings, Citation Impact, &#038; Rejection Rates</a></li>
+<li class="page_item page-item-454"><a href="../index.html%3Fp=454.html">Some of Our Books</a></li>
+</ul></div>
+		</nav></div><!-- #access --></div> <!-- #wrap-bottom-menu -->
+</div> <!-- #wrap-header -->
+	<div id="main">
+	<div id="sidebar_wrap_left" class="split equal_height">
+	<div id="sidebar_left" class="widget-area" role="complementary">
+<aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">John Fischer</span> on <a href="../index.html%3Fp=4902.html#comment-331879">The End</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://dailynous.com/2019/03/07/philosophers-on-the-philosophy-blogosphere/' rel='external nofollow' class='url'>Philosophers On the Philosophy Blogosphere - Daily Nous</a></span> on <a href="../index.html%3Fp=616.html#comment-331009">Doris and Russell on Stanley</a></li><li class="recentcomments"><span class="comment-author-link"><a href='https://philosophy.unc.edu/2019/02/08/worsnip-wins-young-epistemologist-prize/' rel='external nofollow' class='url'>Worsnip wins Young Epistemologist Prize - Department of Philosophy</a></span> on <a href="../index.html%3Fp=4897.html#comment-329263">Young Epistemologist Prize 2019</a></li><li class="recentcomments"><span class="comment-author-link">S. Alas</span> on <a href="../index.html%3Fp=4890.html#comment-324134">A simple problem for (unrestricted) Conditionalization</a></li><li class="recentcomments"><span class="comment-author-link"><a href='https://enigmanically.blogspot.co.uk/' rel='external nofollow' class='url'>Martin Cooke</a></span> on <a href="../index.html%3Fp=4738.html#comment-310431">What philosophers think might not be what you think they think</a></li></ul></aside><aside id="meta-2" class="widget widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="../wp-login.php.html">Log in</a></li>
+			<li><a href="../feed/index.html">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="../comments/feed/index.html">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside><aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-9"><a href="../category/a-priori-knowledge/index.html" >a priori knowledge</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="../category/confirmation-theory/index.html" >confirmation theory</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="../category/contextualism/index.html" >contextualism</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="../category/epistemic-paradoxes/index.html" >epistemic paradoxes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="../category/formal-epistemology/index.html" >formal epistemology</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="../category/foundationalismcoherentism/index.html" >foundationalism and coherentism</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="../category/foundationalism-and-coherentism/index.html" >foundationalism and coherentism</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="../category/general/index.html" >general</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="../category/internalismexternalism/index.html" >internalism and externalism</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="../category/internalism-and-externalism/index.html" >internalism and externalism</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="../category/justification/index.html" >justification</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="../category/knowledge/index.html" >knowledge</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="../category/links/index.html" >Links</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="../category/major-figures/index.html" >major figures</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="../category/memory/index.html" >memory</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="../category/perception/index.html" >perception</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="../category/skepticism/index.html" >skepticism</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="../category/testimony-and-social-epistemology/index.html" >testimony and social epistemology</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="../category/uncategorized/index.html" >Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="../category/understanding/index.html" >understanding</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="../category/value-driven-epistemology/index.html" >value-driven epistemology</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="../category/virtue-epistemology/index.html" >virtue epistemology</a>
+</li>
+		</ul>
+</aside>
+	</div><!-- #sidebar_left .widget-area -->
+	</div><!-- #sidebar_wrap_left -->
+		<div id="container_wrap" class="container-single equal_height split">
+		<div id="container">
+			<div id="content" role="main">
+
+				<nav id="nav-above" class="navigation">
+				<h3 class="assistive-text">Post navigation</h3>
+					<div class="nav-previous"><a href="../index.html%3Fp=364.html" rel="prev"><span class="meta-nav">&larr;</span> Administrative Delays</a></div>
+				<div class="nav-next"><a href="../index.html%3Fp=362.html" rel="next">Philosophers in Administration <span class="meta-nav">&rarr;</span></a></div>
+				</nav><!-- #nav-above -->
+
+
+<article id="post-365" class="content-single  post-365 post type-post status-publish format-standard hentry category-knowledge">
+	<header class="entry-header">
+		<div class="entry-hdr"><h1 class="entry-title">Competent Deduction Closure</h1></div>
+
+		<div class="entry-meta">
+						<div class="meta-info-wrap">
+			<span class="sep posted-on">Posted on </span><a href="../index.html%3Fp=365.html" title="8:49 am" rel="bookmark"><time class="entry-date" datetime="2005-06-18T08:49:59+00:00">June 18, 2005</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="../author/admin/index.html" title="View all posts by Kvanvig Jon" rel="author">Kvanvig Jon</a></span></span><span class="updated">June 18, 2005</span>
+			</div><!-- .entry-meta-icons -->		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+	<div class="entry-content cf">
+		<p>Williamson and Hawthorne, among others, endorse a closure principle about knowledge that employs the concept of a competent deduction.  The straightforward version is that if you know p and competently deduce q from p, then you know q.  As most realize, there are qualifications needed, but I&#8217;ll ignore them here.</p>
+<p>Here&#8217;s a question about the principle.  Suppose a competent deduction of q from p by S occurs, and suppose that the deduction is constituted by a certain sequence of brain states in S.  Now, suppose we have another person, S&#8217;, just as competent at deduction as S who also knows  p.  Further, suppose that a mad neuroscientist produces in S&#8217; the same sequence of brain states that constituted the deduction of q from p by S.  Did S&#8217; just competently deduce q from p?</p>
+<p>Another question.  Assume S&#8217; comes to believe q as a result of what the neuroscientist does.  Does S know q?</p>
+			</div><!-- .entry-content -->
+
+	<footer class="entry-utility">
+<div class="meta-info-wrap">
+			<span class="cat-links">
+<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="../category/knowledge/index.html" rel="category tag">knowledge</a>			</span>
+		<span class="permalink-icon"><a href="../index.html%3Fp=365.html" title="Permalink to Competent Deduction Closure" rel="bookmark">permalink</a></span>
+	</div><!-- .entry-meta-icons -->
+
+	</footer><!-- .entry-utility -->
+</article><!-- #post-365 -->
+
+				<nav id="nav-below" class="navigation">
+				<h3 class="assistive-text">Post navigation</h3>
+					<div class="nav-previous"><a href="../index.html%3Fp=364.html" rel="prev"><span class="meta-nav">&larr;</span> Administrative Delays</a></div>
+				<div class="nav-next"><a href="../index.html%3Fp=362.html" rel="next">Philosophers in Administration <span class="meta-nav">&rarr;</span></a></div>
+				</nav><!-- #nav-above -->
+
+
+	<div id="comments">
+
+		<hr class='comments-hr'>
+		<header id="comments-title">
+		<h3>Comments</h3>
+				<h4>
+<em>Competent Deduction Closure</em> &#8212; 22 Comments		</h4>
+		</header>
+
+		
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-2017" >
+		<article id="comment-2017" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/2d831e972f770702380283101c961e2a?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/2d831e972f770702380283101c961e2a?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Eric</span> on <a href="../index.html%3Fp=365.html#comment-2017"><time datetime="2005-06-18T10:10:41+00:00">June 18, 2005 at 10:10 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>There&#8217;s so much packed into this scenario, I can&#8217;t wait to see how others respond. I suppose that since competence is a property that ascribe to agents their being agents who follow rules or, in general, do something correctly, out of their own agency and not because they are caused to do so by some intervention, that the mad scientist&#8217;s interventions make the vocabulary of competence/incompetence inapplicable. So, by Williamson&#8217;s standards, it would seem that S does not know that q, insofar has her knowing that q is a matter of competently deducing it from p.<br />
+I know that&#8217;s very rough, but it seems to me that we cannot use the vocabulary of competency, in the sense Williamson uses it, except insofar as we assume that the subject of the vocabulary, S, is an agent and not, say, a brain mechanism or process.<br />
+Perhaps some other questions might be: why should we suppose that a competent deduction by S of q from p is something that can be &#8220;constituted&#8221; by brain states? What does &#8220;constituted&#8221; mean here? Is it a marker for a reductive analysis? or do we mean by it that there is a physical subtratum upon which certain cognitive/epistemic processes supervene?<br />
+Sorry if this is very naive&#8230; Your scenario is very interesting. Thanks.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=2017.html#respond' onclick='return addComment.moveForm( "comment-2017", "2017", "respond", "365" )' aria-label='Reply to Eric'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-2018" >
+		<article id="comment-2018" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.missouri.edu/~kvanvigj' rel='external nofollow' class='url'>jon kvanvig</a></span> on <a href="../index.html%3Fp=365.html#comment-2018"><time datetime="2005-06-18T10:47:16+00:00">June 18, 2005 at 10:47 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Eric, W&#038;H want a closure principle that encodes the idea that knowledge is extended by deduction, and so we want something like a complete principle, one that covers all the cases that we want explained.  So I expect they&#8217;d agree with you that the answer to the two questions go together:  either it&#8217;s a deduction and S knows, or it&#8217;s not a deduction and S doesn&#8217;t know.</p>
+<p>If we adopt your answer, the key is whether agency is involved in coming to believe q on the basis of knowing p. I&#8217;m tempted to say the same thing, but that&#8217;s a strange position to have to endorse.  When we think of classic cases of inferential knowledge, we usually don&#8217;t require that agency be involved.  For example, I walk in the room looking for my son, don&#8217;t see him, and come to believe that he isn&#8217;t there.  This latter belief is inferential, but I don&#8217;t think I performed any act of agency in coming to believe it.</p>
+<p>Just so, suppose I know p and intuitively see the implication of q by p and come to believe q.  I have performed no action that I can detect, though my belief in q is an inferential one.  And such cases, one would think, are classic examples in which a deductive consequence of a belief comes to be known.  So if such inferential knowledge doesn&#8217;t involve competent deduction, then the competent deduction principle covers only a subset of the cases we want explained.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=2018.html#respond' onclick='return addComment.moveForm( "comment-2018", "2018", "respond", "365" )' aria-label='Reply to jon kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-2019" >
+		<article id="comment-2019" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/67f220573f8256921b31ccc6af364b98?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/67f220573f8256921b31ccc6af364b98?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.st-andrews.ac.uk/~csj6' rel='external nofollow' class='url'>Carrie Jenkins</a></span> on <a href="../index.html%3Fp=365.html#comment-2019"><time datetime="2005-06-18T12:06:41+00:00">June 18, 2005 at 12:06 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>One response would be that a performance of a competent deduction is more than a series of brain states (at least, if brain states are the sorts of things your envisaged mad neuroscientist would have full control over).  The performance of a competent deduction might require the performer&#8217;s application of the relevant logical rules to be appropriately (non-deviantly?) related to (e.g.) her learning of these rules.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=2019.html#respond' onclick='return addComment.moveForm( "comment-2019", "2019", "respond", "365" )' aria-label='Reply to Carrie Jenkins'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-2020" >
+		<article id="comment-2020" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/2d831e972f770702380283101c961e2a?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/2d831e972f770702380283101c961e2a?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Eric</span> on <a href="../index.html%3Fp=365.html#comment-2020"><time datetime="2005-06-18T12:58:10+00:00">June 18, 2005 at 12:58 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Carrie, I&#8217;m not sure that non-deviancy helps here. Non-deviancy means, variously: not caused by a mad-scientist, not caused by random, highly improbably coincidental causal factors (a la the &#8220;birth&#8221; of Davidson&#8217;s swampman), not due to the fistful of hallucinogenics I downed for breakfast with a mouthful of Wild Turkey, etc&#8230;. I think there has to be a spelling out of &#8216;competency&#8217; that does not define it negatively, especially in terms of the lack of deviancy. Simply put, it seems like &#8216;non-deviant&#8217; is just a synonym for &#8216;competent,&#8217; or &#8216;correct,&#8217; or &#8216;appropriate&#8217;&#8211;all of which require a principled elucidation. But might it not be that any pricipled elucidation will end up either too general to be informative or too disjunctive to really be principled? I&#8217;m not sure&#8230;</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=2020.html#respond' onclick='return addComment.moveForm( "comment-2020", "2020", "respond", "365" )' aria-label='Reply to Eric'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-2021" >
+		<article id="comment-2021" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/67f220573f8256921b31ccc6af364b98?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/67f220573f8256921b31ccc6af364b98?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.st-andrews.ac.uk/~csj6' rel='external nofollow' class='url'>Carrie Jenkins</a></span> on <a href="../index.html%3Fp=365.html#comment-2021"><time datetime="2005-06-18T13:22:05+00:00">June 18, 2005 at 1:22 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jon,<br />
+The mention of non-deviance was meant to be merely illustrative of the kind of thing one might want to say; the general point is that, however you want to spell it out, there seems to be more to competence in deduction than the various brain states through which the subject progresses.  Of course any appeal to appropriateness or non-deviance is a promissory note pending further explication of those notions, but don&#8217;t you share the intuition that there is *some* necessary condition on competence which is not met in your mad neuroscientist case due to the strangeness of the setup?  If so, we have an answer to your questions (albeit one which awaits further development).</p>
+<p>(PS Shameless plug: my own best efforts with notions like &#8216;non-deviance&#8217; are represented in my &#8216;Knowledge and Explanation&#8217; paper, available on my website :))</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=2021.html#respond' onclick='return addComment.moveForm( "comment-2021", "2021", "respond", "365" )' aria-label='Reply to Carrie Jenkins'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-2022" >
+		<article id="comment-2022" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/67f220573f8256921b31ccc6af364b98?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/67f220573f8256921b31ccc6af364b98?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.st-andrews.ac.uk/~csj6' rel='external nofollow' class='url'>Carrie Jenkins</a></span> on <a href="../index.html%3Fp=365.html#comment-2022"><time datetime="2005-06-18T13:38:00+00:00">June 18, 2005 at 1:38 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Oops, sorry &#8211; that last post was meant to be addressed to Eric, obviously!</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=2022.html#respond' onclick='return addComment.moveForm( "comment-2022", "2022", "respond", "365" )' aria-label='Reply to Carrie Jenkins'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-2023" >
+		<article id="comment-2023" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/dbc829d115cfb6e2cba244520dbc56f8?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/dbc829d115cfb6e2cba244520dbc56f8?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://colfa.utsa.edu/ecpc/faculty/almeida/default.htm' rel='external nofollow' class='url'>Mike</a></span> on <a href="../index.html%3Fp=365.html#comment-2023"><time datetime="2005-06-18T14:59:00+00:00">June 18, 2005 at 2:59 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>W&#038;H say _if you know p and competently deduce q from p, then you know q_.</p>
+<p>It is hard to see this as a requirement that *I* do the actual deduction. It looks like a requirement that I rely on nothing less than a competent deduction. Suppose I use a computer program that is more reliable that I am at making inferences. Instead of going through the proof, I run it on the program. It has to be true (no?) that W&#038;H would have me committed to the conclusion of that deduction. Supposing that the neuro-scientist didn&#8217;t randomly put me in the sequence of mental states resulting in q&#8211;supposing that the scientist knew exactly the sequence that correctly inferred q, that he is reliable and put me through the sequence of brain-states exactly in order to have me arrive at q&#8211;I don&#8217;t see why I cannot use his reliability in drawing inferences (just as I can use a computer program).</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=2023.html#respond' onclick='return addComment.moveForm( "comment-2023", "2023", "respond", "365" )' aria-label='Reply to Mike'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-2024" >
+		<article id="comment-2024" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.missouri.edu/~kvanvigj' rel='external nofollow' class='url'>jon kvanvig</a></span> on <a href="../index.html%3Fp=365.html#comment-2024"><time datetime="2005-06-19T09:01:56+00:00">June 19, 2005 at 9:01 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Mike, I don&#8217;t think we want a closure principle to cover the case of deduction handed over to a machine.  You&#8217;re right, though, that we do want an epistemic principle that encodes how one can learn in this way.</p>
+<p>Carrie, I&#8217;m not quite sure that the relation to prior learning is going to be necessary.  I expect that it&#8217;s at least possible for there to be innate competence, and I suspect that this is actually so as well.  So substituting an etiological condition for an agency condition won&#8217;t cover all the cases that I&#8217;d like to have a closure principle address.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=2024.html#respond' onclick='return addComment.moveForm( "comment-2024", "2024", "respond", "365" )' aria-label='Reply to jon kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-2025" >
+		<article id="comment-2025" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/67f220573f8256921b31ccc6af364b98?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/67f220573f8256921b31ccc6af364b98?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.st-andrews.ac.uk/~csj6' rel='external nofollow' class='url'>Carrie Jenkins</a></span> on <a href="../index.html%3Fp=365.html#comment-2025"><time datetime="2005-06-19T12:12:47+00:00">June 19, 2005 at 12:12 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jon,<br />
+I think I want to make the same sort of response here as I made to Eric &#8211; that the mention of learning was merely illustrative of the general point, which is that there seems to be *some* necessary condition on competence which is not met in your mad neuroscientist case due to the strangeness of the scenario.  If we thought competence with certain rules was innate, then we might demand that, in order for a competent deduction to have taken place where the rules used were innate, the subject&#8217;s use of the rules should be appropriately related to her innate capacity to use those rules.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=2025.html#respond' onclick='return addComment.moveForm( "comment-2025", "2025", "respond", "365" )' aria-label='Reply to Carrie Jenkins'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-2026" >
+		<article id="comment-2026" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.missouri.edu/~kvanvigj' rel='external nofollow' class='url'>jon kvanvig</a></span> on <a href="../index.html%3Fp=365.html#comment-2026"><time datetime="2005-06-19T12:28:06+00:00">June 19, 2005 at 12:28 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I see, Carrie, but I worry how whatever such a requirement is, it could fail to be encoded in sequences of brain states.  In the original case, there was no difference between S and S&#8217; in terms of capacities and the like, and yet one sequence of brain states is produced by the made scientist and one is not.  I&#8217;m puzzled how the very same sequence could count as appropriately related to the capacity in one case and not in the other.  Perhaps the answer is that the difference is causal:  in one case, the capacity is causally active in the production of the new belief, and in the other case it isn&#8217;t.  But surely the mad scientist can mimic that as well; it&#8217;ll just be remote causation of the immediate causal story.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=2026.html#respond' onclick='return addComment.moveForm( "comment-2026", "2026", "respond", "365" )' aria-label='Reply to jon kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-2027" >
+		<article id="comment-2027" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/dbc829d115cfb6e2cba244520dbc56f8?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/dbc829d115cfb6e2cba244520dbc56f8?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://colfa.utsa.edu/ecpc/faculty/almeida/default.htm' rel='external nofollow' class='url'>Mike</a></span> on <a href="../index.html%3Fp=365.html#comment-2027"><time datetime="2005-06-19T13:31:22+00:00">June 19, 2005 at 1:31 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>&#8220;I donâ??t think we want a closure principle to cover the case of deduction handed over to a machine.&#8221;</p>
+<p>I&#8217;m not sure why. I&#8217;m sure you know there&#8217;s been lots of controversy over whether the so-called &#8220;four color theorem&#8221; has been proven. Most of the proofs require the use of some sophisticated software. Suppose the closure of mathematician S&#8217;s beliefs includes the four color theorem. And suppose we have reliable software to prove the theorem. Can&#8217;t we use the software to show that S is committed, under competent closure, to that theorem? Don&#8217;t we want our commitments under closure to include those that (i) we cannot competently deduce ourselves but (ii) can be competently deduced?</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=2027.html#respond' onclick='return addComment.moveForm( "comment-2027", "2027", "respond", "365" )' aria-label='Reply to Mike'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-2028" >
+		<article id="comment-2028" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.missouri.edu/~kvanvigj' rel='external nofollow' class='url'>jon kvanvig</a></span> on <a href="../index.html%3Fp=365.html#comment-2028"><time datetime="2005-06-19T14:39:29+00:00">June 19, 2005 at 2:39 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Mike, it is true that the mathematician is committed to the conclusion of the software in question, but that&#8217;s not a closure principle.  If we start with what a mathematician knows and perform software proofs and even make the mathematician know of the results, it doesn&#8217;t follow that the mathematician knows.  S/he&#8217;s committed to the results so long as knowledge of the premises is retained and knowledge of the adequacy of the software, but none of that implies that s/he believes the results.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=2028.html#respond' onclick='return addComment.moveForm( "comment-2028", "2028", "respond", "365" )' aria-label='Reply to jon kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-2029" >
+		<article id="comment-2029" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/dbc829d115cfb6e2cba244520dbc56f8?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/dbc829d115cfb6e2cba244520dbc56f8?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://colfa.utsa.edu/ecpc/faculty/almeida/default.htm' rel='external nofollow' class='url'>Mike</a></span> on <a href="../index.html%3Fp=365.html#comment-2029"><time datetime="2005-06-19T15:27:33+00:00">June 19, 2005 at 3:27 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jon, let me see if I&#8217;ve got it. First (1).</p>
+<p>(1) S starts with knowledge K, S runs the proof on the computer deriving p, S knows that p was properly derived from K and yet S might not know or believe p.</p>
+<p>Therefore (2) cannot be a closure principle.</p>
+<p>(2) If you know p and use a computer to (competently) deduce q from p, then you know q.</p>
+<p>But the W&#038;H principle (3) does not have this problem and so might well be a closure principle.</p>
+<p>(3) If you know p and competently deduce q from p (yourself), then you know q.</p>
+<p>But then (3) cannot have this analogous worry. You look at q and learn &#8220;my God, I&#8217;ve shown that relativity theory is false!&#8221; Now you&#8217;ve competently derived that astounding conclusion (imagine). You reasonably say &#8220;I don&#8217;t believe that conclusion; I need to do the proof again.&#8221;</p>
+<p>In this case you might say, &#8220;well, wait. I know it was competently derived, so I don&#8217;t need to do the proof again. I know q.&#8221;<br />
+But then in the former case you might say &#8220;well, wait. I know the theorem was competently derived, so I don&#8217;t need to do the proof myself. I know q.&#8221;</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=2029.html#respond' onclick='return addComment.moveForm( "comment-2029", "2029", "respond", "365" )' aria-label='Reply to Mike'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-2030" >
+		<article id="comment-2030" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.missouri.edu/~kvanvigj' rel='external nofollow' class='url'>jon kvanvig</a></span> on <a href="../index.html%3Fp=365.html#comment-2030"><time datetime="2005-06-19T15:34:57+00:00">June 19, 2005 at 3:34 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Mike, the principle I started with is an encrypted version of what W&#038;H actually say.  The full Hawthorne principle is:  if you know p, come to believe q by competently deducing it from p, retaining your knowledge of p throughout, then you know q.  Your (3) would suffer from the same problem as the computer version.</p>
+<p>So, you might think, let&#8217;s add that you come to believe the conclusion of the computer program on the basis of that program&#8217;s correctly deducing it from p.  Then you know q.  I hadn&#8217;t seen that before, and I like the point; it goes to the question of how complete the W&#038;H principle is (which they don&#8217;t claim that it is, but which a complete account of closure should be aiming for).</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=2030.html#respond' onclick='return addComment.moveForm( "comment-2030", "2030", "respond", "365" )' aria-label='Reply to jon kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-2031" >
+		<article id="comment-2031" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/67f220573f8256921b31ccc6af364b98?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/67f220573f8256921b31ccc6af364b98?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.st-andrews.ac.uk/~csj6' rel='external nofollow' class='url'>Carrie Jenkins</a></span> on <a href="../index.html%3Fp=365.html#comment-2031"><time datetime="2005-06-19T17:46:09+00:00">June 19, 2005 at 5:46 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jon,<br />
+Sure, causal stories are one way some people might want to develop the point.  Suppose we run something along those lines.  Then, you say, &#8220;surely the mad scientist can mimic that as well; itâ??ll just be remote causation of the immediate causal story.&#8221;  I guess the response to that would be that one of two things could be going on there:<br />
+1) The fact that the scientist interfered (at whatever stage) is enough to make it the case that there is something deviant about the causal link between the capacity and the relevant brain states (in which case we don&#8217;t have S&#8217; performing a competent deduction)<br />
+or<br />
+2) if you don&#8217;t think that sounds right, then you ought to say that the scientist&#8217;s interference through remote causation of the immediate causal story amounted to the scientist&#8217;s *causing S&#8217; to perform a competent deduction* (in which case there seems to be nothing -that is, nothing special- worrying about the application of the closure principle in this scenario).</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=2031.html#respond' onclick='return addComment.moveForm( "comment-2031", "2031", "respond", "365" )' aria-label='Reply to Carrie Jenkins'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-2032" >
+		<article id="comment-2032" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.missouri.edu/~kvanvigj' rel='external nofollow' class='url'>jon kvanvig</a></span> on <a href="../index.html%3Fp=365.html#comment-2032"><time datetime="2005-06-19T18:30:28+00:00">June 19, 2005 at 6:30 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Carrie, that sounds right, and that&#8217;s the question, I think:  is what the scientist does something that leaves a competent deduction in place, or not?  My worry was that we&#8217;ll have to talk about agency here to decide the answer, and that&#8217;s troubling to me, since belief formation doesn&#8217;t seem to be the right kind of thing for talk of agency to encroach on.  That&#8217;s the lesson of the problems for belief voluntarism.  But maybe I&#8217;m overgeneralizing that concern here; I just don&#8217;t know.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=2032.html#respond' onclick='return addComment.moveForm( "comment-2032", "2032", "respond", "365" )' aria-label='Reply to jon kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-2033" >
+		<article id="comment-2033" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/67f220573f8256921b31ccc6af364b98?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/67f220573f8256921b31ccc6af364b98?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.st-andrews.ac.uk/~csj6' rel='external nofollow' class='url'>Carrie Jenkins</a></span> on <a href="../index.html%3Fp=365.html#comment-2033"><time datetime="2005-06-20T13:10:36+00:00">June 20, 2005 at 1:10 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jon,</p>
+<p>>is what the scientist does something that leaves a competent deduction in place, or not?</p>
+<p>It seems more palatable to say it is in the &#8220;remote causation&#8221; case than in the sort of case you originally described.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=2033.html#respond' onclick='return addComment.moveForm( "comment-2033", "2033", "respond", "365" )' aria-label='Reply to Carrie Jenkins'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-2034" >
+		<article id="comment-2034" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.missouri.edu/~kvanvigj' rel='external nofollow' class='url'>jon kvanvig</a></span> on <a href="../index.html%3Fp=365.html#comment-2034"><time datetime="2005-06-20T13:29:10+00:00">June 20, 2005 at 1:29 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Carrie, that sounds right, though I still can&#8217;t tell if it helps us avoid having to think of comp. ded. in terms that require agency.  That&#8217;s my biggest worry, I think.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=2034.html#respond' onclick='return addComment.moveForm( "comment-2034", "2034", "respond", "365" )' aria-label='Reply to jon kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-2035" >
+		<article id="comment-2035" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/67f220573f8256921b31ccc6af364b98?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/67f220573f8256921b31ccc6af364b98?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.st-andrews.ac.uk/~csj6' rel='external nofollow' class='url'>Carrie Jenkins</a></span> on <a href="../index.html%3Fp=365.html#comment-2035"><time datetime="2005-06-21T08:30:07+00:00">June 21, 2005 at 8:30 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jon,</p>
+<p>> I still canâ??t tell if it helps us avoid having to think of comp. ded. in terms that require agency</p>
+<p>I&#8217;m inclined to think it does.  What&#8217;s wrong in your original case is that there&#8217;s the wrong kind of link (causal link if you like) between capacity and performance, so that it&#8217;s not a competent deduction.  No need for mention of agency here.  And in the remote causation case (we might be inclined to think) there *is* a competent deduction because the link (causal if you like) between capacity and performance is of the right kind.  (Again, no need to talk about agency.)</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=2035.html#respond' onclick='return addComment.moveForm( "comment-2035", "2035", "respond", "365" )' aria-label='Reply to Carrie Jenkins'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-2038" >
+		<article id="comment-2038" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/977b05784543d5c6619adba8774802f2?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/977b05784543d5c6619adba8774802f2?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Keith Brian Johnson</span> on <a href="../index.html%3Fp=365.html#comment-2038"><time datetime="2005-07-24T21:01:56+00:00">July 24, 2005 at 9:01 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Greetings, all and sundry!  I&#8217;m just learning my way around the Internet, and this looked interesting.</p>
+<p>&#8220;Williamson and Hawthorne, among others, endorse a closure principle about knowledge that employs the concept of a competent deduction. The straightforward version is that if you know p and competently deduce q from p, then you know q. As most realize, there are qualifications needed, but Iâ??ll ignore them here.</p>
+<p>&#8220;Hereâ??s a question about the principle. Suppose a competent deduction of q from p by S occurs, and suppose that the deduction is constituted by a certain sequence of brain states in S. Now, suppose we have another person, Sâ??, just as competent at deduction as S who also knows p. Further, suppose that a mad neuroscientist produces in Sâ?? the same sequence of brain states that constituted the deduction of q from p by S. Did Sâ?? just competently deduce q from p?&#8221;</p>
+<p>If S and S&#8217; are taken to be physioepistemic twins&#8211;if the exact same brain states and brain processes in S give rise to exactly the same epistemic states and processes as in S&#8217;&#8211;then it seems reasonable to suppose that if the mad neuroscientist induces in S&#8217; the same sequence of brain states that constituted the deduction of q from p by S, then he will also have induced in S&#8217; the same epistemic processes and states as in S, so that yes, S&#8217; will have been caused by the mad scientist to competently deduce q from p; if S and S&#8217; are not taken to be physioepistemic twins, then the induction of the same sequence of brain states that constituted the deduction of q from p in S might constitute something quite different in S&#8217;, so S&#8217; need not have just competently deduced q from p.  What the question really seems to be getting at is either whether or not identical brain states and processes give rise to identical epistemic processes and states in S and S&#8217;&#8211;which seems to hinge on whether or not they are, in the relevant respects, physioepistemic twins&#8211;or, on the other hand, whether the mad scientist&#8217;s manipulation of the brain of S&#8217; gives rise to epistemic processes and states in S&#8217; at all.  The former question seems to be a matter of stipulation, as human brains aren&#8217;t identical; the latter seems to be pretty clearly answerable in the affirmative, doesn&#8217;t it?  Am I missing something?</p>
+<p>&#8220;Another question. Assume Sâ?? comes to believe q as a result of what the neuroscientist does. Does S know q?&#8221;</p>
+<p>Again, if they are physioepistemic twins, then yes, since the same epistemic processes and states have been induced in S&#8217; as in S; if they are not physioepistemic twins, then it&#8217;s going to depend on whether the mad scientist&#8217;s actions have induced the proper epistemic processes in S&#8217; to competently deduce q from p.</p>
+<p>Keith Brian Johnson</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=2038.html#respond' onclick='return addComment.moveForm( "comment-2038", "2038", "respond", "365" )' aria-label='Reply to Keith Brian Johnson'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-2037" >
+		<article id="comment-2037" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.missouri.edu/~kvanvigj' rel='external nofollow' class='url'>jon kvanvig</a></span> on <a href="../index.html%3Fp=365.html#comment-2037"><time datetime="2005-07-25T07:43:53+00:00">July 25, 2005 at 7:43 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Keith, W and H may think differently here, but I think it is pretty obvious that the scientist-induced belief isn&#8217;t competent deduction and isn&#8217;t knowledge.  The second claim could be made false by filling in additional details to the case, but in any case, it won&#8217;t count as knowledge based on deduction.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=2037.html#respond' onclick='return addComment.moveForm( "comment-2037", "2037", "respond", "365" )' aria-label='Reply to jon kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-2036" >
+		<article id="comment-2036" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/977b05784543d5c6619adba8774802f2?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/977b05784543d5c6619adba8774802f2?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Keith Brian Johnson</span> on <a href="../index.html%3Fp=365.html#comment-2036"><time datetime="2005-07-25T13:10:39+00:00">July 25, 2005 at 1:10 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Do I take it you think it&#8217;s obvious that the mad neuroscientist hasn&#8217;t in fact induced the same epistemic processes and states in S&#8217; that S had when deducing q from p?</p>
+<p>Keith Brian Johnson</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=2036.html#respond' onclick='return addComment.moveForm( "comment-2036", "2036", "respond", "365" )' aria-label='Reply to Keith Brian Johnson'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+		</ol>
+
+		
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply to <a href="index.html%3Freplytocom=2030.html#comment-2030">jon kvanvig</a> <small><a rel="nofollow" id="cancel-comment-reply-link" href="../index.html%3Fp=365.html#respond">Cancel reply</a></small></h3>			<form action="http://certaindoubts.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='365' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='2030' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="1dc497b3a8" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="110"/></p>			</form>
+			</div><!-- #respond -->
+	</div><!-- #comments -->
+
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+		</div><!-- #container_wrap -->
+
+	<div id="sidebar_wrap_right" class="split equal_height">
+	<div id="sidebar_right" class="widget-area" role="complementary">
+		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+											<li>
+					<a href="../index.html%3Fp=4902.html">The End</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4897.html">Young Epistemologist Prize 2019</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4890.html">A simple problem for (unrestricted) Conditionalization</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4883.html">Reminder: Young Epistemologist Prize 2019</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4877.html">Do We Know that We&#8217;re not Brains in Vats?: Follow-Up: Polls and Surveys</a>
+									</li>
+					</ul>
+		</aside><aside id="calendar-2" class="widget widget_calendar"><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar">
+	<caption>April 2019</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="../2019/02/index.html">&laquo; Feb</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+	</tr>
+	<tr>
+		<td>8</td><td><a href="../2019/04/09/index.html" aria-label="Posts published on April 9, 2019">9</a></td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+	</tr>
+	<tr>
+		<td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
+	</tr>
+	<tr>
+		<td>22</td><td id="today">23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+	</tr>
+	<tr>
+		<td>29</td><td>30</td>
+		<td class="pad" colspan="5">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></aside><aside id="meta-3" class="widget widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="../wp-login.php.html">Log in</a></li>
+			<li><a href="../feed/index.html">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="../comments/feed/index.html">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside><aside id="search-2" class="widget widget_search"><form role="search" style="background:transparent;" method="get" class="searchform" action="../index.html" >
+	<label class="screen-reader-text" for="s">Search for:</label>
+	<input type="search" value="" name="s" id="s" placeholder="Search Site" />
+	<input class="searchformimg" type="image" src="../wp-content/themes/weaver-ii/images/search_button.gif" alt="Search" />
+	</form></aside>
+	</div><!-- sidebar_right .widget-area -->
+	</div><!-- #sidebar_wrap_right -->
+    <div class='weaver-clear'></div></div><!-- #main -->
+	<footer id="colophon" role="contentinfo">
+	  <div>
+
+		<div id="site-ig-wrap">
+		<span id="site-info">
+		&copy; 2019 - <a href="../index.html" title="Certain Doubts" rel="home">Certain Doubts</a>
+		</span> <!-- #site-info -->
+		<span id="site-generator">
+		<a href="http://wordpress.org/" title="wordpress.org" rel="generator" target="_blank">Proudly powered by WordPress</a>&nbsp;
+Weaver II by <a href="http://weavertheme.com" target="_blank" title="http://weavertheme.com">WP Weaver</a>
+		</span> <!-- #site-generator -->
+		</div><!-- #site-ig-wrap -->
+		<div class="weaver-clear"></div>
+	  </div>
+	</footer><!-- #colophon -->
+</div><!-- #wrapper -->
+<a href="index.html%3Freplytocom=2030.html#page-top" id="page-bottom">&uarr;</a>
+<div id="weaver-final" class="weaver-final-normal"><script type='text/javascript' src='../wp-includes/js/comment-reply.min.js%3Fver=4.9.10'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var weaver_menu_params = {"selector":"li:has(ul) > a","selector_leaf":"li li li:not(:has(ul)) > a"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/themes/weaver-ii/js/weaverjslib.min.js%3Fver=2.2.2'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.min.js%3Fver=4.9.10'></script>
+<script async="async" type='text/javascript' src='../wp-content/plugins/akismet/_inc/form.js%3Fver=4.1'></script>
+</div> <!-- #weaver-final -->
+</body>
+</html>

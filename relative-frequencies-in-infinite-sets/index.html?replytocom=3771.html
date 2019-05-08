@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<!--[if IE 7]>	<html id="ie7" lang="en-US"> <![endif]-->
+<!--[if IE 8]>	<html id="ie8" lang="en-US"> <![endif]-->
+<!--[if IE 9]>	<html id="ie9" lang="en-US"> <![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8) ] | !(IE 9) ><!-->	<html lang="en-US"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes' />
+<title>Relative Frequencies in Infinite Sets | Certain Doubts</title>
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://certaindoubts.com/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://certaindoubts.com/wp-content/themes/weaver-ii/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<script type="text/javascript">var weaverIsMobile=false;var weaverIsSimMobile=false;var weaverIsStacked=false;var weaverThemeWidth=940;var weaverMenuThreshold=640;var weaverHideMenuBar=false;var weaverMobileDisabled=false;var weaverFlowToBottom=false;var weaverHideTooltip=false;var weaverUseSuperfish=false;</script>
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Certain Doubts &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Certain Doubts &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Certain Doubts &raquo; Relative Frequencies in Infinite Sets Comments Feed" href="feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/certaindoubts.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.10"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='weaverii-main-style-sheet-css'  href='../wp-content/themes/weaver-ii/style.min.css%3Fver=2.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='weaverii-mobile-style-sheet-css'  href='../wp-content/themes/weaver-ii/style-mobile.min.css%3Fver=2.2.2.css' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery.js%3Fver=1.12.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min.js%3Fver=1.4.1'></script>
+<link rel='https://api.w.org/' href='../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc.php%3Frsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='A Symmetry between Defeat and Support?' href='../index.html%3Fp=603.html' />
+<link rel='next' title='Brazil Conference on Lehrer&#8211;More Info' href='../index.html%3Fp=605.html' />
+<meta name="generator" content="WordPress 4.9.10" />
+<link rel="canonical" href="../index.html%3Fp=604.html" />
+<link rel='shortlink' href='../index.html%3Fp=604.html' />
+<meta name='robots' content='noindex,follow' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed%3Furl=http:%252F%252Fcertaindoubts.com%252Frelative-frequencies-in-infinite-sets%252F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed%3Furl=http:%252F%252Fcertaindoubts.com%252Frelative-frequencies-in-infinite-sets%252F&amp;format=xml" />
+
+<!-- This site is using Weaver II 2.2.2 (48) subtheme: Wheat -->
+<!-- Page ID: 604 -->
+<style type="text/css">
+/* Weaver II styles - Version 48 */
+a {color:#59C448;}
+a:visited {color:#8DBA61;}
+a:hover {color:#C91640;}
+a{font-style:italic;}
+a{font-weight:bold;}
+.entry-title a {color:#0A0A0A;}
+.entry-title a:visited {color:#0A0A0A;}
+.entry-title a{font-style:normal;}
+.entry-title a{font-weight:normal;}
+.entry-meta a, .entry-utility a {color:#474134;}
+.entry-meta a:visited, .entry-utility a:visited {color:#706752;}
+.entry-meta a:hover, .entry-utility a:hover {color:#C91640;}
+.widget-area a {color:#474134;}
+.widget-area a:visited {color:#706752;}
+.widget-area a:hover {color:#C91640;}
+.widget-area a{font-style:normal;}
+.widget-area a{font-weight:normal;}
+#infobar a{font-style:normal;}
+#infobar a{font-weight:normal;}
+#colophon a{font-style:normal;}
+#colophon a{font-weight:normal;}
+#wrapper {border: 1px solid #AB9B7D;}
+#sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,#first,#second,#third,#fourth, .mobile_widget_area {border: 1px solid #AB9B7D;}
+#wrapper, #branding, #colophon, .commentlist li.comment, #respond, #sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,#first,#second,#third,#fourth,.mobile_widget_area {-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}
+#sidebar_wrap_right.right-1-col,#sidebar_wrap_right.right-2-col,#sidebar_wrap_right.right-2-col-bottom,
+#sidebar_wrap_left.left-1-col,#sidebar_wrap_left.left-2-col,#sidebar_wrap_left.left-2-col-bottom,#sidebar_wrap_left,#sidebar_wrap_right
+{-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}
+.commentlist li.comment .comment-meta {-moz-border-radius-topleft: 7px; -moz-border-radius-topright: 7px;
+ -webkit-border-top-left-radius: 7px; -webkit-border-top-right-radius: 7px; border-top-left-radius: 7px; border-top-right-radius: 7px;}
+#access {-moz-border-radius-bottomleft: 7px; -moz-border-radius-bottomright: 7px;
+ -webkit-border-bottom-left-radius: 7px; -webkit-border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; border-bottom-right-radius: 7px;}
+#access2 {-moz-border-radius-topleft: 7px; -moz-border-radius-topright: 7px;
+ -webkit-border-top-left-radius: 7px; -webkit-border-top-right-radius: 7px; border-top-left-radius: 7px; border-top-right-radius: 7px;}
+body {background-image: url(../wp-content/themes/weaver-ii/images/gr.png); background-attachment: scroll; background-repeat: repeat-x;}
+#wrapper {-webkit-box-shadow: 0 0 3px 3px rgba(0,0,0,0.25); -moz-box-shadow: 0 0 3px 3px rgba(0,0,0,0.25); box-shadow: 0 0 3px 3px rgba(127,127,127,0.25);}
+#wrapper{max-width:940px;}
+#sidebar_primary,.mobile_widget_area {background-color:#F5DEB3;}
+#sidebar_right {background-color:#F5DEB3;}
+#sidebar_left {background-color:#F5DEB3;}
+.sidebar_top,.sidebar_extra {background-color:#F5DEB3;}
+.sidebar_bottom {background-color:#F5DEB3;}
+#first,#second,#third,#fourth {background-color:transparent;}
+.widget {background-color:transparent;}
+#container_wrap.right-1-col{width:75.000%;} #sidebar_wrap_right.right-1-col{width:25.000%;}
+#container_wrap.right-2-col,#container_wrap.right-2-col-bottom{width:67.000%;} #sidebar_wrap_right.right-2-col,#sidebar_wrap_right.right-2-col-bottom{width:33.000%;}
+#container_wrap.left-1-col{width:75.000%;} #sidebar_wrap_left.left-1-col{width:25.000%;}
+#container_wrap.left-2-col,#container_wrap.left-2-col-bottom{width:67.000%;} #sidebar_wrap_left.left-2-col,#sidebar_wrap_left.left-2-col-bottom{width:33.000%;}
+#container_wrap{width:66.000%;} #sidebar_wrap_left{width:17.000%;} #sidebar_wrap_right{width:17.000%;}
+#sidebar_wrap_2_left_left, #sidebar_wrap_2_right_left {width:54.000%;margin-right:1%;}
+#sidebar_wrap_2_left_right, #sidebar_wrap_2_right_right {width:45.000%;}
+#sidebar_header {font-size:70%;}
+#sidebar_header .header-widget-1 {display:none;}
+#sidebar_header .header-widget-2 {display:none;}
+#sidebar_header .header-widget-3 {display:none;}
+#sidebar_header .header-widget-4 {display:none;}
+@media only screen and (max-width:640px) { /* header widget area mobile rules */
+} /* end mobile rules */
+#main {padding: 15px 0 0 0;}
+#site-description {font-size:200.000%;}
+#site-title {overflow:hidden; padding:0; margin:0; position:absolute; left:2.000%; top: 5.000%; z-index:20;}
+#site-description {overflow:hidden; padding:0; margin:0; position:absolute; left:4.000%; top: 30.000%; z-index:20;}
+.menu_bar a, .mobile_menu_bar a {font-weight:bold;}
+@media only screen and (min-width: 641px) {.menu_bar,.weaveriip_vertical_menu .menu_bar { background-image: url(../wp-content/themes/weaver-ii/images/theme/fade.png);}}
+@media only screen and (min-width: 641px) {.menu_bar ul ul a, .menu_bar li:hover > a, .menu_bar ul ul :hover > a { background-image: url(../wp-content/themes/weaver-ii/images/theme/fadeup.png);}}
+#ie8 .menu_bar,#ie8 .weaveriip_vertical_menu .menu_bar,#ie7 .menu_bar,#ie7 .weaveriip_vertical_menu .menu_bar { background-image: url(../wp-content/themes/weaver-ii/images/theme/fade.png);}
+#ie8 .menu_bar ul ul a, #ie8 .menu_bar li:hover > a, #ie8 .menu_bar ul ul :hover > a,
+#ie7 .menu_bar ul ul a, #ie7 .menu_bar li:hover > a, #ie7 .menu_bar ul ul :hover > a{ background-image: url(../wp-content/themes/weaver-ii/images/theme/fadeup.png);}
+.menu_bar, .menu_bar a,.menu_bar a:visited,.mobile_menu_bar a {color:#FFFAEF;}
+.menu_bar li:hover > a, .menu_bar a:focus {background-color:#BAA987;}
+.menu_bar li:hover > a, .menu_bar a:focus {color:#F0EBE0;}
+.menu_bar ul ul a {background-color:#BAA987;}
+.menu_bar ul ul a,.menu_bar ul ul a:visited {color:#FFFAEF;}
+.menu_bar ul ul :hover > a {background-color:#BAA987;}
+.menu_bar ul ul :hover > a {color:#F0EBE0;}
+.menu_bar, .mobile_menu_bar, .menu-add {background-color:#AB9B7D;}
+.mobile-menu-link {border-color:#FFFAEF;}
+.widget-area .menu-vertical,.menu-vertical {clear:both;background-color:transparent;margin:0;width:100%;overflow:hidden;border-bottom:3px solid #FFFAEF;border-top:1px solid #FFFAEF;}
+.widget-area .menu-vertical ul, .menu-vertical ul {margin: 0; padding: 0; list-style-type: none;  list-style-image:none;font-family: inherit;}
+.widget-area .menu-vertical li a, .widget-area .menu-vertical a:visited, .menu-vertical li a, .menu-vertical a:visited {
+color: #FFFAEF;  background-color: #AB9B7D; display: block !important; padding: 5px 10px; text-decoration: none; border-top:2px solid #FFFAEF;}
+.widget-area .menu-vertical a:hover,.widget-area .menu-vertical a:focus, .menu-vertical a:hover,.menu-vertical a:focus {
+color: #F0EBE0; background-color: #BAA987;text-decoration: none;}
+.widget-area .menu-vertical ul ul li, .menu-vertical ul ul li { margin: 0; }
+.widget-area .menu-vertical ul ul a,.menu-vertical ul ul a {color: #FFFAEF; background-color: #AB9B7D;
+ display: block; padding: 4px 5px 4px 25px; text-decoration: none;border:0;
+ border-top:1px solid #FFFAEF;}
+.widget-area .menu-vertical ul ul a:hover,#wrap-header .menu-vertical ul ul a:hover,#wrap-header .menu-vertical ul a:hover {color: #F0EBE0; background-color: #BAA987; text-decoration: none;}
+.widget-area .menu-vertical ul ul ul a,.menu-vertical ul ul ul a {padding: 4px 5px 4px 35px;}
+.widget-area .menu-vertical ul ul ul a,.menu-vertical ul ul ul ul a {padding: 4px 5px 4px 45px;}
+.widget-area .menu-vertical ul ul ul ul a,.menu-vertical ul ul ul ul ul a {padding: 4px 5px 4px 55px;}
+.menu_bar .current_page_item > a, .menu_bar .current-menu-item > a, .menu_bar .current-cat > a, .menu_bar .current_page_ancestor > a,.menu_bar .current-category-ancestor > a, .menu_bar .current-menu-ancestor > a, .menu_bar .current-menu-parent > a, .menu_bar .current-category-parent > a,.menu-vertical .current_page_item > a, .menu-vertical .current-menu-item > a, .menu-vertical .current-cat > a, .menu-vertical .current_page_ancestor > a, .menu-vertical .current-category-ancestor > a, .menu-vertical .current-menu-ancestor > a, .menu-vertical .current-menu-parent > a, .menu-vertical .current-category-parent > a,.widget-area .menu-vertical .current_page_item > a, .widget-area .menu-vertical .current-menu-item > a, .widget-area .menu-vertical .current-cat > a, .widget-area .menu-vertical .current_page_ancestor > a {color:#474134 !important;}
+.entry-title {border-bottom: 1px solid #0A0A0A;}
+#content, .entry-content h1, .entry-content h2 {color:#292929;}
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6, #content dt, #content th,
+h1, h2, h3, h4, h5, h6,#author-info h2 {color:#0A0A0A;}
+#content h1.entry-title {color:#0A0A0A;}
+.commentlist li.comment, #respond {background-color:transparent;}
+.wp-caption p.wp-caption-text, #content .gallery .gallery-caption,.entry-attachment .entry-caption {color:#333333;}
+#content img.size-full, #content img.size-large, #content img.size-medium, #content img.size-thumbnail, #content .attachment-thumbnail, #content .gallery img,#content .gallery-thumb img,.entry-attachment img, #content .wp-caption img, #content img.wp-post-image,#content img[class*="wp-image-"],#author-avatar img,img.avatar {background-color:transparent;}
+.home .sticky, #container.page-with-posts .sticky, #container.index-posts .sticky {background-color:#E6DCC8;}
+.entry-meta, .entry-content label, .entry-utility {color:#706752;}
+body {font-size:12px;}
+body {background-color:#C7B491;}
+body {color:#292929;}
+#wrapper {background-color:#FEF3DD;}
+#main {background-color:transparent;}
+#container {background-color:transparent;}
+#content {background-color:transparent;}
+#content .post,.post {background-color:transparent;}
+#branding {background-color:transparent;}
+#colophon {background-color:#F5DEB3;}
+hr {background-color:#AB9B7D;}
+.entry-meta {background-color:transparent;}
+.entry-utility {background-color:transparent;}
+input, textarea, ins, pre {background-color:#F0F0F0;}
+.widget {color:#333333;}
+.widget-title {border-bottom: 1px solid #222222; margin-bottom:5px;padding-bottom:3px;}
+.widget-title, .widget_search label, #wp-calendar caption {color: #222222;}
+#site-title a {color:#FEF9EE;}
+#site-description {color:#FFFAEF;}
+/* Weaver II Mobile Device Options */
+.weaver-any-mobile  #main a, .weaver-any-mobile  #mobile-widget-area a, .weaver-any-mobile  .sidebar_top a, .weaver-any-mobile  .sidebar_bottom a, .weaver-any-mobile  .sidebar_extra a {text-decoration: underline !important;}
+@media only screen and (max-width:768px) and (orientation:portrait) {body {padding: 0px !important;}}
+@media only screen and (max-width:640px) {
+#main a, #mobile-widget-area a, .sidebar_top a, .sidebar_bottom a, .sidebar_extra a{text-decoration: underline !important;}
+}
+@media only screen and (max-width: 580px) {
+}
+
+/* end Weaver II CSS */
+</style> <!-- end of main options style section -->
+
+
+<!--[if lte IE 8]>
+<style type="text/css" media="screen">
+#content img.size-thumbnail,#content img.size-medium,#content img.size-large,#content img.size-full,#content img.attachment-thumbnail,
+#content img.wp-post-image,img.avatar,.format-chat img.format-chat-icon,
+#wrapper,#branding,#colophon,#content, #content .post,
+#sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,
+#first,#second,#third,#fourth,
+#commentform input:focus,#commentform textarea:focus,#respond input#submit {
+		behavior: url(http://certaindoubts.com/wp-content/themes/weaver-ii/js/PIE/PIE.php) !important; position:relative;
+}
+</style>
+<![endif]-->
+
+<!-- End of Weaver II options -->
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		</head>
+
+<body class="post-template-default single single-post postid-604 single-format-standard singular not-logged-in weaver-desktop weaver-mobile-smart-nostack">
+<a href="index.html%3Freplytocom=3771.html#page-bottom" id="page-top">&darr;</a> <!-- add custom CSS to use this page-bottom link -->
+<div id="wrapper" class="hfeed">
+<div id="wrap-header">
+	<header id="branding" role="banner"><div id="branding-content">
+		<div id="site-logo"></div>
+		<div id="site-logo-link" onclick="location.href='http://certaindoubts.com/';"></div>
+
+		<div class="title-description-xhtml">
+			<h1 id="site-title" ><span><a href="../index.html" title="Certain Doubts" rel="home">Certain Doubts</a></span></h1>
+			<h2 id="site-description"> devoted to matters epistemic</h2>
+		</div>
+		<div id="header_image">
+                              <img src="../wp-content/themes/weaver-ii/images/headers/wheat.jpg" width="940" height="188" alt="Certain Doubts" />
+        		</div><!-- #header_image -->
+	</div></header><!-- #branding-content, #branding -->
+<div id="wrap-bottom-menu">
+<div id="mobile-bottom-nav" class="mobile_menu_bar" style="padding:5px 10px 5px 10px;clear:both;">
+	<div style="margin-bottom:20px;">
+<span class="mobile-home-link">
+	<a href="../index.html" title="Certain Doubts" rel="home">Home</a></span>
+	<span class="mobile-menu-link"><a href="javascript:void(null);" onclick="weaverii_ToggleMenu(document.getElementById('nav-bottom-menu'), this, 'Menu &darr;', 'Menu &uarr;')">Menu &darr;</a></span></div>
+</div>
+		<div class="skip-link"><a class="assistive-text" href="index.html%3Freplytocom=3771.html#content" title="">Skip to primary content</a></div>
+			<div class="skip-link"><a class="assistive-text" href="index.html%3Freplytocom=3771.html#sidebar_primary" title="">Skip to secondary content</a></div>
+				<div id="nav-bottom-menu"><nav id="access" class="menu_bar" role="navigation">
+<div class="menu"><ul>
+<li ><a href="../index.html">Home</a></li><li class="page_item page-item-1894"><a href="../index.html%3Fpage_id=1894.html">Decade and Longitudinal Journal Information</a></li>
+<li class="page_item page-item-2739"><a href="../index.html%3Fpage_id=2739.html">Epistemology Course Slides</a></li>
+<li class="page_item page-item-2752"><a href="../index.html%3Fpage_id=2752.html">Talks:  Slides and Videos</a></li>
+<li class="page_item page-item-417"><a href="../index.html%3Fp=417.html">About Certain Doubts</a></li>
+<li class="page_item page-item-397"><a href="../index.html%3Fp=397.html">Contributors</a></li>
+<li class="page_item page-item-413"><a href="../index.html%3Fp=413.html">Archives</a></li>
+<li class="page_item page-item-774"><a href="../index.html%3Fpage_id=774.html">Complete Hirsch Number Rankings of U.S. Philosophy PhD Programs</a></li>
+<li class="page_item page-item-823"><a href="../index.html%3Fp=823.html">Philosophy Journal Information:  ESF Rankings, Citation Impact, &#038; Rejection Rates</a></li>
+<li class="page_item page-item-454"><a href="../index.html%3Fp=454.html">Some of Our Books</a></li>
+</ul></div>
+		</nav></div><!-- #access --></div> <!-- #wrap-bottom-menu -->
+</div> <!-- #wrap-header -->
+	<div id="main">
+	<div id="sidebar_wrap_left" class="split equal_height">
+	<div id="sidebar_left" class="widget-area" role="complementary">
+<aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">John Fischer</span> on <a href="../index.html%3Fp=4902.html#comment-331879">The End</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://dailynous.com/2019/03/07/philosophers-on-the-philosophy-blogosphere/' rel='external nofollow' class='url'>Philosophers On the Philosophy Blogosphere - Daily Nous</a></span> on <a href="../index.html%3Fp=616.html#comment-331009">Doris and Russell on Stanley</a></li><li class="recentcomments"><span class="comment-author-link"><a href='https://philosophy.unc.edu/2019/02/08/worsnip-wins-young-epistemologist-prize/' rel='external nofollow' class='url'>Worsnip wins Young Epistemologist Prize - Department of Philosophy</a></span> on <a href="../index.html%3Fp=4897.html#comment-329263">Young Epistemologist Prize 2019</a></li><li class="recentcomments"><span class="comment-author-link">S. Alas</span> on <a href="../index.html%3Fp=4890.html#comment-324134">A simple problem for (unrestricted) Conditionalization</a></li><li class="recentcomments"><span class="comment-author-link"><a href='https://enigmanically.blogspot.co.uk/' rel='external nofollow' class='url'>Martin Cooke</a></span> on <a href="../index.html%3Fp=4738.html#comment-310431">What philosophers think might not be what you think they think</a></li></ul></aside><aside id="meta-2" class="widget widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="../wp-login.php.html">Log in</a></li>
+			<li><a href="../feed/index.html">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="../comments/feed/index.html">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside><aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-9"><a href="../category/a-priori-knowledge/index.html" >a priori knowledge</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="../category/confirmation-theory/index.html" >confirmation theory</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="../category/contextualism/index.html" >contextualism</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="../category/epistemic-paradoxes/index.html" >epistemic paradoxes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="../category/formal-epistemology/index.html" >formal epistemology</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="../category/foundationalismcoherentism/index.html" >foundationalism and coherentism</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="../category/foundationalism-and-coherentism/index.html" >foundationalism and coherentism</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="../category/general/index.html" >general</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="../category/internalismexternalism/index.html" >internalism and externalism</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="../category/internalism-and-externalism/index.html" >internalism and externalism</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="../category/justification/index.html" >justification</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="../category/knowledge/index.html" >knowledge</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="../category/links/index.html" >Links</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="../category/major-figures/index.html" >major figures</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="../category/memory/index.html" >memory</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="../category/perception/index.html" >perception</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="../category/skepticism/index.html" >skepticism</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="../category/testimony-and-social-epistemology/index.html" >testimony and social epistemology</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="../category/uncategorized/index.html" >Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="../category/understanding/index.html" >understanding</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="../category/value-driven-epistemology/index.html" >value-driven epistemology</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="../category/virtue-epistemology/index.html" >virtue epistemology</a>
+</li>
+		</ul>
+</aside>
+	</div><!-- #sidebar_left .widget-area -->
+	</div><!-- #sidebar_wrap_left -->
+		<div id="container_wrap" class="container-single equal_height split">
+		<div id="container">
+			<div id="content" role="main">
+
+				<nav id="nav-above" class="navigation">
+				<h3 class="assistive-text">Post navigation</h3>
+					<div class="nav-previous"><a href="../index.html%3Fp=603.html" rel="prev"><span class="meta-nav">&larr;</span> A Symmetry between Defeat and Support?</a></div>
+				<div class="nav-next"><a href="../index.html%3Fp=605.html" rel="next">Brazil Conference on Lehrer&#8211;More Info <span class="meta-nav">&rarr;</span></a></div>
+				</nav><!-- #nav-above -->
+
+
+<article id="post-604" class="content-single  post-604 post type-post status-publish format-standard hentry category-general">
+	<header class="entry-header">
+		<div class="entry-hdr"><h1 class="entry-title">Relative Frequencies in Infinite Sets</h1></div>
+
+		<div class="entry-meta">
+						<div class="meta-info-wrap">
+			<span class="sep posted-on">Posted on </span><a href="../index.html%3Fp=604.html" title="3:30 pm" rel="bookmark"><time class="entry-date" datetime="2006-07-31T15:30:54+00:00">July 31, 2006</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="../author/james-beebe/index.html" title="View all posts by J. Beebe" rel="author">J. Beebe</a></span></span><span class="updated">July 31, 2006</span>
+			</div><!-- .entry-meta-icons -->		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+	<div class="entry-content cf">
+		<p>I have a question about relative frequency for the formal epistemologists out there.  I would like to know whether the following claim is true, given either von Mises’ or Kolmogorov’s definitions of randomness:</p>
+<p>                  (RF) The limiting frequency of positive even integers in a randomly selected sequence of positive integers is 1/2.</p>
+<p>Richard von Mises (Probability, Statistics and Truth, 1957, 24-25) defined a random sequence to be one where the limiting value toward which the relative frequency of the attribute in question converges &#8220;remain[s] the same in all partial sequences which may be selected from the original one in an arbitrary way.&#8221;  Examples of the sort of subsequences he had in mind include those formed by all odd members of the original sequence or by all members for which the place number in the sequence is the square of an integer or a prime number.  The Kolmogorov-inspired definition of randomness I had in mind was the following: a sequence is random if the shortest program that can generate it is no shorter than the one that simply lists the elements of the sequence one by one.</p>
+<p>	Note that the ordinary sequence of integers (1, 2, 3, 4,…) does not qualify as random on either conception of randomness.  Nor do the other sequences commonly used to illustrate the importance of ordering when defining limiting frequencies in infinite sets (e.g., those in which the evens appear at every 3rd place or every 4th place, etc.).  I have no clear intuitions about whether there would be a limiting frequency of positive even integers in the case I describe or, if there were, whether it would of necessity be the commonsensical limit of 1/2.  Any formal intuitions or theoretical insights?</p>
+			</div><!-- .entry-content -->
+
+	<footer class="entry-utility">
+<div class="meta-info-wrap">
+			<span class="cat-links">
+<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="../category/general/index.html" rel="category tag">general</a>			</span>
+		<span class="permalink-icon"><a href="../index.html%3Fp=604.html" title="Permalink to Relative Frequencies in Infinite Sets" rel="bookmark">permalink</a></span>
+	</div><!-- .entry-meta-icons -->
+
+	</footer><!-- .entry-utility -->
+</article><!-- #post-604 -->
+
+				<nav id="nav-below" class="navigation">
+				<h3 class="assistive-text">Post navigation</h3>
+					<div class="nav-previous"><a href="../index.html%3Fp=603.html" rel="prev"><span class="meta-nav">&larr;</span> A Symmetry between Defeat and Support?</a></div>
+				<div class="nav-next"><a href="../index.html%3Fp=605.html" rel="next">Brazil Conference on Lehrer&#8211;More Info <span class="meta-nav">&rarr;</span></a></div>
+				</nav><!-- #nav-above -->
+
+
+	<div id="comments">
+
+		<hr class='comments-hr'>
+		<header id="comments-title">
+		<h3>Comments</h3>
+				<h4>
+<em>Relative Frequencies in Infinite Sets</em> &#8212; 23 Comments		</h4>
+		</header>
+
+		
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-3770" >
+		<article id="comment-3770" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/462cd267c4954d91272d576da768303b?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/462cd267c4954d91272d576da768303b?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jonny Blamey</span> on <a href="../index.html%3Fp=604.html#comment-3770"><time datetime="2006-08-01T05:28:42+00:00">August 1, 2006 at 5:28 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>&#8220;a sequence is random if the shortest program that can generate it is no shorter than the one that simply lists the elements of the sequence one by one.&#8221;<br />
+If the sequence is infinite then the programme that lists the elements one by one is infinite. I&#8217;m ignorant of these matters, but is there any sense in comparing programmes of infinite length? For example, would a programme that listed prime numbers one by one be shorter than one that listed positive integers one by one? The dilemma I&#8217;m thinking of here is that if there is sense to be made of these comparisons, then there will always be a shorter programme than a simple listing, since there will always be some localised summary to be made of a sample of the sequence. The other horn is to say there is no sense to be made of comparisons of length in infinite programmes, in which case perhaps the definition given in terms of programme length is itself senseless.<br />
+If on the other hand you are talking about finite sequences, then only the first horn is available and the simple listing programme has a finite length. So the sequence isn&#8217;t random if there is a shorter finite programme and the definition makes perfect sense. But in this case, given the sequence in the first place, it would again seem unlikely that there was no way to summarise sections of the sequence, which as a matter of chance fell into some arbitrary pattern. This is just an intuition, the intuition is that there exists a proof that for any sequence of integers with over a certain threshold number of elements there will be a shorter programme than a simple listing that will generate the sequence. Even if this intuition is false, the exceptions, although certainly random, will not capture all random sequences.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3770.html#respond' onclick='return addComment.moveForm( "comment-3770", "3770", "respond", "604" )' aria-label='Reply to Jonny Blamey'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3767" >
+		<article id="comment-3767" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/cfcacf99f61152ec4a68e80619c930be?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/cfcacf99f61152ec4a68e80619c930be?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://certaindoubts.com/http://www.princeton.edu/~harman' rel='external nofollow' class='url'>Gilbert Harman</a></span> on <a href="../index.html%3Fp=604.html#comment-3767"><time datetime="2006-08-01T07:14:57+00:00">August 1, 2006 at 7:14 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Suppose there are C characters in an alphabet used to characterize strings of characters of that same alphabet.  There are C^n (C to the nth power) strings of length n.  But there are at most C^(n-1) characterizations that are n-1 characters long.  It follows that almost all strings of length n cannot be characterized using strings of less than length n.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3767.html#respond' onclick='return addComment.moveForm( "comment-3767", "3767", "respond", "604" )' aria-label='Reply to Gilbert Harman'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3779" >
+		<article id="comment-3779" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/49744c70fa902ddd6fa6b03a1c0876c5?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/49744c70fa902ddd6fa6b03a1c0876c5?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">James Beebe</span> on <a href="../index.html%3Fp=604.html#comment-3779"><time datetime="2006-08-01T16:54:29+00:00">August 1, 2006 at 4:54 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jonny and Gilbert, thanks for your comments on my question.</p>
+<p>Here&#8217;s a different way of getting at what I am most interested in: Suppose there is a cosmic lottery machine that contained an infinite number of lottery balls. On each ball is inscribed one positive integer. For every positive integer, there is a ball with that number inscribed on it. (Even though physically impossible, we can imagine such a device being simulated in the mind of God.)</p>
+<p>If the balls were randomly distributed in the drum of the lottery machine, would the limiting frequency of even integers converge to 1/2 as the number of drawn balls approached infinity? (Here I am operating with an intuitive notion of randomness rather than any particular account of randomness. We can think of this notion as what various mathematical accounts of randomness are trying to capture.)</p>
+<p>Even if there are technical problems with all the available accounts of randomness, there still seems to be (from my perspective) a strong intuitive pull toward saying that the relative frequency in the situation I have described would be 1/2. I was wondering if anyone else shared that intuition.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3779.html#respond' onclick='return addComment.moveForm( "comment-3779", "3779", "respond", "604" )' aria-label='Reply to James Beebe'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3773" >
+		<article id="comment-3773" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/7ee32ea3bbe6b3fe38650621977e99c5?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/7ee32ea3bbe6b3fe38650621977e99c5?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Stephen Fogdall</span> on <a href="../index.html%3Fp=604.html#comment-3773"><time datetime="2006-08-01T22:13:10+00:00">August 1, 2006 at 10:13 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>My suspicion is that talk of relative frequencies makes sense in application to infinite sets only relative to an appropriate ordering relation.  Thus, it&#8217;s only because every other natural number is even (when taken in the order defined by the successor relation) that it makes sense to say that the &#8220;relative frequency&#8221; of even numbers among the naturals is 1/2.  But in application to infinite sets as to which no obvious ordering relation is to hand talk of relative frequences is either undefined or defined only relative to an essentially arbitrary choice of measure.  This is what makes it so difficult to analyze, e.g., nomic probabilities in terms of proportions among sets of possibile worlds.  There&#8217;s no obvious order in which to run through them.  Likewise for logical probabilities.  (Doubt I&#8217;m saying anything new, though.)</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3773.html#respond' onclick='return addComment.moveForm( "comment-3773", "3773", "respond", "604" )' aria-label='Reply to Stephen Fogdall'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3774" >
+		<article id="comment-3774" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/bc17b90deb51d1d47da93c1f1de4c448?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jamie</span> on <a href="../index.html%3Fp=604.html#comment-3774"><time datetime="2006-08-01T22:14:43+00:00">August 1, 2006 at 10:14 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Here&#8217;s support for your intuition from a more Bayesian angle.</p>
+<p>If the draws are random in <i>any</i> intuitive sense, then each draw must have a .5 chance of being an even ball, and the draws are independent. The relative frequency of even balls, then, approaches 1/2 with probability 1.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3774.html#respond' onclick='return addComment.moveForm( "comment-3774", "3774", "respond", "604" )' aria-label='Reply to Jamie'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3765" >
+		<article id="comment-3765" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/f4c7482c3767f1976291fe3e8ad033a6?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f4c7482c3767f1976291fe3e8ad033a6?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.philosophy.ox.ac.uk/members/nshackel/index.htm' rel='external nofollow' class='url'>nick shackel</a></span> on <a href="../index.html%3Fp=604.html#comment-3765"><time datetime="2006-08-02T03:46:44+00:00">August 2, 2006 at 3:46 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Here’s some relevant information:<br />
+Kolmogorov is defining randomness for *finite* sequences, and defining a finitely random sequence as a random sequence with high measure of complexity, where the complexity of random sequence is the length of the shortest descrition of it using a universal method of description. Chaitin puts this all in terms of Turing machines, which is very elegant.<br />
+In mathematics sequences are by definition infinite ordered sets, and an arbitrary sequence is usually denoted by ‘{xn}’ by mathematicians, where the index is over natural numbers N.<br />
+A limiting relative frequency is the limit of the sequence of  relative frequencies Xs, if it exists e.g.<br />
+Sequence of Xs<br />
+Sequence of relative frequencies<br />
+l is the limit of a sequence {xn} iff for all eta &gt; 0 there exists m in N such that for all n&gt;m, |xn-l|</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3765.html#respond' onclick='return addComment.moveForm( "comment-3765", "3765", "respond", "604" )' aria-label='Reply to nick shackel'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3780" >
+		<article id="comment-3780" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/f4c7482c3767f1976291fe3e8ad033a6?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f4c7482c3767f1976291fe3e8ad033a6?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.philosophy.ox.ac.uk/members/nshackel/index.htm' rel='external nofollow' class='url'>nick shackel</a></span> on <a href="../index.html%3Fp=604.html#comment-3780"><time datetime="2006-08-02T03:52:56+00:00">August 2, 2006 at 3:52 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>last post mangled by html (problem didn&#8217;t show up in preview), here is how it should have been.</p>
+<p>A limiting relative frequency is the limit of the sequence of  relative frequencies Xs, if it exists e.g.<br />
+Sequence of Xs<br />
+Sequence of relative frequencies<br />
+l is the limit of a sequence {xn} iff for all eta &gt; 0 there exists m in N such that for all n&gt;m, |xn-l|</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3780.html#respond' onclick='return addComment.moveForm( "comment-3780", "3780", "respond", "604" )' aria-label='Reply to nick shackel'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3781" >
+		<article id="comment-3781" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/f4c7482c3767f1976291fe3e8ad033a6?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f4c7482c3767f1976291fe3e8ad033a6?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.philosophy.ox.ac.uk/members/nshackel/index.htm' rel='external nofollow' class='url'>nick shackel</a></span> on <a href="../index.html%3Fp=604.html#comment-3781"><time datetime="2006-08-02T03:55:58+00:00">August 2, 2006 at 3:55 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>last post still totally mangled. one more try<br />
+A limiting relative frequency is the limit of the sequence of  relative frequencies Xs, if it exists e.g.<br />
+Sequence of Xs  {0,1,1,0,1,0,0,….. }<br />
+Sequence of relative frequencies  { 0, ½, 2/3, 2/4,3/5, 3/6, 3/7,…. }<br />
+l is the limit of a sequence {xn} iff for all eta &gt; 0 there exists m in N such that for all n&gt;m, |xn-l|  is less than eta.<br />
+Von Mises definition is part of his frequentist programme for probability, where probability of X is defined by limiting relative frequency of X.  Von Mises says X  is a random event iff sequences of trials for X have limiting frequencies and you can’t independently choose a subsequence such that the subsequence has a different limiting frequency. The second conjunct is supposed to capture the intuition that randomness requires there be no gambling systems for X. I’ve used the term ‘independently choose’ to refer to the restrictions on choosing subsequences, which are specified in technically complex ways. Its bound to end up that an admissable way of choosing a subsequence is a recursively enumerable sequence of natural numbers which satisfies some restriction on  the functions used in the recursive enumeration.<br />
+The problems in specifying ruling out gambling systems may well be precisely the problems you are interested in. One thing that will make evident the difficulty is that it is provable that for any 0 less than r less than 1, there is a binary sequence (sequence of zeros and ones) with r as its limiting frequency.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3781.html#respond' onclick='return addComment.moveForm( "comment-3781", "3781", "respond", "604" )' aria-label='Reply to nick shackel'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3782" >
+		<article id="comment-3782" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/462cd267c4954d91272d576da768303b?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/462cd267c4954d91272d576da768303b?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jonny Blamey</span> on <a href="../index.html%3Fp=604.html#comment-3782"><time datetime="2006-08-02T05:52:56+00:00">August 2, 2006 at 5:52 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>James, to play devil&#8217;s advocate to your intuition, suppose there was this lottery drum in the mind of God. The balls come out in a random sequence is the only condition you are putting on the order in which the balls come out. I suppose that there are an infinite amount of infinitely long random sequences of odd numbers. Therefore it seems that the chances that ALL the balls to be drawn are odd, all here meaning every member of an infinite set, is infinity/infinity. I don&#8217;t know what the conventions are about such a number, but there seems to be equal justification for say it is 1, and 0. So although it is nearly certain that all the balls won&#8217;t be odd, there are infinite ways that they could all be odd. The same is true of even balls. So although there are an infinity of ways that the frequency will tend to 0.5 of even balls, there are infinite ways that the frequency will tend to any other proportion including 1 and 0. The only way around this would be to disallow purely odd, or disproportionately odd or even sequences on the grounds that they are non random. But I fear that this would be to beg the question, and assume your original intuition. Of course none of this applies to finite sequences.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3782.html#respond' onclick='return addComment.moveForm( "comment-3782", "3782", "respond", "604" )' aria-label='Reply to Jonny Blamey'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3783" >
+		<article id="comment-3783" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/49744c70fa902ddd6fa6b03a1c0876c5?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/49744c70fa902ddd6fa6b03a1c0876c5?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.buffalo.edu/~jbeebe2' rel='external nofollow' class='url'>James Beebe</a></span> on <a href="../index.html%3Fp=604.html#comment-3783"><time datetime="2006-08-02T09:38:23+00:00">August 2, 2006 at 9:38 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Stephen wrote: &#8220;But in application to infinite sets as to which no obvious ordering relation is to hand talk of relative frequences is either undefined or defined only relative to an essentially arbitrary choice of measure.&#8221; I was hoping (perhaps in vain) that satisfaction of the randomness requirement would function as a substitute for a particular ordering relation. Instead of having a particular sequence with a particular ordering relation, we would have a set of admissible sequences of positive integers, each of which satisfied the randomness requirement.</p>
+<p>In this light, I think my query can be understood as the question whether the relative frequency of evens in each of the admissible sequences would be 1/2. I still feel there is some intuitive pull to say &#8220;Yes,&#8221; even though I believe there must surely be some technical reason for saying &#8220;No.&#8221;</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3783.html#respond' onclick='return addComment.moveForm( "comment-3783", "3783", "respond", "604" )' aria-label='Reply to James Beebe'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3784" >
+		<article id="comment-3784" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/49744c70fa902ddd6fa6b03a1c0876c5?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/49744c70fa902ddd6fa6b03a1c0876c5?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.buffalo.edu/~jbeebe2' rel='external nofollow' class='url'>James Beebe</a></span> on <a href="../index.html%3Fp=604.html#comment-3784"><time datetime="2006-08-02T09:48:40+00:00">August 2, 2006 at 9:48 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>It seems that Jonny&#8217;s infinitely long sequences of odd numbers would not be random. We can distinguish between the randomness of a sequence and the randomness of the process that generates a sequence. I agree that it is possible for a random process to generate an infinitely long sequence of odds. But the sequence itself would not be random. I was conceiving of my cosmic lottery as involving sequences that were themselves random.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3784.html#respond' onclick='return addComment.moveForm( "comment-3784", "3784", "respond", "604" )' aria-label='Reply to James Beebe'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3776" >
+		<article id="comment-3776" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Gregory Wheeler</span> on <a href="../index.html%3Fp=604.html#comment-3776"><time datetime="2006-08-02T13:41:58+00:00">August 2, 2006 at 1:41 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>James, I was wondering if this might work to pinpoint the problem. Let&#8217;s back off from von Mises and Kologorov for the moment, and instead think about random sampling from an infinite population.</p>
+<p>If a population contains N elements and we draw n</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3776.html#respond' onclick='return addComment.moveForm( "comment-3776", "3776", "respond", "604" )' aria-label='Reply to Gregory Wheeler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-8625" >
+		<article id="comment-8625" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/f4c7482c3767f1976291fe3e8ad033a6?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f4c7482c3767f1976291fe3e8ad033a6?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.philosophy.ox.ac.uk/members/nshackel/index.htm' rel='external nofollow' class='url'>nick shackel</a></span> on <a href="../index.html%3Fp=604.html#comment-8625"><time datetime="2006-08-02T14:54:44+00:00">August 2, 2006 at 2:54 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>James asks &#8220;If the balls were randomly distributed in the drum of the lottery machine, would the limiting frequency of even integers converge to 1/2 as the number of drawn balls approached infinity?&#8221; Here is the technical reason for the answer being, not necessarily. Since you are interested in the limiting frequency of evens we can reduce this question to that of considering the limiting frequencies of the corresponding parity sequences (sequences of zeroes and ones given the oddness or evenness of the drawn numbers). As I said in the last post, it is provable that for any r between 0 and 1, there is a binary sequence with r as its limiting frequency. However, I suspect that the set of such sequences has measure 0 whilst the measure of the set of binary sequences with limiting frequency ½ is 1, so it might well be that Pr(the limiting frequency of even integers converge to 1/2 as the number of drawn balls approached infinity)=1.</p>
+<p>Secondly, James then says &#8220;I was conceiving of my cosmic lottery as involving sequences that were themselves random.&#8221;. I&#8217;m pretty sure that some of the binary sequences whose limiting frequence is not ½ will satisfy von Mises definition of a random sequence but the easy ones to construct are not. Certainly there is one which will satisfy Chaitin&#8217;s definition of randomness, namely the binary sequence that has Chaitin&#8217;s Omega number as it&#8217;s limiting frequency. We know this number is not ½ because it is irrational and it is random because (I hope I&#8217;m remembering this right) each binary digit tells you whether a certain Turing machine halts or not and if it wasn&#8217;t random according to Chaitin&#8217;s definition (algorithmic incompressibility) then we&#8217;d have a solution to the halting problem, which we don&#8217;t.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=8625.html#respond' onclick='return addComment.moveForm( "comment-8625", "8625", "respond", "604" )' aria-label='Reply to nick shackel'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3775" >
+		<article id="comment-3775" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/73aa00b0bfbf97197f8d52c7553c8210?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/73aa00b0bfbf97197f8d52c7553c8210?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.antimeta.org/blog/' rel='external nofollow' class='url'>Kenny Easwaran</a></span> on <a href="../index.html%3Fp=604.html#comment-3775"><time datetime="2006-08-03T01:41:19+00:00">August 3, 2006 at 1:41 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Actually, the standard definition of Kolmogorov randomness considers the limit of the length of the smallest program to output the first n elements of the set.  If the limit of the ratio of the smallest program length to the length of just listing the first n approaches 1, then the sequence is said to be random.</p>
+<p>I suspect that if you take some random sequence, and then replace each term k by 2k+1, then the resulting sequence will still be random, but all values will be odd.  (Basically, we haven&#8217;t increased the length of the program much, but we also have only increased the length of listing the numbers by 1 bit per number.  Presumably this will be swamped by the complexity of writing down a lot of numbers, though I&#8217;m not completely certain.)</p>
+<p>Note that this definition of randomness works quite differently if you just ignore the number and pay attention only to the parity, because a sequence of just odd numbers can still be quite complex, even though a sequence of just 1&#8217;s is very simple.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3775.html#respond' onclick='return addComment.moveForm( "comment-3775", "3775", "respond", "604" )' aria-label='Reply to Kenny Easwaran'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3766" >
+		<article id="comment-3766" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/462cd267c4954d91272d576da768303b?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/462cd267c4954d91272d576da768303b?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jonny Blamey</span> on <a href="../index.html%3Fp=604.html#comment-3766"><time datetime="2006-08-03T05:50:11+00:00">August 3, 2006 at 5:50 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Following on from Kenny, even if you named odd number 0 and even numbers 1, and thereby claimed that a sequence of only odd numbers was non random, how about an infinite sequence of odd numbers with just one even number? Perhaps you could also call this sequence non random. But whether or not it is random, we know the frequency of even numbers, it is 1/infinity which conventionally equals 0. Now consider a sequence with all but two odd numbers. The relative frequency of even numbers would still be 0. 2/infinity = 0. We can extend this argument to any number of even numbers. So however many even numbers there are in the infinte sequence, the relative frequency will still be 0. We can reverse the argument for odd numbers, so that for any n such that n is the number of odd numbers in the sequence, then the relative frequency of odd numbers is 0. There is no upper limit on n, so there are infinite sequences where the frequency of odd numbers is 0 and infinite sequences where the frequency of even numbers is 0. The only sequence where this is not the case is where both odd and even numbers are infinite, in which case the proportion is infinity/infinity which is undefined.<br />
+This argument demonstrates that the frequency of even numbers is either 0,1 or undefined in any infinite set. The intuition that it should be 1/2 comes from trying to picture infinity by picturing a finite sequence and extending it. I refer to Wittgenstein Philosophical investigations 352. Also to the St Petersburg game, which is a very close analogy. You get £2 if the first coin is heads, £4 if the first two coins are heads, £8 if the first 3 coins are heads and so on infinitely. The expected utility of this game is paradoxically infinite, since the pay off doubles as the probability halfs, creating £1 + £1 + £1&#8230;&#8230;. But the real value of entering such a game cannot be infinite, since it is clear that there is a 1/2 chance of losing in the first throw.<br />
+Thanks for the post by the way, I share your intuition and it turns out much more difficult that it seems.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3766.html#respond' onclick='return addComment.moveForm( "comment-3766", "3766", "respond", "604" )' aria-label='Reply to Jonny Blamey'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3769" >
+		<article id="comment-3769" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Gregory Wheeler</span> on <a href="../index.html%3Fp=604.html#comment-3769"><time datetime="2006-08-03T09:39:34+00:00">August 3, 2006 at 9:39 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Ut oh. Most of my post was lost after &#8216;&lt;&#8216;. (Damn!)</p>
+<p>The general idea was to look at sampling from infinite populations that <i>do</i> work out the way James wants his experiment to work, and then work backwards from there to see if some sampling model that works makes sense for sampling positive integers for the categories &#8216;Even&#8217; and &#8216;Odd&#8217;. The intuition was that you could work on constructing various sampling mechanisms to describe sampling of positive integers that behave exactly like sampling on infinite populations. None of these things might do what you&#8217;d like to do, but you might get a nice view of where the catch is.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3769.html#respond' onclick='return addComment.moveForm( "comment-3769", "3769", "respond", "604" )' aria-label='Reply to Gregory Wheeler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3772" >
+		<article id="comment-3772" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/27265677250b0e6ee1e6594a318bb21d?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Gregory Wheeler</span> on <a href="../index.html%3Fp=604.html#comment-3772"><time datetime="2006-08-03T12:44:17+00:00">August 3, 2006 at 12:44 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hi Kenny. I think that the 2k+1 alteration to the sample that you suggest would not remain random from a sampling point of view. Rather, the renaming scheme would amount to a biased, second sampling of the population. (Reason: We are using two categories for classification, Odd and Even, and this renaming scheme is also a reclassification scheme on these two categories that we&#8217;re using to sort observations.)</p>
+<p>The idea behind the algorithmic approach to defining random processes is to give a precise meaning to one process &#8220;being more random than&#8221; another process. Until Kolmogorov, being a little bit random was like being a little bit pregnant. Nevertheless, von Mises&#8217;s conception of randomness and Kolmogorov&#8217;s do come apart; I think von Mises randomness fails to preserve log scaling&#8230;or something like this.</p>
+<p>Returning to 2k+1: This is a nice example. It highlights Steve&#8217;s point earlier on about the categories &#8216;Odd&#8217; and &#8216;Even&#8217; being a function of the ordering relation in the population. Typically we use the positive integers to order things and count them&#8230;black and white balls, let&#8217;s say. Then we sample on those things, the balls, with the fixed properties (color, uniform shape) used in the process of  categorize them from observations, and the mathematical properties of the integers to manipulate them and calculate probabilities.</p>
+<p>James&#8217;s experiment asks us to bypass the balls and go right to the positive integers themselves; so, one has to be very careful about designing a sample mechanism for the categories that you&#8217;re interested, so that the categories that you use when you build your count vectors will remain fixed, and not collapse when you do calculation.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3772.html#respond' onclick='return addComment.moveForm( "comment-3772", "3772", "respond", "604" )' aria-label='Reply to Gregory Wheeler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3778" >
+		<article id="comment-3778" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/73aa00b0bfbf97197f8d52c7553c8210?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/73aa00b0bfbf97197f8d52c7553c8210?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.antimeta.org/blog/' rel='external nofollow' class='url'>Kenny Easwaran</a></span> on <a href="../index.html%3Fp=604.html#comment-3778"><time datetime="2006-08-03T15:33:58+00:00">August 3, 2006 at 3:33 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jonny &#8211; when the sets are both infinite, the traditional way to consider frequencies is by taking the limit of the frequencies in the first n numbers, as n goes to infinity.  For very large n, the frequency of even numbers in the first n is very close to 1/2, so this particular infinity/infinity becomes 1/2.  However, for the squares, for very large n the ratio becomes close to 0.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3778.html#respond' onclick='return addComment.moveForm( "comment-3778", "3778", "respond", "604" )' aria-label='Reply to Kenny Easwaran'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3777" >
+		<article id="comment-3777" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/73aa00b0bfbf97197f8d52c7553c8210?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/73aa00b0bfbf97197f8d52c7553c8210?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.antimeta.org/blog/' rel='external nofollow' class='url'>Kenny Easwaran</a></span> on <a href="../index.html%3Fp=604.html#comment-3777"><time datetime="2006-08-03T15:40:16+00:00">August 3, 2006 at 3:40 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Also, I think I&#8217;ve changed my opinion since last night after thinking about things a bit further.  The proper way to think about a set of natural numbers does seem to be as a sequence of 0&#8217;s and 1&#8217;s, where a 1 occurs in position n iff n is in the set in question.</p>
+<p>For a set S that only has odd numbers, we can just consider the set of k such that 2k+1 is in S, and then add the instruction to insert 0&#8217;s between members of the sequence.  This instruction has finite size, so this results in a compression of 1/2 in the limit, so the sequence is no longer Kolmogorov random.</p>
+<p>It seems plausible that if the limiting frequency of odds in the set is substantially more than 1/2, then one could compress the information in the odds by this much, and then just list the evens, and still achieve substantial compression.  (Similarly for ones substantially less than 1/2.)  Thus, contrary to what I said last night, I think it will turn out true that in any Kolmogorov random set, the limiting frequency of odd numbers will be 1/2.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3777.html#respond' onclick='return addComment.moveForm( "comment-3777", "3777", "respond", "604" )' aria-label='Reply to Kenny Easwaran'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3764" >
+		<article id="comment-3764" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/f4c7482c3767f1976291fe3e8ad033a6?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f4c7482c3767f1976291fe3e8ad033a6?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">nick shackel</span> on <a href="../index.html%3Fp=604.html#comment-3764"><time datetime="2006-08-04T07:28:24+00:00">August 4, 2006 at 7:28 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Regarding Kenny&#8217;s remark that &#8220;Note that this definition of randomness works quite differently if you just ignore the number and pay attention only to the parity, because a sequence of just odd numbers can still be quite complex, even though a sequence of just 1’s is very simple.&#8221; That&#8217;s quite true, but my thought was that  all that is required to refute &#8216;all random sequences of natural numbers have limiting frequency of evens = 1/2&#8217; is a single sequence of natural numbers which is random and has a limiting frequency that is not 1/2. If such a parity sequence exists (and infinitely many do) then that sequence itself refutes the claim (since it is a sequence of natural numbers) and also shows that there will be a whole class of such sequences each of which contains each natural number exactly once (which are perhaps the sort of sequence James is particularly interested in).</p>
+<p>Regarding Kenny&#8217;s last remark, here is what seems to me a way of constructing a Kolmogorov random sequence of odd numbers whose limiting frequency of odds is 1 (he said &#8216; Kolmogorov random set&#8217; but sets of natural numbers do not have limiting frequencies, so I presume he means that sequence which is got from a set of natural numbers taken under the usual ordering). Take any infinite binary sequence, BKR (for Binary Kolmogorov Random), that is random by the definition given by Kenny: a sequence is Kolmogorov random iff the the limit of the ratio of the smallest program length that outputs the first n of the sequence to the length of just listing the first n  is 1. Then construct the sequence ONKR as follows. For all n, m in N, the nth member of ONKR = 2m+1 iff the nth occurrence of 1 in BKR  is at the mth place in BKR. Then ONKR will be Kolmogorov random. Suppose ONKR is not Kolmogorov random and so its limiting ratio is less than 1. In that case we could use the programs of smallest program length that output the first n of ONKR, plus 1 step, to output the first n of BKR. Adding one step to each program won&#8217;t change the limiting ratio, so for BKR that ratio would be less that 1,  which would contradict BKR being Kolmogorov random.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3764.html#respond' onclick='return addComment.moveForm( "comment-3764", "3764", "respond", "604" )' aria-label='Reply to nick shackel'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3768" >
+		<article id="comment-3768" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/462cd267c4954d91272d576da768303b?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/462cd267c4954d91272d576da768303b?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jonny Blamey</span> on <a href="../index.html%3Fp=604.html#comment-3768"><time datetime="2006-08-04T08:56:43+00:00">August 4, 2006 at 8:56 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Thank&#8217;s Kenny. But surely one could (and should) apply inductive skepticism to such a &#8220;traditional&#8221; sampling technique, which is why I put in the Wittgenstein reference. If you took the limiting frequency of the first n numbers, and the sequence was truely random, you still have infinite numbers left, and the remaining draws n+1 to infinity could still all be odd. So even if you establish that the limiting frequency of evens in the first n of the sequence is 1/2, however large n is, the actual frequency could still end up being 0. The sampling has established nothing.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3768.html#respond' onclick='return addComment.moveForm( "comment-3768", "3768", "respond", "604" )' aria-label='Reply to Jonny Blamey'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3771" >
+		<article id="comment-3771" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/462cd267c4954d91272d576da768303b?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/462cd267c4954d91272d576da768303b?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jonny Blamey</span> on <a href="../index.html%3Fp=604.html#comment-3771"><time datetime="2006-08-04T09:34:50+00:00">August 4, 2006 at 9:34 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>How about this: each ball in the sequence gives some information about the proportion of odds and evens in the whole sequence. Suppose the whole sequence is 1 ball long, then that ball gives the total information about the proportion of odds to evens. If the sequence is 2 balls long, each ball will give 1/2 the information about how many balls are odd to even, If the sequence is n balls longs each ball will give 1/n information about the proportion of odd to even. For very large n, it does not matter that each ball gives such small amounts of information, because the large number of balls will multiply this small number up. But in an infinite sequence each ball gives zero information about how many balls are odd, so however many balls we look at it will yield no information about the relative frequency of odd to even balls.<br />
+I suppose this is what you&#8217;ve been getting at all along. The only place to look is process by which the sequence was generated. But if the process is truely random, it seems wrong that this should mean that there is therefore exact parity.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3771.html#respond' onclick='return addComment.moveForm( "comment-3771", "3771", "respond", "604" )' aria-label='Reply to Jonny Blamey'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-3785" >
+		<article id="comment-3785" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://0.gravatar.com/avatar/c84b04e9704a4abee40964af1c9f9560?s=40&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c84b04e9704a4abee40964af1c9f9560?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">molly</span> on <a href="../index.html%3Fp=604.html#comment-3785"><time datetime="2006-09-05T11:07:21+00:00">September 5, 2006 at 11:07 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>what is relative frequency??!</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=3785.html#respond' onclick='return addComment.moveForm( "comment-3785", "3785", "respond", "604" )' aria-label='Reply to molly'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+		</ol>
+
+		
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply to <a href="index.html%3Freplytocom=3771.html#comment-3771">Jonny Blamey</a> <small><a rel="nofollow" id="cancel-comment-reply-link" href="../index.html%3Fp=604.html#respond">Cancel reply</a></small></h3>			<form action="http://certaindoubts.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='604' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='3771' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="5546b5be30" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="126"/></p>			</form>
+			</div><!-- #respond -->
+	</div><!-- #comments -->
+
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+		</div><!-- #container_wrap -->
+
+	<div id="sidebar_wrap_right" class="split equal_height">
+	<div id="sidebar_right" class="widget-area" role="complementary">
+		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+											<li>
+					<a href="../index.html%3Fp=4902.html">The End</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4897.html">Young Epistemologist Prize 2019</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4890.html">A simple problem for (unrestricted) Conditionalization</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4883.html">Reminder: Young Epistemologist Prize 2019</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4877.html">Do We Know that We&#8217;re not Brains in Vats?: Follow-Up: Polls and Surveys</a>
+									</li>
+					</ul>
+		</aside><aside id="calendar-2" class="widget widget_calendar"><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar">
+	<caption>April 2019</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="../2019/02/index.html">&laquo; Feb</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+	</tr>
+	<tr>
+		<td>8</td><td><a href="../2019/04/09/index.html" aria-label="Posts published on April 9, 2019">9</a></td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+	</tr>
+	<tr>
+		<td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
+	</tr>
+	<tr>
+		<td>22</td><td id="today">23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+	</tr>
+	<tr>
+		<td>29</td><td>30</td>
+		<td class="pad" colspan="5">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></aside><aside id="meta-3" class="widget widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="../wp-login.php.html">Log in</a></li>
+			<li><a href="../feed/index.html">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="../comments/feed/index.html">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside><aside id="search-2" class="widget widget_search"><form role="search" style="background:transparent;" method="get" class="searchform" action="../index.html" >
+	<label class="screen-reader-text" for="s">Search for:</label>
+	<input type="search" value="" name="s" id="s" placeholder="Search Site" />
+	<input class="searchformimg" type="image" src="../wp-content/themes/weaver-ii/images/search_button.gif" alt="Search" />
+	</form></aside>
+	</div><!-- sidebar_right .widget-area -->
+	</div><!-- #sidebar_wrap_right -->
+    <div class='weaver-clear'></div></div><!-- #main -->
+	<footer id="colophon" role="contentinfo">
+	  <div>
+
+		<div id="site-ig-wrap">
+		<span id="site-info">
+		&copy; 2019 - <a href="../index.html" title="Certain Doubts" rel="home">Certain Doubts</a>
+		</span> <!-- #site-info -->
+		<span id="site-generator">
+		<a href="http://wordpress.org/" title="wordpress.org" rel="generator" target="_blank">Proudly powered by WordPress</a>&nbsp;
+Weaver II by <a href="http://weavertheme.com" target="_blank" title="http://weavertheme.com">WP Weaver</a>
+		</span> <!-- #site-generator -->
+		</div><!-- #site-ig-wrap -->
+		<div class="weaver-clear"></div>
+	  </div>
+	</footer><!-- #colophon -->
+</div><!-- #wrapper -->
+<a href="index.html%3Freplytocom=3771.html#page-top" id="page-bottom">&uarr;</a>
+<div id="weaver-final" class="weaver-final-normal"><script type='text/javascript' src='../wp-includes/js/comment-reply.min.js%3Fver=4.9.10'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var weaver_menu_params = {"selector":"li:has(ul) > a","selector_leaf":"li li li:not(:has(ul)) > a"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/themes/weaver-ii/js/weaverjslib.min.js%3Fver=2.2.2'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.min.js%3Fver=4.9.10'></script>
+<script async="async" type='text/javascript' src='../wp-content/plugins/akismet/_inc/form.js%3Fver=4.1'></script>
+</div> <!-- #weaver-final -->
+</body>
+</html>

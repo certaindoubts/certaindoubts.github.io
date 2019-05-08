@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<!--[if IE 7]>	<html id="ie7" lang="en-US"> <![endif]-->
+<!--[if IE 8]>	<html id="ie8" lang="en-US"> <![endif]-->
+<!--[if IE 9]>	<html id="ie9" lang="en-US"> <![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8) ] | !(IE 9) ><!-->	<html lang="en-US"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes' />
+<title>Jim Hawthorne on the logic of nonmonotonic conditionals | Certain Doubts</title>
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://certaindoubts.com/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://certaindoubts.com/wp-content/themes/weaver-ii/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<script type="text/javascript">var weaverIsMobile=false;var weaverIsSimMobile=false;var weaverIsStacked=false;var weaverThemeWidth=940;var weaverMenuThreshold=640;var weaverHideMenuBar=false;var weaverMobileDisabled=false;var weaverFlowToBottom=false;var weaverHideTooltip=false;var weaverUseSuperfish=false;</script>
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Certain Doubts &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Certain Doubts &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Certain Doubts &raquo; Jim Hawthorne on the logic of nonmonotonic conditionals Comments Feed" href="feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/certaindoubts.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.10"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='weaverii-main-style-sheet-css'  href='../wp-content/themes/weaver-ii/style.min.css%3Fver=2.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='weaverii-mobile-style-sheet-css'  href='../wp-content/themes/weaver-ii/style-mobile.min.css%3Fver=2.2.2.css' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery.js%3Fver=1.12.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min.js%3Fver=1.4.1'></script>
+<link rel='https://api.w.org/' href='../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc.php%3Frsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Alston&#8217;s new book' href='../index.html%3Fp=254.html' />
+<link rel='next' title='Greg Wheeler&#8217;s paper on Lottery and Preface' href='../index.html%3Fp=256.html' />
+<meta name="generator" content="WordPress 4.9.10" />
+<link rel="canonical" href="../index.html%3Fp=255.html" />
+<link rel='shortlink' href='../index.html%3Fp=255.html' />
+<meta name='robots' content='noindex,follow' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed%3Furl=http:%252F%252Fcertaindoubts.com%252Fjim-hawthorne-on-the-logic-of-nonmonotonic-conditionals%252F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed%3Furl=http:%252F%252Fcertaindoubts.com%252Fjim-hawthorne-on-the-logic-of-nonmonotonic-conditionals%252F&amp;format=xml" />
+
+<!-- This site is using Weaver II 2.2.2 (48) subtheme: Wheat -->
+<!-- Page ID: 255 -->
+<style type="text/css">
+/* Weaver II styles - Version 48 */
+a {color:#59C448;}
+a:visited {color:#8DBA61;}
+a:hover {color:#C91640;}
+a{font-style:italic;}
+a{font-weight:bold;}
+.entry-title a {color:#0A0A0A;}
+.entry-title a:visited {color:#0A0A0A;}
+.entry-title a{font-style:normal;}
+.entry-title a{font-weight:normal;}
+.entry-meta a, .entry-utility a {color:#474134;}
+.entry-meta a:visited, .entry-utility a:visited {color:#706752;}
+.entry-meta a:hover, .entry-utility a:hover {color:#C91640;}
+.widget-area a {color:#474134;}
+.widget-area a:visited {color:#706752;}
+.widget-area a:hover {color:#C91640;}
+.widget-area a{font-style:normal;}
+.widget-area a{font-weight:normal;}
+#infobar a{font-style:normal;}
+#infobar a{font-weight:normal;}
+#colophon a{font-style:normal;}
+#colophon a{font-weight:normal;}
+#wrapper {border: 1px solid #AB9B7D;}
+#sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,#first,#second,#third,#fourth, .mobile_widget_area {border: 1px solid #AB9B7D;}
+#wrapper, #branding, #colophon, .commentlist li.comment, #respond, #sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,#first,#second,#third,#fourth,.mobile_widget_area {-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}
+#sidebar_wrap_right.right-1-col,#sidebar_wrap_right.right-2-col,#sidebar_wrap_right.right-2-col-bottom,
+#sidebar_wrap_left.left-1-col,#sidebar_wrap_left.left-2-col,#sidebar_wrap_left.left-2-col-bottom,#sidebar_wrap_left,#sidebar_wrap_right
+{-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}
+.commentlist li.comment .comment-meta {-moz-border-radius-topleft: 7px; -moz-border-radius-topright: 7px;
+ -webkit-border-top-left-radius: 7px; -webkit-border-top-right-radius: 7px; border-top-left-radius: 7px; border-top-right-radius: 7px;}
+#access {-moz-border-radius-bottomleft: 7px; -moz-border-radius-bottomright: 7px;
+ -webkit-border-bottom-left-radius: 7px; -webkit-border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; border-bottom-right-radius: 7px;}
+#access2 {-moz-border-radius-topleft: 7px; -moz-border-radius-topright: 7px;
+ -webkit-border-top-left-radius: 7px; -webkit-border-top-right-radius: 7px; border-top-left-radius: 7px; border-top-right-radius: 7px;}
+body {background-image: url(../wp-content/themes/weaver-ii/images/gr.png); background-attachment: scroll; background-repeat: repeat-x;}
+#wrapper {-webkit-box-shadow: 0 0 3px 3px rgba(0,0,0,0.25); -moz-box-shadow: 0 0 3px 3px rgba(0,0,0,0.25); box-shadow: 0 0 3px 3px rgba(127,127,127,0.25);}
+#wrapper{max-width:940px;}
+#sidebar_primary,.mobile_widget_area {background-color:#F5DEB3;}
+#sidebar_right {background-color:#F5DEB3;}
+#sidebar_left {background-color:#F5DEB3;}
+.sidebar_top,.sidebar_extra {background-color:#F5DEB3;}
+.sidebar_bottom {background-color:#F5DEB3;}
+#first,#second,#third,#fourth {background-color:transparent;}
+.widget {background-color:transparent;}
+#container_wrap.right-1-col{width:75.000%;} #sidebar_wrap_right.right-1-col{width:25.000%;}
+#container_wrap.right-2-col,#container_wrap.right-2-col-bottom{width:67.000%;} #sidebar_wrap_right.right-2-col,#sidebar_wrap_right.right-2-col-bottom{width:33.000%;}
+#container_wrap.left-1-col{width:75.000%;} #sidebar_wrap_left.left-1-col{width:25.000%;}
+#container_wrap.left-2-col,#container_wrap.left-2-col-bottom{width:67.000%;} #sidebar_wrap_left.left-2-col,#sidebar_wrap_left.left-2-col-bottom{width:33.000%;}
+#container_wrap{width:66.000%;} #sidebar_wrap_left{width:17.000%;} #sidebar_wrap_right{width:17.000%;}
+#sidebar_wrap_2_left_left, #sidebar_wrap_2_right_left {width:54.000%;margin-right:1%;}
+#sidebar_wrap_2_left_right, #sidebar_wrap_2_right_right {width:45.000%;}
+#sidebar_header {font-size:70%;}
+#sidebar_header .header-widget-1 {display:none;}
+#sidebar_header .header-widget-2 {display:none;}
+#sidebar_header .header-widget-3 {display:none;}
+#sidebar_header .header-widget-4 {display:none;}
+@media only screen and (max-width:640px) { /* header widget area mobile rules */
+} /* end mobile rules */
+#main {padding: 15px 0 0 0;}
+#site-description {font-size:200.000%;}
+#site-title {overflow:hidden; padding:0; margin:0; position:absolute; left:2.000%; top: 5.000%; z-index:20;}
+#site-description {overflow:hidden; padding:0; margin:0; position:absolute; left:4.000%; top: 30.000%; z-index:20;}
+.menu_bar a, .mobile_menu_bar a {font-weight:bold;}
+@media only screen and (min-width: 641px) {.menu_bar,.weaveriip_vertical_menu .menu_bar { background-image: url(../wp-content/themes/weaver-ii/images/theme/fade.png);}}
+@media only screen and (min-width: 641px) {.menu_bar ul ul a, .menu_bar li:hover > a, .menu_bar ul ul :hover > a { background-image: url(../wp-content/themes/weaver-ii/images/theme/fadeup.png);}}
+#ie8 .menu_bar,#ie8 .weaveriip_vertical_menu .menu_bar,#ie7 .menu_bar,#ie7 .weaveriip_vertical_menu .menu_bar { background-image: url(../wp-content/themes/weaver-ii/images/theme/fade.png);}
+#ie8 .menu_bar ul ul a, #ie8 .menu_bar li:hover > a, #ie8 .menu_bar ul ul :hover > a,
+#ie7 .menu_bar ul ul a, #ie7 .menu_bar li:hover > a, #ie7 .menu_bar ul ul :hover > a{ background-image: url(../wp-content/themes/weaver-ii/images/theme/fadeup.png);}
+.menu_bar, .menu_bar a,.menu_bar a:visited,.mobile_menu_bar a {color:#FFFAEF;}
+.menu_bar li:hover > a, .menu_bar a:focus {background-color:#BAA987;}
+.menu_bar li:hover > a, .menu_bar a:focus {color:#F0EBE0;}
+.menu_bar ul ul a {background-color:#BAA987;}
+.menu_bar ul ul a,.menu_bar ul ul a:visited {color:#FFFAEF;}
+.menu_bar ul ul :hover > a {background-color:#BAA987;}
+.menu_bar ul ul :hover > a {color:#F0EBE0;}
+.menu_bar, .mobile_menu_bar, .menu-add {background-color:#AB9B7D;}
+.mobile-menu-link {border-color:#FFFAEF;}
+.widget-area .menu-vertical,.menu-vertical {clear:both;background-color:transparent;margin:0;width:100%;overflow:hidden;border-bottom:3px solid #FFFAEF;border-top:1px solid #FFFAEF;}
+.widget-area .menu-vertical ul, .menu-vertical ul {margin: 0; padding: 0; list-style-type: none;  list-style-image:none;font-family: inherit;}
+.widget-area .menu-vertical li a, .widget-area .menu-vertical a:visited, .menu-vertical li a, .menu-vertical a:visited {
+color: #FFFAEF;  background-color: #AB9B7D; display: block !important; padding: 5px 10px; text-decoration: none; border-top:2px solid #FFFAEF;}
+.widget-area .menu-vertical a:hover,.widget-area .menu-vertical a:focus, .menu-vertical a:hover,.menu-vertical a:focus {
+color: #F0EBE0; background-color: #BAA987;text-decoration: none;}
+.widget-area .menu-vertical ul ul li, .menu-vertical ul ul li { margin: 0; }
+.widget-area .menu-vertical ul ul a,.menu-vertical ul ul a {color: #FFFAEF; background-color: #AB9B7D;
+ display: block; padding: 4px 5px 4px 25px; text-decoration: none;border:0;
+ border-top:1px solid #FFFAEF;}
+.widget-area .menu-vertical ul ul a:hover,#wrap-header .menu-vertical ul ul a:hover,#wrap-header .menu-vertical ul a:hover {color: #F0EBE0; background-color: #BAA987; text-decoration: none;}
+.widget-area .menu-vertical ul ul ul a,.menu-vertical ul ul ul a {padding: 4px 5px 4px 35px;}
+.widget-area .menu-vertical ul ul ul a,.menu-vertical ul ul ul ul a {padding: 4px 5px 4px 45px;}
+.widget-area .menu-vertical ul ul ul ul a,.menu-vertical ul ul ul ul ul a {padding: 4px 5px 4px 55px;}
+.menu_bar .current_page_item > a, .menu_bar .current-menu-item > a, .menu_bar .current-cat > a, .menu_bar .current_page_ancestor > a,.menu_bar .current-category-ancestor > a, .menu_bar .current-menu-ancestor > a, .menu_bar .current-menu-parent > a, .menu_bar .current-category-parent > a,.menu-vertical .current_page_item > a, .menu-vertical .current-menu-item > a, .menu-vertical .current-cat > a, .menu-vertical .current_page_ancestor > a, .menu-vertical .current-category-ancestor > a, .menu-vertical .current-menu-ancestor > a, .menu-vertical .current-menu-parent > a, .menu-vertical .current-category-parent > a,.widget-area .menu-vertical .current_page_item > a, .widget-area .menu-vertical .current-menu-item > a, .widget-area .menu-vertical .current-cat > a, .widget-area .menu-vertical .current_page_ancestor > a {color:#474134 !important;}
+.entry-title {border-bottom: 1px solid #0A0A0A;}
+#content, .entry-content h1, .entry-content h2 {color:#292929;}
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6, #content dt, #content th,
+h1, h2, h3, h4, h5, h6,#author-info h2 {color:#0A0A0A;}
+#content h1.entry-title {color:#0A0A0A;}
+.commentlist li.comment, #respond {background-color:transparent;}
+.wp-caption p.wp-caption-text, #content .gallery .gallery-caption,.entry-attachment .entry-caption {color:#333333;}
+#content img.size-full, #content img.size-large, #content img.size-medium, #content img.size-thumbnail, #content .attachment-thumbnail, #content .gallery img,#content .gallery-thumb img,.entry-attachment img, #content .wp-caption img, #content img.wp-post-image,#content img[class*="wp-image-"],#author-avatar img,img.avatar {background-color:transparent;}
+.home .sticky, #container.page-with-posts .sticky, #container.index-posts .sticky {background-color:#E6DCC8;}
+.entry-meta, .entry-content label, .entry-utility {color:#706752;}
+body {font-size:12px;}
+body {background-color:#C7B491;}
+body {color:#292929;}
+#wrapper {background-color:#FEF3DD;}
+#main {background-color:transparent;}
+#container {background-color:transparent;}
+#content {background-color:transparent;}
+#content .post,.post {background-color:transparent;}
+#branding {background-color:transparent;}
+#colophon {background-color:#F5DEB3;}
+hr {background-color:#AB9B7D;}
+.entry-meta {background-color:transparent;}
+.entry-utility {background-color:transparent;}
+input, textarea, ins, pre {background-color:#F0F0F0;}
+.widget {color:#333333;}
+.widget-title {border-bottom: 1px solid #222222; margin-bottom:5px;padding-bottom:3px;}
+.widget-title, .widget_search label, #wp-calendar caption {color: #222222;}
+#site-title a {color:#FEF9EE;}
+#site-description {color:#FFFAEF;}
+/* Weaver II Mobile Device Options */
+.weaver-any-mobile  #main a, .weaver-any-mobile  #mobile-widget-area a, .weaver-any-mobile  .sidebar_top a, .weaver-any-mobile  .sidebar_bottom a, .weaver-any-mobile  .sidebar_extra a {text-decoration: underline !important;}
+@media only screen and (max-width:768px) and (orientation:portrait) {body {padding: 0px !important;}}
+@media only screen and (max-width:640px) {
+#main a, #mobile-widget-area a, .sidebar_top a, .sidebar_bottom a, .sidebar_extra a{text-decoration: underline !important;}
+}
+@media only screen and (max-width: 580px) {
+}
+
+/* end Weaver II CSS */
+</style> <!-- end of main options style section -->
+
+
+<!--[if lte IE 8]>
+<style type="text/css" media="screen">
+#content img.size-thumbnail,#content img.size-medium,#content img.size-large,#content img.size-full,#content img.attachment-thumbnail,
+#content img.wp-post-image,img.avatar,.format-chat img.format-chat-icon,
+#wrapper,#branding,#colophon,#content, #content .post,
+#sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,
+#first,#second,#third,#fourth,
+#commentform input:focus,#commentform textarea:focus,#respond input#submit {
+		behavior: url(http://certaindoubts.com/wp-content/themes/weaver-ii/js/PIE/PIE.php) !important; position:relative;
+}
+</style>
+<![endif]-->
+
+<!-- End of Weaver II options -->
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		</head>
+
+<body class="post-template-default single single-post postid-255 single-format-standard singular not-logged-in weaver-desktop weaver-mobile-smart-nostack">
+<a href="index.html%3Freplytocom=1362.html#page-bottom" id="page-top">&darr;</a> <!-- add custom CSS to use this page-bottom link -->
+<div id="wrapper" class="hfeed">
+<div id="wrap-header">
+	<header id="branding" role="banner"><div id="branding-content">
+		<div id="site-logo"></div>
+		<div id="site-logo-link" onclick="location.href='http://certaindoubts.com/';"></div>
+
+		<div class="title-description-xhtml">
+			<h1 id="site-title" ><span><a href="../index.html" title="Certain Doubts" rel="home">Certain Doubts</a></span></h1>
+			<h2 id="site-description"> devoted to matters epistemic</h2>
+		</div>
+		<div id="header_image">
+                              <img src="../wp-content/themes/weaver-ii/images/headers/wheat.jpg" width="940" height="188" alt="Certain Doubts" />
+        		</div><!-- #header_image -->
+	</div></header><!-- #branding-content, #branding -->
+<div id="wrap-bottom-menu">
+<div id="mobile-bottom-nav" class="mobile_menu_bar" style="padding:5px 10px 5px 10px;clear:both;">
+	<div style="margin-bottom:20px;">
+<span class="mobile-home-link">
+	<a href="../index.html" title="Certain Doubts" rel="home">Home</a></span>
+	<span class="mobile-menu-link"><a href="javascript:void(null);" onclick="weaverii_ToggleMenu(document.getElementById('nav-bottom-menu'), this, 'Menu &darr;', 'Menu &uarr;')">Menu &darr;</a></span></div>
+</div>
+		<div class="skip-link"><a class="assistive-text" href="index.html%3Freplytocom=1362.html#content" title="">Skip to primary content</a></div>
+			<div class="skip-link"><a class="assistive-text" href="index.html%3Freplytocom=1362.html#sidebar_primary" title="">Skip to secondary content</a></div>
+				<div id="nav-bottom-menu"><nav id="access" class="menu_bar" role="navigation">
+<div class="menu"><ul>
+<li ><a href="../index.html">Home</a></li><li class="page_item page-item-1894"><a href="../index.html%3Fpage_id=1894.html">Decade and Longitudinal Journal Information</a></li>
+<li class="page_item page-item-2739"><a href="../index.html%3Fpage_id=2739.html">Epistemology Course Slides</a></li>
+<li class="page_item page-item-2752"><a href="../index.html%3Fpage_id=2752.html">Talks:  Slides and Videos</a></li>
+<li class="page_item page-item-417"><a href="../index.html%3Fp=417.html">About Certain Doubts</a></li>
+<li class="page_item page-item-397"><a href="../index.html%3Fp=397.html">Contributors</a></li>
+<li class="page_item page-item-413"><a href="../index.html%3Fp=413.html">Archives</a></li>
+<li class="page_item page-item-774"><a href="../index.html%3Fpage_id=774.html">Complete Hirsch Number Rankings of U.S. Philosophy PhD Programs</a></li>
+<li class="page_item page-item-823"><a href="../index.html%3Fp=823.html">Philosophy Journal Information:  ESF Rankings, Citation Impact, &#038; Rejection Rates</a></li>
+<li class="page_item page-item-454"><a href="../index.html%3Fp=454.html">Some of Our Books</a></li>
+</ul></div>
+		</nav></div><!-- #access --></div> <!-- #wrap-bottom-menu -->
+</div> <!-- #wrap-header -->
+	<div id="main">
+	<div id="sidebar_wrap_left" class="split equal_height">
+	<div id="sidebar_left" class="widget-area" role="complementary">
+<aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">John Fischer</span> on <a href="../index.html%3Fp=4902.html#comment-331879">The End</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://dailynous.com/2019/03/07/philosophers-on-the-philosophy-blogosphere/' rel='external nofollow' class='url'>Philosophers On the Philosophy Blogosphere - Daily Nous</a></span> on <a href="../index.html%3Fp=616.html#comment-331009">Doris and Russell on Stanley</a></li><li class="recentcomments"><span class="comment-author-link"><a href='https://philosophy.unc.edu/2019/02/08/worsnip-wins-young-epistemologist-prize/' rel='external nofollow' class='url'>Worsnip wins Young Epistemologist Prize - Department of Philosophy</a></span> on <a href="../index.html%3Fp=4897.html#comment-329263">Young Epistemologist Prize 2019</a></li><li class="recentcomments"><span class="comment-author-link">S. Alas</span> on <a href="../index.html%3Fp=4890.html#comment-324134">A simple problem for (unrestricted) Conditionalization</a></li><li class="recentcomments"><span class="comment-author-link"><a href='https://enigmanically.blogspot.co.uk/' rel='external nofollow' class='url'>Martin Cooke</a></span> on <a href="../index.html%3Fp=4738.html#comment-310431">What philosophers think might not be what you think they think</a></li></ul></aside><aside id="meta-2" class="widget widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="../wp-login.php.html">Log in</a></li>
+			<li><a href="../feed/index.html">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="../comments/feed/index.html">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside><aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-9"><a href="../category/a-priori-knowledge/index.html" >a priori knowledge</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="../category/confirmation-theory/index.html" >confirmation theory</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="../category/contextualism/index.html" >contextualism</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="../category/epistemic-paradoxes/index.html" >epistemic paradoxes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="../category/formal-epistemology/index.html" >formal epistemology</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="../category/foundationalismcoherentism/index.html" >foundationalism and coherentism</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="../category/foundationalism-and-coherentism/index.html" >foundationalism and coherentism</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="../category/general/index.html" >general</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="../category/internalismexternalism/index.html" >internalism and externalism</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="../category/internalism-and-externalism/index.html" >internalism and externalism</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="../category/justification/index.html" >justification</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="../category/knowledge/index.html" >knowledge</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="../category/links/index.html" >Links</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="../category/major-figures/index.html" >major figures</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="../category/memory/index.html" >memory</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="../category/perception/index.html" >perception</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="../category/skepticism/index.html" >skepticism</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="../category/testimony-and-social-epistemology/index.html" >testimony and social epistemology</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="../category/uncategorized/index.html" >Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="../category/understanding/index.html" >understanding</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="../category/value-driven-epistemology/index.html" >value-driven epistemology</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="../category/virtue-epistemology/index.html" >virtue epistemology</a>
+</li>
+		</ul>
+</aside>
+	</div><!-- #sidebar_left .widget-area -->
+	</div><!-- #sidebar_wrap_left -->
+		<div id="container_wrap" class="container-single equal_height split">
+		<div id="container">
+			<div id="content" role="main">
+
+				<nav id="nav-above" class="navigation">
+				<h3 class="assistive-text">Post navigation</h3>
+					<div class="nav-previous"><a href="../index.html%3Fp=254.html" rel="prev"><span class="meta-nav">&larr;</span> Alston&#8217;s new book</a></div>
+				<div class="nav-next"><a href="../index.html%3Fp=256.html" rel="next">Greg Wheeler&#8217;s paper on Lottery and Preface <span class="meta-nav">&rarr;</span></a></div>
+				</nav><!-- #nav-above -->
+
+
+<article id="post-255" class="content-single  post-255 post type-post status-publish format-standard hentry category-general">
+	<header class="entry-header">
+		<div class="entry-hdr"><h1 class="entry-title">Jim Hawthorne on the logic of nonmonotonic conditionals</h1></div>
+
+		<div class="entry-meta">
+						<div class="meta-info-wrap">
+			<span class="sep posted-on">Posted on </span><a href="../index.html%3Fp=255.html" title="11:48 am" rel="bookmark"><time class="entry-date" datetime="2005-02-07T11:48:32+00:00">February 7, 2005</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="../author/admin/index.html" title="View all posts by Kvanvig Jon" rel="author">Kvanvig Jon</a></span></span><span class="updated">February 7, 2005</span>
+			</div><!-- .entry-meta-icons -->		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+	<div class="entry-content cf">
+		<p>Jim sent me a note on the relationship between conditional probabilities above a threshold and nonmonotonic conditionals, which will be of interest to many who read this blog.  So here&#8217;s <a href="http://www.missouri.edu/~kvanvigj/certain_doubts/rules.pdf">the link </a>to it.  Jim would appreciate thoughts on it, and discussing it here will be beneficial to others as well.</p>
+			</div><!-- .entry-content -->
+
+	<footer class="entry-utility">
+<div class="meta-info-wrap">
+			<span class="cat-links">
+<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="../category/general/index.html" rel="category tag">general</a>			</span>
+		<span class="permalink-icon"><a href="../index.html%3Fp=255.html" title="Permalink to Jim Hawthorne on the logic of nonmonotonic conditionals" rel="bookmark">permalink</a></span>
+	</div><!-- .entry-meta-icons -->
+
+	</footer><!-- .entry-utility -->
+</article><!-- #post-255 -->
+
+				<nav id="nav-below" class="navigation">
+				<h3 class="assistive-text">Post navigation</h3>
+					<div class="nav-previous"><a href="../index.html%3Fp=254.html" rel="prev"><span class="meta-nav">&larr;</span> Alston&#8217;s new book</a></div>
+				<div class="nav-next"><a href="../index.html%3Fp=256.html" rel="next">Greg Wheeler&#8217;s paper on Lottery and Preface <span class="meta-nav">&rarr;</span></a></div>
+				</nav><!-- #nav-above -->
+
+
+	<div id="comments">
+
+		<hr class='comments-hr'>
+		<header id="comments-title">
+		<h3>Comments</h3>
+				<h4>
+<em>Jim Hawthorne on the logic of nonmonotonic conditionals</em> &#8212; 22 Comments		</h4>
+		</header>
+
+		
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-1351" >
+		<article id="comment-1351" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/e9ae850880930170b2c0592e86a45c95?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/e9ae850880930170b2c0592e86a45c95?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://centria.di.fct.unl.pt/~greg/research.html' rel='external nofollow' class='url'>Gregory Wheeler</a></span> on <a href="../index.html%3Fp=255.html#comment-1351"><time datetime="2005-02-07T13:29:29+00:00">February 7, 2005 at 1:29 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hi Jim,</p>
+<p>This looks very interesting. Am I understanding rule 10 (Lottery Logic) correctly to be incorporating the <i>Weak Lottery Assumption</i>?</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1351.html#respond' onclick='return addComment.moveForm( "comment-1351", "1351", "respond", "255" )' aria-label='Reply to Gregory Wheeler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1348" >
+		<article id="comment-1348" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/ed46b91025a62b22e4bdbc69964b9118?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ed46b91025a62b22e4bdbc69964b9118?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jim Hawthorne</span> on <a href="../index.html%3Fp=255.html#comment-1348"><time datetime="2005-02-07T20:30:59+00:00">February 7, 2005 at 8:30 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hi Greg,</p>
+<p>You&#8217;re referring to a notion that Luc and I used in our paper on the preface and lottery paradoxes. But we need not get into that here. The short answer is that Rule 10 makes no special assumptions. It is a theorem of probability theory (for Popper functions) <i>just as it&#8217;s stated here</i>, with no hidden assumptions. That is, Rule 10 is just the theorem of probability theory that says this:</p>
+<p>if n &#8805; (r/(1&#8722;r)) + 1 and if for each distinct i and j, P[(AivAj) | B&#183;~(AivAj)] &#8805; r, then P[Ai | B] &#8805; r for at least one of the Ai.</p>
+<p>Here is a proof of the theorem.</p>
+<p>Suppose that P[(AivAj) | B&#183;~(AivAj)] &#8805; r &#062; 0.</p>
+<p>Multiplying by P[~(AivAj) | B], either P[(AivAj)&#183;~(AivAj) | B] &#062; 0 or P[~(AivAj) | B] = 0. But for the Popper functions P[(AivAj)&#183;~(AivAj) | B] &#062; 0 only if, for every D, P[D | B] = 1. So, either P[Ai | B] = 1 &#8805; r for each Ai (and we&#8217;re done), or else P[~Ai&#183;~Aj | B] = 0.</p>
+<p>Let us suppose that we&#8217;re not done &#8212; that for each i And j, P[~Ai&#183;~Aj | B] = 0. Notice that this implies that<br />
+P[~Ai&#183;(~Ai+1v&#8230;v~An) | B] = P[(~Ai&#183;~Ai+1)v&#8230;v(~Ai&#183;~An) | B] = 0.</p>
+<p>Now we have:</p>
+<p>1 &#8805; P[~A1v&#8230;v~An | B]<br />
+ =  P[~A1 | B] + P[~A2v&#8230;v~An | B] &#8722; P[~A1&#183;(~A2v&#8230;v~An) | B]<br />
+ = P[~A1 | B] + P[~A2v&#8230;v~An | B]<br />
+ = &#8230;<br />
+ = P[~A1 | B] + &#8230; + P[~An | B] = (1&#8722;P[A1 | B]) + &#8230;+ (1&#8722;P[An | B])<br />
+ = n &#8722; (P[A1 | B] + &#8230;+ P[An | B]).</p>
+<p>So, P[A1 | B] + &#8230;+ P[An | B] &#8805; n&#8722; 1.</p>
+<p>Now, notice that if each P[Ai | B] &#060; r, then n&#183;r &#062; P[A1 | B] + &#8230;+ P[An | B] &#8805; n &#8722; 1,<br />
+so that 1 &#062; n&#183;(1&#8722;r) &#8212; i.e., n &#060; 1/(1&#8722;r) = (r/(1&#8722;r)) + 1.<br />
+Thus, (contrapositively) if n &#8805; (r/(1&#8722;r)) + 1, then P[Ai | B] &#8805; r for at least one of the Ai.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1348.html#respond' onclick='return addComment.moveForm( "comment-1348", "1348", "respond", "255" )' aria-label='Reply to Jim Hawthorne'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1350" >
+		<article id="comment-1350" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.missouri.edu/~kvanvigj' rel='external nofollow' class='url'>jon kvanvig</a></span> on <a href="../index.html%3Fp=255.html#comment-1350"><time datetime="2005-02-07T20:31:20+00:00">February 7, 2005 at 8:31 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jim, very nice ideas here, and I&#8217;m just learning about logics for defeasible consequence, and it&#8217;s so fun!  Can&#8217;t believe people pay us to do this&#8230;</p>
+<p>So, suppose one is interested in the logic because of application to epistemology, as I am.  Then I treat the arrows in your statements of rules as epistemic principles governing what&#8217;s rational to believe based on bodies of evidence characterized by the antecedents.  We can then test the idea of defining the arrow as you suggest in terms of conditional probabilities.  Test, that is, at least for purposes of epistemic application.  If problems arise, that means that the system isn&#8217;t especially good for this purpose, though it might be good for other purposes.  Does this sound plausible to you?</p>
+<p>One other question in the use of the usual logical entailment relation.  Does the system require classical assumptions?  For the epistemological application, I like systems that are weaker, and it would be neat if it didn&#8217;t matter here.</p>
+<p>I&#8217;ll hold off on more specific thoughts until I hear what you think about this.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1350.html#respond' onclick='return addComment.moveForm( "comment-1350", "1350", "respond", "255" )' aria-label='Reply to jon kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1347" >
+		<article id="comment-1347" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/ed46b91025a62b22e4bdbc69964b9118?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ed46b91025a62b22e4bdbc69964b9118?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jim Hawthorne</span> on <a href="../index.html%3Fp=255.html#comment-1347"><time datetime="2005-02-07T21:21:20+00:00">February 7, 2005 at 9:21 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jon,</p>
+<p>What you say about the usefulness of this system for applications to epistemology sounds exactly right to me.</p>
+<p>Regarding your senond question: One might be able to get a similar logic that uses a weaker notion of logical entailment if one has a version of probability theory that only uses that weaker logical entailment relation. One would then have to see what theorems of that probability theory would provide rules for the corresponding nonmonotonic conditionals.</p>
+<p>One way to think about how, or whether, one might plausibly be able to get a reasonable probability theory based on a weaker logical entailment relation is to look at the rules for the Popper functions, and see what one might be willing to give up there. That is, the rules for the Popper functions do not presuppose classical logical entailment. But if you buy the Popper function rules for probabilities, then you are stuck with classical logical entailment &#8212; because one can &#8220;define&#8221; classical entailment in terms of the Popper functions.</p>
+<p>Here are the rules for Popper functions:<br />
+A Popper function is any function from pairs of sentence to real numbers between 0 and 1 such that<br />
+1. for some D and E, P[D|E] &#60; 1.<br />
+1a.  P[A|A] = 1<br />
+2. P[A|B&#038;C] = P[A|C&#038;B]<br />
+3. P[A&#038;B|C]= P[B&#038;A|C]<br />
+4. either P[A|C] + P[~A|C] = 1, or else for every D, P[D|C] = 1<br />
+5. P[A&#038;B|C] = P[A|B&#038;C] x P[B|C] .</p>
+<p>Notice that these rules don&#8217;t draw on any notion of logical entailment. There is no assumption here that one can substitute logically equivalent sentences, or that tautologies have probability 1. Rather, one can &#8220;define&#8221; the notion of logical entailment (which turns out to be the classical notion) in terms of the Popper Functions, and then prove such things about tautologies and logical equivalences. Here is the Popper function &#8220;definition&#8221; of logical entailment:</p>
+<p>Definition: B Prob-entails A  iff  for every popper function P, P[A|B] = 1.</p>
+<p>Then one can prove that Prob-entailment coincides with classical logical entailment. And one can prove that the Popper functions are just the classical probability function, but extended to so that probability remains defined when one conditionalized on sentences that have a probability of 0.</p>
+<p>So if you want a probability theory with a weaker logical entailment relation, you <i>must replace one of the five Popper function rules with something weaker too</i>. And it looks like rules 4 and 5 are your best options here.</p>
+<p>Hope that helps some.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1347.html#respond' onclick='return addComment.moveForm( "comment-1347", "1347", "respond", "255" )' aria-label='Reply to Jim Hawthorne'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1349" >
+		<article id="comment-1349" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.missouri.edu/~kvanvigj' rel='external nofollow' class='url'>jon kvanvig</a></span> on <a href="../index.html%3Fp=255.html#comment-1349"><time datetime="2005-02-07T21:44:57+00:00">February 7, 2005 at 9:44 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jim, yes, 1-3 are impeccable by my lights.  But (4) looks a bit suspicious to my intuitionistically-sensitized thinking (not that I&#8217;m an intuitionist, but I&#8217;ve learned how to act like one&#8230;).  Suppose A is something for which we refuse to endorse excluded middle; then I don&#8217;t see why we&#8217;d accept (4).  Does that seem right to you?</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1349.html#respond' onclick='return addComment.moveForm( "comment-1349", "1349", "respond", "255" )' aria-label='Reply to jon kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1346" >
+		<article id="comment-1346" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/ed46b91025a62b22e4bdbc69964b9118?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ed46b91025a62b22e4bdbc69964b9118?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jim Hawthorne</span> on <a href="../index.html%3Fp=255.html#comment-1346"><time datetime="2005-02-07T21:53:43+00:00">February 7, 2005 at 9:53 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jon, that sounds exactly right! I think Brian Weatherson has been working on such a probability theory. He talked about it at the Formal Epistemology Workshop at Berkeley last spring. His paper is still on the conference web site I think. Certainly worth taking a look.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1346.html#respond' onclick='return addComment.moveForm( "comment-1346", "1346", "respond", "255" )' aria-label='Reply to Jim Hawthorne'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1345" >
+		<article id="comment-1345" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/dd7380ae73a84711b7a4fde83cdfc07e?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/dd7380ae73a84711b7a4fde83cdfc07e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Branden Fitelson</span> on <a href="../index.html%3Fp=255.html#comment-1345"><time datetime="2005-02-08T02:59:43+00:00">February 8, 2005 at 2:59 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Great stuff, Jim!</p>
+<p>There is a Popper-Style approach to intuitionistic probability (which I prefer).   David Miller has an amazing new piece on this, at:</p>
+<p><a href="http://www2.warwick.ac.uk/fac/soc/philosophy/staff/miller/chuaqui.pdf" rel="nofollow">http://www2.warwick.ac.uk/fac/soc/philosophy/staff/miller/chuaqui.pdf</a></p>
+<p>This approach is more general than Brian&#8217;s in several respects, and it shows how tricky intuitionistic probability is (especially, when conditionals are included in the logic!).  I think you&#8217;ll like this paper A LOT, Jim!  I was hoping to write a paper like this on my sabbatical next year, but Miller has nailed it!</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1345.html#respond' onclick='return addComment.moveForm( "comment-1345", "1345", "respond", "255" )' aria-label='Reply to Branden Fitelson'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1352" >
+		<article id="comment-1352" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/dd7380ae73a84711b7a4fde83cdfc07e?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/dd7380ae73a84711b7a4fde83cdfc07e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Branden Fitelson</span> on <a href="../index.html%3Fp=255.html#comment-1352"><time datetime="2005-02-08T03:02:09+00:00">February 8, 2005 at 3:02 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jim,</p>
+<p>Have you thought about an analogous project for likelihood-ratios above a threshold?  That&#8217;s something I&#8217;ve been wanting to work on for a while.  Perhaps we could look at this together later this year?</p>
+<p>-Branden</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1352.html#respond' onclick='return addComment.moveForm( "comment-1352", "1352", "respond", "255" )' aria-label='Reply to Branden Fitelson'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1355" >
+		<article id="comment-1355" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/e9ae850880930170b2c0592e86a45c95?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/e9ae850880930170b2c0592e86a45c95?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://centria.di.fct.unl.pt/~greg/research.html' rel='external nofollow' class='url'>Gregory Wheeler</a></span> on <a href="../index.html%3Fp=255.html#comment-1355"><time datetime="2005-02-08T11:10:52+00:00">February 8, 2005 at 11:10 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hi Jim,</p>
+<p>My concern wasn&#8217;t whether 10 was sound. I was wondering what happens when you don&#8217;t assume that at most one ticket wins. For instance, we might think that it is <i>almost</i> certain that at most one ticket wins. Or, we might be certain that more than one ticket wins.</p>
+<p>It still seems reasonable in these cases, pre-theoretically, to presume that one of the tickets wins, which is what 10 expresses. But can we, theoretically?</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1355.html#respond' onclick='return addComment.moveForm( "comment-1355", "1355", "respond", "255" )' aria-label='Reply to Gregory Wheeler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1356" >
+		<article id="comment-1356" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/ed46b91025a62b22e4bdbc69964b9118?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ed46b91025a62b22e4bdbc69964b9118?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jim Hawthorne</span> on <a href="../index.html%3Fp=255.html#comment-1356"><time datetime="2005-02-08T13:41:00+00:00">February 8, 2005 at 1:41 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Branden,</p>
+<p>Thanks for the Miller reference. Sounds intriguing &#8212; I&#8217;ll definitely take a look.</p>
+<p>The idea about likelihood ratios hadn&#8217;t occured to me. The idea, if I&#8217;m following you, is to define a conditional =} for a given real number r greater than 1, as follows: E =} H just in case P[E|H]/P[E|~H] â?¥ r.<br />
+Then we want to see what rules =} follows. This conditional represents &#8220;E is positive evidence for H at level r or higher&#8221;. Really interesting idea, Branden!!! Certainly worth looking into.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1356.html#respond' onclick='return addComment.moveForm( "comment-1356", "1356", "respond", "255" )' aria-label='Reply to Jim Hawthorne'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1357" >
+		<article id="comment-1357" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/ed46b91025a62b22e4bdbc69964b9118?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ed46b91025a62b22e4bdbc69964b9118?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jim Hawthorne</span> on <a href="../index.html%3Fp=255.html#comment-1357"><time datetime="2005-02-08T14:34:17+00:00">February 8, 2005 at 2:34 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Greg,</p>
+<p>I think I see your point. But let me ask for a bit of clarification.</p>
+<p>First, the consequent of 10 as applied to lotteries is that (B supports belief that) &#8220;ticket 1 will lose&#8221; or supports belief that &#8220;ticket 2 will lose&#8221;, &#8230;, or supports belief that &#8220;ticket n will lose&#8221;. So did you mean that in the cases you raise, it still seems pre-theoretically reasonable to &#8220;presume that one of the tickets <i>loses</i>&#8221; &#8212; i.e. belief is supported that &#8220;ticket 1 will lose&#8221; or &#8230; or belief is supported that &#8220;ticket n will lose&#8221;?</p>
+<p>One question, then, is what happens if you are not &#8220;certain, given B, that at most one ticket wins&#8221;. E.g., what if you are only &#8220;almost certain&#8221;? A second question is what happens if you are &#8220;certain, given B, that at least two tickets win&#8221; (or that &#8220;at least k tickets win&#8221;, for some fixed k). Let me add &#8212; what happens if you are certain that &#8220;no more than k tickets will win&#8221; for some fixed k.</p>
+<p>Good questions, Greg! I&#8217;ll need to think them through and get back to you.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1357.html#respond' onclick='return addComment.moveForm( "comment-1357", "1357", "respond", "255" )' aria-label='Reply to Jim Hawthorne'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1353" >
+		<article id="comment-1353" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/dd7380ae73a84711b7a4fde83cdfc07e?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/dd7380ae73a84711b7a4fde83cdfc07e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Branden Fitelson</span> on <a href="../index.html%3Fp=255.html#comment-1353"><time datetime="2005-02-09T01:48:13+00:00">February 9, 2005 at 1:48 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jim,</p>
+<p>Yep, that&#8217;s exactly what I had in mind!  As you know, I think of the relation of confirmation as the one analogous to entailment.  So, any &#8220;conditional&#8221; in the &#8220;object language&#8221; (if you follow my analogy) would, for me, have to be one defined in terms of degree of confirmation, not probability.  I wonder what would happen.  It&#8217;s going to be a rather weak conditional.  But, I wonder what one could say about it.</p>
+<p>-B</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1353.html#respond' onclick='return addComment.moveForm( "comment-1353", "1353", "respond", "255" )' aria-label='Reply to Branden Fitelson'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1354" >
+		<article id="comment-1354" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/ed46b91025a62b22e4bdbc69964b9118?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ed46b91025a62b22e4bdbc69964b9118?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jim Hawthorne</span> on <a href="../index.html%3Fp=255.html#comment-1354"><time datetime="2005-02-09T03:24:48+00:00">February 9, 2005 at 3:24 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Greg,</p>
+<p>Here are some partials answers to your questions &#8212; partial because itâ??s the best I can do right now.</p>
+<p>1. The logic containing only one Q[r] conditional (only one conditional satisfying the Q rules at threshold level r) doesnâ??t have the resources to also say â??B makes A almost certainâ?? for some degree of certainty higher than r. One might do something close to this, though, with a system containing two conditionals, one a Q[r] conditional (for some specific level r) and the second a conditional, =>, for the system R (a so-called rational consequence relation). The R conditional => would satisfy rules 0-5, 11, and 12. The Q[r] conditional â??&#8211;>â?? would satisfy rules 0-9, and a version of 10 with the antecedent consisting of conditionals of form â??B => (Ai v Aj)â?? and the consequent having (the disjunction of) conditionals of form â??B&#8211;>Aiâ??. (Such a logic would also need a rule saying â??if B=>A, then B&#8211;>Aâ??.) This isnâ??t exactly what you wanted, but goes in that direction, since the antecedent of 10 would no longer involve the claims â??B&#038;~(Ai v Aj) &#8211;> (Ai v Aj)â??, which require that B make (Ai v Aj) <i>absolutely</i> (nonmonotonically) certain, but would instead employ the somewhat weaker claims â??B => (Ai v Aj)â?? that say that B makes (Ai v Aj) defeasibly certain.<br />
+Perhaps one could even use a similar two-conditional strategy employing two distinct Q conditionals, a Q[r] conditional â??&#8211;>â?? and a Q[s] conditional â??=>â?? with s > r. In that case rule 10 would have to be replaced by a somewhat more complex two-conditional rule (more complex because of how the proof of rule 10 works), and itâ??s not exactly clear to me how that more complex rule should look.</p>
+<p>2. The interpretations of rules 9 and 10 in terms of pages (for the preface) and in terms of lotteries was only illustrative. These rules hold regardless of what propositions the terms â??Aiâ?? and â??Bâ?? stand for, and regardless of their logical complexity (i.e. they need not be atomic statement letters). [I know this is obvious, but it helps set up what Iâ??m about to say in answer to your other questions.] To help the reader get the gist of rule 10, I suggested letting each â??Aiâ?? say â??ticket i wonâ??t winâ?? (in a given lottery). On this interpretation each conditional in the antecedent of rule 10 effectively says â??B makes it absolutely certain that either ticket i wonâ??t win or ticket j wonâ??t winâ??. Now, you ask, what if we add â??B makes it absolutely certain that more than one ticket will winâ??. This, of course, contradicts the antecedent of rule 10 (if we take the â??Ai v Ajâ?? to say â??ticket i wonâ??t win or ticket j wonâ??t winâ??) &#8212; so it seems that rule 10 just doesnâ??t apply here. But not so fast!<br />
+Suppose we want to say â??B makes it absolutely certain that at least one ticket will winâ??. Here is how we can say that for an n ticket lottery: â??B&#038;~(~A1 v &#8230; v ~An) &#8211;> (~A1 v &#8230; v ~An)â?? (where â??(~Ai v &#8230; v ~An)â?? says â??one of the tickets doesnâ??t loseâ??). It follows from this that â??B &#8211;> (~A1 v &#8230; v ~An)â??; and it follows from rule 10 (supposing n > or = (r/(1-r))+1, and supposing that B makes it certain that no two tickets will win) that â??B &#8211;> A1 or B &#8211;> A2 or &#8230; or B &#8211;>Anâ??. All of this is perfectly consistent and reasonable.<br />
+Suppose, instead, we want to say â??B makes it absolutely certain that at least two tickets will winâ??. Here is how to say that: B&#038;~[(~A1&#038;~A2) v &#8230; v (~An-1&#038;~An)] &#8211;> [(~A1&#038;~A2) v &#8230; v (~An-1&#038;~An)]â??. Each term â??(~Ai &#038; ~Aj)â?? says â??ticket i doesnâ??t lose and ticket j doesnâ??t loseâ?? (i.e. â??ticket i wins and ticket j winsâ??); and the disjunction of these terms says that some pair of tickets wins &#8212; at leaast two tickets win. Notice that this claim seems to violate the antecedent of 10. However, 10 is still useful. For we might also be certain that â??no more than k tickets will all winâ?? for some given k (e.g. we might be certain that no more than 10 tickets can win this lottery, given how the lottery is set up). Then we will have each of the conditionals of form â??B&#038;~(Ci v Cj) &#8211;> (Ci v Cj)â?? to use in the antecedent of rule 10, where each â??Ciâ?? says that some specific block of p (not necessarily consecutive) tickets wonâ??t all win (e.g. (A1 v &#8230; v Ap)), and each â??Cjâ?? says that some specific block of q tickets wonâ??t win (e.g. (A1 v &#8230; v Aq)), and where p+q = k+1 (and where Ci and Cj share no tickets in common). For each way of dividing the tickets up into such non-overlapping blocks, and provided that the total number of the blocks (for a given way of dividing them) is at least (r/(1-r))+1, rule 10 give us that â??B &#8211;> C1 or &#8230; or B &#8211;>Cnâ??.</p>
+<p>3. One more point. Consider lotteries where, B makes it plausible that â??at least k tickets will winâ?? in the sense that â??B &#8211;> [(~A1 &#038; .. &#038;~Ak) v &#8230; v (~An-k &#038; .. &#038;~An)] (where each possible conjunction of k tickets â??not losingâ?? is represented by one of the disjuncts). [B may also make plausible lots of other things, such as, that â??no more than m tickets will win &#8212; i.e. we are no supposing that B is limited to only implying the lower bound k.] For such â??lower bound conditionalsâ??, rule 10 tells us nothing much &#8212; but rule 9 also applies, and may tell us something informative. That is, provided that B isnâ??t contradictory  (i.e. provided that it is not the case that B &#8211;> ~ B), and provided that the number of such blocks of k tickets is less than (r/(1-r)), rule 9 says that one of the following <i>must not hold</i>: B &#8211;> (A1 v &#8230; v Ak) or &#8230; or B &#8211;> (An-k v &#8230; v An) (where each disjunction saying that â??one of k tickets will loseâ?? is represented). In other words, based on B, <i>it must not be the case</i> that for each block of k tickets, you believe <i>one of the tickets in this block must lose</i> (when the number of such blocks is small enough &#8212; less than (r/(1-r)) &#8212; and you believe â??at least k tickets will win).</p>
+<p>Sorry this reply is so long, Greg. But I hope its helps answer your questions.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1354.html#respond' onclick='return addComment.moveForm( "comment-1354", "1354", "respond", "255" )' aria-label='Reply to Jim Hawthorne'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1358" >
+		<article id="comment-1358" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/e9ae850880930170b2c0592e86a45c95?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/e9ae850880930170b2c0592e86a45c95?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://centria.di.fct.unl.pt/~greg/research.html' rel='external nofollow' class='url'>Gregory Wheeler</a></span> on <a href="../index.html%3Fp=255.html#comment-1358"><time datetime="2005-02-09T09:27:24+00:00">February 9, 2005 at 9:27 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jim, thanks very much for your reply. I need to think on this some more. I&#8217;m very excited about your study of systems below system P. I agree with you that a system weaker than P is necessay if you take the notion of probabilistic acceptance seriously.</p>
+<p>Branden &#038; Jim: a thought came to me about a logic for likelihood ratios on the train this morning. I think there may be a problem with complexity. Standard (propositional) probabilistic logics are NP-complete, which is no worse than propositional logic. But wouldn&#8217;t a logic for likelihood ratios be decided in polynomial space? The thought is that you couldn&#8217;t clear the denominators and solve the equations linearly for a language rich enough to express likelihood ratios. If this is right, then while you&#8217;ll be able to give the semantics fairly straightforwardly, it would be harder to axiomatize and difficult to determine the validity of formulas within such a logic.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1358.html#respond' onclick='return addComment.moveForm( "comment-1358", "1358", "respond", "255" )' aria-label='Reply to Gregory Wheeler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1359" >
+		<article id="comment-1359" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/dd7380ae73a84711b7a4fde83cdfc07e?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/dd7380ae73a84711b7a4fde83cdfc07e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Branden Fitelson</span> on <a href="../index.html%3Fp=255.html#comment-1359"><time datetime="2005-02-09T11:36:26+00:00">February 9, 2005 at 11:36 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Dear Greg,</p>
+<p>I have a decision procedure for all of probability calculus that is double-exponential.  The best possible algorithm is PSPACE.  I have a student working on that for his thesis in the logic group at Berkeley.   See my talk:</p>
+<p><a href="http://fitelson.org/bristol_pr.pdf" rel="nofollow">http://fitelson.org/bristol_pr.pdf</a></p>
+<p>for some details.  You can download a user-friendly version of my procedure as a Mathematica package (co-written with Jason Alexander). See</p>
+<p><a href="http://fitelson.org/PrSAT" rel="nofollow">http://fitelson.org/PrSAT</a></p>
+<p>-Branden</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1359.html#respond' onclick='return addComment.moveForm( "comment-1359", "1359", "respond", "255" )' aria-label='Reply to Branden Fitelson'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1360" >
+		<article id="comment-1360" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/e9ae850880930170b2c0592e86a45c95?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/e9ae850880930170b2c0592e86a45c95?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://centria.di.fct.unl.pt/~greg/research.html' rel='external nofollow' class='url'>Gregory Wheeler</a></span> on <a href="../index.html%3Fp=255.html#comment-1360"><time datetime="2005-02-09T14:17:11+00:00">February 9, 2005 at 2:17 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Thanks for the links, Branden. So, it is polynomial space. I didn&#8217;t know whether this result was generalized, since I&#8217;ve only seen it for one language. I glanced at the slides, which are very interesting. A question: is the idea to reduce nearly all problems to 3 terms to make the algorithm tractable? What type of confirmation problems resist this reduction strategy&#8212;or, why the qualification of &#8216;nearly all&#8217; on slide 9?  Or have I misunderstood how the program works?</p>
+<p>You can get down to NP-complete with a weaker language (namely one that won&#8217;t allow you to express independence within the language, nor to compare likelihood ratios); I&#8217;m sure you know this, I&#8217;m just mentioning it for casual readers.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1360.html#respond' onclick='return addComment.moveForm( "comment-1360", "1360", "respond", "255" )' aria-label='Reply to Gregory Wheeler'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1361" >
+		<article id="comment-1361" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/dd7380ae73a84711b7a4fde83cdfc07e?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/dd7380ae73a84711b7a4fde83cdfc07e?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Branden Fitelson</span> on <a href="../index.html%3Fp=255.html#comment-1361"><time datetime="2005-02-10T02:35:15+00:00">February 10, 2005 at 2:35 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Dear Greg,</p>
+<p>The algorithm is fully general.  I just discuss 3-event examples to illustrate.  Canny showed (in 1992) that the (pure) existential quantifier elimination problem in the theory of real closed fields is PSPACE.  This entails that the present problems are PSPACE, since we can translate them into that fragment of the TRCF.  The paper describes that translation, and demonstrates how Mathematica&#8217;s built-in TRCF QE algorithm (which is double exponential) can be used to solve problems.  My graduate student is implementing Canny&#8217;s PSPACE algorithm, which will hopefull be a bit faster in practice, and which will also be public domain (rather than being tied to Mathematica).  I hope that helps.</p>
+<p>-B</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1361.html#respond' onclick='return addComment.moveForm( "comment-1361", "1361", "respond", "255" )' aria-label='Reply to Branden Fitelson'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1362" >
+		<article id="comment-1362" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/ed46b91025a62b22e4bdbc69964b9118?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ed46b91025a62b22e4bdbc69964b9118?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jim Hawthorne</span> on <a href="../index.html%3Fp=255.html#comment-1362"><time datetime="2005-02-10T23:31:34+00:00">February 10, 2005 at 11:31 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Horacio,</p>
+<p>Where is your paper coming out? It sounds really interesting to me &#8212; I definitely need to read it!!!</p>
+<p>It can be shown that the system R is a complete characterization of the probability 1 parts of Popper functions on a language for propositional logic with a <i>countably infinite number of atomic sentences</i>. But this language has no way (no symbol) for representing infinite conjunctions or disjunctions of sentences &#8212; so is only finitely additive, not sigma additive. R is also a complete charaterization of the probability 1 parts of Popper functions when applied to the (the usual countably infinite) language of first-order predicate logic (with identity). Again, this language has no general way to represent infinite conjunctions or disjunctions <i>of arbitray collections of sentences</i>. However, the quantifiers (in the object language) let one represent &#8220;infinite conjunctions&#8221; and &#8220;infinite disjunctions&#8221; of some sentences (those gotten by plugging names into open formulas in place of free variables) &#8212; e.g. (x)Fx can represent (Fc1 &#038; Fc2 &#038; &#8230;), and (Ex)Fx can represent (Fc1 v Fc2 v &#8230;), for arbitrarily complex formulas Fx.</p>
+<p>Indeed, like the Popper functions themselves, there is a set of rules for R (on infinite languages) that doesn&#8217;t draw on an already defined notion of logical entailment. The propositional logic version of these rules is as follows:</p>
+<p>1) for some D and E, it is not the case that E&#8211;>D;<br />
+2) A &#8211;> A;<br />
+3) if (C&#038;B) &#8211;> A, then (B&#038;C) &#8211;>A;<br />
+4.1) if C &#8211;> (B&#038;A), then C &#8211;> (A&#038;B);<br />
+4.2) if C &#8211;> ~(B&#038;A), then C &#8211;> ~(A&#038;B);<br />
+5.1) if B &#8211;> ~~A, then B &#8211;> A;<br />
+5.2) if B &#8211;> A and B &#8211;> ~A, then B &#8211;> C (for all C);<br />
+6.1) C &#8211;> B and (C&#038;B) &#8211;> A iff C &#8211;> (B&#038;A);<br />
+6.2) C &#8211;> ~B or (C&#038;B) &#8211;> ~A iff C &#8211;> ~(B&#038;A).</p>
+<p>It turns out that one can derive all of the usual rules for the rational consequence relations R from these, and vice versa.<br />
+Notice that these rules don&#8217;t presuppose the classical notion (or any other notion) of logical entailment. There is no assumption here that &#8216;B&#8211;>T&#8217; holds for tautologies T, and no assumption that one can substitute logically equivalent sentence in. Rather, one can &#8220;define&#8221; a notion of logical entailment in terms of these conditionals, then show that it is equivalent to the classical notion. And then one can <i>prove</i> that &#8216;B&#8211;>T&#8217; holds for tautologies T, and that substitute logically equivalent sentences can be substituted into conditional statements.</p>
+<p>Definition: B R-entails A iff for every conditional &#8216;&#8211;>&#8217; satisfying these rules, B&#8211;>A.</p>
+<p>Theorem: B R-entails A iff B logically entails A (in the usual classical sense).</p>
+<p>etc.</p>
+<p>One can do a similar thing for predicate logic (with identity) &#8212; but the quantifier rule is a bit complicated, so I won&#8217;t repeat it here. All of this is on infinite languages, but without countable conjunctions or disjunctions(except for quantified sentences, insofar as they are like infinite conjunctions and disjunctions).</p>
+<p>Anyway, please tell me where I will find your paper!!!</p>
+<p>Jim</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1362.html#respond' onclick='return addComment.moveForm( "comment-1362", "1362", "respond", "255" )' aria-label='Reply to Jim Hawthorne'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1363" >
+		<article id="comment-1363" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/ed46b91025a62b22e4bdbc69964b9118?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ed46b91025a62b22e4bdbc69964b9118?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Jim Hawthorne</span> on <a href="../index.html%3Fp=255.html#comment-1363"><time datetime="2005-02-12T18:17:18+00:00">February 12, 2005 at 6:17 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Horacio,</p>
+<p>I received the copy of your forthcoming JPL paper. Thanks for sending it!!! I gave it a fairly quick read in order to be able to reply intelligently (I hope) to your posting. (Itâ??s really interesting, and Iâ??ll take the time to go through more carefully in the next few days.) Anyway, I think I get it now. Let me try to characterize what I think is going on in the result you described in your post. This will take several pages to describe, Iâ??m afraid. [Sorry this is going to be so long, Jon!!!] Please tell me if you think Iâ??m getting it right or wrong.</p>
+<p>Letâ??s put the consequence relations (the nonmonotonic conditionals) completely to the side for now, and just talk about probability. And let us distinguish between what Iâ??ll call â??van Fraassen Functionsâ?? (vF functions) and â??Popper functionsâ?? (Pop functions). One big difference is that Pop functions are defined on sentences, whereas vF functions are defined on sets, which can be thought of as propositions &#8212; i.e. sets of possible worlds. But they are similar in that both take conditional probability as primitive (not defined in terms of unconditional probability), and logically they work in exactly the same way &#8212; with one exception.</p>
+<p>The vF functions are defined on a probability space [U,F,P], where U is a set (think â??set of all possible worldsâ??), F is a field of subsets of U (think â??propositionsâ??) and P is a conditional probability function defined on pairs of â??propositionsâ??. To say that F is a field of subsets of U just means that:(1) if A is in F, its complement, U-A, is in F; (2) if A and B are in F, their union is in F (and thus, so is their intersection, which is definable in terms of union and complement). Think of each member of F as a proposition, and F is a Boolean algebra of propositions. [Iâ??m going into this kind of  detail for readers who may not be up on this stuff.] Given this, the function P in a vF probability space [U,F,P] assigns numbers between 0 and 1 such that, holding A from F fixed, P[  |A] <i>either</i> satisfies the usual axioms for a one-place probability functions (defined on sets) <i>or else</i> P[ |A] is degenerate in that P[X|A] has value 1 for all X in F. Letâ??s call such functions (on such probability spaces) â??finitely additive vF functions.â??</p>
+<p>However, it is also common to define â??countably additive vF functionsâ??. Such functions are defined on a probability space [U,F,P], just like before, except that F is a sigma-field of subsets of U. That means that F is a field, as before, and in addition, for each countable collection of members of F, {A1, A2, &#8230;}, F must also contain â??union{A1, A2, &#8230;}â??, the union of the whole collection (and it follows that F also contains the intersections of each countable collection of its members).  Furthermore, when F is a sigma-field, P is taken to be a â??countably additive probability measureâ??, which means it satisfies the usual rules for probabilities described above, and in addition: if {B1, B2, &#8230;} a countable set of disjoint sets, then P[union{B1, B2, &#8230;}|A] = (P[B1|A] + P[B2|A] + &#8230;+ P[Bn|A]+ &#8230;).</p>
+<p>All of this makes the â??finitely additive vF functionsâ?? just like the Pop functions, except that the Pop functions are defined on sentences of a formal language L for sentential logic (with a countable set of sentence letters), rather than on sets (rather than on propositions-as-sets-of-worlds). The probabilistic logic of finitely additive vF functions is precisely the same as that of the usual Pop functions &#8212; lets us call them the â??finitely additive Pop functionsâ?? to mark this.</p>
+<p>One might extend the usual definition of finitely additive Pop function to â??countably additive Pop functionsâ?? by doing something analogous to what one does to get countably additive vF functions. To do so one must first introduce a way to represent infinite disjunctions (or conjunctions&#8211;either one will do) of sentences: i.e., for any set of sentences {b1, b2, &#8230;}, let â??v(b1, b2, &#8230;)â?? (where the bi are in some specific order) be the disjunction of those sentences. The propositional logic of languages with such a connective has been worked out, and is pretty well known. Then a â??countably additive Pop functionâ?? would say: if each distinct pair in {b1, b2, &#8230;} is inconsistent, then p[v(b1, b2, &#8230;) | a] = p[b1|a] + p[b2|a] + &#8230; . One usually doesnâ??t introduce infinite disjunction into the Pop functions, and so does not have countably additive Pop functions &#8212; but there is no technical problem in doing so. (Horacio&#8217;s and Rohitâ??s paper uses lower case letters for sentences and upper case letters for sets, and Iâ??m following suit here.)</p>
+<p>Horacio&#8217;s and Rohitâ??s paper assumes, for their main results, that the set U (of worlds) is countable. That means that the set F of propositions might be as large as 2^aleph-null (e.g. if F is the set of all subsets of U). But F is only â??requiredâ?? to be some Boolean algebra of sets &#8212; so it may be countable (even finite, for some given case of a probability space). However, the set of sentences (atomic and larger) of the formal language L (for sentential logic) is only countable. Nevertheless, given any specific part of a probability space [U,F], one can use it as an â??interpretationâ?? of sentences of L by specifying an assignment function I such that for each atomic sentence b in L, I[b] is in F (I[b] is the proposition B in F that sentence b represents). There are a few obvious rules that interpretations I must follow, though: for all sentences c, I[~c] = U-I[c]; for all b, c, I[(bvc)] = (I[b] union I[c]). Also, if F is a sigma field <i>and if</i> L <i>permits infinite disjunctions</i>, then we should have I[v(b1, b2, &#8230;)] = (union{I[b1], I[b2], &#8230;}). However, although Horacio and Rohit have models where F is a sigma-field, they do not employ a language L that contains infinite disjunctions. I think this is important to understanding the result in their paper that Horacio described in his post.</p>
+<p>Now, clearly, each finitely additive vF function is mimicked by a finitely additive Pop functions, and vice versa. Given a finitely additive [U,F,P] and an interpretation I that maps sentences of L to sets in F, define a corresponding function p on L such that p[b|a] = P[I[a] | I[b]]. It is easy to show that p is a Pop function. Conversely, given any finitely additive Pop function p, we can define a finitely additive probability space that mimics it.</p>
+<p> The same goes for the countably additive vF and countably additive Pop functions.</p>
+<p>Now, what if the language L has no way of representing infinite disjunctions, but one starts with a countably additive vF function [U,F,P]. Is there a Pop function that â??agrees with Pâ?? on an interpretation I of the language? Sure!!! Just extend the language to a new language L+ that also accommodates infinite disjunctions, extent I to map sentences in L+ to the corresponding countable unions of F (there is one and only one way to do this, since the way I makes assignments to complex sentences is fixed uniquely by how it makes assignments to atomic sentences), then find the Pop function p+ that corresponds to P (as above). So we have a Pop function p+ on L+ that behaves just like P on F. Now just throw out all of p+ that applies to sentences involving infinite disjunctions, and call the resulting function p. p is a Pop function that agrees with the vF function on the Boolean sub-algebra of F picked out by interpretation I restricted to the language L.</p>
+<p>However, the converse of this process wonâ??t work in general, and that is â??effectivelyâ?? (i.e. for my purposes) what the result that Horacio describes in his post is about. That is, start with an arbitrary finitely additive Pop function p on a usual language L for sentential logic (with countably many sentence letters). Is there <i>always</i> (i.e. for each given p) a way to construct a probability space [U,F,P] with U countable, F a sigma-field, and P a countably additive vF function, such that there is an interpretation I that makes p agree with P (i.e. such that, for some I, p[b|a] = P[I[a] | I[b]] for each a and b in L)? The answer is NO!</p>
+<p>So, about the conditionals in R:</p>
+<p>They are just the probability 1 parts of finitely additive Pop functions. I.e.,</p>
+<p>(1)for each conditional &#8211;> satisfying the rules of R, there is a finitely additive Pop function p that has<br />
+p[a|b] = 1 iff b&#8211;>a.</p>
+<p>and</p>
+<p>(2) for each finitely additive Pop function p, there is a conditional &#8211;> satisfying the rules of R such that, b&#8211;>a iff p[a|b] = 1.</p>
+<p>However if we define Pop functions on a language L+ with countable disjunction (which L doesnâ??t have) we get frm Horacioâ??s and Rohitâ??s result:</p>
+<p>(1*) there are conditionals &#8211;> satisfying the rules of R (on L) such that no countably additive Pop function p on L+ agrees with &#8211;> on L (i.e. no p gives â??p[a|b] = 1 iff b&#8211;>aâ?? for all sentences a, b in L).</p>
+<p>But, of course, the alteration for (2) to countably additive Pop functions still works:</p>
+<p>(2*) for each countably additive Pop function P (on L+), there is a conditional &#8211;> satisfying the rules of R (on L) such that (for sentences of L), b&#8211;>a iff P[A|B] = 1.</p>
+<p>The obvious question is, â??what if we extend R to the language L+ ?â?? That is Define R+ to include all conditionals (all pairs of sentences of L+) that satisfy the rules of R (where the notion of logical entailment |= in these rules is replaced by the entailment relation |=+ appropriate to logic with countable disjunctions)?</p>
+<p>Clearly the claim corresponding to (2) still holds:</p>
+<p>(2+) for each countably additive Pop function p, there is a conditional &#8211;> satisfying the rules of R+ such that, b&#8211;>a iff p[a|b] = 1. (One can show quite easily that a well-known way to axiomatize the Pop functions yield (2+) when altered to handle L+.)</p>
+<p>What about the claim corresponding to (1)?</p>
+<p>(1+) for each conditional &#8211;> satisfying the rules of R+, there is a countably additive Pop function P that has p[a|b] = 1 iff b&#8211;>a.</p>
+<p>If looks to me like this should hold as well, and can be proved in the same way that (1) is usually proved.</p>
+<p>Does this all look right?</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1363.html#respond' onclick='return addComment.moveForm( "comment-1363", "1363", "respond", "255" )' aria-label='Reply to Jim Hawthorne'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1364" >
+		<article id="comment-1364" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/24191827e60cdb49a3d17fb1befe951b?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/24191827e60cdb49a3d17fb1befe951b?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Postmodernist</span> on <a href="../index.html%3Fp=255.html#comment-1364"><time datetime="2005-05-26T20:33:10+00:00">May 26, 2005 at 8:33 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Is the notion of a nonmonotonic intuitionist logic coherent?  Are such logics studied?  I&#8217;ve never seen one.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1364.html#respond' onclick='return addComment.moveForm( "comment-1364", "1364", "respond", "255" )' aria-label='Reply to Postmodernist'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="pingback">
+		<p>Pingback: <a href='http://bengal-ng.missouri.edu/~kvanvigj/certain_doubts/?p=577' rel='external nofollow' class='url'>Certain Doubts &raquo; April Stats</a></p>
+	</li><!-- #comment-## -->
+	<li class="pingback">
+		<p>Pingback: <a href='http://bengal-ng.missouri.edu/~kvanvigj/certain_doubts/?p=589' rel='external nofollow' class='url'>Certain Doubts &raquo; Stats for May</a></p>
+	</li><!-- #comment-## -->
+		</ol>
+
+		
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply to <a href="index.html%3Freplytocom=1362.html#comment-1362">Jim Hawthorne</a> <small><a rel="nofollow" id="cancel-comment-reply-link" href="../index.html%3Fp=255.html#respond">Cancel reply</a></small></h3>			<form action="http://certaindoubts.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='255' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='1362' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="c493e0cd8c" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="206"/></p>			</form>
+			</div><!-- #respond -->
+	</div><!-- #comments -->
+
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+		</div><!-- #container_wrap -->
+
+	<div id="sidebar_wrap_right" class="split equal_height">
+	<div id="sidebar_right" class="widget-area" role="complementary">
+		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+											<li>
+					<a href="../index.html%3Fp=4902.html">The End</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4897.html">Young Epistemologist Prize 2019</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4890.html">A simple problem for (unrestricted) Conditionalization</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4883.html">Reminder: Young Epistemologist Prize 2019</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4877.html">Do We Know that We&#8217;re not Brains in Vats?: Follow-Up: Polls and Surveys</a>
+									</li>
+					</ul>
+		</aside><aside id="calendar-2" class="widget widget_calendar"><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar">
+	<caption>April 2019</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="../2019/02/index.html">&laquo; Feb</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+	</tr>
+	<tr>
+		<td>8</td><td><a href="../2019/04/09/index.html" aria-label="Posts published on April 9, 2019">9</a></td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+	</tr>
+	<tr>
+		<td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
+	</tr>
+	<tr>
+		<td>22</td><td id="today">23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+	</tr>
+	<tr>
+		<td>29</td><td>30</td>
+		<td class="pad" colspan="5">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></aside><aside id="meta-3" class="widget widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="../wp-login.php.html">Log in</a></li>
+			<li><a href="../feed/index.html">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="../comments/feed/index.html">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside><aside id="search-2" class="widget widget_search"><form role="search" style="background:transparent;" method="get" class="searchform" action="../index.html" >
+	<label class="screen-reader-text" for="s">Search for:</label>
+	<input type="search" value="" name="s" id="s" placeholder="Search Site" />
+	<input class="searchformimg" type="image" src="../wp-content/themes/weaver-ii/images/search_button.gif" alt="Search" />
+	</form></aside>
+	</div><!-- sidebar_right .widget-area -->
+	</div><!-- #sidebar_wrap_right -->
+    <div class='weaver-clear'></div></div><!-- #main -->
+	<footer id="colophon" role="contentinfo">
+	  <div>
+
+		<div id="site-ig-wrap">
+		<span id="site-info">
+		&copy; 2019 - <a href="../index.html" title="Certain Doubts" rel="home">Certain Doubts</a>
+		</span> <!-- #site-info -->
+		<span id="site-generator">
+		<a href="http://wordpress.org/" title="wordpress.org" rel="generator" target="_blank">Proudly powered by WordPress</a>&nbsp;
+Weaver II by <a href="http://weavertheme.com" target="_blank" title="http://weavertheme.com">WP Weaver</a>
+		</span> <!-- #site-generator -->
+		</div><!-- #site-ig-wrap -->
+		<div class="weaver-clear"></div>
+	  </div>
+	</footer><!-- #colophon -->
+</div><!-- #wrapper -->
+<a href="index.html%3Freplytocom=1362.html#page-top" id="page-bottom">&uarr;</a>
+<div id="weaver-final" class="weaver-final-normal"><script type='text/javascript' src='../wp-includes/js/comment-reply.min.js%3Fver=4.9.10'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var weaver_menu_params = {"selector":"li:has(ul) > a","selector_leaf":"li li li:not(:has(ul)) > a"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/themes/weaver-ii/js/weaverjslib.min.js%3Fver=2.2.2'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.min.js%3Fver=4.9.10'></script>
+<script async="async" type='text/javascript' src='../wp-content/plugins/akismet/_inc/form.js%3Fver=4.1'></script>
+</div> <!-- #weaver-final -->
+</body>
+</html>

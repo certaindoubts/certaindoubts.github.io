@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<!--[if IE 7]>	<html id="ie7" lang="en-US"> <![endif]-->
+<!--[if IE 8]>	<html id="ie8" lang="en-US"> <![endif]-->
+<!--[if IE 9]>	<html id="ie9" lang="en-US"> <![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8) ] | !(IE 9) ><!-->	<html lang="en-US"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes' />
+<title>Closure vs. Transmission | Certain Doubts</title>
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://certaindoubts.com/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://certaindoubts.com/wp-content/themes/weaver-ii/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<script type="text/javascript">var weaverIsMobile=false;var weaverIsSimMobile=false;var weaverIsStacked=false;var weaverThemeWidth=940;var weaverMenuThreshold=640;var weaverHideMenuBar=false;var weaverMobileDisabled=false;var weaverFlowToBottom=false;var weaverHideTooltip=false;var weaverUseSuperfish=false;</script>
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Certain Doubts &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Certain Doubts &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Certain Doubts &raquo; Closure vs. Transmission Comments Feed" href="feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/certaindoubts.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.10"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='weaverii-main-style-sheet-css'  href='../wp-content/themes/weaver-ii/style.min.css%3Fver=2.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='weaverii-mobile-style-sheet-css'  href='../wp-content/themes/weaver-ii/style-mobile.min.css%3Fver=2.2.2.css' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery.js%3Fver=1.12.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min.js%3Fver=1.4.1'></script>
+<link rel='https://api.w.org/' href='../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc.php%3Frsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='CFP on Justification for Dialectica' href='../index.html%3Fp=1844.html' />
+<link rel='next' title='OBO Philosophy: Resources for Epistemologists' href='../index.html%3Fp=1854.html' />
+<meta name="generator" content="WordPress 4.9.10" />
+<link rel="canonical" href="../index.html%3Fp=1846.html" />
+<link rel='shortlink' href='../index.html%3Fp=1846.html' />
+<meta name='robots' content='noindex,follow' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed%3Furl=http:%252F%252Fcertaindoubts.com%252Fclosure-vs-transmission%252F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed%3Furl=http:%252F%252Fcertaindoubts.com%252Fclosure-vs-transmission%252F&amp;format=xml" />
+
+<!-- This site is using Weaver II 2.2.2 (48) subtheme: Wheat -->
+<!-- Page ID: 1846 -->
+<style type="text/css">
+/* Weaver II styles - Version 48 */
+a {color:#59C448;}
+a:visited {color:#8DBA61;}
+a:hover {color:#C91640;}
+a{font-style:italic;}
+a{font-weight:bold;}
+.entry-title a {color:#0A0A0A;}
+.entry-title a:visited {color:#0A0A0A;}
+.entry-title a{font-style:normal;}
+.entry-title a{font-weight:normal;}
+.entry-meta a, .entry-utility a {color:#474134;}
+.entry-meta a:visited, .entry-utility a:visited {color:#706752;}
+.entry-meta a:hover, .entry-utility a:hover {color:#C91640;}
+.widget-area a {color:#474134;}
+.widget-area a:visited {color:#706752;}
+.widget-area a:hover {color:#C91640;}
+.widget-area a{font-style:normal;}
+.widget-area a{font-weight:normal;}
+#infobar a{font-style:normal;}
+#infobar a{font-weight:normal;}
+#colophon a{font-style:normal;}
+#colophon a{font-weight:normal;}
+#wrapper {border: 1px solid #AB9B7D;}
+#sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,#first,#second,#third,#fourth, .mobile_widget_area {border: 1px solid #AB9B7D;}
+#wrapper, #branding, #colophon, .commentlist li.comment, #respond, #sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,#first,#second,#third,#fourth,.mobile_widget_area {-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}
+#sidebar_wrap_right.right-1-col,#sidebar_wrap_right.right-2-col,#sidebar_wrap_right.right-2-col-bottom,
+#sidebar_wrap_left.left-1-col,#sidebar_wrap_left.left-2-col,#sidebar_wrap_left.left-2-col-bottom,#sidebar_wrap_left,#sidebar_wrap_right
+{-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}
+.commentlist li.comment .comment-meta {-moz-border-radius-topleft: 7px; -moz-border-radius-topright: 7px;
+ -webkit-border-top-left-radius: 7px; -webkit-border-top-right-radius: 7px; border-top-left-radius: 7px; border-top-right-radius: 7px;}
+#access {-moz-border-radius-bottomleft: 7px; -moz-border-radius-bottomright: 7px;
+ -webkit-border-bottom-left-radius: 7px; -webkit-border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; border-bottom-right-radius: 7px;}
+#access2 {-moz-border-radius-topleft: 7px; -moz-border-radius-topright: 7px;
+ -webkit-border-top-left-radius: 7px; -webkit-border-top-right-radius: 7px; border-top-left-radius: 7px; border-top-right-radius: 7px;}
+body {background-image: url(../wp-content/themes/weaver-ii/images/gr.png); background-attachment: scroll; background-repeat: repeat-x;}
+#wrapper {-webkit-box-shadow: 0 0 3px 3px rgba(0,0,0,0.25); -moz-box-shadow: 0 0 3px 3px rgba(0,0,0,0.25); box-shadow: 0 0 3px 3px rgba(127,127,127,0.25);}
+#wrapper{max-width:940px;}
+#sidebar_primary,.mobile_widget_area {background-color:#F5DEB3;}
+#sidebar_right {background-color:#F5DEB3;}
+#sidebar_left {background-color:#F5DEB3;}
+.sidebar_top,.sidebar_extra {background-color:#F5DEB3;}
+.sidebar_bottom {background-color:#F5DEB3;}
+#first,#second,#third,#fourth {background-color:transparent;}
+.widget {background-color:transparent;}
+#container_wrap.right-1-col{width:75.000%;} #sidebar_wrap_right.right-1-col{width:25.000%;}
+#container_wrap.right-2-col,#container_wrap.right-2-col-bottom{width:67.000%;} #sidebar_wrap_right.right-2-col,#sidebar_wrap_right.right-2-col-bottom{width:33.000%;}
+#container_wrap.left-1-col{width:75.000%;} #sidebar_wrap_left.left-1-col{width:25.000%;}
+#container_wrap.left-2-col,#container_wrap.left-2-col-bottom{width:67.000%;} #sidebar_wrap_left.left-2-col,#sidebar_wrap_left.left-2-col-bottom{width:33.000%;}
+#container_wrap{width:66.000%;} #sidebar_wrap_left{width:17.000%;} #sidebar_wrap_right{width:17.000%;}
+#sidebar_wrap_2_left_left, #sidebar_wrap_2_right_left {width:54.000%;margin-right:1%;}
+#sidebar_wrap_2_left_right, #sidebar_wrap_2_right_right {width:45.000%;}
+#sidebar_header {font-size:70%;}
+#sidebar_header .header-widget-1 {display:none;}
+#sidebar_header .header-widget-2 {display:none;}
+#sidebar_header .header-widget-3 {display:none;}
+#sidebar_header .header-widget-4 {display:none;}
+@media only screen and (max-width:640px) { /* header widget area mobile rules */
+} /* end mobile rules */
+#main {padding: 15px 0 0 0;}
+#site-description {font-size:200.000%;}
+#site-title {overflow:hidden; padding:0; margin:0; position:absolute; left:2.000%; top: 5.000%; z-index:20;}
+#site-description {overflow:hidden; padding:0; margin:0; position:absolute; left:4.000%; top: 30.000%; z-index:20;}
+.menu_bar a, .mobile_menu_bar a {font-weight:bold;}
+@media only screen and (min-width: 641px) {.menu_bar,.weaveriip_vertical_menu .menu_bar { background-image: url(../wp-content/themes/weaver-ii/images/theme/fade.png);}}
+@media only screen and (min-width: 641px) {.menu_bar ul ul a, .menu_bar li:hover > a, .menu_bar ul ul :hover > a { background-image: url(../wp-content/themes/weaver-ii/images/theme/fadeup.png);}}
+#ie8 .menu_bar,#ie8 .weaveriip_vertical_menu .menu_bar,#ie7 .menu_bar,#ie7 .weaveriip_vertical_menu .menu_bar { background-image: url(../wp-content/themes/weaver-ii/images/theme/fade.png);}
+#ie8 .menu_bar ul ul a, #ie8 .menu_bar li:hover > a, #ie8 .menu_bar ul ul :hover > a,
+#ie7 .menu_bar ul ul a, #ie7 .menu_bar li:hover > a, #ie7 .menu_bar ul ul :hover > a{ background-image: url(../wp-content/themes/weaver-ii/images/theme/fadeup.png);}
+.menu_bar, .menu_bar a,.menu_bar a:visited,.mobile_menu_bar a {color:#FFFAEF;}
+.menu_bar li:hover > a, .menu_bar a:focus {background-color:#BAA987;}
+.menu_bar li:hover > a, .menu_bar a:focus {color:#F0EBE0;}
+.menu_bar ul ul a {background-color:#BAA987;}
+.menu_bar ul ul a,.menu_bar ul ul a:visited {color:#FFFAEF;}
+.menu_bar ul ul :hover > a {background-color:#BAA987;}
+.menu_bar ul ul :hover > a {color:#F0EBE0;}
+.menu_bar, .mobile_menu_bar, .menu-add {background-color:#AB9B7D;}
+.mobile-menu-link {border-color:#FFFAEF;}
+.widget-area .menu-vertical,.menu-vertical {clear:both;background-color:transparent;margin:0;width:100%;overflow:hidden;border-bottom:3px solid #FFFAEF;border-top:1px solid #FFFAEF;}
+.widget-area .menu-vertical ul, .menu-vertical ul {margin: 0; padding: 0; list-style-type: none;  list-style-image:none;font-family: inherit;}
+.widget-area .menu-vertical li a, .widget-area .menu-vertical a:visited, .menu-vertical li a, .menu-vertical a:visited {
+color: #FFFAEF;  background-color: #AB9B7D; display: block !important; padding: 5px 10px; text-decoration: none; border-top:2px solid #FFFAEF;}
+.widget-area .menu-vertical a:hover,.widget-area .menu-vertical a:focus, .menu-vertical a:hover,.menu-vertical a:focus {
+color: #F0EBE0; background-color: #BAA987;text-decoration: none;}
+.widget-area .menu-vertical ul ul li, .menu-vertical ul ul li { margin: 0; }
+.widget-area .menu-vertical ul ul a,.menu-vertical ul ul a {color: #FFFAEF; background-color: #AB9B7D;
+ display: block; padding: 4px 5px 4px 25px; text-decoration: none;border:0;
+ border-top:1px solid #FFFAEF;}
+.widget-area .menu-vertical ul ul a:hover,#wrap-header .menu-vertical ul ul a:hover,#wrap-header .menu-vertical ul a:hover {color: #F0EBE0; background-color: #BAA987; text-decoration: none;}
+.widget-area .menu-vertical ul ul ul a,.menu-vertical ul ul ul a {padding: 4px 5px 4px 35px;}
+.widget-area .menu-vertical ul ul ul a,.menu-vertical ul ul ul ul a {padding: 4px 5px 4px 45px;}
+.widget-area .menu-vertical ul ul ul ul a,.menu-vertical ul ul ul ul ul a {padding: 4px 5px 4px 55px;}
+.menu_bar .current_page_item > a, .menu_bar .current-menu-item > a, .menu_bar .current-cat > a, .menu_bar .current_page_ancestor > a,.menu_bar .current-category-ancestor > a, .menu_bar .current-menu-ancestor > a, .menu_bar .current-menu-parent > a, .menu_bar .current-category-parent > a,.menu-vertical .current_page_item > a, .menu-vertical .current-menu-item > a, .menu-vertical .current-cat > a, .menu-vertical .current_page_ancestor > a, .menu-vertical .current-category-ancestor > a, .menu-vertical .current-menu-ancestor > a, .menu-vertical .current-menu-parent > a, .menu-vertical .current-category-parent > a,.widget-area .menu-vertical .current_page_item > a, .widget-area .menu-vertical .current-menu-item > a, .widget-area .menu-vertical .current-cat > a, .widget-area .menu-vertical .current_page_ancestor > a {color:#474134 !important;}
+.entry-title {border-bottom: 1px solid #0A0A0A;}
+#content, .entry-content h1, .entry-content h2 {color:#292929;}
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6, #content dt, #content th,
+h1, h2, h3, h4, h5, h6,#author-info h2 {color:#0A0A0A;}
+#content h1.entry-title {color:#0A0A0A;}
+.commentlist li.comment, #respond {background-color:transparent;}
+.wp-caption p.wp-caption-text, #content .gallery .gallery-caption,.entry-attachment .entry-caption {color:#333333;}
+#content img.size-full, #content img.size-large, #content img.size-medium, #content img.size-thumbnail, #content .attachment-thumbnail, #content .gallery img,#content .gallery-thumb img,.entry-attachment img, #content .wp-caption img, #content img.wp-post-image,#content img[class*="wp-image-"],#author-avatar img,img.avatar {background-color:transparent;}
+.home .sticky, #container.page-with-posts .sticky, #container.index-posts .sticky {background-color:#E6DCC8;}
+.entry-meta, .entry-content label, .entry-utility {color:#706752;}
+body {font-size:12px;}
+body {background-color:#C7B491;}
+body {color:#292929;}
+#wrapper {background-color:#FEF3DD;}
+#main {background-color:transparent;}
+#container {background-color:transparent;}
+#content {background-color:transparent;}
+#content .post,.post {background-color:transparent;}
+#branding {background-color:transparent;}
+#colophon {background-color:#F5DEB3;}
+hr {background-color:#AB9B7D;}
+.entry-meta {background-color:transparent;}
+.entry-utility {background-color:transparent;}
+input, textarea, ins, pre {background-color:#F0F0F0;}
+.widget {color:#333333;}
+.widget-title {border-bottom: 1px solid #222222; margin-bottom:5px;padding-bottom:3px;}
+.widget-title, .widget_search label, #wp-calendar caption {color: #222222;}
+#site-title a {color:#FEF9EE;}
+#site-description {color:#FFFAEF;}
+/* Weaver II Mobile Device Options */
+.weaver-any-mobile  #main a, .weaver-any-mobile  #mobile-widget-area a, .weaver-any-mobile  .sidebar_top a, .weaver-any-mobile  .sidebar_bottom a, .weaver-any-mobile  .sidebar_extra a {text-decoration: underline !important;}
+@media only screen and (max-width:768px) and (orientation:portrait) {body {padding: 0px !important;}}
+@media only screen and (max-width:640px) {
+#main a, #mobile-widget-area a, .sidebar_top a, .sidebar_bottom a, .sidebar_extra a{text-decoration: underline !important;}
+}
+@media only screen and (max-width: 580px) {
+}
+
+/* end Weaver II CSS */
+</style> <!-- end of main options style section -->
+
+
+<!--[if lte IE 8]>
+<style type="text/css" media="screen">
+#content img.size-thumbnail,#content img.size-medium,#content img.size-large,#content img.size-full,#content img.attachment-thumbnail,
+#content img.wp-post-image,img.avatar,.format-chat img.format-chat-icon,
+#wrapper,#branding,#colophon,#content, #content .post,
+#sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,
+#first,#second,#third,#fourth,
+#commentform input:focus,#commentform textarea:focus,#respond input#submit {
+		behavior: url(http://certaindoubts.com/wp-content/themes/weaver-ii/js/PIE/PIE.php) !important; position:relative;
+}
+</style>
+<![endif]-->
+
+<!-- End of Weaver II options -->
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		</head>
+
+<body class="post-template-default single single-post postid-1846 single-format-standard singular not-logged-in weaver-desktop weaver-mobile-smart-nostack">
+<a href="index.html%3Freplytocom=11041.html#page-bottom" id="page-top">&darr;</a> <!-- add custom CSS to use this page-bottom link -->
+<div id="wrapper" class="hfeed">
+<div id="wrap-header">
+	<header id="branding" role="banner"><div id="branding-content">
+		<div id="site-logo"></div>
+		<div id="site-logo-link" onclick="location.href='http://certaindoubts.com/';"></div>
+
+		<div class="title-description-xhtml">
+			<h1 id="site-title" ><span><a href="../index.html" title="Certain Doubts" rel="home">Certain Doubts</a></span></h1>
+			<h2 id="site-description"> devoted to matters epistemic</h2>
+		</div>
+		<div id="header_image">
+                              <img src="../wp-content/themes/weaver-ii/images/headers/wheat.jpg" width="940" height="188" alt="Certain Doubts" />
+        		</div><!-- #header_image -->
+	</div></header><!-- #branding-content, #branding -->
+<div id="wrap-bottom-menu">
+<div id="mobile-bottom-nav" class="mobile_menu_bar" style="padding:5px 10px 5px 10px;clear:both;">
+	<div style="margin-bottom:20px;">
+<span class="mobile-home-link">
+	<a href="../index.html" title="Certain Doubts" rel="home">Home</a></span>
+	<span class="mobile-menu-link"><a href="javascript:void(null);" onclick="weaverii_ToggleMenu(document.getElementById('nav-bottom-menu'), this, 'Menu &darr;', 'Menu &uarr;')">Menu &darr;</a></span></div>
+</div>
+		<div class="skip-link"><a class="assistive-text" href="index.html%3Freplytocom=11041.html#content" title="">Skip to primary content</a></div>
+			<div class="skip-link"><a class="assistive-text" href="index.html%3Freplytocom=11041.html#sidebar_primary" title="">Skip to secondary content</a></div>
+				<div id="nav-bottom-menu"><nav id="access" class="menu_bar" role="navigation">
+<div class="menu"><ul>
+<li ><a href="../index.html">Home</a></li><li class="page_item page-item-1894"><a href="../index.html%3Fpage_id=1894.html">Decade and Longitudinal Journal Information</a></li>
+<li class="page_item page-item-2739"><a href="../index.html%3Fpage_id=2739.html">Epistemology Course Slides</a></li>
+<li class="page_item page-item-2752"><a href="../index.html%3Fpage_id=2752.html">Talks:  Slides and Videos</a></li>
+<li class="page_item page-item-417"><a href="../index.html%3Fp=417.html">About Certain Doubts</a></li>
+<li class="page_item page-item-397"><a href="../index.html%3Fp=397.html">Contributors</a></li>
+<li class="page_item page-item-413"><a href="../index.html%3Fp=413.html">Archives</a></li>
+<li class="page_item page-item-774"><a href="../index.html%3Fpage_id=774.html">Complete Hirsch Number Rankings of U.S. Philosophy PhD Programs</a></li>
+<li class="page_item page-item-823"><a href="../index.html%3Fp=823.html">Philosophy Journal Information:  ESF Rankings, Citation Impact, &#038; Rejection Rates</a></li>
+<li class="page_item page-item-454"><a href="../index.html%3Fp=454.html">Some of Our Books</a></li>
+</ul></div>
+		</nav></div><!-- #access --></div> <!-- #wrap-bottom-menu -->
+</div> <!-- #wrap-header -->
+	<div id="main">
+	<div id="sidebar_wrap_left" class="split equal_height">
+	<div id="sidebar_left" class="widget-area" role="complementary">
+<aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">John Fischer</span> on <a href="../index.html%3Fp=4902.html#comment-331879">The End</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://dailynous.com/2019/03/07/philosophers-on-the-philosophy-blogosphere/' rel='external nofollow' class='url'>Philosophers On the Philosophy Blogosphere - Daily Nous</a></span> on <a href="../index.html%3Fp=616.html#comment-331009">Doris and Russell on Stanley</a></li><li class="recentcomments"><span class="comment-author-link"><a href='https://philosophy.unc.edu/2019/02/08/worsnip-wins-young-epistemologist-prize/' rel='external nofollow' class='url'>Worsnip wins Young Epistemologist Prize - Department of Philosophy</a></span> on <a href="../index.html%3Fp=4897.html#comment-329263">Young Epistemologist Prize 2019</a></li><li class="recentcomments"><span class="comment-author-link">S. Alas</span> on <a href="../index.html%3Fp=4890.html#comment-324134">A simple problem for (unrestricted) Conditionalization</a></li><li class="recentcomments"><span class="comment-author-link"><a href='https://enigmanically.blogspot.co.uk/' rel='external nofollow' class='url'>Martin Cooke</a></span> on <a href="../index.html%3Fp=4738.html#comment-310431">What philosophers think might not be what you think they think</a></li></ul></aside><aside id="meta-2" class="widget widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="../wp-login.php.html">Log in</a></li>
+			<li><a href="../feed/index.html">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="../comments/feed/index.html">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside><aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-9"><a href="../category/a-priori-knowledge/index.html" >a priori knowledge</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="../category/confirmation-theory/index.html" >confirmation theory</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="../category/contextualism/index.html" >contextualism</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="../category/epistemic-paradoxes/index.html" >epistemic paradoxes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="../category/formal-epistemology/index.html" >formal epistemology</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="../category/foundationalismcoherentism/index.html" >foundationalism and coherentism</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="../category/foundationalism-and-coherentism/index.html" >foundationalism and coherentism</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="../category/general/index.html" >general</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="../category/internalismexternalism/index.html" >internalism and externalism</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="../category/internalism-and-externalism/index.html" >internalism and externalism</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="../category/justification/index.html" >justification</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="../category/knowledge/index.html" >knowledge</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="../category/links/index.html" >Links</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="../category/major-figures/index.html" >major figures</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="../category/memory/index.html" >memory</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="../category/perception/index.html" >perception</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="../category/skepticism/index.html" >skepticism</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="../category/testimony-and-social-epistemology/index.html" >testimony and social epistemology</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="../category/uncategorized/index.html" >Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="../category/understanding/index.html" >understanding</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="../category/value-driven-epistemology/index.html" >value-driven epistemology</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="../category/virtue-epistemology/index.html" >virtue epistemology</a>
+</li>
+		</ul>
+</aside>
+	</div><!-- #sidebar_left .widget-area -->
+	</div><!-- #sidebar_wrap_left -->
+		<div id="container_wrap" class="container-single equal_height split">
+		<div id="container">
+			<div id="content" role="main">
+
+				<nav id="nav-above" class="navigation">
+				<h3 class="assistive-text">Post navigation</h3>
+					<div class="nav-previous"><a href="../index.html%3Fp=1844.html" rel="prev"><span class="meta-nav">&larr;</span> CFP on Justification for Dialectica</a></div>
+				<div class="nav-next"><a href="../index.html%3Fp=1854.html" rel="next">OBO Philosophy: Resources for Epistemologists <span class="meta-nav">&rarr;</span></a></div>
+				</nav><!-- #nav-above -->
+
+
+<article id="post-1846" class="content-single  post-1846 post type-post status-publish format-standard hentry category-justification category-skepticism tag-closure tag-transmission tag-tucker">
+	<header class="entry-header">
+		<div class="entry-hdr"><h1 class="entry-title">Closure vs. Transmission</h1></div>
+
+		<div class="entry-meta">
+						<div class="meta-info-wrap">
+			<span class="sep posted-on">Posted on </span><a href="../index.html%3Fp=1846.html" title="8:23 am" rel="bookmark"><time class="entry-date" datetime="2010-05-01T08:23:47+00:00">May 1, 2010</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="../author/tucker/index.html" title="View all posts by Chris Tucker" rel="author">Chris Tucker</a></span></span><span class="updated">May 1, 2010</span>
+			</div><!-- .entry-meta-icons -->		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+	<div class="entry-content cf">
+		<p style="text-align: justify">Crispin Wright, Martin Davies (in some places but not others), and most explicitly Martin Smith seem sympathetic with the following diagnosis of Moore’s Proof (I have a hand therefore there is at least one material object): “Moore’s Proof (MP) seems to be a bad argument, but intuitive closure principles seem too plausible to reject.  This tension can be resolved when MP is treated as an instance of transmission rather than closure failure.  MP seems to be a bad argument and <em>is </em>a bad argument because it fails to transmit justification to its conclusion; it is not, however, a counterexample to intuitive closure principles.”</p>
+<p style="text-align: justify">The alleged virtue of this diagnosis is that it preserves intuitive closure principles while explaining why the inference is genuinely bad.  The explanation of badness is that the inference fails to transmit.  This diagnosis is no good because  Wright, etc. don’t salvage the closure principles that epistemologists find too plausible to reject.</p>
+<p style="text-align: justify"><span id="more-1846"></span>An inference fails to transmit justification to belief in its conclusion when it doesn’t make belief in its conclusion justified.   A closure principle says if Pa and Rab, then Pb.  A transmission principle says if Pa and Rab, then Pb <em>in virtue of</em> Pa and Rab.  Let us say that a deduction is <strong>competent</strong> just in case the premises are well-justified; the premises provide deductive (so maximal) support for their conclusions; there are no relevant defeaters; and it is not premise circular (i.e. the premise of MP isn’t based on a chain of reasoning that uses the conclusion of MP as a premise).</p>
+<p style="text-align: justify">The closure principle that people find attractive is something like this:</p>
+<p style="text-align: justify"><strong>Strong Closure (SC):</strong> If S justifiably believes P and S <em>competently</em> deduces Q from P, then S justifiably believes Q.</p>
+<p style="text-align: justify">There are various concerns with Strong Closure in the literature, but I get the impression that epistemologists often think something <em>like</em> Strong Closure will turn out to be true.  (Most discussions of closure focus on the closure of knowledge<em> </em>rather than doxastic justification, but I’m less optimistic about knowledge closure principles.)</p>
+<p style="text-align: justify">The closure principle that Wright et al are able to endorse is:</p>
+<p style="text-align: justify"><strong> </strong></p>
+<p style="text-align: justify"><strong>Weak Closure (WC):</strong> If S justifiably believes P and S competently deduces Q from P, then S has some epistemic status for Q, no matter how weak.</p>
+<p style="text-align: justify">Suppose S competently deduces Q from her justified belief that P.  SC holds that S must justifiably believe Q.  WC, on the other hand, says only that S must have some positive epistemic status for Q, no matter how weak.  Wright et al say that MP fails to make its conclusion justifiably believed, so it fails to transmit (doxastic) justification.  Yet Wright et al endorse a view of perceptual justification according to which one has, by default, some <strong>very</strong> weak epistemic status, entitlement, for the conclusion (that there is a material object) <em>and</em> this entitlement is an essential part of what justifies the person in believing the premise (that one has a hand).  So anytime one is justified in believing the premise, one has entitlement for the conclusion.  Thus, Weak Closure is true.  But Strong Closure is false because the conclusion is not justifiably believed (and on their view, the conclusion cannot be justifiably believed via MP).</p>
+<p style="text-align: justify">I say it is no advantage to accommodate only WC, because epistemologists find something like SC too plausible to reject.  Hence, those who say that MP is an instance of transmission failure must say that it also is a counterexample to the closure principles epistemologists find too plausible to reject.</p>
+<p style="text-align: justify">For further clarification of the above argument, see 4.C of my forthcoming IEP entry on transmission failure.  I defend a transmission principle that entails SC in my “When Transmission Fails,” esp. sec. 4 (forthcoming Phil Review).  Both papers are available on my website.</p>
+			</div><!-- .entry-content -->
+
+	<footer class="entry-utility">
+<div class="meta-info-wrap">
+			<span class="cat-links">
+<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="../category/justification/index.html" rel="category tag">justification</a>, <a href="../category/skepticism/index.html" rel="category tag">skepticism</a>			</span>
+			<span class="tag-links">
+<span class="entry-utility-prep entry-utility-prep-tag-links">Tagged</span> <a href="../tag/closure/index.html" rel="tag">closure</a>, <a href="../tag/transmission/index.html" rel="tag">transmission</a>, <a href="../tag/tucker/index.html" rel="tag">Tucker</a>			</span>
+		<span class="permalink-icon"><a href="../index.html%3Fp=1846.html" title="Permalink to Closure vs. Transmission" rel="bookmark">permalink</a></span>
+	</div><!-- .entry-meta-icons -->
+		<div id="author-info">
+			<div id="author-avatar">
+				<img alt='' src='http://2.gravatar.com/avatar/84582cd6e00c45fb9c1d4db1f08363fa?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/84582cd6e00c45fb9c1d4db1f08363fa?s=136&#038;d=mm&#038;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' />			</div><!-- #author-avatar -->
+			<div id="author-description">
+				<h2>About Chris Tucker</h2>
+				Assistant Professor at the College of William and Mary				<div id="author-link"><span class="vcard author post-author"><span class="fn">
+					<a href="../author/tucker/index.html" rel="author">
+						View all posts by Chris Tucker					</a></span></span>
+				</div><!-- #author-link	-->
+			</div><!-- #author-description -->
+		</div><!-- #author-info -->
+
+	</footer><!-- .entry-utility -->
+</article><!-- #post-1846 -->
+
+				<nav id="nav-below" class="navigation">
+				<h3 class="assistive-text">Post navigation</h3>
+					<div class="nav-previous"><a href="../index.html%3Fp=1844.html" rel="prev"><span class="meta-nav">&larr;</span> CFP on Justification for Dialectica</a></div>
+				<div class="nav-next"><a href="../index.html%3Fp=1854.html" rel="next">OBO Philosophy: Resources for Epistemologists <span class="meta-nav">&rarr;</span></a></div>
+				</nav><!-- #nav-above -->
+
+
+	<div id="comments">
+
+		<hr class='comments-hr'>
+		<header id="comments-title">
+		<h3>Comments</h3>
+				<h4>
+<em>Closure vs. Transmission</em> &#8212; 18 Comments		</h4>
+		</header>
+
+		
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-11037" >
+		<article id="comment-11037" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/d4361e52135f6243710ab44bfbb66b6c?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/d4361e52135f6243710ab44bfbb66b6c?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Mark</span> on <a href="../index.html%3Fp=1846.html#comment-11037"><time datetime="2010-05-01T09:39:08+00:00">May 1, 2010 at 9:39 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Chris,</p>
+<p>You are right that people who endorse the transmission failure account of what goes wrong in Moore&#8217;s proof can&#8217;t accept Strong Closure <i>if they hold that we don&#8217;t have knowledge/justified belief that there is no external world</i>.  But advocates of the transmission failure account don&#8217;t ned to be committed to the italicized claim.  (It may be that Wright or other advocates of the transmission failure account do commit themselves that claim &#8212; I&#8217;m not sure if they do or not &#8212; but they aren&#8217;t forced to <i>qua</i> advocates of the account.)  Most non-skeptics will hold that we do know there is an external world (perhaps only because we are &#8220;entitled&#8221; to, but if so, entitlement is not a weak kind of epistemic status at all).</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=11037.html#respond' onclick='return addComment.moveForm( "comment-11037", "11037", "respond", "1846" )' aria-label='Reply to Mark'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-11038" >
+		<article id="comment-11038" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/5eb6abe0a48f3410fa0158042913baef?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/5eb6abe0a48f3410fa0158042913baef?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://sites.google.com/site/aidanmcglynn/home' rel='external nofollow' class='url'>Aidan McGlynn</a></span> on <a href="../index.html%3Fp=1846.html#comment-11038"><time datetime="2010-05-01T10:10:33+00:00">May 1, 2010 at 10:10 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I had the same reaction as Mark above. Roger White seems to hold a version of the transmission failure diagnosis, but he gets to keep SC. It depends on what one says about our standing with respect to the cornerstones.</p>
+<p>As for Wright, two points. One is that it&#8217;s unclear to me why one would attribute him the view that entitlement is as weak an epistemic status as they get. But that&#8217;s what&#8217;s needed to commit him to WC on the basis of his insistence that we sometimes only have entitlements to accept propositions which we have competently deduced from justified beliefs. It looks like the natural formulation is rather:</p>
+<p>WC*: If S justifiably believes P and S competently deduces Q from P, then S has warrant for Q.</p>
+<p>I suspect Wright would endorse WC*, but not WC.</p>
+<p>The second point is that the closure principle that Wright holds is too plausible to give up is a principle concerning warrant. When Wright confronts the clash with SC, which he does in response to Schiffer, he readily gives up closure for justification, but notes that he can still hang on to closure for warrant. For him, it&#8217;s the latter principle which giving up transmission is meant to enable us to save, and as far as I can tell that&#8217;s a pretty consistent point throughout Wright&#8217;s writings on this topic. So when you say &#8216;The closure principle that people find attractive&#8230;..&#8217;, this doesn&#8217;t really apply to Wright, even if it does to Davies and Martin.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=11038.html#respond' onclick='return addComment.moveForm( "comment-11038", "11038", "respond", "1846" )' aria-label='Reply to Aidan McGlynn'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-11039" >
+		<article id="comment-11039" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/ec608c847bc29f6267a66d9924541744?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ec608c847bc29f6267a66d9924541744?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.gla.ac.uk/departments/philosophy/ourstaff/martinsmith/' rel='external nofollow' class='url'>Martin Smith</a></span> on <a href="../index.html%3Fp=1846.html#comment-11039"><time datetime="2010-05-01T13:03:57+00:00">May 1, 2010 at 1:03 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hi Chris,</p>
+<p>Just to echo a point already made, if we regard entitlement as a *kind* of justification (as I’m inclined to) then it seems perfectly possible to classify Moore’s argument as an instance of transmission failure whilst holding on to SC.</p>
+<p>Suppose I actually execute Moore’s procedure – hold my hands in front of my face, have a perceptual experience, form the belief that I have hands and then competently deduce that there are external objects. If I do this then, in my view, I *do* wind up with a justified belief &#8211; it’s just that the justificatory status of the belief owes nothing to the procedure that I’ve gone through.  </p>
+<p>Rather, the belief gets to be justified to a certain extent purely in virtue of its content, and Moore’s procedure adds nothing to this default level of justification.  </p>
+<p>For what it&#8217;s worth, I wouldn’t regard this sort of justification as being exceptionally weak (in fact, I think it can be no weaker than my perceptual justification for believing that I have hands).  What is distinctive about it is its source, not its strength.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=11039.html#respond' onclick='return addComment.moveForm( "comment-11039", "11039", "respond", "1846" )' aria-label='Reply to Martin Smith'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-tucker bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-11041" >
+		<article id="comment-11041" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/84582cd6e00c45fb9c1d4db1f08363fa?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/84582cd6e00c45fb9c1d4db1f08363fa?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.nd.edu/~ctucker1' rel='external nofollow' class='url'>Chris Tucker</a></span> on <a href="../index.html%3Fp=1846.html#comment-11041"><time datetime="2010-05-01T13:08:07+00:00">May 1, 2010 at 1:08 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Mark,</p>
+<p>At least Wright holds that one can&#8217;t be justified in believing that there are material things.  His view is that we can only have warrant to *accept* that there are material things, but we can&#8217;t have warrant to *believe* that are material things.  I admit that I may be taking Wright to be more representative than he actually is.</p>
+<p>I did not mean to argue that there is no logical space for a view that says MP fails to transmit and that still can hold on to SC.  And, although I didn&#8217;t really argue for this, I doubt there is a plausible way of saying MP fails to transmit while holding on to SC.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=11041.html#respond' onclick='return addComment.moveForm( "comment-11041", "11041", "respond", "1846" )' aria-label='Reply to Chris Tucker'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-tucker bypostauthor even thread-even depth-1" id="li-comment-11042" >
+		<article id="comment-11042" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/84582cd6e00c45fb9c1d4db1f08363fa?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/84582cd6e00c45fb9c1d4db1f08363fa?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.nd.edu/~ctucker1' rel='external nofollow' class='url'>Chris Tucker</a></span> on <a href="../index.html%3Fp=1846.html#comment-11042"><time datetime="2010-05-01T13:26:33+00:00">May 1, 2010 at 1:26 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Aidan,</p>
+<p>I&#8217;d be curious to hear more about Roger White&#8217;s view.  I have a guess about what I&#8217;ll say in response, but I&#8217;ll actually wait to hear what the view is.</p>
+<p>The Weakness of Wright&#8217;s Entitlement: I didn&#8217;t mean to say that Wright&#8217;s entitlement is a maximally weak epistemic status, just that it is a very weak one.  That seems right to me considering that it isn&#8217;t strong enough to make belief appropriate (see my response to Mark).  </p>
+<p>As far as WC* goes: First, WC is meant to be the same principle as WC*.  I went with WC because not everyone uses &#8220;warrant&#8221; in the way Wright uses it.  Second, even if warrant is some suitably strong epistemic status, WC* entails WC.  So he can&#8217;t endorse WC* and reject WC, even if his focus is WC*.</p>
+<p>On closure principles too plausible to reject: There is at least one person, Wright, who is perfectly satisfied with WC* (and WC).  But this is a hollow victory. The people who are typically viewed as defenders of closure aren&#8217;t going to be satisfied by WC(*).  They are less interested in whether warrant is closed under some relation.  They are more interested in whether justified belief or knowledge is closed under some relation, such as competent deduction.  Why?  Closure principles seem so plausible because certain kinds of deductions seem to transmit justification (knowledge) to their conclusions of necessity.  Hence, I take it that, typically, intuitions in favor of closure principles are, more fundamentally, intuitions in favor of transmission principles.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=11042.html#respond' onclick='return addComment.moveForm( "comment-11042", "11042", "respond", "1846" )' aria-label='Reply to Chris Tucker'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-tucker bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-11043" >
+		<article id="comment-11043" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/84582cd6e00c45fb9c1d4db1f08363fa?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/84582cd6e00c45fb9c1d4db1f08363fa?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.nd.edu/~ctucker1' rel='external nofollow' class='url'>Chris Tucker</a></span> on <a href="../index.html%3Fp=1846.html#comment-11043"><time datetime="2010-05-01T14:05:21+00:00">May 1, 2010 at 2:05 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Martin, </p>
+<p>I was worried that, on your view, the justification for the material world belief isn&#8217;t weak.  Thanks for the correction.</p>
+<p>I think you *should* say that MP can transmit *doxastic* justification (even if it doesn&#8217;t transmit propositional justification).  To say otherwise would commit you to what (I take to be) an implausible view concerning non-inferential doxastic justification.</p>
+<p>Suppose, as I take you to say, that MW (there is a material world) comes with some default level of propositional justification.  It is counterintuitive to say that a belief in MW can be doxastically justified no matter what one&#8217;s belief in MW is based on.  If I base my belief in MW solely on my belief that 2+2=4, my belief in MW should fail to be doxastically justified.  </p>
+<p>Do you say that one&#8217;s warrant or propositional justification for MW is an essential part of what gives one propositional justification for thinking one has hands?  I&#8217;ll assume that you do. Then Moore&#8217;s Proof might play an epistemically significant function.  If some propositional justification for P provides one&#8217;s belief in P with doxastic justification, then the belief in P must be appropriately connected to that propositional justification.  I say the inference from one&#8217;s having hands (whose doxastic justification in part depends on propositional justification for MW) allows one&#8217;s belief in MW to have an appropriate connection to the propositional justification for MW.</p>
+<p>In other words, if I base my belief in MW on my belief that 2+2=4, my belief in MW would fail to be justified because it lacks an appropriate connection to the relevant propositional justification.  Given that propositional justification for MW is a part of what justifies my belief in my hands, if I base my belief in MW on my belief that I have hands, then I say MP plays an important role in bringing about a justified belief in MP: it makes one&#8217;s belief in MP appropriately connected to the default propositional justification for MP.  So MP transmits doxastic justification, even if it doesn&#8217;t transmit some other status.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=11043.html#respond' onclick='return addComment.moveForm( "comment-11043", "11043", "respond", "1846" )' aria-label='Reply to Chris Tucker'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-11045" >
+		<article id="comment-11045" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/5eb6abe0a48f3410fa0158042913baef?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/5eb6abe0a48f3410fa0158042913baef?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://sites.google.com/site/aidanmcglynn/home' rel='external nofollow' class='url'>Aidan McGlynn</a></span> on <a href="../index.html%3Fp=1846.html#comment-11045"><time datetime="2010-05-01T15:33:44+00:00">May 1, 2010 at 3:33 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Suppose that there&#8217;s some positive epistemic status an acceptance can have that&#8217;s even weaker than entitlement (which should be possible if entitlement isn&#8217;t a maximally weak epistemic status). Suppose that after competent inference from p, which one is justified in believing, one&#8217;s acceptance of q enjoys only this weaker epistemic status. Then WC is satisfied, but WC* isn&#8217;t. So I guess I don&#8217;t see how they can just be the same principle, if we&#8217;re not assuming that entitlement is a weak as it gets. (You&#8217;re quite right, of course, that if WC* is stronger than WC, Wright can&#8217;t accept the former while rejecting the latter &#8211; I misspoke, meaning to say that I think he would hold that WC* rather than WC is the strongest principle he can hang on to.)</p>
+<p>On the &#8216;hollow victory&#8217;: I&#8217;m inclined to agree. But that&#8217;s a slightly different point than the one I took myself to be responding to. There are two criticisms you might have been making in your post. The first is that those who have advanced this particular diagnosis of what&#8217;s wrong with Moore&#8217;s proof claim they&#8217;re going to save widely-held closure principles, but they fail to live up to their own promises. That&#8217;s what&#8217;s suggested by your first paragraph, with the little dialogue in quotes representing what you take your opponents to be saying. In response to that objection, it seems legitimate to point out that this isn&#8217;t quite what Wright&#8217;s up to; it&#8217;s not that he wants to save whatever closure principles epistemologists hold dear, but rather a particular closure principle that *he* thinks we shouldn&#8217;t surrender. Second, you might be arguing that even if Wright and others are content to save only closure for warrant, (WC), or some other weak principle, the rest of us shouldn&#8217;t be content with that. That&#8217;s what I take you to be saying in the last paragraph of your response to me. But as I said, the way you initially set the issue up in the post made me think it was the first kind of worry you were pushing; it looks like the objection is that these guys fail to meet a goal that they themselves impose by way of motivating their view. If it&#8217;s the second kind of worry you&#8217;re pushing then, as I say, I&#8217;m generally on board.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=11045.html#respond' onclick='return addComment.moveForm( "comment-11045", "11045", "respond", "1846" )' aria-label='Reply to Aidan McGlynn'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-11053" >
+		<article id="comment-11053" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/ec608c847bc29f6267a66d9924541744?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ec608c847bc29f6267a66d9924541744?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.gla.ac.uk/departments/philosophy/ourstaff/martinsmith/' rel='external nofollow' class='url'>Martin Smith</a></span> on <a href="../index.html%3Fp=1846.html#comment-11053"><time datetime="2010-05-02T03:10:37+00:00">May 2, 2010 at 3:10 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hi Chris,</p>
+<p>I don&#8217;t think that a belief in the existence of the external world will be justified *irrespective* of how it is formed or on what basis it is held. But I do think that the belief can be justified (to an extent) if held as an article of faith &#8211; roughly, held in such a way that one is unwilling or unable to offer any reasons in support of it.</p>
+<p>If I were to hold this belief on the basis of a Moorean type inference &#8211; if I were to tether it, in effect, to a mundane piece of perceptual evidence, then this would not enhance its epistemic standing beyond the default level that it enjoys as an article of faith.</p>
+<p>I think this is one reason to deny that a Moorean inference could transmit even doxastic justification. How could my belief be justified in virtue of the inference? It would have been justified to the same extent even if held as an article of faith.</p>
+<p>You&#8217;re right, of course, that a belief shouldn&#8217;t count as doxastically justified unless it is &#8216;hooked up&#8217; with its propositional justification in the right way. But just how this plays out once we have a notion of default propositional justification on the table is not all that clear. It&#8217;s an issue I&#8217;d like to think more about!</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=11053.html#respond' onclick='return addComment.moveForm( "comment-11053", "11053", "respond", "1846" )' aria-label='Reply to Martin Smith'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-tucker bypostauthor even thread-even depth-1" id="li-comment-11054" >
+		<article id="comment-11054" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/84582cd6e00c45fb9c1d4db1f08363fa?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/84582cd6e00c45fb9c1d4db1f08363fa?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.nd.edu/~ctucker1' rel='external nofollow' class='url'>Chris Tucker</a></span> on <a href="../index.html%3Fp=1846.html#comment-11054"><time datetime="2010-05-02T09:51:31+00:00">May 2, 2010 at 9:51 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Martin,</p>
+<p>You say: &#8220;I do think that the belief can be justified (to an extent) if held as an article of faith – roughly, held in such a way that one is unwilling or unable to offer any reasons in support of it.&#8221;  Here is an uncharitable way of translating what you say: if you believe NW when you are an incompetent reasoner or when you stubbornly refuse to consider whether there are any good reasons for MW, then you can have some doxastic justification for MW. I&#8217;m sure I&#8217;m missing some nuances of your view (which you understandably haven’t provided), but the initial gloss raises some red flags.  </p>
+<p>You say: &#8220;If I were to hold this belief on the basis of a Moorean type inference&#8230;then this would not enhance its epistemic standing beyond the default level that it enjoys as an article of faith.&#8221;  Well, given your view of propositional justification, the Moorean reasoning wouldn&#8217;t improve the pre-existing level of propositional justification.  Nonetheless, the reasoning would make two important epistemic contributions: (i) it (I say) would provide a first-time doxastic justification for one&#8217;s belief in MW because (ii) it provides a first-time appropriate connection to that pre-existing propositional justification.  Going from mere propositional justification for MW to doxastic justification for one’s belief in MW sounds like some sort of epistemic progress.</p>
+<p>You say: “How could my belief be justified in virtue of the inference? It would have been justified to the same extent even if held as an article of faith.”  Even if one can have a doxastically justified belief in MW article-of-faith style (which seems to be a kind of non-inferential doxastic justification), I don’t see how this has any bearing on whether one can have a doxastically justified belief in MW via Moorean style reasoning (which would a kind of inferential doxastic justification).  There can be more than one way to achieve a doxastically justified belief in a proposition.  Think of all the different ways one could know that there is a cat in the next room.</p>
+<p>You say: “You’re right, of course, that a belief shouldn’t count as doxastically justified unless it is ‘hooked up’ with its propositional justification in the right way. But just how this plays out once we have a notion of default propositional justification on the table is not all that clear. It’s an issue I’d like to think more about!” It’s good to hear that I’m right about something!  More seriously, in my AJP paper, I complain that, on a view like yours, it is hard to get the right “hook up” between a belief and a pre-existing default propositional justification.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=11054.html#respond' onclick='return addComment.moveForm( "comment-11054", "11054", "respond", "1846" )' aria-label='Reply to Chris Tucker'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-11056" >
+		<article id="comment-11056" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/87aff427192ce9c2d4ffdae95d03d0df?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/87aff427192ce9c2d4ffdae95d03d0df?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Mark</span> on <a href="../index.html%3Fp=1846.html#comment-11056"><time datetime="2010-05-02T12:41:24+00:00">May 2, 2010 at 12:41 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Chris,</p>
+<p>There is something different about how you are thinking about these issues than how I have been thinking about them, which I suspect is close to the way Martin is thinking about them.  I wish I could put my finger on it.  Let me make a try.</p>
+<p>I&#8217;m thinking that the <i>only</i> warrant available for MW is some kind of &#8220;default warrant&#8221; or &#8220;entitlement&#8221; and that that warrant may be quite good&#8212;enough to give you knowledge.  Maybe you could fail to know MW if your belief in it is pathologically based, but I think almost everyone does know MW. Does that include people who are incompetent reasoners or stubbornly refuse to consider whether there are any good reasons for MW?  Does it include people who base their belief in MW on Moore&#8217;s argument?  (Are there really such people or, are there just people who <i>think</i> that they base their belief in MW on Moore&#8217;s argument?) It is pretty unclear to me what kind of debasement it would take to sabotage our knowledge of MW, which I take it was Martin&#8217;s final point.  But one thing that is totally clear is that going through Moore&#8217;s argument isn&#8217;t going to <i>enhance</i> your warrant for MW.  That&#8217;s because the default warrant is all the warrant there is, and you had that before you went through Moore&#8217;s argument (even if you can retain it after you go through Moore&#8217;s argument).</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=11056.html#respond' onclick='return addComment.moveForm( "comment-11056", "11056", "respond", "1846" )' aria-label='Reply to Mark'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-tucker bypostauthor even thread-even depth-1" id="li-comment-11057" >
+		<article id="comment-11057" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/84582cd6e00c45fb9c1d4db1f08363fa?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/84582cd6e00c45fb9c1d4db1f08363fa?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.nd.edu/~ctucker1' rel='external nofollow' class='url'>Chris Tucker</a></span> on <a href="../index.html%3Fp=1846.html#comment-11057"><time datetime="2010-05-02T12:58:12+00:00">May 2, 2010 at 12:58 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Mark,</p>
+<p>You say: &#8220;But one thing that is totally clear is that going through Moore’s argument isn’t going to enhance your warrant for MW.&#8221; I can accept this; but it doesn&#8217;t follow that the Moorean reasoning fails to transmit doxastic justification or that it fails to make any epistemically significant contribution.  That was what I was trying to highlight in my latest response to Martin.</p>
+<p>What I&#8217;m looking for from Martin and other proponents of the default entitlement view is some theory about how default entitlement for P is connected to doxastically justified belief and knowledge that P.  It seems that not just any belief in MW will count as doxastically justified or knowledge (for reasons I gave in my first response to Martin).  As far as I know, no proponent of the default view has really attempted to spell this out in the published literature.  So there is some work to be done, even if there is a good story to tell.</p>
+<p>[Late Addition: I think you are noticing that I am coming at this issue from a different angle than most of the literature on the topic.  E.g. most assume that the failure to transmit warrant suffices for the failure to transmit doxastic justification, but I don&#8217;t.  In the first two sections of &#8220;When Transmission Fails&#8221; I set up the issue the way I think it should be, and I explain how this approach is different or better than the approach assumed in much of the literature.]</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=11057.html#respond' onclick='return addComment.moveForm( "comment-11057", "11057", "respond", "1846" )' aria-label='Reply to Chris Tucker'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-11061" >
+		<article id="comment-11061" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/ec608c847bc29f6267a66d9924541744?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ec608c847bc29f6267a66d9924541744?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.gla.ac.uk/departments/philosophy/ourstaff/martinsmith/' rel='external nofollow' class='url'>Martin Smith</a></span> on <a href="../index.html%3Fp=1846.html#comment-11061"><time datetime="2010-05-03T05:53:49+00:00">May 3, 2010 at 5:53 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>There is certainly work to be done in understanding the relationship between doxastic justification and default propositional justification. </p>
+<p>Here&#8217;s one thing to consider: Default propositional justifications, like acquired propositional justifications are, in general, defeasible. One thing that should be required in order for a belief to be appropriately connected to a default propositional justification is that the belief be sensitive or responsive to the conditions under which the justification would be defeated. Roughly, the circumstances under which one is disposed to retract the belief and the circumstances under which the default propositional justification is defeated should match.</p>
+<p>I&#8217;m not saying that this is the only requirement on justifiably believing a default justified proposition &#8211; but it seems to do a lot of the work that we need it to. If my belief in the existence of the external world is based upon my belief that 2+2=4 (to use Chris&#8217;s example above) then, presumably, it will have a completely eccentric retraction profile and would be ruled out from being doxastically justified.</p>
+<p>When I spoke about believing something &#8216;as an article of faith&#8217;, then, I didn&#8217;t mean believing it in a stubborn or dogmatic way. It&#8217;s more like a default unwillingness to take certain doubts seriously, unless evidence is presented to substantiate them. I suspect that is, in essence, my attitude towards a lot of sceptical doubts.</p>
+<p>Of course there&#8217;s a lot more that needs to be said here. But this does seem like a potentially promising line of investigation.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=11061.html#respond' onclick='return addComment.moveForm( "comment-11061", "11061", "respond", "1846" )' aria-label='Reply to Martin Smith'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-11084" >
+		<article id="comment-11084" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/d9052667c53160642269944f31376d49?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/d9052667c53160642269944f31376d49?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Alex Jackson</span> on <a href="../index.html%3Fp=1846.html#comment-11084"><time datetime="2010-05-06T12:15:27+00:00">May 6, 2010 at 12:15 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>hey chris,</p>
+<p>it seems to me that &#8216;williamsonian closure&#8217; is a principle of knowledge-transmission. it seems that way to you, too. for you say in post 5: &#8220;Closure principles seem so plausible because certain kinds of deductions seem to transmit justification (knowledge) to their conclusions of necessity.&#8221;</p>
+<p>so i think we should go back to formulating closure the old-fashioned way:</p>
+<p>(CK) if S knows that p, and S is in a position to know that p entails q, then S is in a position to know q.</p>
+<p>unlike williamson-closure, that&#8217;s neutral on *how* S could know q. that is, it is neutral on issues of transmission.<br />
+(CK also seems better-placed to explain why we retract knowledge-attributions in a &#8216;lottery paradox&#8217; situation, which is a closure-supporting datum.)</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=11084.html#respond' onclick='return addComment.moveForm( "comment-11084", "11084", "respond", "1846" )' aria-label='Reply to Alex Jackson'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-tucker bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-11086" >
+		<article id="comment-11086" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/84582cd6e00c45fb9c1d4db1f08363fa?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/84582cd6e00c45fb9c1d4db1f08363fa?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.nd.edu/~ctucker1' rel='external nofollow' class='url'>Chris Tucker</a></span> on <a href="../index.html%3Fp=1846.html#comment-11086"><time datetime="2010-05-06T13:14:31+00:00">May 6, 2010 at 1:14 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Alex,</p>
+<p>I agree that Williamson&#8217;s &#8220;closure&#8221; principle is really a transmission principle.  In addition, Hawthorne sometimes talks as if closure principles are transmission principles.  And Dretske even says that some of what he says about closure failure is better cast in terms of transmission failure.  All of this, and my own intuitions on the matter, motivate my claim that our intuitions in favor of transmission principles are fundamental.</p>
+<p>I don&#8217;t agree, though, that CK is the way to go.  At any rate, I won&#8217;t agree until I find a suitable precisification of &#8220;in a position to know.&#8221;  </p>
+<p>Distinguish between two claims: (i) CK provides the handiest, most elegant way of presenting the lottery paradox and (ii) implicit acceptance of CK (and not a principle concerning competent deductions) is the best explanation of our intuitions regarding the lottery paradox.  I <i>might</i> be willing to concede something like (i), but I don&#8217;t think that (ii) follows.  I&#8217;d still say that our intuitions in favor of transmission-across-competent-deduction principles explain our intuitions in the lottery cases.  What am I missing?</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=11086.html#respond' onclick='return addComment.moveForm( "comment-11086", "11086", "respond", "1846" )' aria-label='Reply to Chris Tucker'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-11126" >
+		<article id="comment-11126" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/d9052667c53160642269944f31376d49?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/d9052667c53160642269944f31376d49?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Alex Jackson</span> on <a href="../index.html%3Fp=1846.html#comment-11126"><time datetime="2010-05-10T18:47:51+00:00">May 10, 2010 at 6:47 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>hey chris,</p>
+<p>here&#8217;s an example of the lottery puzzle reasoning: &#8220;suzy doesn&#8217;t know her car hasn&#8217;t been stolen since she parked it, so she doesn&#8217;t know it is still there.&#8221; </p>
+<p>i don&#8217;t think it&#8217;s plausible that we&#8217;re implicitly thinking: &#8220;if suzy did know her car is still there, she could deduce and know it hasn&#8217;t been stolen; but she can&#8217;t do that.&#8221; </p>
+<p>1. i don&#8217;t think that&#8217;s psychologically plausible. the natural thought that suzy can&#8217;t &#8220;rule out&#8221; car-theft doesn&#8217;t proceed by imagining suzy reasoning: &#8220;the car is still parked there, so it hasn&#8217;t been stolen.&#8221;</p>
+<p>2. i don&#8217;t see the explanation for why suzy couldn&#8217;t deduce and know that the car hasn&#8217;t been stolen (bar the following&#8230;).</p>
+<p>3. i think that the first premise in the alleged train of thought is false: even if suzy does know her car is still parked there, she can&#8217;t deduce that it hasn&#8217;t been stolen, because that reasoning &#8220;inverts the epistemic order.&#8221; in other words, it is an intuitive case of transmission-failure. (consider a case in which suzy knows her car is being watched over by a security guard.)</p>
+<p>so i think we need to understand the lottery-reasoning using CK and not williamson-closure.</p>
+<p>alex</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=11126.html#respond' onclick='return addComment.moveForm( "comment-11126", "11126", "respond", "1846" )' aria-label='Reply to Alex Jackson'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-tucker bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-11132" >
+		<article id="comment-11132" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/84582cd6e00c45fb9c1d4db1f08363fa?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/84582cd6e00c45fb9c1d4db1f08363fa?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.nd.edu/~ctucker1' rel='external nofollow' class='url'>Chris Tucker</a></span> on <a href="../index.html%3Fp=1846.html#comment-11132"><time datetime="2010-05-11T07:23:12+00:00">May 11, 2010 at 7:23 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Alex,</p>
+<p>I take it that the line of thought you consider implausible and the can&#8217;t-rule-out-theft line of thought are complementary.  But, in any case, I&#8217;m more interested in your third point.</p>
+<p>I&#8217;m not sure what you have in mind when you talk about inverting the epistemic order.  If I understand you, you have in mind something like this extended inference:</p>
+<p>1. My car is being watched by a trustworthy, competent security guard.<br />
+2. If 1, then my car is still in the parking lot.<br />
+3. Therefore, my car is still in the parking lot.<br />
+4. Therefore, my car hasn&#8217;t been stolen (and so taken out of the parking lot).</p>
+<p>I take it that your claim is that the inference from 3 to 4 fails to transmit.  If I&#8217;m understanding you correctly, I disagree: this argument looks completely unobjectionable to me.  Maybe there is a more efficient way of inferring 4 when one knows that 1 is true, but that is no reason to think that the inference fails to transmit doxastic justification.</p>
+<p>I wonder if your dislike of inverting the epistemic order is similar to Wright&#8217;s distaste for what I call &#8220;inefficient structures&#8221;.  If so, my objections to Wright&#8217;s view in sec. 3 of &#8220;When Transmission Fails&#8221;, may work equally well against your view.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=11132.html#respond' onclick='return addComment.moveForm( "comment-11132", "11132", "respond", "1846" )' aria-label='Reply to Chris Tucker'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-11365" >
+		<article id="comment-11365" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/d9052667c53160642269944f31376d49?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/d9052667c53160642269944f31376d49?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Alex Jackson</span> on <a href="../index.html%3Fp=1846.html#comment-11365"><time datetime="2010-05-12T11:50:05+00:00">May 12, 2010 at 11:50 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>one quick intuition-pump:<br />
+it doesn&#8217;t sound so good to reply:<br />
+&#8220;how do you know your car hasn&#8217;t been stolen and driven off?&#8221;<br />
+&#8211; &#8220;it is still in the parking lot. so it hasn&#8217;t been stolen and driven off.&#8221;</p>
+<p>my example of transmission-failure is just the argument 3-4, not the argument 1-4.</p>
+<p>i&#8217;ll take a look at your paper&#8211;sounds interesting!</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=11365.html#respond' onclick='return addComment.moveForm( "comment-11365", "11365", "respond", "1846" )' aria-label='Reply to Alex Jackson'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-tucker bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-11371" >
+		<article id="comment-11371" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/84582cd6e00c45fb9c1d4db1f08363fa?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/84582cd6e00c45fb9c1d4db1f08363fa?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.nd.edu/~ctucker1' rel='external nofollow' class='url'>Chris Tucker</a></span> on <a href="../index.html%3Fp=1846.html#comment-11371"><time datetime="2010-05-12T12:21:27+00:00">May 12, 2010 at 12:21 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Hey Alex, your intuition pump doesn&#8217;t seem all that bad to me.  It might seem bad if we filled in some details, but the set-up invites the following reply: yes, there is a problem, but it is a dialectical, not epistemic.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=11371.html#respond' onclick='return addComment.moveForm( "comment-11371", "11371", "respond", "1846" )' aria-label='Reply to Chris Tucker'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+		</ol>
+
+		
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply to <a href="index.html%3Freplytocom=11041.html#comment-11041">Chris Tucker</a> <small><a rel="nofollow" id="cancel-comment-reply-link" href="../index.html%3Fp=1846.html#respond">Cancel reply</a></small></h3>			<form action="http://certaindoubts.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='1846' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='11041' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="f7c8022189" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="26"/></p>			</form>
+			</div><!-- #respond -->
+	</div><!-- #comments -->
+
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+		</div><!-- #container_wrap -->
+
+	<div id="sidebar_wrap_right" class="split equal_height">
+	<div id="sidebar_right" class="widget-area" role="complementary">
+		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+											<li>
+					<a href="../index.html%3Fp=4902.html">The End</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4897.html">Young Epistemologist Prize 2019</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4890.html">A simple problem for (unrestricted) Conditionalization</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4883.html">Reminder: Young Epistemologist Prize 2019</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4877.html">Do We Know that We&#8217;re not Brains in Vats?: Follow-Up: Polls and Surveys</a>
+									</li>
+					</ul>
+		</aside><aside id="calendar-2" class="widget widget_calendar"><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar">
+	<caption>April 2019</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="../2019/02/index.html">&laquo; Feb</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+	</tr>
+	<tr>
+		<td>8</td><td><a href="../2019/04/09/index.html" aria-label="Posts published on April 9, 2019">9</a></td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+	</tr>
+	<tr>
+		<td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
+	</tr>
+	<tr>
+		<td>22</td><td id="today">23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+	</tr>
+	<tr>
+		<td>29</td><td>30</td>
+		<td class="pad" colspan="5">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></aside><aside id="meta-3" class="widget widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="../wp-login.php.html">Log in</a></li>
+			<li><a href="../feed/index.html">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="../comments/feed/index.html">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside><aside id="search-2" class="widget widget_search"><form role="search" style="background:transparent;" method="get" class="searchform" action="../index.html" >
+	<label class="screen-reader-text" for="s">Search for:</label>
+	<input type="search" value="" name="s" id="s" placeholder="Search Site" />
+	<input class="searchformimg" type="image" src="../wp-content/themes/weaver-ii/images/search_button.gif" alt="Search" />
+	</form></aside>
+	</div><!-- sidebar_right .widget-area -->
+	</div><!-- #sidebar_wrap_right -->
+    <div class='weaver-clear'></div></div><!-- #main -->
+	<footer id="colophon" role="contentinfo">
+	  <div>
+
+		<div id="site-ig-wrap">
+		<span id="site-info">
+		&copy; 2019 - <a href="../index.html" title="Certain Doubts" rel="home">Certain Doubts</a>
+		</span> <!-- #site-info -->
+		<span id="site-generator">
+		<a href="http://wordpress.org/" title="wordpress.org" rel="generator" target="_blank">Proudly powered by WordPress</a>&nbsp;
+Weaver II by <a href="http://weavertheme.com" target="_blank" title="http://weavertheme.com">WP Weaver</a>
+		</span> <!-- #site-generator -->
+		</div><!-- #site-ig-wrap -->
+		<div class="weaver-clear"></div>
+	  </div>
+	</footer><!-- #colophon -->
+</div><!-- #wrapper -->
+<a href="index.html%3Freplytocom=11041.html#page-top" id="page-bottom">&uarr;</a>
+<div id="weaver-final" class="weaver-final-normal"><script type='text/javascript' src='../wp-includes/js/comment-reply.min.js%3Fver=4.9.10'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var weaver_menu_params = {"selector":"li:has(ul) > a","selector_leaf":"li li li:not(:has(ul)) > a"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/themes/weaver-ii/js/weaverjslib.min.js%3Fver=2.2.2'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.min.js%3Fver=4.9.10'></script>
+<script async="async" type='text/javascript' src='../wp-content/plugins/akismet/_inc/form.js%3Fver=4.1'></script>
+</div> <!-- #weaver-final -->
+</body>
+</html>

@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<!--[if IE 7]>	<html id="ie7" lang="en-US"> <![endif]-->
+<!--[if IE 8]>	<html id="ie8" lang="en-US"> <![endif]-->
+<!--[if IE 9]>	<html id="ie9" lang="en-US"> <![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8) ] | !(IE 9) ><!-->	<html lang="en-US"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes' />
+<title>More on Memory | Certain Doubts</title>
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://certaindoubts.com/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://certaindoubts.com/wp-content/themes/weaver-ii/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<script type="text/javascript">var weaverIsMobile=false;var weaverIsSimMobile=false;var weaverIsStacked=false;var weaverThemeWidth=940;var weaverMenuThreshold=640;var weaverHideMenuBar=false;var weaverMobileDisabled=false;var weaverFlowToBottom=false;var weaverHideTooltip=false;var weaverUseSuperfish=false;</script>
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Certain Doubts &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Certain Doubts &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Certain Doubts &raquo; More on Memory Comments Feed" href="feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/certaindoubts.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.10"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='weaverii-main-style-sheet-css'  href='../wp-content/themes/weaver-ii/style.min.css%3Fver=2.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='weaverii-mobile-style-sheet-css'  href='../wp-content/themes/weaver-ii/style-mobile.min.css%3Fver=2.2.2.css' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery.js%3Fver=1.12.4'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min.js%3Fver=1.4.1'></script>
+<link rel='https://api.w.org/' href='../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc.php%3Frsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Conference on Dutch Book Arguments' href='../index.html%3Fp=319.html' />
+<link rel='next' title='Late 20th Century Nonsense Police' href='../index.html%3Fp=322.html' />
+<meta name="generator" content="WordPress 4.9.10" />
+<link rel="canonical" href="../index.html%3Fp=320.html" />
+<link rel='shortlink' href='../index.html%3Fp=320.html' />
+<meta name='robots' content='noindex,follow' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed%3Furl=http:%252F%252Fcertaindoubts.com%252Fmore-on-memory%252F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed%3Furl=http:%252F%252Fcertaindoubts.com%252Fmore-on-memory%252F&amp;format=xml" />
+
+<!-- This site is using Weaver II 2.2.2 (48) subtheme: Wheat -->
+<!-- Page ID: 320 -->
+<style type="text/css">
+/* Weaver II styles - Version 48 */
+a {color:#59C448;}
+a:visited {color:#8DBA61;}
+a:hover {color:#C91640;}
+a{font-style:italic;}
+a{font-weight:bold;}
+.entry-title a {color:#0A0A0A;}
+.entry-title a:visited {color:#0A0A0A;}
+.entry-title a{font-style:normal;}
+.entry-title a{font-weight:normal;}
+.entry-meta a, .entry-utility a {color:#474134;}
+.entry-meta a:visited, .entry-utility a:visited {color:#706752;}
+.entry-meta a:hover, .entry-utility a:hover {color:#C91640;}
+.widget-area a {color:#474134;}
+.widget-area a:visited {color:#706752;}
+.widget-area a:hover {color:#C91640;}
+.widget-area a{font-style:normal;}
+.widget-area a{font-weight:normal;}
+#infobar a{font-style:normal;}
+#infobar a{font-weight:normal;}
+#colophon a{font-style:normal;}
+#colophon a{font-weight:normal;}
+#wrapper {border: 1px solid #AB9B7D;}
+#sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,#first,#second,#third,#fourth, .mobile_widget_area {border: 1px solid #AB9B7D;}
+#wrapper, #branding, #colophon, .commentlist li.comment, #respond, #sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,#first,#second,#third,#fourth,.mobile_widget_area {-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}
+#sidebar_wrap_right.right-1-col,#sidebar_wrap_right.right-2-col,#sidebar_wrap_right.right-2-col-bottom,
+#sidebar_wrap_left.left-1-col,#sidebar_wrap_left.left-2-col,#sidebar_wrap_left.left-2-col-bottom,#sidebar_wrap_left,#sidebar_wrap_right
+{-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}
+.commentlist li.comment .comment-meta {-moz-border-radius-topleft: 7px; -moz-border-radius-topright: 7px;
+ -webkit-border-top-left-radius: 7px; -webkit-border-top-right-radius: 7px; border-top-left-radius: 7px; border-top-right-radius: 7px;}
+#access {-moz-border-radius-bottomleft: 7px; -moz-border-radius-bottomright: 7px;
+ -webkit-border-bottom-left-radius: 7px; -webkit-border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; border-bottom-right-radius: 7px;}
+#access2 {-moz-border-radius-topleft: 7px; -moz-border-radius-topright: 7px;
+ -webkit-border-top-left-radius: 7px; -webkit-border-top-right-radius: 7px; border-top-left-radius: 7px; border-top-right-radius: 7px;}
+body {background-image: url(../wp-content/themes/weaver-ii/images/gr.png); background-attachment: scroll; background-repeat: repeat-x;}
+#wrapper {-webkit-box-shadow: 0 0 3px 3px rgba(0,0,0,0.25); -moz-box-shadow: 0 0 3px 3px rgba(0,0,0,0.25); box-shadow: 0 0 3px 3px rgba(127,127,127,0.25);}
+#wrapper{max-width:940px;}
+#sidebar_primary,.mobile_widget_area {background-color:#F5DEB3;}
+#sidebar_right {background-color:#F5DEB3;}
+#sidebar_left {background-color:#F5DEB3;}
+.sidebar_top,.sidebar_extra {background-color:#F5DEB3;}
+.sidebar_bottom {background-color:#F5DEB3;}
+#first,#second,#third,#fourth {background-color:transparent;}
+.widget {background-color:transparent;}
+#container_wrap.right-1-col{width:75.000%;} #sidebar_wrap_right.right-1-col{width:25.000%;}
+#container_wrap.right-2-col,#container_wrap.right-2-col-bottom{width:67.000%;} #sidebar_wrap_right.right-2-col,#sidebar_wrap_right.right-2-col-bottom{width:33.000%;}
+#container_wrap.left-1-col{width:75.000%;} #sidebar_wrap_left.left-1-col{width:25.000%;}
+#container_wrap.left-2-col,#container_wrap.left-2-col-bottom{width:67.000%;} #sidebar_wrap_left.left-2-col,#sidebar_wrap_left.left-2-col-bottom{width:33.000%;}
+#container_wrap{width:66.000%;} #sidebar_wrap_left{width:17.000%;} #sidebar_wrap_right{width:17.000%;}
+#sidebar_wrap_2_left_left, #sidebar_wrap_2_right_left {width:54.000%;margin-right:1%;}
+#sidebar_wrap_2_left_right, #sidebar_wrap_2_right_right {width:45.000%;}
+#sidebar_header {font-size:70%;}
+#sidebar_header .header-widget-1 {display:none;}
+#sidebar_header .header-widget-2 {display:none;}
+#sidebar_header .header-widget-3 {display:none;}
+#sidebar_header .header-widget-4 {display:none;}
+@media only screen and (max-width:640px) { /* header widget area mobile rules */
+} /* end mobile rules */
+#main {padding: 15px 0 0 0;}
+#site-description {font-size:200.000%;}
+#site-title {overflow:hidden; padding:0; margin:0; position:absolute; left:2.000%; top: 5.000%; z-index:20;}
+#site-description {overflow:hidden; padding:0; margin:0; position:absolute; left:4.000%; top: 30.000%; z-index:20;}
+.menu_bar a, .mobile_menu_bar a {font-weight:bold;}
+@media only screen and (min-width: 641px) {.menu_bar,.weaveriip_vertical_menu .menu_bar { background-image: url(../wp-content/themes/weaver-ii/images/theme/fade.png);}}
+@media only screen and (min-width: 641px) {.menu_bar ul ul a, .menu_bar li:hover > a, .menu_bar ul ul :hover > a { background-image: url(../wp-content/themes/weaver-ii/images/theme/fadeup.png);}}
+#ie8 .menu_bar,#ie8 .weaveriip_vertical_menu .menu_bar,#ie7 .menu_bar,#ie7 .weaveriip_vertical_menu .menu_bar { background-image: url(../wp-content/themes/weaver-ii/images/theme/fade.png);}
+#ie8 .menu_bar ul ul a, #ie8 .menu_bar li:hover > a, #ie8 .menu_bar ul ul :hover > a,
+#ie7 .menu_bar ul ul a, #ie7 .menu_bar li:hover > a, #ie7 .menu_bar ul ul :hover > a{ background-image: url(../wp-content/themes/weaver-ii/images/theme/fadeup.png);}
+.menu_bar, .menu_bar a,.menu_bar a:visited,.mobile_menu_bar a {color:#FFFAEF;}
+.menu_bar li:hover > a, .menu_bar a:focus {background-color:#BAA987;}
+.menu_bar li:hover > a, .menu_bar a:focus {color:#F0EBE0;}
+.menu_bar ul ul a {background-color:#BAA987;}
+.menu_bar ul ul a,.menu_bar ul ul a:visited {color:#FFFAEF;}
+.menu_bar ul ul :hover > a {background-color:#BAA987;}
+.menu_bar ul ul :hover > a {color:#F0EBE0;}
+.menu_bar, .mobile_menu_bar, .menu-add {background-color:#AB9B7D;}
+.mobile-menu-link {border-color:#FFFAEF;}
+.widget-area .menu-vertical,.menu-vertical {clear:both;background-color:transparent;margin:0;width:100%;overflow:hidden;border-bottom:3px solid #FFFAEF;border-top:1px solid #FFFAEF;}
+.widget-area .menu-vertical ul, .menu-vertical ul {margin: 0; padding: 0; list-style-type: none;  list-style-image:none;font-family: inherit;}
+.widget-area .menu-vertical li a, .widget-area .menu-vertical a:visited, .menu-vertical li a, .menu-vertical a:visited {
+color: #FFFAEF;  background-color: #AB9B7D; display: block !important; padding: 5px 10px; text-decoration: none; border-top:2px solid #FFFAEF;}
+.widget-area .menu-vertical a:hover,.widget-area .menu-vertical a:focus, .menu-vertical a:hover,.menu-vertical a:focus {
+color: #F0EBE0; background-color: #BAA987;text-decoration: none;}
+.widget-area .menu-vertical ul ul li, .menu-vertical ul ul li { margin: 0; }
+.widget-area .menu-vertical ul ul a,.menu-vertical ul ul a {color: #FFFAEF; background-color: #AB9B7D;
+ display: block; padding: 4px 5px 4px 25px; text-decoration: none;border:0;
+ border-top:1px solid #FFFAEF;}
+.widget-area .menu-vertical ul ul a:hover,#wrap-header .menu-vertical ul ul a:hover,#wrap-header .menu-vertical ul a:hover {color: #F0EBE0; background-color: #BAA987; text-decoration: none;}
+.widget-area .menu-vertical ul ul ul a,.menu-vertical ul ul ul a {padding: 4px 5px 4px 35px;}
+.widget-area .menu-vertical ul ul ul a,.menu-vertical ul ul ul ul a {padding: 4px 5px 4px 45px;}
+.widget-area .menu-vertical ul ul ul ul a,.menu-vertical ul ul ul ul ul a {padding: 4px 5px 4px 55px;}
+.menu_bar .current_page_item > a, .menu_bar .current-menu-item > a, .menu_bar .current-cat > a, .menu_bar .current_page_ancestor > a,.menu_bar .current-category-ancestor > a, .menu_bar .current-menu-ancestor > a, .menu_bar .current-menu-parent > a, .menu_bar .current-category-parent > a,.menu-vertical .current_page_item > a, .menu-vertical .current-menu-item > a, .menu-vertical .current-cat > a, .menu-vertical .current_page_ancestor > a, .menu-vertical .current-category-ancestor > a, .menu-vertical .current-menu-ancestor > a, .menu-vertical .current-menu-parent > a, .menu-vertical .current-category-parent > a,.widget-area .menu-vertical .current_page_item > a, .widget-area .menu-vertical .current-menu-item > a, .widget-area .menu-vertical .current-cat > a, .widget-area .menu-vertical .current_page_ancestor > a {color:#474134 !important;}
+.entry-title {border-bottom: 1px solid #0A0A0A;}
+#content, .entry-content h1, .entry-content h2 {color:#292929;}
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6, #content dt, #content th,
+h1, h2, h3, h4, h5, h6,#author-info h2 {color:#0A0A0A;}
+#content h1.entry-title {color:#0A0A0A;}
+.commentlist li.comment, #respond {background-color:transparent;}
+.wp-caption p.wp-caption-text, #content .gallery .gallery-caption,.entry-attachment .entry-caption {color:#333333;}
+#content img.size-full, #content img.size-large, #content img.size-medium, #content img.size-thumbnail, #content .attachment-thumbnail, #content .gallery img,#content .gallery-thumb img,.entry-attachment img, #content .wp-caption img, #content img.wp-post-image,#content img[class*="wp-image-"],#author-avatar img,img.avatar {background-color:transparent;}
+.home .sticky, #container.page-with-posts .sticky, #container.index-posts .sticky {background-color:#E6DCC8;}
+.entry-meta, .entry-content label, .entry-utility {color:#706752;}
+body {font-size:12px;}
+body {background-color:#C7B491;}
+body {color:#292929;}
+#wrapper {background-color:#FEF3DD;}
+#main {background-color:transparent;}
+#container {background-color:transparent;}
+#content {background-color:transparent;}
+#content .post,.post {background-color:transparent;}
+#branding {background-color:transparent;}
+#colophon {background-color:#F5DEB3;}
+hr {background-color:#AB9B7D;}
+.entry-meta {background-color:transparent;}
+.entry-utility {background-color:transparent;}
+input, textarea, ins, pre {background-color:#F0F0F0;}
+.widget {color:#333333;}
+.widget-title {border-bottom: 1px solid #222222; margin-bottom:5px;padding-bottom:3px;}
+.widget-title, .widget_search label, #wp-calendar caption {color: #222222;}
+#site-title a {color:#FEF9EE;}
+#site-description {color:#FFFAEF;}
+/* Weaver II Mobile Device Options */
+.weaver-any-mobile  #main a, .weaver-any-mobile  #mobile-widget-area a, .weaver-any-mobile  .sidebar_top a, .weaver-any-mobile  .sidebar_bottom a, .weaver-any-mobile  .sidebar_extra a {text-decoration: underline !important;}
+@media only screen and (max-width:768px) and (orientation:portrait) {body {padding: 0px !important;}}
+@media only screen and (max-width:640px) {
+#main a, #mobile-widget-area a, .sidebar_top a, .sidebar_bottom a, .sidebar_extra a{text-decoration: underline !important;}
+}
+@media only screen and (max-width: 580px) {
+}
+
+/* end Weaver II CSS */
+</style> <!-- end of main options style section -->
+
+
+<!--[if lte IE 8]>
+<style type="text/css" media="screen">
+#content img.size-thumbnail,#content img.size-medium,#content img.size-large,#content img.size-full,#content img.attachment-thumbnail,
+#content img.wp-post-image,img.avatar,.format-chat img.format-chat-icon,
+#wrapper,#branding,#colophon,#content, #content .post,
+#sidebar_primary,#sidebar_right,#sidebar_left,.sidebar_top,.sidebar_bottom,.sidebar_extra,
+#first,#second,#third,#fourth,
+#commentform input:focus,#commentform textarea:focus,#respond input#submit {
+		behavior: url(http://certaindoubts.com/wp-content/themes/weaver-ii/js/PIE/PIE.php) !important; position:relative;
+}
+</style>
+<![endif]-->
+
+<!-- End of Weaver II options -->
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		</head>
+
+<body class="post-template-default single single-post postid-320 single-format-standard singular not-logged-in weaver-desktop weaver-mobile-smart-nostack">
+<a href="index.html%3Freplytocom=1743.html#page-bottom" id="page-top">&darr;</a> <!-- add custom CSS to use this page-bottom link -->
+<div id="wrapper" class="hfeed">
+<div id="wrap-header">
+	<header id="branding" role="banner"><div id="branding-content">
+		<div id="site-logo"></div>
+		<div id="site-logo-link" onclick="location.href='http://certaindoubts.com/';"></div>
+
+		<div class="title-description-xhtml">
+			<h1 id="site-title" ><span><a href="../index.html" title="Certain Doubts" rel="home">Certain Doubts</a></span></h1>
+			<h2 id="site-description"> devoted to matters epistemic</h2>
+		</div>
+		<div id="header_image">
+                              <img src="../wp-content/themes/weaver-ii/images/headers/wheat.jpg" width="940" height="188" alt="Certain Doubts" />
+        		</div><!-- #header_image -->
+	</div></header><!-- #branding-content, #branding -->
+<div id="wrap-bottom-menu">
+<div id="mobile-bottom-nav" class="mobile_menu_bar" style="padding:5px 10px 5px 10px;clear:both;">
+	<div style="margin-bottom:20px;">
+<span class="mobile-home-link">
+	<a href="../index.html" title="Certain Doubts" rel="home">Home</a></span>
+	<span class="mobile-menu-link"><a href="javascript:void(null);" onclick="weaverii_ToggleMenu(document.getElementById('nav-bottom-menu'), this, 'Menu &darr;', 'Menu &uarr;')">Menu &darr;</a></span></div>
+</div>
+		<div class="skip-link"><a class="assistive-text" href="index.html%3Freplytocom=1743.html#content" title="">Skip to primary content</a></div>
+			<div class="skip-link"><a class="assistive-text" href="index.html%3Freplytocom=1743.html#sidebar_primary" title="">Skip to secondary content</a></div>
+				<div id="nav-bottom-menu"><nav id="access" class="menu_bar" role="navigation">
+<div class="menu"><ul>
+<li ><a href="../index.html">Home</a></li><li class="page_item page-item-1894"><a href="../index.html%3Fpage_id=1894.html">Decade and Longitudinal Journal Information</a></li>
+<li class="page_item page-item-2739"><a href="../index.html%3Fpage_id=2739.html">Epistemology Course Slides</a></li>
+<li class="page_item page-item-2752"><a href="../index.html%3Fpage_id=2752.html">Talks:  Slides and Videos</a></li>
+<li class="page_item page-item-417"><a href="../index.html%3Fp=417.html">About Certain Doubts</a></li>
+<li class="page_item page-item-397"><a href="../index.html%3Fp=397.html">Contributors</a></li>
+<li class="page_item page-item-413"><a href="../index.html%3Fp=413.html">Archives</a></li>
+<li class="page_item page-item-774"><a href="../index.html%3Fpage_id=774.html">Complete Hirsch Number Rankings of U.S. Philosophy PhD Programs</a></li>
+<li class="page_item page-item-823"><a href="../index.html%3Fp=823.html">Philosophy Journal Information:  ESF Rankings, Citation Impact, &#038; Rejection Rates</a></li>
+<li class="page_item page-item-454"><a href="../index.html%3Fp=454.html">Some of Our Books</a></li>
+</ul></div>
+		</nav></div><!-- #access --></div> <!-- #wrap-bottom-menu -->
+</div> <!-- #wrap-header -->
+	<div id="main">
+	<div id="sidebar_wrap_left" class="split equal_height">
+	<div id="sidebar_left" class="widget-area" role="complementary">
+<aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">John Fischer</span> on <a href="../index.html%3Fp=4902.html#comment-331879">The End</a></li><li class="recentcomments"><span class="comment-author-link"><a href='http://dailynous.com/2019/03/07/philosophers-on-the-philosophy-blogosphere/' rel='external nofollow' class='url'>Philosophers On the Philosophy Blogosphere - Daily Nous</a></span> on <a href="../index.html%3Fp=616.html#comment-331009">Doris and Russell on Stanley</a></li><li class="recentcomments"><span class="comment-author-link"><a href='https://philosophy.unc.edu/2019/02/08/worsnip-wins-young-epistemologist-prize/' rel='external nofollow' class='url'>Worsnip wins Young Epistemologist Prize - Department of Philosophy</a></span> on <a href="../index.html%3Fp=4897.html#comment-329263">Young Epistemologist Prize 2019</a></li><li class="recentcomments"><span class="comment-author-link">S. Alas</span> on <a href="../index.html%3Fp=4890.html#comment-324134">A simple problem for (unrestricted) Conditionalization</a></li><li class="recentcomments"><span class="comment-author-link"><a href='https://enigmanically.blogspot.co.uk/' rel='external nofollow' class='url'>Martin Cooke</a></span> on <a href="../index.html%3Fp=4738.html#comment-310431">What philosophers think might not be what you think they think</a></li></ul></aside><aside id="meta-2" class="widget widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="../wp-login.php.html">Log in</a></li>
+			<li><a href="../feed/index.html">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="../comments/feed/index.html">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside><aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-9"><a href="../category/a-priori-knowledge/index.html" >a priori knowledge</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="../category/confirmation-theory/index.html" >confirmation theory</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="../category/contextualism/index.html" >contextualism</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="../category/epistemic-paradoxes/index.html" >epistemic paradoxes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="../category/formal-epistemology/index.html" >formal epistemology</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="../category/foundationalismcoherentism/index.html" >foundationalism and coherentism</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="../category/foundationalism-and-coherentism/index.html" >foundationalism and coherentism</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="../category/general/index.html" >general</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="../category/internalismexternalism/index.html" >internalism and externalism</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="../category/internalism-and-externalism/index.html" >internalism and externalism</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="../category/justification/index.html" >justification</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="../category/knowledge/index.html" >knowledge</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="../category/links/index.html" >Links</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="../category/major-figures/index.html" >major figures</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="../category/memory/index.html" >memory</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="../category/perception/index.html" >perception</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="../category/skepticism/index.html" >skepticism</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="../category/testimony-and-social-epistemology/index.html" >testimony and social epistemology</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="../category/uncategorized/index.html" >Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="../category/understanding/index.html" >understanding</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="../category/value-driven-epistemology/index.html" >value-driven epistemology</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="../category/virtue-epistemology/index.html" >virtue epistemology</a>
+</li>
+		</ul>
+</aside>
+	</div><!-- #sidebar_left .widget-area -->
+	</div><!-- #sidebar_wrap_left -->
+		<div id="container_wrap" class="container-single equal_height split">
+		<div id="container">
+			<div id="content" role="main">
+
+				<nav id="nav-above" class="navigation">
+				<h3 class="assistive-text">Post navigation</h3>
+					<div class="nav-previous"><a href="../index.html%3Fp=319.html" rel="prev"><span class="meta-nav">&larr;</span> Conference on Dutch Book Arguments</a></div>
+				<div class="nav-next"><a href="../index.html%3Fp=322.html" rel="next">Late 20th Century Nonsense Police <span class="meta-nav">&rarr;</span></a></div>
+				</nav><!-- #nav-above -->
+
+
+<article id="post-320" class="content-single  post-320 post type-post status-publish format-standard hentry category-memory">
+	<header class="entry-header">
+		<div class="entry-hdr"><h1 class="entry-title">More on Memory</h1></div>
+
+		<div class="entry-meta">
+						<div class="meta-info-wrap">
+			<span class="sep posted-on">Posted on </span><a href="../index.html%3Fp=320.html" title="6:56 am" rel="bookmark"><time class="entry-date" datetime="2005-05-08T06:56:01+00:00">May 8, 2005</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="../author/admin/index.html" title="View all posts by Kvanvig Jon" rel="author">Kvanvig Jon</a></span></span><span class="updated">May 8, 2005</span>
+			</div><!-- .entry-meta-icons -->		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+	<div class="entry-content cf">
+		<p>Here&#8217;s a bit of a puzzle about memory.  An ordinary view, in the language of modularity, is that the memory box contains propositions, and when one explicitly recalls something, one accesses such information from one&#8217;s memory box (though this claim is not meant to suggest that there aren&#8217;t other things going on in memory that are more image-based).</p>
+<p>But now consider the question of the justification of a particular kind of belief.  Suppose several years ago you visited me at my former department and were impressed with the outstanding live oak tree outside our building.  You perceived the tree being outside the building, and came to believe that there is an outstanding specimen of a live oak tree there.</p>
+<p>Now three years later you still believe that there is an outstanding specimen of a live oak tree there (if you&#8217;re worried that the span of time is too long for justification to be present, we can shorten it to allay that worry).  What is your present belief based on?</p>
+<p><span id="more-320"></span>Is it based on the initial perception?  That looks quite a bit like action at a temporal distance.</p>
+<p>Is it based on memory?  If so, how?  It&#8217;s not as if you are in the seeming state of remembering the tree.  You simply still hold the belief you formed quite a bit ago.  You <em>could</em> make memory operative by bringing to mind the visit and the experience, but you needn&#8217;t do that to continue to belief that there is a three at that location.</p>
+<p>The temptation is to say that the belief itself, and not (just?) the content of the belief, is stored in the memory box, and that&#8217;s how memory is presently responsible for the belief and how that belief is based on memory.  But that is a rather anti-modularity idea.</p>
+			</div><!-- .entry-content -->
+
+	<footer class="entry-utility">
+<div class="meta-info-wrap">
+			<span class="cat-links">
+<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="../category/memory/index.html" rel="category tag">memory</a>			</span>
+		<span class="permalink-icon"><a href="../index.html%3Fp=320.html" title="Permalink to More on Memory" rel="bookmark">permalink</a></span>
+	</div><!-- .entry-meta-icons -->
+
+	</footer><!-- .entry-utility -->
+</article><!-- #post-320 -->
+
+				<nav id="nav-below" class="navigation">
+				<h3 class="assistive-text">Post navigation</h3>
+					<div class="nav-previous"><a href="../index.html%3Fp=319.html" rel="prev"><span class="meta-nav">&larr;</span> Conference on Dutch Book Arguments</a></div>
+				<div class="nav-next"><a href="../index.html%3Fp=322.html" rel="next">Late 20th Century Nonsense Police <span class="meta-nav">&rarr;</span></a></div>
+				</nav><!-- #nav-above -->
+
+
+	<div id="comments">
+
+		<hr class='comments-hr'>
+		<header id="comments-title">
+		<h3>Comments</h3>
+				<h4>
+<em>More on Memory</em> &#8212; 19 Comments		</h4>
+		</header>
+
+		
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-1726" >
+		<article id="comment-1726" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/20e270dfe0b41a4f2ccc5f2c1d31b738?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/20e270dfe0b41a4f2ccc5f2c1d31b738?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Matt Weiner</span> on <a href="../index.html%3Fp=320.html#comment-1726"><time datetime="2005-05-09T15:49:53+00:00">May 9, 2005 at 3:49 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Why is it anti-modularity?  It seems to me that it could be a different kind of modularity.  Or perhaps, under modularity, the <i>sentence</i> is stored in the belief-box, and there&#8217;s another module that goes around updating your belief-box and throwing the sentences that are past their sell-by date&#8211;so that &#8220;the cat is on the mat&#8221; gets thrown out quickly, but &#8220;there is a big tree outside that building&#8221; stays around for a while.</p>
+<p>I don&#8217;t really believe that there&#8217;s such a thing as <i>the</i> content of a belief in a way that could get stored in a box, and I don&#8217;t particularly hold with modularity either, so I don&#8217;t know if I should be commenting on this!</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1726.html#respond' onclick='return addComment.moveForm( "comment-1726", "1726", "respond", "320" )' aria-label='Reply to Matt Weiner'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1727" >
+		<article id="comment-1727" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.missouri.edu/~kvanvigj' rel='external nofollow' class='url'>jon kvanvig</a></span> on <a href="../index.html%3Fp=320.html#comment-1727"><time datetime="2005-05-09T15:55:15+00:00">May 9, 2005 at 3:55 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Well, it&#8217;s not incompatible with modularity, I guess.  But the usual idea for propositional attitude verbs is that when modularity can be exploited, the idea is to make the mental box be one that contains propositional contents that are the complements of the relevant attitude verb:  hope, fear, wish, believe, remember, opine, etc.  If there is some other machine running around cleaning up what no longer belongs in various boxes, it won&#8217;t be another one of the boxes but rather something completely different.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1727.html#respond' onclick='return addComment.moveForm( "comment-1727", "1727", "respond", "320" )' aria-label='Reply to jon kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1728" >
+		<article id="comment-1728" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/20e270dfe0b41a4f2ccc5f2c1d31b738?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/20e270dfe0b41a4f2ccc5f2c1d31b738?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Matt Weiner</span> on <a href="../index.html%3Fp=320.html#comment-1728"><time datetime="2005-05-09T17:32:20+00:00">May 9, 2005 at 5:32 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>So do people really think that when I believe that there is a tree in front of <i>that building</i>, my belief box contains the propositional content&#8211;a singular proposition containing &#8216;that building&#8217; as a component&#8211;and so that building (note lack of quotes!) is sitting there in my belief box?  Sounds painful.</p>
+<p>Well, perhaps no one holds the combination of views that leads to that conclusion.  I should read up.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1728.html#respond' onclick='return addComment.moveForm( "comment-1728", "1728", "respond", "320" )' aria-label='Reply to Matt Weiner'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1729" >
+		<article id="comment-1729" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/171d7d196c6a2da552f5af4064807bf3?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/171d7d196c6a2da552f5af4064807bf3?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Chris Green</span> on <a href="../index.html%3Fp=320.html#comment-1729"><time datetime="2005-05-09T17:41:38+00:00">May 9, 2005 at 5:41 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I think it&#8217;s clearly a memorially-based belief.  I don&#8217;t need to bring the earlier experience <i>to mind</i> in order for my belief to be based on a memory trace stemming from that experience, just as I don&#8217;t need to have a belief about current perceptual experience in order for a perceptually-based belief to be based on it.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1729.html#respond' onclick='return addComment.moveForm( "comment-1729", "1729", "respond", "320" )' aria-label='Reply to Chris Green'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1730" >
+		<article id="comment-1730" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.missouri.edu/~kvanvigj' rel='external nofollow' class='url'>jon kvanvig</a></span> on <a href="../index.html%3Fp=320.html#comment-1730"><time datetime="2005-05-09T17:45:52+00:00">May 9, 2005 at 5:45 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>In a way, they (we) do.  Propositions are in the belief box, and propositions are structured entities constituted in part by such buildings and the like.</p>
+<p>If it&#8217;s painful to have such a proposition in a belief box, the alternative, Fregean view should be troubling in a different way.  Abstracta, such as properties, don&#8217;t have spatiotemporal location, so a proposition constituted solely out of properties could be in the belief box and yet the head in question be completely empty!</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1730.html#respond' onclick='return addComment.moveForm( "comment-1730", "1730", "respond", "320" )' aria-label='Reply to jon kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1731" >
+		<article id="comment-1731" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.missouri.edu/~kvanvigj' rel='external nofollow' class='url'>jon kvanvig</a></span> on <a href="../index.html%3Fp=320.html#comment-1731"><time datetime="2005-05-09T17:55:53+00:00">May 9, 2005 at 5:55 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Chris, I don&#8217;t know what a memory trace is.  Is it another belief?  If so, what&#8217;s its content?  Maybe the content is that I once had a perceptual experience of a certain sort.  But I needn&#8217;t have such a belief.  Is it a seeming-to-remember of some sort?  In the case as described, there isn&#8217;t one of those.  There&#8217;s just the original experience and some kind of inertial retention of belief across time.</p>
+<p>Maybe it&#8217;s like this:  your perception box used to have a content in it, and that content was transferred to the memory box.  And it is this content being in the memory box that grounds the belief in question.  In such a case, the memory and the perception have precisely the same content.  But why think this?  Why think, that is, that the perceptual content has to be transferred and thus be in some box or other for the belief in question to be based on?  It <i>could</i> go this way, I suppose, by I don&#8217;t see why it has to go this way, and so I don&#8217;t see that it&#8217;s clearly a belief based on memory (on this interpretation of &#8220;based on memory&#8221;).</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1731.html#respond' onclick='return addComment.moveForm( "comment-1731", "1731", "respond", "320" )' aria-label='Reply to jon kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1732" >
+		<article id="comment-1732" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/171d7d196c6a2da552f5af4064807bf3?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/171d7d196c6a2da552f5af4064807bf3?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Chris Green</span> on <a href="../index.html%3Fp=320.html#comment-1732"><time datetime="2005-05-10T17:14:18+00:00">May 10, 2005 at 5:14 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jon,</p>
+<p>I tried to post an answer this morning, but it didn&#8217;t show up.  So maybe this will eventually be a duplicate (or maybe it won&#8217;t show up either).</p>
+<p>Here&#8217;s how I think of memory traces: I think a memory trace that supports a memorially-based belief that p is not a belief, and not a seeming <i>to remember</i> that p, but is itself a form of seeming that p.  This is analoguous to perception, in which the perceptual experience that supports a perceptually-based belief that p is a seeming that p, not a seeming <i>to perceive</i> that p.  Perceptual seemings that p and memorial seemings that p differ phenomenally, just as do English and French statements that p.  In standard conditions perceptual seemings change into memorial seemings&#8211;i.e., perceptual sensations change into memory traces.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1732.html#respond' onclick='return addComment.moveForm( "comment-1732", "1732", "respond", "320" )' aria-label='Reply to Chris Green'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1733" >
+		<article id="comment-1733" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.missouri.edu/~kvanvigj' rel='external nofollow' class='url'>jon kvanvig</a></span> on <a href="../index.html%3Fp=320.html#comment-1733"><time datetime="2005-05-10T18:06:44+00:00">May 10, 2005 at 6:06 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Chris, that sounds good, except that the phenomenology just doesn&#8217;t support the existence of such states.  I still believe there&#8217;s a tree, but I don&#8217;t have any seeming state of the sort you describe.  I&#8217;m like Hume here:  I&#8217;ve looked and it&#8217;s just not there.</p>
+<p>In ordinary perceptual conditions when I believe what my senses tell me, I believe that p, it perceptually seems to me that p, and in some sense it seems to me to be true that p.  The perception quickly disappears, and the seeming-to-be-true state remains as does the belief.  But the seeming-to-be-true state is not a memory trace, since it was present when the perceptual seeming was present.  So I can&#8217;t find the trace you speak of.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1733.html#respond' onclick='return addComment.moveForm( "comment-1733", "1733", "respond", "320" )' aria-label='Reply to jon kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1734" >
+		<article id="comment-1734" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/171d7d196c6a2da552f5af4064807bf3?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/171d7d196c6a2da552f5af4064807bf3?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Chris Green</span> on <a href="../index.html%3Fp=320.html#comment-1734"><time datetime="2005-05-10T18:53:13+00:00">May 10, 2005 at 6:53 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jon,</p>
+<p>Hmm. Introspectively, it seems different to me.  When, at time 1, my senses tell me that p, via a perceptual seeming, I find that at time 2, my memory tells me that p, via some sort of medium.  Not-p feels awkward, and I attribute this to my memory processes; I call it a memory trace.  This isn&#8217;t, I think, just p seeming to be <i>true</i>, because it doesn&#8217;t always involve any apprehension of the <i>truth</i> of p, as such, just an attraction to p itself.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1734.html#respond' onclick='return addComment.moveForm( "comment-1734", "1734", "respond", "320" )' aria-label='Reply to Chris Green'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1735" >
+		<article id="comment-1735" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.missouri.edu/~kvanvigj' rel='external nofollow' class='url'>jon kvanvig</a></span> on <a href="../index.html%3Fp=320.html#comment-1735"><time datetime="2005-05-11T06:49:08+00:00">May 11, 2005 at 6:49 am</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Chris, suppose we grant that for occurrent beliefs, something like what you say will work.  Consider, however, non-occurrent beliefs of the sort described in the post.  If, as you say in comment 7, memory traces are kinds of seeming states, I don&#8217;t think I&#8217;m in a seeming state with respect to all of my justified beliefs about the past, especially I&#8217;m not with respect to non-occurrent beliefs of this sort.</p>
+<p>In comment 9 above, you say that you attribute the awkwardness of the negation to your memory processes.  I think that isn&#8217;t enough.  There&#8217;s no question that memory is playing a role of some sort here, but the question is what the belief is based on.  If we want to call the role that memory plays a &#8220;memory trace&#8221;, that&#8217;s fine, but then we need some account of this notion other than in terms of beliefs or seeming states.  Moreover, we need the account that makes these traces be evidence for the belief in question, since we&#8217;re assuming that the belief is justified.  If the traces were seeming states or beliefs, that would help.  But I don&#8217;t see how they can be seeming states, since I don&#8217;t know what a dispositional seeming state would be (though, of course, I do know what a disposition toward a seeming state would be).</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1735.html#respond' onclick='return addComment.moveForm( "comment-1735", "1735", "respond", "320" )' aria-label='Reply to jon kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1736" >
+		<article id="comment-1736" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/171d7d196c6a2da552f5af4064807bf3?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/171d7d196c6a2da552f5af4064807bf3?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Chris Green</span> on <a href="../index.html%3Fp=320.html#comment-1736"><time datetime="2005-05-11T13:50:54+00:00">May 11, 2005 at 1:50 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jon,<br />
+You might be right regarding non-occurrent beliefs.  In general, I&#8217;m not sure what to say about what they&#8217;re based on.  I had thought you were talking about an occurrent belief.  My main intuition here is that an occurrent belief is always based on <i>some</i> sort of phenomenology, some variety of felt rightness about the belief.  I do wish I had more to say about what that is in the case of memory; it&#8217;s not the associated imagery, as with vision, but it&#8217;s something.  Once I get over my queasiness about phenomenology and read more people like Husserl, maybe I&#8217;ll have more to say.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1736.html#respond' onclick='return addComment.moveForm( "comment-1736", "1736", "respond", "320" )' aria-label='Reply to Chris Green'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1737" >
+		<article id="comment-1737" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.missouri.edu/~kvanvigj' rel='external nofollow' class='url'>jon kvanvig</a></span> on <a href="../index.html%3Fp=320.html#comment-1737"><time datetime="2005-05-11T14:05:56+00:00">May 11, 2005 at 2:05 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Chris, well, I doubt reading that will help here!</p>
+<p>Think of perception as involving three possible elements.  There is the phenomenal state itself, there is the belief, and there is the felt correctness of the belief.  These can come apart:  one might not be able to bring oneself to believe what the seeming states suggest; one might know that the conditions are deceptive, so the phenomenal state doesn&#8217;t have felt correctness to it, etc.</p>
+<p>Something similar may happen in occurrent memory beliefs.  I can seem to recall that p, p can have felt correctness to it, and I may believe p. These may come apart as well, just as with perception.</p>
+<p>But there&#8217;s a difference, as you noted already:  a memory belief, even an occurrent one, need not be based on seeming to recall or remember.  In such cases, there may still be the felt correctness of the belief, but there needs to be more than that for it to count as a memorial belief (not every belief about the past that feels correct is a memorial belief).</p>
+<p>Worse still are the non-occurrent memorial beliefs.  In such cases, there&#8217;s not even a felt correctness to the belief, since there is nothing present-to-consciousness in the case.  It&#8217;s a bit perplexing what makes some beliefs be memorial and some not, and what evidence the justified ones are based on&#8230;</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1737.html#respond' onclick='return addComment.moveForm( "comment-1737", "1737", "respond", "320" )' aria-label='Reply to jon kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1738" >
+		<article id="comment-1738" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/171d7d196c6a2da552f5af4064807bf3?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/171d7d196c6a2da552f5af4064807bf3?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Chris Green</span> on <a href="../index.html%3Fp=320.html#comment-1738"><time datetime="2005-05-11T15:18:38+00:00">May 11, 2005 at 3:18 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jon,</p>
+<p>I don&#8217;t think you&#8217;re setting up the parallel between perception and (occurrent) memory in a way that makes it as strong as it could be.  In perception we can have (a) a phenomenal state, (b) a belief that p, (c) a feeling of the correctness of p to which (a) gives rise, and also (d) seeming <i>to perceive</i> that p, as well as other higher-level states.  In (occurrent) memory, we can also have (a) a phenomenal state, (b) a belief that p, (c) a feeling of the correctness of p to which (a) gives rise, and also (d) seeming <i>to recall</i> that p, as well as other higher-order states.</p>
+<p>I think that in both perception and memory, the beliefs in (b) are always accompanied by some sort of phenomenology, as in (a), which gives a feeling of the correctness of p, as in (c).  The higher-order states in (d) are dispensible in both cases.  We can have (a) and (c) without (b), but not (b) without (a) and (c).</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1738.html#respond' onclick='return addComment.moveForm( "comment-1738", "1738", "respond", "320" )' aria-label='Reply to Chris Green'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1739" >
+		<article id="comment-1739" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/171d7d196c6a2da552f5af4064807bf3?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/171d7d196c6a2da552f5af4064807bf3?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Chris Green</span> on <a href="../index.html%3Fp=320.html#comment-1739"><time datetime="2005-05-11T15:29:08+00:00">May 11, 2005 at 3:29 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Of course, I&#8217;m not trying to copyright that &#8220;feeling of correctness&#8221; language!</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1739.html#respond' onclick='return addComment.moveForm( "comment-1739", "1739", "respond", "320" )' aria-label='Reply to Chris Green'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1740" >
+		<article id="comment-1740" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/20e270dfe0b41a4f2ccc5f2c1d31b738?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/20e270dfe0b41a4f2ccc5f2c1d31b738?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Matt Weiner</span> on <a href="../index.html%3Fp=320.html#comment-1740"><time datetime="2005-05-11T15:45:57+00:00">May 11, 2005 at 3:45 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>My comment a ways back got eaten too&#8211;fortunately I want to revise and extend it anyway.</p>
+<p>The first comment was: In response to 5, I think I might be able to avoid the dilemma by saying that what goes in the belief box is representations of sentences in the language of thought, whatever that may be.  Representations of signs in the language of thought can have spatiotemporal location&#8211;I&#8217;m envisioning them as neurological formulations, analgous to the tokens of words you&#8217;re looking at right now.  So I don&#8217;t have to say that I can have a building in my belief box, and I don&#8217;t have to say that the stuff in the belief box is composed of abstracta without spatiotemporal location.</p>
+<p>But I also realized: As a good Pittsburgher, I should entertain the McDowellian idea that the mind isn&#8217;t in the head&#8211;so the belief box isn&#8217;t in the head.  Then it wouldn&#8217;t be any problem if the belief box contained singular propositions that contain trees as components.  Believing that <i>there is a tree in front of that building</i> isn&#8217;t a narrow mental attitude (neither is seeing that there is a tree in front of that building), so even if it contains a proposition as a component the proposition needn&#8217;t be in the head.</p>
+<p>I wonder if this is the first time anyone&#8217;s used McDowell to defend modularity?</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1740.html#respond' onclick='return addComment.moveForm( "comment-1740", "1740", "respond", "320" )' aria-label='Reply to Matt Weiner'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1741" >
+		<article id="comment-1741" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.missouri.edu/~kvanvigj' rel='external nofollow' class='url'>jon kvanvig</a></span> on <a href="../index.html%3Fp=320.html#comment-1741"><time datetime="2005-05-11T15:55:12+00:00">May 11, 2005 at 3:55 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Chris, I take it that when you say that in both memory and perception the beliefs are always accompanied by some sort of phenomenology, you&#8217;re thinking about occurrent beliefs?  I think we agree on that.  It&#8217;s the non-occurrent memorial beliefs that I find mysterious.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1741.html#respond' onclick='return addComment.moveForm( "comment-1741", "1741", "respond", "320" )' aria-label='Reply to jon kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1742" >
+		<article id="comment-1742" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4cd858eaf6b87b6959b2dd2ea544a1cf?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn"><a href='http://www.missouri.edu/~kvanvigj' rel='external nofollow' class='url'>jon kvanvig</a></span> on <a href="../index.html%3Fp=320.html#comment-1742"><time datetime="2005-05-11T15:56:07+00:00">May 11, 2005 at 3:56 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Matt, with all due respect for McDowell, not many people are comfortable using the mysterious to defend or explain some other mystery!</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1742.html#respond' onclick='return addComment.moveForm( "comment-1742", "1742", "respond", "320" )' aria-label='Reply to jon kvanvig'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1743" >
+		<article id="comment-1743" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://1.gravatar.com/avatar/171d7d196c6a2da552f5af4064807bf3?s=40&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/171d7d196c6a2da552f5af4064807bf3?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Chris Green</span> on <a href="../index.html%3Fp=320.html#comment-1743"><time datetime="2005-05-11T18:14:22+00:00">May 11, 2005 at 6:14 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Jon&#8211;that&#8217;s right.  Maybe I misunderstood the initial post.  I&#8217;m not sure what non-occurrent memorial beliefs are, or what they&#8217;re based on.  But I think there is a strong parallel between the epistemologies of occurrent memorially-based beliefs and perceptually-based beliefs.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1743.html#respond' onclick='return addComment.moveForm( "comment-1743", "1743", "respond", "320" )' aria-label='Reply to Chris Green'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1744" >
+		<article id="comment-1744" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+<img alt='' src='http://2.gravatar.com/avatar/20e270dfe0b41a4f2ccc5f2c1d31b738?s=40&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/20e270dfe0b41a4f2ccc5f2c1d31b738?s=80&#038;d=mm&#038;r=g 2x' class='avatar avatar-40 photo' height='40' width='40' /><span class="fn">Matt Weiner</span> on <a href="../index.html%3Fp=320.html#comment-1744"><time datetime="2005-05-12T15:59:55+00:00">May 12, 2005 at 3:59 pm</time></a> <span class="says">said:</span>
+				</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Oh, I&#8217;m fine with that.  If I can convince everyone that they&#8217;ve got to be McDowellians or reject the idea that the contents of beliefs are propositions, my day will be made.</p>
+</div>
+			<div class="reply">
+				<a rel='nofollow' class='comment-reply-link' href='index.html%3Freplytocom=1744.html#respond' onclick='return addComment.moveForm( "comment-1744", "1744", "respond", "320" )' aria-label='Reply to Matt Weiner'>Reply <span>&darr;</span></a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+		</ol>
+
+		
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply to <a href="index.html%3Freplytocom=1743.html#comment-1743">Chris Green</a> <small><a rel="nofollow" id="cancel-comment-reply-link" href="../index.html%3Fp=320.html#respond">Cancel reply</a></small></h3>			<form action="http://certaindoubts.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='320' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='1743' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="9a73328545" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="149"/></p>			</form>
+			</div><!-- #respond -->
+	</div><!-- #comments -->
+
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+		</div><!-- #container_wrap -->
+
+	<div id="sidebar_wrap_right" class="split equal_height">
+	<div id="sidebar_right" class="widget-area" role="complementary">
+		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+											<li>
+					<a href="../index.html%3Fp=4902.html">The End</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4897.html">Young Epistemologist Prize 2019</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4890.html">A simple problem for (unrestricted) Conditionalization</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4883.html">Reminder: Young Epistemologist Prize 2019</a>
+									</li>
+											<li>
+					<a href="../index.html%3Fp=4877.html">Do We Know that We&#8217;re not Brains in Vats?: Follow-Up: Polls and Surveys</a>
+									</li>
+					</ul>
+		</aside><aside id="calendar-2" class="widget widget_calendar"><div id="calendar_wrap" class="calendar_wrap"><table id="wp-calendar">
+	<caption>April 2019</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="../2019/02/index.html">&laquo; Feb</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+	</tr>
+	<tr>
+		<td>8</td><td><a href="../2019/04/09/index.html" aria-label="Posts published on April 9, 2019">9</a></td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+	</tr>
+	<tr>
+		<td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
+	</tr>
+	<tr>
+		<td>22</td><td id="today">23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+	</tr>
+	<tr>
+		<td>29</td><td>30</td>
+		<td class="pad" colspan="5">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></aside><aside id="meta-3" class="widget widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="../wp-login.php.html">Log in</a></li>
+			<li><a href="../feed/index.html">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="../comments/feed/index.html">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside><aside id="search-2" class="widget widget_search"><form role="search" style="background:transparent;" method="get" class="searchform" action="../index.html" >
+	<label class="screen-reader-text" for="s">Search for:</label>
+	<input type="search" value="" name="s" id="s" placeholder="Search Site" />
+	<input class="searchformimg" type="image" src="../wp-content/themes/weaver-ii/images/search_button.gif" alt="Search" />
+	</form></aside>
+	</div><!-- sidebar_right .widget-area -->
+	</div><!-- #sidebar_wrap_right -->
+    <div class='weaver-clear'></div></div><!-- #main -->
+	<footer id="colophon" role="contentinfo">
+	  <div>
+
+		<div id="site-ig-wrap">
+		<span id="site-info">
+		&copy; 2019 - <a href="../index.html" title="Certain Doubts" rel="home">Certain Doubts</a>
+		</span> <!-- #site-info -->
+		<span id="site-generator">
+		<a href="http://wordpress.org/" title="wordpress.org" rel="generator" target="_blank">Proudly powered by WordPress</a>&nbsp;
+Weaver II by <a href="http://weavertheme.com" target="_blank" title="http://weavertheme.com">WP Weaver</a>
+		</span> <!-- #site-generator -->
+		</div><!-- #site-ig-wrap -->
+		<div class="weaver-clear"></div>
+	  </div>
+	</footer><!-- #colophon -->
+</div><!-- #wrapper -->
+<a href="index.html%3Freplytocom=1743.html#page-top" id="page-bottom">&uarr;</a>
+<div id="weaver-final" class="weaver-final-normal"><script type='text/javascript' src='../wp-includes/js/comment-reply.min.js%3Fver=4.9.10'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var weaver_menu_params = {"selector":"li:has(ul) > a","selector_leaf":"li li li:not(:has(ul)) > a"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/themes/weaver-ii/js/weaverjslib.min.js%3Fver=2.2.2'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.min.js%3Fver=4.9.10'></script>
+<script async="async" type='text/javascript' src='../wp-content/plugins/akismet/_inc/form.js%3Fver=4.1'></script>
+</div> <!-- #weaver-final -->
+</body>
+</html>

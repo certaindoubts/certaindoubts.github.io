@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: closure for justification and the order of inquiry</title>
+	<atom:link href="http://certaindoubts.com/closure-for-justification-and-the-order-of-inquiry/feed/" rel="self" type="application/rss+xml" />
+	<link>http://certaindoubts.com/closure-for-justification-and-the-order-of-inquiry/</link>
+	<description>devoted to matters epistemic</description>
+	<lastBuildDate>Wed, 10 Apr 2019 16:37:28 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.10</generator>
+	<item>
+		<title>By: Gregory Wheeler</title>
+		<link>http://certaindoubts.com/closure-for-justification-and-the-order-of-inquiry/#comment-646</link>
+		<dc:creator><![CDATA[Gregory Wheeler]]></dc:creator>
+		<pubDate>Thu, 09 Dec 2004 13:04:44 +0000</pubDate>
+		<guid isPermaLink="false">http://fleetwood.baylor.edu/certain_doubts/?p=118#comment-646</guid>
+		<description><![CDATA[Hi Jon, I&#039;ll email it to you. The paper is under review now.]]></description>
+		<content:encoded><![CDATA[<p>Hi Jon, I&#8217;ll email it to you. The paper is under review now.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: jon kvanvig</title>
+		<link>http://certaindoubts.com/closure-for-justification-and-the-order-of-inquiry/#comment-645</link>
+		<dc:creator><![CDATA[jon kvanvig]]></dc:creator>
+		<pubDate>Thu, 09 Dec 2004 00:35:31 +0000</pubDate>
+		<guid isPermaLink="false">http://fleetwood.baylor.edu/certain_doubts/?p=118#comment-645</guid>
+		<description><![CDATA[Greg, I think I see through a glass darkly here what is going on, but can you pass on the reference so I can check to see if I get it?]]></description>
+		<content:encoded><![CDATA[<p>Greg, I think I see through a glass darkly here what is going on, but can you pass on the reference so I can check to see if I get it?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Gregory Wheeler</title>
+		<link>http://certaindoubts.com/closure-for-justification-and-the-order-of-inquiry/#comment-644</link>
+		<dc:creator><![CDATA[Gregory Wheeler]]></dc:creator>
+		<pubDate>Tue, 07 Dec 2004 21:59:01 +0000</pubDate>
+		<guid isPermaLink="false">http://fleetwood.baylor.edu/certain_doubts/?p=118#comment-644</guid>
+		<description><![CDATA[Here is a suggestion: draw a sharp distinction between the probability of a conjunctive (disjunctive) event, and conjoined (disjoined) probabilistic events.
+
+I prefer to mark this distinction by &lt;b&gt;in &lt;/b&gt; expressions and &lt;b&gt;out &lt;/b&gt; expressions, respectively. An &lt;b&gt;in &lt;/b&gt; expression is an ordered pair, (p, [l,u]), where p is a wff of a propositional language, and l and u designate reals in the unit interval marking &#039;lower&#039; and &#039;upper&#039; bounds. An &lt;b&gt;out &lt;/b&gt; expression is composed of a collection of &lt;b&gt;in &lt;/b&gt; expressions.
+
+The next question is, how are &lt;b&gt;out &lt;/b&gt; expressions composed? In other words, how do you disjoin and conjoin &lt;b&gt;in &lt;/b&gt; expressions? And how does closure fit into this? Take each question in turn.
+
+Suppose (T_1, [.999,.9999]) and (T_2, [.999,.9999]) are two &lt;b&gt;in &lt;/b&gt; expressions. You may interpret each as saying that the probability that ticket i losses is .999 where i=1 or i=2, if you like. We know that there is the possibility of a depletion of probability mass by combining probabilistic events: the lottery paradox turns on this, and we are marking this point by noting that (T_1, [.999,.999]) *and* (T_2, [.999,.999]) does not entail (T_1 ^ T_2, [.999,.999]), where wedge (^) is boolean &#039;and&#039; and *and* is yet to be defined. The proposal reduces to this: define a semantics for *and* (and also *or*) to compute the bounds of an &lt;b&gt;in &lt;/b&gt; expression whose first coordinate is the boolean conjunction of the propositions appearing in the first coordinates of the *conjuncts* (*disjuncts*) of &lt;b&gt;out &lt;/b&gt; expression, and the second coordinate--the probability interval--is calculated to &lt;i&gt;contain &lt;/i&gt; the composite probablistic event denoted by the &lt;b&gt;out &lt;/b&gt; expression.
+
+(I sketch a semantics for *and* and *or* connectives in a paper that I&#039;d be happy to pass on;  The key idea is the following observation: Pr(p^q) must lie in the interval [max(0,Pr(p) + Pr(q) -1), min(Pr(p), Pr(q))]. We may tighten this interval (and indeed, compute precise values) if we are warranted to make explicit assumptions about the relationship between the events p and q, such as when they are (probabilistically) independent, mutually exclusive, or when one implies the other, among other relationships that might hold between them. )
+
+The trick, then, is that once one has an &lt;b&gt;in &lt;/b&gt; expression (e.g., (T_1 ^ T_2 [.998,.999]) ) whose bounds are guaranteed to offer greatest lower and least upper bounds on the probability of the corresponding composit event, (e.g., the &lt;b&gt;out &lt;/b&gt; expression (T_1 [.999,.999] *and* T_2 [.999,.999])), then one may take the deductive closure of the proposition in the first coordinate of the &lt;b&gt;in &lt;/b&gt; expression.
+
+OK. So, if one has a threshold point in mind (say, .99) then closure works as follows. First, restrict the construction of &lt;b&gt;in&lt;/b&gt; expressions from &lt;b&gt;out &lt;/b&gt; expressions to just those that pass threshold. Then, close *each* &lt;b&gt;in &lt;/b&gt; expression under logical consequence. The resulting system is sound: all outputs (if any) will be above threshold. Also, order of premises does not matter. However, the system is not precise: there may in fact be composite probabilistic events that in fact are above threshold but for which the system generates no corresponding &lt;b&gt;in &lt;/b&gt; expression. Also, you are going to have collections of &lt;b&gt;in &lt;/b&gt; expressions (which, after all, corresponds to an &lt;b&gt;out &lt;/b&gt; expression) that you may be tempted to interpret incorrectly. But, so long as you keep the distinction in mind (and your system for interpreting these expressions) one should be able to keep things straight.
+
+
+The analysis of the lottery falls out as follows: the mistake the lottery paradox invites us to make is to interpret a collection of accepted sentences (Ticket 1 loses, [.999,.999] *and*, ..., *and*, Ticket n loses [.999,.999]) as acceptance of the conjunction of each proposition in the collection. The conversion of *and* to the corresponding boolean conjunction is controlled by the semantics for *and* which accounts for the depletion of probability mass that is possible when combining probabilistic events.
+
+That&#039;s the idea, in a nutshell.]]></description>
+		<content:encoded><![CDATA[<p>Here is a suggestion: draw a sharp distinction between the probability of a conjunctive (disjunctive) event, and conjoined (disjoined) probabilistic events.</p>
+<p>I prefer to mark this distinction by <b>in </b> expressions and <b>out </b> expressions, respectively. An <b>in </b> expression is an ordered pair, (p, [l,u]), where p is a wff of a propositional language, and l and u designate reals in the unit interval marking &#8216;lower&#8217; and &#8216;upper&#8217; bounds. An <b>out </b> expression is composed of a collection of <b>in </b> expressions.</p>
+<p>The next question is, how are <b>out </b> expressions composed? In other words, how do you disjoin and conjoin <b>in </b> expressions? And how does closure fit into this? Take each question in turn.</p>
+<p>Suppose (T_1, [.999,.9999]) and (T_2, [.999,.9999]) are two <b>in </b> expressions. You may interpret each as saying that the probability that ticket i losses is .999 where i=1 or i=2, if you like. We know that there is the possibility of a depletion of probability mass by combining probabilistic events: the lottery paradox turns on this, and we are marking this point by noting that (T_1, [.999,.999]) *and* (T_2, [.999,.999]) does not entail (T_1 ^ T_2, [.999,.999]), where wedge (^) is boolean &#8216;and&#8217; and *and* is yet to be defined. The proposal reduces to this: define a semantics for *and* (and also *or*) to compute the bounds of an <b>in </b> expression whose first coordinate is the boolean conjunction of the propositions appearing in the first coordinates of the *conjuncts* (*disjuncts*) of <b>out </b> expression, and the second coordinate&#8211;the probability interval&#8211;is calculated to <i>contain </i> the composite probablistic event denoted by the <b>out </b> expression.</p>
+<p>(I sketch a semantics for *and* and *or* connectives in a paper that I&#8217;d be happy to pass on;  The key idea is the following observation: Pr(p^q) must lie in the interval [max(0,Pr(p) + Pr(q) -1), min(Pr(p), Pr(q))]. We may tighten this interval (and indeed, compute precise values) if we are warranted to make explicit assumptions about the relationship between the events p and q, such as when they are (probabilistically) independent, mutually exclusive, or when one implies the other, among other relationships that might hold between them. )</p>
+<p>The trick, then, is that once one has an <b>in </b> expression (e.g., (T_1 ^ T_2 [.998,.999]) ) whose bounds are guaranteed to offer greatest lower and least upper bounds on the probability of the corresponding composit event, (e.g., the <b>out </b> expression (T_1 [.999,.999] *and* T_2 [.999,.999])), then one may take the deductive closure of the proposition in the first coordinate of the <b>in </b> expression.</p>
+<p>OK. So, if one has a threshold point in mind (say, .99) then closure works as follows. First, restrict the construction of <b>in</b> expressions from <b>out </b> expressions to just those that pass threshold. Then, close *each* <b>in </b> expression under logical consequence. The resulting system is sound: all outputs (if any) will be above threshold. Also, order of premises does not matter. However, the system is not precise: there may in fact be composite probabilistic events that in fact are above threshold but for which the system generates no corresponding <b>in </b> expression. Also, you are going to have collections of <b>in </b> expressions (which, after all, corresponds to an <b>out </b> expression) that you may be tempted to interpret incorrectly. But, so long as you keep the distinction in mind (and your system for interpreting these expressions) one should be able to keep things straight.</p>
+<p>The analysis of the lottery falls out as follows: the mistake the lottery paradox invites us to make is to interpret a collection of accepted sentences (Ticket 1 loses, [.999,.999] *and*, &#8230;, *and*, Ticket n loses [.999,.999]) as acceptance of the conjunction of each proposition in the collection. The conversion of *and* to the corresponding boolean conjunction is controlled by the semantics for *and* which accounts for the depletion of probability mass that is possible when combining probabilistic events.</p>
+<p>That&#8217;s the idea, in a nutshell.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: jon kvanvig</title>
+		<link>http://certaindoubts.com/closure-for-justification-and-the-order-of-inquiry/#comment-643</link>
+		<dc:creator><![CDATA[jon kvanvig]]></dc:creator>
+		<pubDate>Thu, 02 Sep 2004 11:55:43 +0000</pubDate>
+		<guid isPermaLink="false">http://fleetwood.baylor.edu/certain_doubts/?p=118#comment-643</guid>
+		<description><![CDATA[The reason I&#039;m interested in CLOSURE is because, as you might have expected, it&#039;s been defended in print (or at least a close cousin of it).  And of course, you&#039;re right that the entailment here is not between p and q, but in the simple modus ponens inference itself.
+
+If we change the principle from one appealing to implication between p and q to one appealing to entailment, the issue about order of inquiry won&#039;t come up with having a conjunction-introduction rule to use under the scope of the justification operator.  If we had that, we could conjoin your values for p and q, which together entail q, and then apply the entailment version of CLOSURE.  But, then, the problem might be with the conjunction rule rather than the new closure claim, which is a multi-premise closure principle.]]></description>
+		<content:encoded><![CDATA[<p>The reason I&#8217;m interested in CLOSURE is because, as you might have expected, it&#8217;s been defended in print (or at least a close cousin of it).  And of course, you&#8217;re right that the entailment here is not between p and q, but in the simple modus ponens inference itself.</p>
+<p>If we change the principle from one appealing to implication between p and q to one appealing to entailment, the issue about order of inquiry won&#8217;t come up with having a conjunction-introduction rule to use under the scope of the justification operator.  If we had that, we could conjoin your values for p and q, which together entail q, and then apply the entailment version of CLOSURE.  But, then, the problem might be with the conjunction rule rather than the new closure claim, which is a multi-premise closure principle.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Keith</title>
+		<link>http://certaindoubts.com/closure-for-justification-and-the-order-of-inquiry/#comment-642</link>
+		<dc:creator><![CDATA[Keith]]></dc:creator>
+		<pubDate>Thu, 02 Sep 2004 03:31:21 +0000</pubDate>
+		<guid isPermaLink="false">http://fleetwood.baylor.edu/certain_doubts/?p=118#comment-642</guid>
+		<description><![CDATA[I see what you&#039;re thinking now.
+
+I have always thought of closure principles as articulating ways knowledge/justification transmits over &lt;i&gt;entailment&lt;/i&gt;, so I read your &quot;implies&quot; in your principle as meaning &quot;entails.&quot;
+
+In the second step, if this is going by single-premise closure, the single premise would be:
+
+&lt;b&gt;P:&lt;/b&gt; &lt;i&gt;ticket 2 loses&lt;/i&gt;,
+
+which one justifiably believes on probabilistic grounds, and the conclusion reached on its basis is:
+
+&lt;b&gt;Q:&lt;/b&gt; &lt;i&gt;If ticket 3 loses, then if ticket 4 loses, then...if ticket n loses, then it is not the case that some ticket wins.&lt;/i&gt;
+
+But then, I was thinking, this doesn&#039;t fit your single-premise &lt;b&gt;CLOSURE&lt;/b&gt;, for here &lt;b&gt;P&lt;/b&gt; doesn&#039;t &lt;b&gt;&lt;i&gt;entail&lt;/i&gt;&lt;/b&gt; &lt;b&gt;Q&lt;/b&gt;.  &lt;b&gt;P&lt;/b&gt; can serve as a basis on which we may come to justifiably believe that &lt;b&gt;Q&lt;/b&gt;, but only because we already justifiably believe that
+
+&lt;b&gt;If P then Q:&lt;/b&gt; &lt;i&gt;If ticket 2 loses, then if ticket 3 loses, then...if ticket n loses, then it is not the case that some ticket wins&lt;/i&gt;,
+
+which we presumably came to justifiably believe in the first step.  But that &lt;b&gt;P&lt;/b&gt; and something else we justifiably believe together entail &lt;b&gt;Q&lt;/b&gt; does not mean that &lt;b&gt;P&lt;/b&gt; entails &lt;b&gt;Q&lt;/b&gt;.  This seems a case where we justifiably believe that &lt;b&gt;If P then Q&lt;/b&gt; though &lt;b&gt;P&lt;/b&gt; doesn&#039;t entail &lt;b&gt;Q&lt;/b&gt;.  That&#039;s why I thought you needed to go to multi-premise closure.]]></description>
+		<content:encoded><![CDATA[<p>I see what you&#8217;re thinking now.</p>
+<p>I have always thought of closure principles as articulating ways knowledge/justification transmits over <i>entailment</i>, so I read your &#8220;implies&#8221; in your principle as meaning &#8220;entails.&#8221;</p>
+<p>In the second step, if this is going by single-premise closure, the single premise would be:</p>
+<p><b>P:</b> <i>ticket 2 loses</i>,</p>
+<p>which one justifiably believes on probabilistic grounds, and the conclusion reached on its basis is:</p>
+<p><b>Q:</b> <i>If ticket 3 loses, then if ticket 4 loses, then&#8230;if ticket n loses, then it is not the case that some ticket wins.</i></p>
+<p>But then, I was thinking, this doesn&#8217;t fit your single-premise <b>CLOSURE</b>, for here <b>P</b> doesn&#8217;t <b><i>entail</i></b> <b>Q</b>.  <b>P</b> can serve as a basis on which we may come to justifiably believe that <b>Q</b>, but only because we already justifiably believe that</p>
+<p><b>If P then Q:</b> <i>If ticket 2 loses, then if ticket 3 loses, then&#8230;if ticket n loses, then it is not the case that some ticket wins</i>,</p>
+<p>which we presumably came to justifiably believe in the first step.  But that <b>P</b> and something else we justifiably believe together entail <b>Q</b> does not mean that <b>P</b> entails <b>Q</b>.  This seems a case where we justifiably believe that <b>If P then Q</b> though <b>P</b> doesn&#8217;t entail <b>Q</b>.  That&#8217;s why I thought you needed to go to multi-premise closure.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: jon kvanvig</title>
+		<link>http://certaindoubts.com/closure-for-justification-and-the-order-of-inquiry/#comment-641</link>
+		<dc:creator><![CDATA[jon kvanvig]]></dc:creator>
+		<pubDate>Wed, 01 Sep 2004 18:51:20 +0000</pubDate>
+		<guid isPermaLink="false">http://fleetwood.baylor.edu/certain_doubts/?p=118#comment-641</guid>
+		<description><![CDATA[Keith, maybe I&#039;m missing something, but p is the claim that ticket #1 loses, and q is the long conditional minus its antecendent (which is p).  The long conditional is the value for &quot;p implies q.&quot;  By applying CLOSURE, we get justification for q.
+
+To apply ClOSURE again, I&#039;m assuming that you come to believe q as a result of deducing it from p and the fact that p implies q.  That should be good enough to yield that the belief that q is properly based, and so the justification for q together with proper basing of the belief that q yields that one justifiably believes q.  I also assume that you use the same probabilistic assessment procedures used in coming to believe that ticket #1 loses to come to believe that ticket #2 loses.  So if the probability is high enough, then you justifiably believe that ticket #2 loses as well.  Then you are in a position to apply CLOSURE a second time, and so on.]]></description>
+		<content:encoded><![CDATA[<p>Keith, maybe I&#8217;m missing something, but p is the claim that ticket #1 loses, and q is the long conditional minus its antecendent (which is p).  The long conditional is the value for &#8220;p implies q.&#8221;  By applying CLOSURE, we get justification for q.</p>
+<p>To apply ClOSURE again, I&#8217;m assuming that you come to believe q as a result of deducing it from p and the fact that p implies q.  That should be good enough to yield that the belief that q is properly based, and so the justification for q together with proper basing of the belief that q yields that one justifiably believes q.  I also assume that you use the same probabilistic assessment procedures used in coming to believe that ticket #1 loses to come to believe that ticket #2 loses.  So if the probability is high enough, then you justifiably believe that ticket #2 loses as well.  Then you are in a position to apply CLOSURE a second time, and so on.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Keith</title>
+		<link>http://certaindoubts.com/closure-for-justification-and-the-order-of-inquiry/#comment-640</link>
+		<dc:creator><![CDATA[Keith]]></dc:creator>
+		<pubDate>Wed, 01 Sep 2004 18:20:16 +0000</pubDate>
+		<guid isPermaLink="false">http://fleetwood.baylor.edu/certain_doubts/?p=118#comment-640</guid>
+		<description><![CDATA[&lt;b&gt;&lt;i&gt;CLOSURE: If S justifiably believes p and justifiably believes that p implies q, then S is justified in believing q.&lt;/i&gt;&lt;/b&gt;
+
+Jon: Don&#039;t you instead need some principle of &lt;i&gt;multi-premise&lt;/i&gt; closure?
+
+That ticket #1 doesn&#039;t win, doesn&#039;t by itself imply the first conclusion reached (the long conditional minus the first antecedent), but also needs the long conditional as a premise.  That long conditional can be thought of as part of the set-up of the case, and so one might think that the premise that #1 doesn&#039;t win does, for current purposes (i.e., given the set-up), entail the first conclusion reached.  But after that first inference is drawn, aren&#039;t we definitely into multi-premise closure to get us any further?  For we then have to use the premise that #2 doesn&#039;t win, &lt;b&gt; along with the long-conditional-minus-the-first-antecedent&lt;/b&gt; to get to the next conclusion, and the l-c-m-t-f-a isn&#039;t just part of the set-up of the case.]]></description>
+		<content:encoded><![CDATA[<p><b><i>CLOSURE: If S justifiably believes p and justifiably believes that p implies q, then S is justified in believing q.</i></b></p>
+<p>Jon: Don&#8217;t you instead need some principle of <i>multi-premise</i> closure?</p>
+<p>That ticket #1 doesn&#8217;t win, doesn&#8217;t by itself imply the first conclusion reached (the long conditional minus the first antecedent), but also needs the long conditional as a premise.  That long conditional can be thought of as part of the set-up of the case, and so one might think that the premise that #1 doesn&#8217;t win does, for current purposes (i.e., given the set-up), entail the first conclusion reached.  But after that first inference is drawn, aren&#8217;t we definitely into multi-premise closure to get us any further?  For we then have to use the premise that #2 doesn&#8217;t win, <b> along with the long-conditional-minus-the-first-antecedent</b> to get to the next conclusion, and the l-c-m-t-f-a isn&#8217;t just part of the set-up of the case.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>
